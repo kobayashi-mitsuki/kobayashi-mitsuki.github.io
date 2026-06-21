@@ -1,0 +1,27 @@
+project:
+  type: website
+
+website:
+  title: "小林 光木 / Mitsuki Kobayashi"
+  navbar:
+    left:
+      - href: index.qmd
+        text: ホーム
+      - href: research.qmd
+        text: 研究
+      - href: publications.qmd
+        text: 業績
+      - href: teaching.qmd
+        text: 授業
+      - href: videos.qmd
+        text: 動画
+      - href: links.qmd
+        text: リンク
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
