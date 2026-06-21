@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "小林 光木 / Mitsuki Kobayashi"
