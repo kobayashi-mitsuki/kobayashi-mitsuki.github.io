@@ -2,9 +2,14 @@
 title: "ホーム"
 ---
 
-# 小林光木
+:::: {.grid .align-items-center}
 
-![](images/profile.jpg){width=220px}
+::: {.g-col-12 .g-col-md-4}
+![](images/profile.jpg){width=240px}
+:::
+
+::: {.g-col-12 .g-col-md-8}
+# 小林光木
 
 成蹊大学 理工学部 助教  
 データサイエンス研究室
@@ -12,69 +17,84 @@ title: "ホーム"
 解析学、確率論、漸近統計論、確率過程を背景に、確率モデルや統計的推測に関する研究を行っています。
 
 このサイトでは、研究活動、業績、担当授業、動画、外部リンク、連絡先とアクセスに関する情報をまとめています。
+:::
+
+::::
 
 ## Contents
 
 :::: {.grid}
 
 ::: {.g-col-12 .g-col-md-6}
-<div class="card h-100">
-  <div class="card-body">
-    <h3 class="card-title">研究</h3>
-    <p class="card-text">研究内容・研究テーマについてまとめています。</p>
-    <a href="research.html" class="btn btn-primary">研究を見る</a>
-  </div>
-</div>
+::: {.card .h-100}
+::: {.card-body}
+### 研究
+
+研究内容・研究テーマについてまとめています。
+
+[研究を見る](research.html){.btn .btn-primary}
+:::
+:::
 :::
 
 ::: {.g-col-12 .g-col-md-6}
-<div class="card h-100">
-  <div class="card-body">
-    <h3 class="card-title">業績</h3>
-    <p class="card-text">論文・発表などの研究業績をまとめています。</p>
-    <a href="publications.html" class="btn btn-primary">業績を見る</a>
-  </div>
-</div>
+::: {.card .h-100}
+::: {.card-body}
+### 業績
+
+論文・発表などの研究業績をまとめています。
+
+[業績を見る](publications.html){.btn .btn-primary}
+:::
+:::
 :::
 
 ::: {.g-col-12 .g-col-md-6}
-<div class="card h-100">
-  <div class="card-body">
-    <h3 class="card-title">授業</h3>
-    <p class="card-text">担当授業・教材に関する情報をまとめています。</p>
-    <a href="teaching.html" class="btn btn-primary">授業を見る</a>
-  </div>
-</div>
+::: {.card .h-100}
+::: {.card-body}
+### 授業
+
+担当授業・教材に関する情報をまとめています。
+
+[授業を見る](teaching.html){.btn .btn-primary}
+:::
+:::
 :::
 
 ::: {.g-col-12 .g-col-md-6}
-<div class="card h-100">
-  <div class="card-body">
-    <h3 class="card-title">動画</h3>
-    <p class="card-text">講義動画・補足解説動画などへのリンクをまとめています。</p>
-    <a href="videos.html" class="btn btn-primary">動画を見る</a>
-  </div>
-</div>
+::: {.card .h-100}
+::: {.card-body}
+### 動画
+
+講義動画・補足解説動画などへのリンクをまとめています。
+
+[動画を見る](videos.html){.btn .btn-primary}
+:::
+:::
 :::
 
 ::: {.g-col-12 .g-col-md-6}
-<div class="card h-100">
-  <div class="card-body">
-    <h3 class="card-title">リンク</h3>
-    <p class="card-text">researchmap, ORCID, GitHub などの外部リンクをまとめています。</p>
-    <a href="links.html" class="btn btn-primary">リンクを見る</a>
-  </div>
-</div>
+::: {.card .h-100}
+::: {.card-body}
+### リンク
+
+researchmap, ORCID, GitHub などの外部リンクをまとめています。
+
+[リンクを見る](links.html){.btn .btn-primary}
+:::
+:::
 :::
 
 ::: {.g-col-12 .g-col-md-6}
-<div class="card h-100">
-  <div class="card-body">
-    <h3 class="card-title">連絡先とアクセス</h3>
-    <p class="card-text">メールアドレス、所在地、アクセス情報をまとめています。</p>
-    <a href="contact.html" class="btn btn-primary">連絡先を見る</a>
-  </div>
-</div>
+::: {.card .h-100}
+::: {.card-body}
+### 連絡先とアクセス
+
+メールアドレス、所在地、アクセス情報をまとめています。
+
+[連絡先を見る](contact.html){.btn .btn-primary}
+:::
+:::
 :::
 
 ::::
