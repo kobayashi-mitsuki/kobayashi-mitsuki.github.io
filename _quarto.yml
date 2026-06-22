@@ -4,22 +4,16 @@ project:
 
 website:
   title: "小林光木 | 成蹊大学 理工学部 データサイエンス研究室 助教"
+  search: false
   navbar:
-    left:
-      - href: index.qmd
-        text: ホーム
-      - href: research.qmd
-        text: 研究
-      - href: publications.qmd
-        text: 業績
-      - href: teaching.qmd
-        text: 授業
-      - href: videos.qmd
-        text: 動画
-      - href: links.qmd
-        text: リンク
-      - href: contact.qmd
-        text: 連絡先とアクセス
+    right:
+      - research.qmd
+      - publications.qmd
+      - teaching.qmd
+      - videos.qmd
+      - links.qmd
+      - text: "連絡先とアクセス"
+        href: contact.qmd
 
 format:
   html:
