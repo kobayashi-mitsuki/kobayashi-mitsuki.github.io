@@ -1,0 +1,48 @@
+---
+title: "連絡先とアクセス"
+---
+
+## 所属
+
+成蹊大学 理工学部 助教  
+データサイエンス研究室  
+小林光木
+
+## E-mail
+
+mitsuki-kobayashi@st.seikei.ac.jp
+
+成蹊大学の学生で Microsoft Teams から連絡を取りたい方は、Teams 上で上記のメールアドレスを検索すると、個人チャットを送ることができます。
+
+## 所在地
+
+〒180-8633  
+東京都武蔵野市吉祥寺北町3丁目3-1  
+成蹊大学 理工学部 11号館 306室
+
+## Google Maps
+
+[Google Maps で開く](https://www.google.com/maps/search/?api=1&query=成蹊大学%20理工学部%2011号館)
+
+<iframe
+  src="https://www.google.com/maps?q=成蹊大学%20理工学部%2011号館&output=embed"
+  width="100%"
+  height="320"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+## アクセス関連リンク
+
+- [成蹊大学の交通アクセス](https://www.seikei.ac.jp/university/aboutus/accessmap.html)
+- [キャンパスマップ](https://www.seikei.ac.jp/university/aboutus/campus_uni/)
+
+## 来訪について
+
+来訪の際は、事前にメールでご連絡ください。
+
+11号館3階の研究室エリア入口に電話機があります。  
+到着されましたら、電話機で「小森 研究室」を押してください。  
+「小森 教員室」を押すと別の部屋につながりますので、ご注意ください。
