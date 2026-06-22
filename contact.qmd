@@ -2,12 +2,6 @@
 title: "連絡先とアクセス"
 ---
 
-## 所属
-
-成蹊大学 理工学部 助教  
-データサイエンス研究室  
-小林光木
-
 ## E-mail
 
 mitsuki-kobayashi@st.seikei.ac.jp
