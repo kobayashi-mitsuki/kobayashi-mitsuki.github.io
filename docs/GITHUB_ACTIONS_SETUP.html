@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>links – 小林 光木 / Mitsuki Kobayashi</title>
+<title>github_actions_setup – 小林 光木 / Mitsuki Kobayashi</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -275,7 +275,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">動画</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./links.html" aria-current="page"> 
+    <a class="nav-link" href="./links.html"> 
 <span class="menu-text">リンク</span></a>
   </li>  
 </ul>
@@ -295,9 +295,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">目次</h2>
    
   <ul>
-  <li><a href="#研究者情報" id="toc-研究者情報" class="nav-link active" data-scroll-target="#研究者情報">研究者情報</a></li>
-  <li><a href="#web" id="toc-web" class="nav-link" data-scroll-target="#web">Web</a></li>
-  <li><a href="#その他" id="toc-その他" class="nav-link" data-scroll-target="#その他">その他</a></li>
+  <li><a href="#github-actions-による-quarto-自動-render-設定" id="toc-github-actions-による-quarto-自動-render-設定" class="nav-link active" data-scroll-target="#github-actions-による-quarto-自動-render-設定">GitHub Actions による Quarto 自動 render 設定</a>
+  <ul class="collapse">
+  <li><a href="#想定する-github-pages-設定" id="toc-想定する-github-pages-設定" class="nav-link" data-scroll-target="#想定する-github-pages-設定">想定する GitHub Pages 設定</a></li>
+  <li><a href="#スマホからの軽微な編集手順" id="toc-スマホからの軽微な編集手順" class="nav-link" data-scroll-target="#スマホからの軽微な編集手順">スマホからの軽微な編集手順</a></li>
+  <li><a href="#初回に確認すること" id="toc-初回に確認すること" class="nav-link" data-scroll-target="#初回に確認すること">初回に確認すること</a></li>
+  <li><a href="#注意" id="toc-注意" class="nav-link" data-scroll-target="#注意">注意</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -308,25 +312,46 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="研究者情報" class="level2">
-<h2 class="anchored" data-anchor-id="研究者情報">研究者情報</h2>
+<section id="github-actions-による-quarto-自動-render-設定" class="level1">
+<h1>GitHub Actions による Quarto 自動 render 設定</h1>
+<p>このリポジトリでは、<code>.github/workflows/render-quarto.yml</code> により、<code>main</code> ブランチへ push されたときに GitHub Actions 上で <code>quarto render</code> を実行し、生成された <code>docs/</code> を自動コミットする設定にしています。</p>
+<section id="想定する-github-pages-設定" class="level2">
+<h2 class="anchored" data-anchor-id="想定する-github-pages-設定">想定する GitHub Pages 設定</h2>
+<p>現在の構成を維持します。</p>
 <ul>
-<li><a href="https://researchmap.jp/mitsuki_kobayashi">researchmap</a></li>
-<li><a href="https://orcid.org/0000-0003-0083-3187">ORCID</a></li>
+<li>Branch: <code>main</code></li>
+<li>Folder: <code>/docs</code></li>
+</ul>
+<p>この設定のままで、<code>.qmd</code> や <code>_quarto.yml</code> などを GitHub 上で編集して commit すると、GitHub Actions が自動的に <code>docs/</code> を更新します。</p>
+</section>
+<section id="スマホからの軽微な編集手順" class="level2">
+<h2 class="anchored" data-anchor-id="スマホからの軽微な編集手順">スマホからの軽微な編集手順</h2>
+<ol type="1">
+<li>GitHub 上で <code>.qmd</code> ファイルを編集する。</li>
+<li>Commit changes を押す。</li>
+<li>Actions タブで <code>Render Quarto site</code> が成功するのを確認する。</li>
+<li>少し待ってから公開ページを確認する。</li>
+</ol>
+</section>
+<section id="初回に確認すること" class="level2">
+<h2 class="anchored" data-anchor-id="初回に確認すること">初回に確認すること</h2>
+<p>GitHub Actions が <code>docs/</code> の更新コミットを push できない場合は、GitHub の repository settings で次を確認してください。</p>
+<ul>
+<li>Settings → Actions → General</li>
+<li>Workflow permissions</li>
+<li><code>Read and write permissions</code> を有効化</li>
 </ul>
 </section>
-<section id="web" class="level2">
-<h2 class="anchored" data-anchor-id="web">Web</h2>
+<section id="注意" class="level2">
+<h2 class="anchored" data-anchor-id="注意">注意</h2>
 <ul>
-<li><a href="https://github.com/kobayashi-mitsuki">GitHub</a></li>
-<li><a href="https://www.youtube.com/channel/UCqoROvCYF1CmY6sq0omuzcA">YouTube</a></li>
+<li><code>docs/</code> と <code>_site/</code> だけが更新された push では workflow を再実行しない設定にしています。</li>
+<li>これにより、Actions が生成した <code>docs/</code> の自動コミットによる無限ループを避けます。</li>
+<li>研究者ホームページ本体の公開設定は、従来どおり <code>main</code> branch の <code>/docs</code> を使います。</li>
 </ul>
+
+
 </section>
-<section id="その他" class="level2">
-<h2 class="anchored" data-anchor-id="その他">その他</h2>
-<p>準備中です。</p>
-
-
 </section>
 
 </main> <!-- /main -->
