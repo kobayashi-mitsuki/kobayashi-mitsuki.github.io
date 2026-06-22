@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "小林 光木 / Mitsuki Kobayashi"
+  title: "小林光木 | 成蹊大学 理工学部 データサイエンス研究室 助教"
   navbar:
     left:
       - href: index.qmd
