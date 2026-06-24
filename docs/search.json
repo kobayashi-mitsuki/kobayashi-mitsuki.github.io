@@ -77,30 +77,65 @@
     "text": "アクセス関連リンク\n\n成蹊大学の交通アクセス\nキャンパスマップ"
   },
   {
-    "objectID": "teaching/cpp-programming-1.html",
-    "href": "teaching/cpp-programming-1.html",
-    "title": "C++プログラミングⅠ",
+    "objectID": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html",
+    "href": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html",
+    "title": "高階定数係数斉次線形微分方程式",
+    "section": "",
+    "text": "このページでは，微分作用素を (D=) とおき，因数分解された形で与えられた高階定数係数斉次線形微分方程式の一般解を求める練習をします。\n各問題で扱う解は実数値解です。"
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html#基本ルール",
+    "href": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html#基本ルール",
+    "title": "高階定数係数斉次線形微分方程式",
+    "section": "基本ルール",
+    "text": "基本ルール\n(D-a) に対応する基本解は [ e^{at} ] です。(D-a) が多重度 (m) で現れるときは， [ e^{at},te^{at},t2e{at},,t{m-1}e{at} ] が現れます。\n((D-a)2+b2) に対応する基本解は [ e^{at}bt,e^{at}bt ] です。((D-a)2+b2) が多重度 (m) で現れるときは， [ e^{at}{P_{m-1}(t)bt+Q_{m-1}(t)bt} ] の形でまとめて書けます。ここで (P_{m-1}(t),Q_{m-1}(t)) は次数 (m-1) 以下の任意多項式です。"
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html#実根のみ",
+    "href": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html#実根のみ",
+    "title": "高階定数係数斉次線形微分方程式",
+    "section": "実根のみ",
+    "text": "実根のみ\n\n\n問題を生成\n\n\n\n\n\n\n略解"
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html#虚根のみ",
+    "href": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html#虚根のみ",
+    "title": "高階定数係数斉次線形微分方程式",
+    "section": "虚根のみ",
+    "text": "虚根のみ\n\n\n問題を生成\n\n\n\n\n\n\n略解"
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html#実根が多重度-m",
+    "href": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html#実根が多重度-m",
+    "title": "高階定数係数斉次線形微分方程式",
+    "section": "実根が多重度 (m)",
+    "text": "実根が多重度 (m)\n\n\n問題を生成\n\n\n\n\n\n\n略解"
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html#虚根が多重度-m",
+    "href": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html#虚根が多重度-m",
+    "title": "高階定数係数斉次線形微分方程式",
+    "section": "虚根が多重度 (m)",
+    "text": "虚根が多重度 (m)\n\n\n問題を生成\n\n\n\n\n\n\n略解"
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html#一般の場合",
+    "href": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html#一般の場合",
+    "title": "高階定数係数斉次線形微分方程式",
+    "section": "一般の場合",
+    "text": "一般の場合\n\n\n問題を生成\n\n\n\n\n\n\n略解"
+  },
+  {
+    "objectID": "teaching/cpp-programming-2.html",
+    "href": "teaching/cpp-programming-2.html",
+    "title": "C++プログラミングⅡ",
     "section": "",
     "text": "準備中"
   },
   {
-    "objectID": "teaching/statistics-intro.html",
-    "href": "teaching/statistics-intro.html",
-    "title": "確率統計（入門）",
-    "section": "",
-    "text": "準備中"
-  },
-  {
-    "objectID": "teaching/programming-basics-python.html",
-    "href": "teaching/programming-basics-python.html",
-    "title": "プログラミング基礎（Python）",
-    "section": "",
-    "text": "準備中"
-  },
-  {
-    "objectID": "teaching/intermediate-statistics.html",
-    "href": "teaching/intermediate-statistics.html",
-    "title": "Intermediate Statistics",
+    "objectID": "teaching/fourier-analysis.html",
+    "href": "teaching/fourier-analysis.html",
+    "title": "フーリエ解析",
     "section": "",
     "text": "準備中"
   },
@@ -137,19 +172,33 @@
     "href": "teaching/differential-equations.html#自習用教材",
     "title": "微分方程式",
     "section": "自習用教材",
-    "text": "自習用教材\n\n\n2階線形微分方程式\n\n準備中\n\n\n\n高階線形微分方程式\n\n準備中\n\n\n\n冪級数解法\n\n準備中\n\n\n\n連立線形微分方程式\n\n準備中"
+    "text": "自習用教材\n\n\n2階線形微分方程式\n\n準備中\n\n\n\n高階線形微分方程式\n\n\n高階定数係数斉次線形微分方程式\n\n準備中\n\n\n\n冪級数解法\n\n準備中\n\n\n\n連立線形微分方程式\n\n準備中"
   },
   {
-    "objectID": "teaching/fourier-analysis.html",
-    "href": "teaching/fourier-analysis.html",
-    "title": "フーリエ解析",
+    "objectID": "teaching/intermediate-statistics.html",
+    "href": "teaching/intermediate-statistics.html",
+    "title": "Intermediate Statistics",
     "section": "",
     "text": "準備中"
   },
   {
-    "objectID": "teaching/cpp-programming-2.html",
-    "href": "teaching/cpp-programming-2.html",
-    "title": "C++プログラミングⅡ",
+    "objectID": "teaching/programming-basics-python.html",
+    "href": "teaching/programming-basics-python.html",
+    "title": "プログラミング基礎（Python）",
+    "section": "",
+    "text": "準備中"
+  },
+  {
+    "objectID": "teaching/statistics-intro.html",
+    "href": "teaching/statistics-intro.html",
+    "title": "確率統計（入門）",
+    "section": "",
+    "text": "準備中"
+  },
+  {
+    "objectID": "teaching/cpp-programming-1.html",
+    "href": "teaching/cpp-programming-1.html",
+    "title": "C++プログラミングⅠ",
     "section": "",
     "text": "準備中"
   },
