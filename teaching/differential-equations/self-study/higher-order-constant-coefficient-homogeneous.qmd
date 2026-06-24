@@ -2,31 +2,7 @@
 title: "高階定数係数斉次線形微分方程式"
 ---
 
-このページでは，微分作用素を \(D=\dfrac{d}{dt}\) とおき，因数分解された形で与えられた高階定数係数斉次線形微分方程式の一般解を求める練習をします。
-
-各問題で扱う解は実数値解です。
-
-## 基本ルール
-
-\(D-a\) に対応する基本解は
-$$
-e^{at}
-$$
-です。\(D-a\) が多重度 \(m\) で現れるときは，
-$$
-e^{at},\quad te^{at},\quad t^2e^{at},\quad \ldots,\quad t^{m-1}e^{at}
-$$
-が現れます。
-
-\((D-a)^2+b^2\) に対応する基本解は
-$$
-e^{at}\cos bt,\quad e^{at}\sin bt
-$$
-です。\((D-a)^2+b^2\) が多重度 \(m\) で現れるときは，
-$$
-e^{at}\{P_{m-1}(t)\cos bt+Q_{m-1}(t)\sin bt\}
-$$
-の形でまとめて書けます。ここで \(P_{m-1}(t),Q_{m-1}(t)\) は次数 \(m-1\) 以下の任意多項式です。
+問題を生成し，一般解を求めてください。略解は必要なタイミングで開いて確認できます。
 
 ## 実根のみ
 
@@ -35,6 +11,10 @@ $$
 <div id="real-distinct-problem"></div>
 <details>
 <summary>略解</summary>
+<ul>
+<li>特性根が異なる実根だけの場合，各実根 \(a\) に対して \(e^{at}\) が出る。</li>
+<li>一般解はそれらの線形結合。</li>
+</ul>
 <div id="real-distinct-answer"></div>
 </details>
 </div>
@@ -46,6 +26,11 @@ $$
 <div id="complex-distinct-problem"></div>
 <details>
 <summary>略解</summary>
+<ul>
+<li>因子 \(((D-a)^2+b^2)\) は特性根 \(a \pm bi\) に対応する。</li>
+<li>実数値解として \(e^{at}\cos bt\) と \(e^{at}\sin bt\) が出る。</li>
+<li>一般解は各因子から出る解の線形結合。</li>
+</ul>
 <div id="complex-distinct-answer"></div>
 </details>
 </div>
@@ -57,6 +42,11 @@ $$
 <div id="real-repeated-problem"></div>
 <details>
 <summary>略解</summary>
+<ul>
+<li>\((D-a)^m\) は実根 \(a\) が多重度 \(m\) であることを表す。</li>
+<li>\(e^{at}, te^{at}, \ldots, t^{m-1}e^{at}\) が出る。</li>
+<li>解答は \(e^{at}\) に次数 \(m-1\) 以下の多項式をかけた形でまとめてよい。</li>
+</ul>
 <div id="real-repeated-answer"></div>
 </details>
 </div>
@@ -68,6 +58,11 @@ $$
 <div id="complex-repeated-problem"></div>
 <details>
 <summary>略解</summary>
+<ul>
+<li>\(((D-a)^2+b^2)^m\) は虚根 \(a \pm bi\) が多重度 \(m\) であることを表す。</li>
+<li>解答は \(e^{at}\{P(t)\cos bt + Q(t)\sin bt\}\) の形でまとめてよい。</li>
+<li>\(P(t), Q(t)\) は次数 \(m-1\) 以下の多項式。</li>
+</ul>
 <div id="complex-repeated-answer"></div>
 </details>
 </div>
@@ -79,6 +74,10 @@ $$
 <div id="mixed-repeated-problem"></div>
 <details>
 <summary>略解</summary>
+<ul>
+<li>実根部分と虚根部分をそれぞれ処理し，それらを足し合わせる。</li>
+<li>実根の重根から出る項と，虚根の重根から出る項を分けて書く。</li>
+</ul>
 <div id="mixed-repeated-answer"></div>
 </details>
 </div>
