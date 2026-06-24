@@ -8,7 +8,24 @@ title: "微分方程式"
 
 ## 定期試験
 
-準備中
+<details>
+<summary>中間試験</summary>
+
+- [令和8年度 中間試験](differential-equations/exam/r8-midterm.pdf)
+- [令和7年度 中間試験](differential-equations/exam/r7-midterm.pdf)
+- [令和6年度 中間試験](differential-equations/exam/r6-midterm.pdf)
+- [令和6年度 中間試験 練習用](differential-equations/exam/r6-midterm-practice.pdf)
+
+</details>
+
+<details>
+<summary>期末試験</summary>
+
+- [令和7年度 期末試験](differential-equations/exam/r7-final.pdf)
+- [令和6年度 期末試験](differential-equations/exam/r6-final.pdf)
+- [令和6年度 期末試験 練習用](differential-equations/exam/r6-final-practice.pdf)
+
+</details>
 
 ## 自習用教材
 
