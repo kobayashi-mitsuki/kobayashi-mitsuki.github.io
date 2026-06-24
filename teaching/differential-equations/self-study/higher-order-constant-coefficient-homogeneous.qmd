@@ -9,23 +9,23 @@ title: "高階定数係数斉次線形微分方程式"
 ## 基本ルール
 
 \(D-a\) に対応する基本解は
-\[
+$$
 e^{at}
-\]
+$$
 です。\(D-a\) が多重度 \(m\) で現れるときは，
-\[
+$$
 e^{at},\quad te^{at},\quad t^2e^{at},\quad \ldots,\quad t^{m-1}e^{at}
-\]
+$$
 が現れます。
 
 \((D-a)^2+b^2\) に対応する基本解は
-\[
+$$
 e^{at}\cos bt,\quad e^{at}\sin bt
-\]
+$$
 です。\((D-a)^2+b^2\) が多重度 \(m\) で現れるときは，
-\[
+$$
 e^{at}\{P_{m-1}(t)\cos bt+Q_{m-1}(t)\sin bt\}
-\]
+$$
 の形でまとめて書けます。ここで \(P_{m-1}(t),Q_{m-1}(t)\) は次数 \(m-1\) 以下の任意多項式です。
 
 ## 実根のみ
@@ -199,7 +199,7 @@ function complexRepeatedAnswer(pair, m) {
   const p = polynomial(1, m - 1);
   const q = polynomial(m + 1, m - 1);
   const body = `(${p})${trigArg(b, "cos")}+(${q})${trigArg(b, "sin")}`;
-  return e === "" ? `y=${body}` : `y=${e}\\{${body}\\}`;
+  return e === "" ? `y=${body}` : `y=${e}\\left\\{${body}\\right\\}`;
 }
 
 function mixedRepeatedAnswer(a, r, pair) {
@@ -213,18 +213,29 @@ function mixedRepeatedAnswer(a, r, pair) {
   const q = polynomial(start + 2, 1);
   const e2 = expFactor(c);
   const complexBody = `(${p})${trigArg(d, "cos")}+(${q})${trigArg(d, "sin")}`;
-  const complexPart = e2 === "" ? complexBody : `${e2}\\{${complexBody}\\}`;
+  const complexPart = e2 === "" ? complexBody : `${e2}\\left\\{${complexBody}\\right\\}`;
   return `y=${realPart}+${complexPart}`;
 }
 
-function typeset() {
-  if (window.MathJax && window.MathJax.typesetPromise) {
-    window.MathJax.typesetPromise();
+function setMath(id, tex) {
+  const element = document.getElementById(id);
+  element.innerHTML = "";
+
+  if (window.katex) {
+    window.katex.render(tex, element, {
+      displayMode: true,
+      throwOnError: false
+    });
+  } else if (window.MathJax && window.MathJax.typesetPromise) {
+    element.innerHTML = `\\[${tex}\\]`;
+    window.MathJax.typesetPromise([element]);
+  } else {
+    element.textContent = tex;
   }
 }
 
-function setMath(id, tex) {
-  document.getElementById(id).innerHTML = `\\[${tex}\\]`;
+function typeset() {
+  // setMath の中で数式レンダリングするため、この関数は空でよい。
 }
 
 function generateRealDistinct() {
