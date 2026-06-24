@@ -2,6 +2,10 @@
 title: "微分方程式"
 ---
 
+## シラバス
+
+- [2026年度 シラバス](https://www.wsl.waseda.jp/syllabus/JAA104.php?pKey=2800210007032026280021000728&pLng=jp)
+
 ## 授業資料
 
 準備中
@@ -29,4 +33,30 @@ title: "微分方程式"
 
 ## 自習用教材
 
+<details>
+<summary>2階線形微分方程式</summary>
+
 準備中
+
+</details>
+
+<details>
+<summary>高階線形微分方程式</summary>
+
+準備中
+
+</details>
+
+<details>
+<summary>冪級数解法</summary>
+
+準備中
+
+</details>
+
+<details>
+<summary>連立線形微分方程式</summary>
+
+準備中
+
+</details>
