@@ -1,0 +1,288 @@
+---
+title: "高階定数係数斉次線形微分方程式"
+---
+
+このページでは，微分作用素を \(D=\dfrac{d}{dt}\) とおき，因数分解された形で与えられた高階定数係数斉次線形微分方程式の一般解を求める練習をします。
+
+各問題で扱う解は実数値解です。
+
+## 基本ルール
+
+\(D-a\) に対応する基本解は
+\[
+e^{at}
+\]
+です。\(D-a\) が多重度 \(m\) で現れるときは，
+\[
+e^{at},\quad te^{at},\quad t^2e^{at},\quad \ldots,\quad t^{m-1}e^{at}
+\]
+が現れます。
+
+\((D-a)^2+b^2\) に対応する基本解は
+\[
+e^{at}\cos bt,\quad e^{at}\sin bt
+\]
+です。\((D-a)^2+b^2\) が多重度 \(m\) で現れるときは，
+\[
+e^{at}\{P_{m-1}(t)\cos bt+Q_{m-1}(t)\sin bt\}
+\]
+の形でまとめて書けます。ここで \(P_{m-1}(t),Q_{m-1}(t)\) は次数 \(m-1\) 以下の任意多項式です。
+
+## 実根のみ
+
+<div class="practice-box">
+<button type="button" onclick="generateRealDistinct()">問題を生成</button>
+<div id="real-distinct-problem"></div>
+<details>
+<summary>略解</summary>
+<div id="real-distinct-answer"></div>
+</details>
+</div>
+
+## 虚根のみ
+
+<div class="practice-box">
+<button type="button" onclick="generateComplexDistinct()">問題を生成</button>
+<div id="complex-distinct-problem"></div>
+<details>
+<summary>略解</summary>
+<div id="complex-distinct-answer"></div>
+</details>
+</div>
+
+## 実根が多重度 \(m\)
+
+<div class="practice-box">
+<button type="button" onclick="generateRealRepeated()">問題を生成</button>
+<div id="real-repeated-problem"></div>
+<details>
+<summary>略解</summary>
+<div id="real-repeated-answer"></div>
+</details>
+</div>
+
+## 虚根が多重度 \(m\)
+
+<div class="practice-box">
+<button type="button" onclick="generateComplexRepeated()">問題を生成</button>
+<div id="complex-repeated-problem"></div>
+<details>
+<summary>略解</summary>
+<div id="complex-repeated-answer"></div>
+</details>
+</div>
+
+## 一般の場合
+
+<div class="practice-box">
+<button type="button" onclick="generateMixedRepeated()">問題を生成</button>
+<div id="mixed-repeated-problem"></div>
+<details>
+<summary>略解</summary>
+<div id="mixed-repeated-answer"></div>
+</details>
+</div>
+
+<script>
+function randInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function sampleWithoutReplacement(array, k) {
+  const arr = array.slice();
+  const out = [];
+  for (let i = 0; i < k; i++) {
+    const j = randInt(0, arr.length - 1);
+    out.push(arr.splice(j, 1)[0]);
+  }
+  return out;
+}
+
+function range(min, max) {
+  const out = [];
+  for (let i = min; i <= max; i++) out.push(i);
+  return out;
+}
+
+function plusSigned(n) {
+  if (n > 0) return "+" + n;
+  if (n < 0) return String(n);
+  return "";
+}
+
+function minusRootFactor(a) {
+  if (a === 0) return "D";
+  if (a > 0) return "D-" + a;
+  return "D+" + Math.abs(a);
+}
+
+function expFactor(a) {
+  if (a === 0) return "";
+  if (a === 1) return "e^{t}";
+  if (a === -1) return "e^{-t}";
+  return `e^{${a}t}`;
+}
+
+function trigArg(b, fn) {
+  if (b === 1) return `\\${fn} t`;
+  return `\\${fn} ${b}t`;
+}
+
+function tPower(p) {
+  if (p === 0) return "";
+  if (p === 1) return "t";
+  return `t^${p}`;
+}
+
+function constantTerm(index, power) {
+  const tp = tPower(power);
+  if (power === 0) return `C_{${index}}`;
+  return `C_{${index}}${tp}`;
+}
+
+function polynomial(startIndex, degree) {
+  const terms = [];
+  for (let p = 0; p <= degree; p++) {
+    terms.push(constantTerm(startIndex + p, p));
+  }
+  return terms.join("+");
+}
+
+function realDistinctEquation(roots) {
+  return roots.map(a => `(${minusRootFactor(a)})`).join("") + "y=0";
+}
+
+function complexFactor(pair) {
+  const a = pair[0];
+  const b = pair[1];
+  if (a === 0) return `(D^2+${b*b})`;
+  return `((${minusRootFactor(a)})^2+${b*b})`;
+}
+
+function complexDistinctEquation(pairs) {
+  return pairs.map(pair => complexFactor(pair)).join("") + "y=0";
+}
+
+function realDistinctAnswer(roots) {
+  const terms = roots.map((a, i) => {
+    const c = `C_{${i + 1}}`;
+    const e = expFactor(a);
+    return e === "" ? c : `${c}${e}`;
+  });
+  return "y=" + terms.join("+");
+}
+
+function complexDistinctAnswer(pairs) {
+  let c = 1;
+  const terms = [];
+  pairs.forEach(pair => {
+    const a = pair[0];
+    const b = pair[1];
+    const e = expFactor(a);
+    const body = `C_{${c}}${trigArg(b, "cos")}+C_{${c+1}}${trigArg(b, "sin")}`;
+    c += 2;
+    terms.push(e === "" ? `(${body})` : `${e}(${body})`);
+  });
+  return "y=" + terms.join("+");
+}
+
+function realRepeatedAnswer(a, m) {
+  const e = expFactor(a);
+  const poly = polynomial(1, m - 1);
+  return e === "" ? `y=${poly}` : `y=${e}(${poly})`;
+}
+
+function complexRepeatedAnswer(pair, m) {
+  const a = pair[0];
+  const b = pair[1];
+  const e = expFactor(a);
+  const p = polynomial(1, m - 1);
+  const q = polynomial(m + 1, m - 1);
+  const body = `(${p})${trigArg(b, "cos")}+(${q})${trigArg(b, "sin")}`;
+  return e === "" ? `y=${body}` : `y=${e}\\{${body}\\}`;
+}
+
+function mixedRepeatedAnswer(a, r, pair) {
+  const c = pair[0];
+  const d = pair[1];
+  const e1 = expFactor(a);
+  const realPoly = polynomial(1, r - 1);
+  const realPart = e1 === "" ? realPoly : `${e1}(${realPoly})`;
+  const start = r + 1;
+  const p = polynomial(start, 1);
+  const q = polynomial(start + 2, 1);
+  const e2 = expFactor(c);
+  const complexBody = `(${p})${trigArg(d, "cos")}+(${q})${trigArg(d, "sin")}`;
+  const complexPart = e2 === "" ? complexBody : `${e2}\\{${complexBody}\\}`;
+  return `y=${realPart}+${complexPart}`;
+}
+
+function typeset() {
+  if (window.MathJax && window.MathJax.typesetPromise) {
+    window.MathJax.typesetPromise();
+  }
+}
+
+function setMath(id, tex) {
+  document.getElementById(id).innerHTML = `\\[${tex}\\]`;
+}
+
+function generateRealDistinct() {
+  const k = randInt(3, 5);
+  const roots = sampleWithoutReplacement(range(-9, 9), k).sort((a,b) => a-b);
+  setMath("real-distinct-problem", realDistinctEquation(roots));
+  setMath("real-distinct-answer", realDistinctAnswer(roots));
+  typeset();
+}
+
+function generateComplexDistinct() {
+  const allPairs = [];
+  for (const a of range(-9, 9)) {
+    for (const b of range(1, 9)) {
+      allPairs.push([a, b]);
+    }
+  }
+  const k = randInt(2, 3);
+  const pairs = sampleWithoutReplacement(allPairs, k);
+  setMath("complex-distinct-problem", complexDistinctEquation(pairs));
+  setMath("complex-distinct-answer", complexDistinctAnswer(pairs));
+  typeset();
+}
+
+function generateRealRepeated() {
+  const a = randInt(-9, 9);
+  const m = randInt(3, 6);
+  setMath("real-repeated-problem", `(${minusRootFactor(a)})^${m}y=0`);
+  setMath("real-repeated-answer", realRepeatedAnswer(a, m));
+  typeset();
+}
+
+function generateComplexRepeated() {
+  const a = randInt(-9, 9);
+  const b = randInt(1, 9);
+  const m = randInt(2, 4);
+  const pair = [a, b];
+  setMath("complex-repeated-problem", `${complexFactor(pair)}^${m}y=0`);
+  setMath("complex-repeated-answer", complexRepeatedAnswer(pair, m));
+  typeset();
+}
+
+function generateMixedRepeated() {
+  const a = randInt(-9, 9);
+  const r = randInt(3, 4);
+  const c = randInt(-9, 9);
+  const d = randInt(1, 9);
+  const pair = [c, d];
+  setMath("mixed-repeated-problem", `(${minusRootFactor(a)})^${r}${complexFactor(pair)}^2y=0`);
+  setMath("mixed-repeated-answer", mixedRepeatedAnswer(a, r, pair));
+  typeset();
+}
+
+window.addEventListener("load", function() {
+  generateRealDistinct();
+  generateComplexDistinct();
+  generateRealRepeated();
+  generateComplexRepeated();
+  generateMixedRepeated();
+});
+</script>
