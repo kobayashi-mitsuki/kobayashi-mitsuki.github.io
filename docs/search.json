@@ -21,13 +21,6 @@
     "text": "研究業績\n\n業績一覧（準備中）"
   },
   {
-    "objectID": "research.html#講演資料発表資料",
-    "href": "research.html#講演資料発表資料",
-    "title": "研究活動",
-    "section": "講演資料・発表資料",
-    "text": "講演資料・発表資料\n準備中"
-  },
-  {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "業績",
@@ -147,11 +140,11 @@
     "text": "researchmap\nORCID"
   },
   {
-    "objectID": "links.html#外部サービス",
-    "href": "links.html#外部サービス",
+    "objectID": "links.html#公開コード公開動画",
+    "href": "links.html#公開コード公開動画",
     "title": "外部リンク",
-    "section": "外部サービス",
-    "text": "外部サービス\n\nGitHub\nYouTube"
+    "section": "公開コード・公開動画",
+    "text": "公開コード・公開動画\n\nGitHub\nYouTube"
   },
   {
     "objectID": "about.html",
