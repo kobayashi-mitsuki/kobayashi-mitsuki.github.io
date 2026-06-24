@@ -7,8 +7,10 @@ title: "高階定数係数斉次線形微分方程式"
 ## 実根のみ
 
 <div class="practice-box">
-<button type="button" class="problem-button" onclick="generateRealDistinct()">問題を生成</button>
 <div id="real-distinct-problem"></div>
+<div class="problem-button-row">
+  <button type="button" class="problem-button" onclick="generateRealDistinct()">問題を変更</button>
+</div>
 <details>
 <summary>略解</summary>
 <ul>
@@ -22,8 +24,10 @@ title: "高階定数係数斉次線形微分方程式"
 ## 虚根のみ
 
 <div class="practice-box">
-<button type="button" class="problem-button" onclick="generateComplexDistinct()">問題を生成</button>
 <div id="complex-distinct-problem"></div>
+<div class="problem-button-row">
+  <button type="button" class="problem-button" onclick="generateComplexDistinct()">問題を変更</button>
+</div>
 <details>
 <summary>略解</summary>
 <ul>
@@ -38,8 +42,10 @@ title: "高階定数係数斉次線形微分方程式"
 ## 実根が多重度 \(m\)
 
 <div class="practice-box">
-<button type="button" class="problem-button" onclick="generateRealRepeated()">問題を生成</button>
 <div id="real-repeated-problem"></div>
+<div class="problem-button-row">
+  <button type="button" class="problem-button" onclick="generateRealRepeated()">問題を変更</button>
+</div>
 <details>
 <summary>略解</summary>
 <ul>
@@ -54,8 +60,10 @@ title: "高階定数係数斉次線形微分方程式"
 ## 虚根が多重度 \(m\)
 
 <div class="practice-box">
-<button type="button" class="problem-button" onclick="generateComplexRepeated()">問題を生成</button>
 <div id="complex-repeated-problem"></div>
+<div class="problem-button-row">
+  <button type="button" class="problem-button" onclick="generateComplexRepeated()">問題を変更</button>
+</div>
 <details>
 <summary>略解</summary>
 <ul>
@@ -70,8 +78,10 @@ title: "高階定数係数斉次線形微分方程式"
 ## 一般の場合
 
 <div class="practice-box">
-<button type="button" class="problem-button" onclick="generateMixedRepeated()">問題を生成</button>
 <div id="mixed-repeated-problem"></div>
+<div class="problem-button-row">
+  <button type="button" class="problem-button" onclick="generateMixedRepeated()">問題を変更</button>
+</div>
 <details>
 <summary>略解</summary>
 <ul>
