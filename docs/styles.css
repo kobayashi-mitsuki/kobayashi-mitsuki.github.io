@@ -21,3 +21,20 @@ details[open] summary {
 details ul {
   margin-top: 0.4rem;
 }
+
+.problem-button {
+  display: inline-block;
+  margin: 0.4rem 0 0.8rem 0;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid currentColor;
+  border-radius: 0.35rem;
+  background: transparent;
+  color: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.problem-button:hover,
+.problem-button:focus {
+  background: rgba(127, 127, 127, 0.18);
+}
