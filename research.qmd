@@ -8,7 +8,7 @@ title: "研究活動"
 
 ## 研究業績
 
-- [業績一覧](publications.qmd)
+- [業績一覧（準備中）](publications.qmd)
 
 ## 講演資料・発表資料
 
