@@ -81,7 +81,42 @@
     "href": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html",
     "title": "高階定数係数斉次線形微分方程式",
     "section": "",
-    "text": "次の微分方程式の解をすべて求めよ.ただし, \\(D=\\tfrac{d}{dx}\\) とし, \\(C_k\\) \\((k=1,2,\\dots)\\) を任意定数として用いて良い.\n\n\n\n実根のみ\n\n問題を変更\n\n\n\n\n\n\n\n\n解答と解説\n\n\n\n\n\n特性根が異なる実根だけの場合，各実根 \\(a\\) に対して \\(e^{ax}\\) が出る。\n一般解はそれらの線形結合。\n\n\n\n\n\n\n虚根のみ\n\n問題を変更\n\n\n\n\n\n\n\n\n略解\n\n\n因子 \\(((D-a)^2+b^2)\\) は特性根 \\(a \\pm bi\\) に対応する。\n実数値解として \\(e^{ax}\\cos bx\\) と \\(e^{ax}\\sin bx\\) が出る。\n一般解は各因子から出る解の線形結合。\n\n\n\n\n\n\n\n\n\n実根が多重度 \\(m\\)\n\n問題を変更\n\n\n\n\n\n\n\n\n略解\n\n\n\\((D-a)^m\\) は実根 \\(a\\) が多重度 \\(m\\) であることを表す。\n\\(e^{ax}, xe^{ax}, \\ldots, x^{m-1}e^{ax}\\) が出る。\n解答は \\(e^{ax}\\) に次数 \\(m-1\\) 以下の多項式をかけた形でまとめてよい。\n\n\n\n\n\n\n\n\n\n虚根が多重度 \\(m\\)\n\n問題を変更\n\n\n\n\n\n\n\n\n略解\n\n\n\\(((D-a)^2+b^2)^m\\) は虚根 \\(a \\pm bi\\) が多重度 \\(m\\) であることを表す。\n解答は \\(e^{ax}\\{P(x)\\cos bx + Q(x)\\sin bx\\}\\) の形でまとめてよい。\n\\(P(x), Q(x)\\) は次数 \\(m-1\\) 以下の多項式。\n\n\n\n\n\n\n\n\n\n一般の場合\n\n問題を変更\n\n\n\n\n\n\n\n\n略解\n\n\n実根部分と虚根部分をそれぞれ処理し，それらを足し合わせる。\n実根の重根から出る項と，虚根の重根から出る項を分けて書く。"
+    "text": "次の微分方程式の解をすべて求めよ.ただし, \\(D=\\tfrac{d}{dx}\\) とし, \\(C_k\\) \\((k=1,2,\\dots)\\) を任意定数として用いて良い."
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html#実根のみ",
+    "href": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html#実根のみ",
+    "title": "高階定数係数斉次線形微分方程式",
+    "section": "1. 実根のみ",
+    "text": "1. 実根のみ\n\n問題を変更\n\n\n\n\n\n\n\n解答と解説\n\n\n\n\n\n特性根が異なる実根だけの場合，各実根 \\(a\\) に対して \\(e^{ax}\\) が出る。\n一般解はそれらの線形結合。"
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html#虚根のみ",
+    "href": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html#虚根のみ",
+    "title": "高階定数係数斉次線形微分方程式",
+    "section": "2. 虚根のみ",
+    "text": "2. 虚根のみ\n\n問題を変更\n\n\n\n\n\n\n\n略解\n\n\n因子 \\(((D-a)^2+b^2)\\) は特性根 \\(a \\pm bi\\) に対応する。\n実数値解として \\(e^{ax}\\cos bx\\) と \\(e^{ax}\\sin bx\\) が出る。\n一般解は各因子から出る解の線形結合。"
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html#実根が多重度-m",
+    "href": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html#実根が多重度-m",
+    "title": "高階定数係数斉次線形微分方程式",
+    "section": "3. 実根が多重度 \\(m\\)",
+    "text": "3. 実根が多重度 \\(m\\)\n\n問題を変更\n\n\n\n\n\n\n\n略解\n\n\n\\((D-a)^m\\) は実根 \\(a\\) が多重度 \\(m\\) であることを表す。\n\\(e^{ax}, xe^{ax}, \\ldots, x^{m-1}e^{ax}\\) が出る。\n解答は \\(e^{ax}\\) に次数 \\(m-1\\) 以下の多項式をかけた形でまとめてよい。"
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html#虚根が多重度-m",
+    "href": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html#虚根が多重度-m",
+    "title": "高階定数係数斉次線形微分方程式",
+    "section": "4. 虚根が多重度 \\(m\\)",
+    "text": "4. 虚根が多重度 \\(m\\)\n\n問題を変更\n\n\n\n\n\n\n\n略解\n\n\n\\(((D-a)^2+b^2)^m\\) は虚根 \\(a \\pm bi\\) が多重度 \\(m\\) であることを表す。\n解答は \\(e^{ax}\\{P(x)\\cos bx + Q(x)\\sin bx\\}\\) の形でまとめてよい。\n\\(P(x), Q(x)\\) は次数 \\(m-1\\) 以下の多項式。"
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html#一般の場合",
+    "href": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html#一般の場合",
+    "title": "高階定数係数斉次線形微分方程式",
+    "section": "5. 一般の場合",
+    "text": "5. 一般の場合\n\n問題を変更\n\n\n\n\n\n\n\n略解\n\n\n実根部分と虚根部分をそれぞれ処理し，それらを足し合わせる。\n実根の重根から出る項と，虚根の重根から出る項を分けて書く。"
   },
   {
     "objectID": "teaching/cpp-programming-2.html",
