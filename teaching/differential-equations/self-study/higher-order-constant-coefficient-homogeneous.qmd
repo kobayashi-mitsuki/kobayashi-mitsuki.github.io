@@ -13,11 +13,12 @@ title: "高階定数係数斉次線形微分方程式"
 </div>
 <details>
 <summary>略解</summary>
-<ul>
-<li>特性根が異なる実根だけの場合，各実根 \(a\) に対して \(e^{at}\) が出る。</li>
-<li>一般解はそれらの線形結合。</li>
-</ul>
+
+- 特性根が異なる実根だけの場合，各実根 $a$ に対して $e^{at}$ が出る。
+- 一般解はそれらの線形結合。
+
 <div id="real-distinct-answer"></div>
+
 </details>
 </div>
 
@@ -30,16 +31,17 @@ title: "高階定数係数斉次線形微分方程式"
 </div>
 <details>
 <summary>略解</summary>
-<ul>
-<li>因子 \(((D-a)^2+b^2)\) は特性根 \(a \pm bi\) に対応する。</li>
-<li>実数値解として \(e^{at}\cos bt\) と \(e^{at}\sin bt\) が出る。</li>
-<li>一般解は各因子から出る解の線形結合。</li>
-</ul>
+
+- 因子 $((D-a)^2+b^2)$ は特性根 $a \pm bi$ に対応する。
+- 実数値解として $e^{at}\cos bt$ と $e^{at}\sin bt$ が出る。
+- 一般解は各因子から出る解の線形結合。
+
 <div id="complex-distinct-answer"></div>
+
 </details>
 </div>
 
-## 実根が多重度 \(m\)
+## 実根が多重度 $m$
 
 <div class="practice-box">
 <div id="real-repeated-problem"></div>
@@ -48,16 +50,17 @@ title: "高階定数係数斉次線形微分方程式"
 </div>
 <details>
 <summary>略解</summary>
-<ul>
-<li>\((D-a)^m\) は実根 \(a\) が多重度 \(m\) であることを表す。</li>
-<li>\(e^{at}, te^{at}, \ldots, t^{m-1}e^{at}\) が出る。</li>
-<li>解答は \(e^{at}\) に次数 \(m-1\) 以下の多項式をかけた形でまとめてよい。</li>
-</ul>
+
+- $(D-a)^m$ は実根 $a$ が多重度 $m$ であることを表す。
+- $e^{at}, te^{at}, \ldots, t^{m-1}e^{at}$ が出る。
+- 解答は $e^{at}$ に次数 $m-1$ 以下の多項式をかけた形でまとめてよい。
+
 <div id="real-repeated-answer"></div>
+
 </details>
 </div>
 
-## 虚根が多重度 \(m\)
+## 虚根が多重度 $m$
 
 <div class="practice-box">
 <div id="complex-repeated-problem"></div>
@@ -66,12 +69,13 @@ title: "高階定数係数斉次線形微分方程式"
 </div>
 <details>
 <summary>略解</summary>
-<ul>
-<li>\(((D-a)^2+b^2)^m\) は虚根 \(a \pm bi\) が多重度 \(m\) であることを表す。</li>
-<li>解答は \(e^{at}\{P(t)\cos bt + Q(t)\sin bt\}\) の形でまとめてよい。</li>
-<li>\(P(t), Q(t)\) は次数 \(m-1\) 以下の多項式。</li>
-</ul>
+
+- $((D-a)^2+b^2)^m$ は虚根 $a \pm bi$ が多重度 $m$ であることを表す。
+- 解答は $e^{at}\{P(t)\cos bt + Q(t)\sin bt\}$ の形でまとめてよい。
+- $P(t), Q(t)$ は次数 $m-1$ 以下の多項式。
+
 <div id="complex-repeated-answer"></div>
+
 </details>
 </div>
 
@@ -84,11 +88,12 @@ title: "高階定数係数斉次線形微分方程式"
 </div>
 <details>
 <summary>略解</summary>
-<ul>
-<li>実根部分と虚根部分をそれぞれ処理し，それらを足し合わせる。</li>
-<li>実根の重根から出る項と，虚根の重根から出る項を分けて書く。</li>
-</ul>
+
+- 実根部分と虚根部分をそれぞれ処理し，それらを足し合わせる。
+- 実根の重根から出る項と，虚根の重根から出る項を分けて書く。
+
 <div id="mixed-repeated-answer"></div>
+
 </details>
 </div>
 
@@ -230,14 +235,14 @@ function setMath(id, tex) {
   const element = document.getElementById(id);
   element.innerHTML = "";
 
-  if (window.katex) {
+  if (window.MathJax && window.MathJax.typesetPromise) {
+    element.innerHTML = `\\[${tex}\\]`;
+    window.MathJax.typesetPromise([element]);
+  } else if (window.katex) {
     window.katex.render(tex, element, {
       displayMode: true,
       throwOnError: false
     });
-  } else if (window.MathJax && window.MathJax.typesetPromise) {
-    element.innerHTML = `\\[${tex}\\]`;
-    window.MathJax.typesetPromise([element]);
   } else {
     element.textContent = tex;
   }
