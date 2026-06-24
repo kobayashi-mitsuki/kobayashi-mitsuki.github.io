@@ -109,14 +109,21 @@
     "href": "teaching/differential-equations.html",
     "title": "微分方程式",
     "section": "",
-    "text": "準備中"
+    "text": "2026年度 シラバス"
+  },
+  {
+    "objectID": "teaching/differential-equations.html#シラバス",
+    "href": "teaching/differential-equations.html#シラバス",
+    "title": "微分方程式",
+    "section": "",
+    "text": "2026年度 シラバス"
   },
   {
     "objectID": "teaching/differential-equations.html#授業資料",
     "href": "teaching/differential-equations.html#授業資料",
     "title": "微分方程式",
-    "section": "",
-    "text": "準備中"
+    "section": "授業資料",
+    "text": "授業資料\n準備中"
   },
   {
     "objectID": "teaching/differential-equations.html#定期試験の過去問pdf",
@@ -130,7 +137,7 @@
     "href": "teaching/differential-equations.html#自習用教材",
     "title": "微分方程式",
     "section": "自習用教材",
-    "text": "自習用教材\n準備中"
+    "text": "自習用教材\n\n\n2階線形微分方程式\n\n準備中\n\n\n\n高階線形微分方程式\n\n準備中\n\n\n\n冪級数解法\n\n準備中\n\n\n\n連立線形微分方程式\n\n準備中"
   },
   {
     "objectID": "teaching/fourier-analysis.html",
