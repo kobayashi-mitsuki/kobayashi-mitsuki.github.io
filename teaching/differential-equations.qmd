@@ -6,7 +6,7 @@ title: "微分方程式"
 
 準備中
 
-## 定期試験
+## 定期試験の過去問（PDF）
 
 <details>
 <summary>中間試験</summary>
