@@ -2,9 +2,30 @@
   {
     "objectID": "research.html",
     "href": "research.html",
-    "title": "研究",
+    "title": "研究活動",
     "section": "",
-    "text": "準備中です。"
+    "text": "研究概要、研究業績、講演資料・発表資料などを整理していく予定です。"
+  },
+  {
+    "objectID": "research.html#研究概要",
+    "href": "research.html#研究概要",
+    "title": "研究活動",
+    "section": "研究概要",
+    "text": "研究概要\n準備中です。"
+  },
+  {
+    "objectID": "research.html#研究業績",
+    "href": "research.html#研究業績",
+    "title": "研究活動",
+    "section": "研究業績",
+    "text": "研究業績\n\n業績一覧"
+  },
+  {
+    "objectID": "research.html#講演資料発表資料",
+    "href": "research.html#講演資料発表資料",
+    "title": "研究活動",
+    "section": "講演資料・発表資料",
+    "text": "講演資料・発表資料\n準備中です。"
   },
   {
     "objectID": "publications.html",
@@ -23,42 +44,42 @@
   {
     "objectID": "contact.html",
     "href": "contact.html",
-    "title": "連絡先とアクセス",
+    "title": "連絡先・アクセス",
     "section": "",
     "text": "mitsuki-kobayashi(at)st.seikei.ac.jp"
   },
   {
     "objectID": "contact.html#e-mail",
     "href": "contact.html#e-mail",
-    "title": "連絡先とアクセス",
+    "title": "連絡先・アクセス",
     "section": "",
     "text": "mitsuki-kobayashi(at)st.seikei.ac.jp"
   },
   {
     "objectID": "contact.html#所在地",
     "href": "contact.html#所在地",
-    "title": "連絡先とアクセス",
+    "title": "連絡先・アクセス",
     "section": "所在地",
     "text": "所在地\n〒180-8633\n東京都武蔵野市吉祥寺北町3丁目3-1\n成蹊大学 理工学部 11号館 306室"
   },
   {
     "objectID": "contact.html#来訪について",
     "href": "contact.html#来訪について",
-    "title": "連絡先とアクセス",
+    "title": "連絡先・アクセス",
     "section": "来訪について",
     "text": "来訪について\n来訪の際は、オフィスアワーを除き、事前に予約をしていただけるとスムーズです。\nオフィスアワーは成蹊大学ポータルサイトで確認してください。\n到着時、11号館3階の研究室エリア入口に電話機があるので、「小森 研究室」のボタンを押してください。\n「小森 教員室」を押すと別の部屋につながりますので、ご注意ください。"
   },
   {
     "objectID": "contact.html#google-maps",
     "href": "contact.html#google-maps",
-    "title": "連絡先とアクセス",
+    "title": "連絡先・アクセス",
     "section": "Google Maps",
     "text": "Google Maps\nGoogle Maps で開く"
   },
   {
     "objectID": "contact.html#アクセス関連リンク",
     "href": "contact.html#アクセス関連リンク",
-    "title": "連絡先とアクセス",
+    "title": "連絡先・アクセス",
     "section": "アクセス関連リンク",
     "text": "アクセス関連リンク\n\n成蹊大学の交通アクセス\nキャンパスマップ"
   },
@@ -67,103 +88,68 @@
     "href": "teaching/cpp-programming-1.html",
     "title": "C++プログラミングⅠ",
     "section": "",
-    "text": "このページでは、C++プログラミングⅠに関する授業資料・補足資料・動画等を整理していく予定です。",
-    "crumbs": [
-      "授業",
-      "プログラミング・データサイエンス",
-      "C++プログラミングⅠ"
-    ]
+    "text": "このページでは、C++プログラミングⅠに関する授業資料・補足資料・動画等を整理していく予定です。"
   },
   {
     "objectID": "teaching/statistics-intro.html",
     "href": "teaching/statistics-intro.html",
     "title": "確率統計（入門）",
     "section": "",
-    "text": "このページでは、確率統計の入門的な内容に関する授業資料・補足資料・動画等を整理していく予定です。",
-    "crumbs": [
-      "授業",
-      "数学・統計",
-      "確率統計（入門）"
-    ]
+    "text": "このページでは、確率統計の入門的な内容に関する授業資料・補足資料・動画等を整理していく予定です。"
   },
   {
     "objectID": "teaching/programming-basics-python.html",
     "href": "teaching/programming-basics-python.html",
     "title": "プログラミング基礎（Python）",
     "section": "",
-    "text": "このページでは、Python を用いたプログラミング基礎に関する授業資料・補足資料・動画等を整理していく予定です。",
-    "crumbs": [
-      "授業",
-      "プログラミング・データサイエンス",
-      "プログラミング基礎（Python）"
-    ]
+    "text": "このページでは、Python を用いたプログラミング基礎に関する授業資料・補足資料・動画等を整理していく予定です。"
   },
   {
     "objectID": "teaching/intermediate-statistics.html",
     "href": "teaching/intermediate-statistics.html",
     "title": "Intermediate Statistics",
     "section": "",
-    "text": "This page will organize lecture materials, supplementary notes, videos, and related resources for Intermediate Statistics.",
-    "crumbs": [
-      "授業",
-      "数学・統計",
-      "Intermediate Statistics"
-    ]
+    "text": "This page will organize lecture materials, supplementary notes, videos, and related resources for Intermediate Statistics."
   },
   {
     "objectID": "teaching/differential-equations.html",
     "href": "teaching/differential-equations.html",
     "title": "微分方程式",
     "section": "",
-    "text": "このページでは、微分方程式に関する授業資料・補足資料・動画等を整理していく予定です。",
-    "crumbs": [
-      "授業",
-      "数学・統計",
-      "微分方程式"
-    ]
+    "text": "このページでは、微分方程式に関する授業資料・補足資料・動画等を整理していく予定です。"
   },
   {
     "objectID": "teaching/fourier-analysis.html",
     "href": "teaching/fourier-analysis.html",
     "title": "フーリエ解析",
     "section": "",
-    "text": "このページでは、フーリエ解析に関する授業資料・補足資料・動画等を整理していく予定です。",
-    "crumbs": [
-      "授業",
-      "数学・統計",
-      "フーリエ解析"
-    ]
+    "text": "このページでは、フーリエ解析に関する授業資料・補足資料・動画等を整理していく予定です。"
   },
   {
     "objectID": "teaching/cpp-programming-2.html",
     "href": "teaching/cpp-programming-2.html",
     "title": "C++プログラミングⅡ",
     "section": "",
-    "text": "このページでは、C++プログラミングⅡに関する授業資料・補足資料・動画等を整理していく予定です。",
-    "crumbs": [
-      "授業",
-      "プログラミング・データサイエンス",
-      "C++プログラミングⅡ"
-    ]
+    "text": "このページでは、C++プログラミングⅡに関する授業資料・補足資料・動画等を整理していく予定です。"
   },
   {
     "objectID": "links.html",
     "href": "links.html",
-    "title": "リンク",
+    "title": "外部リンク",
     "section": "",
     "text": "researchmap\nORCID"
   },
   {
     "objectID": "links.html#研究者情報",
     "href": "links.html#研究者情報",
-    "title": "リンク",
+    "title": "外部リンク",
     "section": "",
     "text": "researchmap\nORCID"
   },
   {
     "objectID": "links.html#外部サービス",
     "href": "links.html#外部サービス",
-    "title": "リンク",
+    "title": "外部リンク",
     "section": "外部サービス",
     "text": "外部サービス\n\nGitHub\nYouTube"
   },
@@ -177,41 +163,29 @@
   {
     "objectID": "teaching.html",
     "href": "teaching.html",
-    "title": "授業",
+    "title": "授業・教材",
     "section": "",
-    "text": "担当授業および関連する教材・動画へのリンクをまとめています。",
-    "crumbs": [
-      "授業",
-      "授業一覧"
-    ]
+    "text": "微分方程式\nフーリエ解析\n確率統計（入門）\nIntermediate Statistics"
   },
   {
     "objectID": "teaching.html#数学統計",
     "href": "teaching.html#数学統計",
-    "title": "授業",
-    "section": "数学・統計",
-    "text": "数学・統計\n\n微分方程式\nフーリエ解析\n確率統計（入門）\nIntermediate Statistics",
-    "crumbs": [
-      "授業",
-      "授業一覧"
-    ]
+    "title": "授業・教材",
+    "section": "",
+    "text": "微分方程式\nフーリエ解析\n確率統計（入門）\nIntermediate Statistics"
   },
   {
     "objectID": "teaching.html#プログラミングデータサイエンス",
     "href": "teaching.html#プログラミングデータサイエンス",
-    "title": "授業",
+    "title": "授業・教材",
     "section": "プログラミング・データサイエンス",
-    "text": "プログラミング・データサイエンス\n\nプログラミング基礎（Python）\nC++プログラミングⅠ\nC++プログラミングⅡ",
-    "crumbs": [
-      "授業",
-      "授業一覧"
-    ]
+    "text": "プログラミング・データサイエンス\n\nプログラミング基礎（Python）\nC++プログラミングⅠ\nC++プログラミングⅡ"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "小林光木",
     "section": "",
-    "text": "小林光木\n\n成蹊大学 理工学部\nデータサイエンス研究室 助教\n\n早稲田大学 理工学術院・国際教養学部\n非常勤講師\n\n解析学、確率論、漸近統計論、確率過程を背景に、確率モデルや統計的推測に関する研究を行っています。\nこのサイトでは、研究活動、業績、担当授業、動画、外部リンク、連絡先とアクセスに関する情報をまとめています。"
+    "text": "小林光木\n\n成蹊大学 理工学部\nデータサイエンス研究室 助教\n\n早稲田大学 理工学術院・国際教養学部\n非常勤講師\n\n解析学、確率論、漸近統計論、確率過程を背景に、確率モデルや統計的推測に関する研究を行っています。"
   }
 ]
