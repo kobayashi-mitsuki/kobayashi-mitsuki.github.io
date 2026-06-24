@@ -34,7 +34,7 @@ title: "微分方程式"
 ## 自習用教材
 
 <details>
-<summary>2階線形微分方程式</summary>
+<summary>2階線形微分方程式（準備中）</summary>
 
 準備中
 
@@ -50,14 +50,14 @@ title: "微分方程式"
 </details>
 
 <details>
-<summary>冪級数解法</summary>
+<summary>冪級数解法（準備中）</summary>
 
 準備中
 
 </details>
 
 <details>
-<summary>連立線形微分方程式</summary>
+<summary>連立線形微分方程式（準備中）</summary>
 
 準備中
 
