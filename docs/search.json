@@ -63,6 +63,55 @@
     "text": "アクセス関連リンク\n\n成蹊大学の交通アクセス\nキャンパスマップ"
   },
   {
+    "objectID": "teaching/cpp-programming-1.html",
+    "href": "teaching/cpp-programming-1.html",
+    "title": "C++プログラミングⅠ",
+    "section": "",
+    "text": "このページでは、C++プログラミングⅠに関する授業資料・補足資料・動画等を整理していく予定です。"
+  },
+  {
+    "objectID": "teaching/statistics-intro.html",
+    "href": "teaching/statistics-intro.html",
+    "title": "確率統計（入門）",
+    "section": "",
+    "text": "このページでは、確率統計の入門的な内容に関する授業資料・補足資料・動画等を整理していく予定です。"
+  },
+  {
+    "objectID": "teaching/programming-basics-python.html",
+    "href": "teaching/programming-basics-python.html",
+    "title": "プログラミング基礎（Python）",
+    "section": "",
+    "text": "このページでは、Python を用いたプログラミング基礎に関する授業資料・補足資料・動画等を整理していく予定です。"
+  },
+  {
+    "objectID": "teaching/intermediate-statistics.html",
+    "href": "teaching/intermediate-statistics.html",
+    "title": "Intermediate Statistics",
+    "section": "",
+    "text": "This page will organize lecture materials, supplementary notes, videos, and related resources for Intermediate Statistics."
+  },
+  {
+    "objectID": "teaching/differential-equations.html",
+    "href": "teaching/differential-equations.html",
+    "title": "微分方程式",
+    "section": "",
+    "text": "このページでは、微分方程式に関する授業資料・補足資料・動画等を整理していく予定です。"
+  },
+  {
+    "objectID": "teaching/fourier-analysis.html",
+    "href": "teaching/fourier-analysis.html",
+    "title": "フーリエ解析",
+    "section": "",
+    "text": "このページでは、フーリエ解析に関する授業資料・補足資料・動画等を整理していく予定です。"
+  },
+  {
+    "objectID": "teaching/cpp-programming-2.html",
+    "href": "teaching/cpp-programming-2.html",
+    "title": "C++プログラミングⅡ",
+    "section": "",
+    "text": "このページでは、C++プログラミングⅡに関する授業資料・補足資料・動画等を整理していく予定です。"
+  },
+  {
     "objectID": "links.html",
     "href": "links.html",
     "title": "リンク",
@@ -95,7 +144,21 @@
     "href": "teaching.html",
     "title": "授業",
     "section": "",
-    "text": "準備中です。"
+    "text": "担当授業および関連する教材・動画へのリンクをまとめています。"
+  },
+  {
+    "objectID": "teaching.html#数学統計",
+    "href": "teaching.html#数学統計",
+    "title": "授業",
+    "section": "数学・統計",
+    "text": "数学・統計\n\n微分方程式\nフーリエ解析\n確率統計（入門）\nIntermediate Statistics"
+  },
+  {
+    "objectID": "teaching.html#プログラミングデータサイエンス",
+    "href": "teaching.html#プログラミングデータサイエンス",
+    "title": "授業",
+    "section": "プログラミング・データサイエンス",
+    "text": "プログラミング・データサイエンス\n\nプログラミング基礎（Python）\nC++プログラミングⅠ\nC++プログラミングⅡ"
   },
   {
     "objectID": "index.html",
