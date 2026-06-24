@@ -7,7 +7,7 @@ title: "外部リンク"
 - [researchmap](https://researchmap.jp/mitsuki_kobayashi)
 - [ORCID](https://orcid.org/0000-0003-0083-3187)
 
-## 外部サービス
+## 公開コード・公開動画
 
 - [GitHub](https://github.com/kobayashi-mitsuki)
 - [YouTube](https://www.youtube.com/channel/UCqoROvCYF1CmY6sq0omuzcA)
