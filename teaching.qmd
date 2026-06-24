@@ -4,7 +4,7 @@ title: "授業・教材"
 
 ## 数学・統計
 
-- [微分方程式（準備中）](teaching/differential-equations.qmd)
+- [微分方程式](teaching/differential-equations.qmd)
 - [フーリエ解析（準備中）](teaching/fourier-analysis.qmd)
 - [確率統計（入門）（準備中）](teaching/statistics-intro.qmd)
 - [Intermediate Statistics（準備中）](teaching/intermediate-statistics.qmd)
