@@ -67,49 +67,84 @@
     "href": "teaching/cpp-programming-1.html",
     "title": "C++プログラミングⅠ",
     "section": "",
-    "text": "このページでは、C++プログラミングⅠに関する授業資料・補足資料・動画等を整理していく予定です。"
+    "text": "このページでは、C++プログラミングⅠに関する授業資料・補足資料・動画等を整理していく予定です。",
+    "crumbs": [
+      "授業",
+      "プログラミング・データサイエンス",
+      "C++プログラミングⅠ"
+    ]
   },
   {
     "objectID": "teaching/statistics-intro.html",
     "href": "teaching/statistics-intro.html",
     "title": "確率統計（入門）",
     "section": "",
-    "text": "このページでは、確率統計の入門的な内容に関する授業資料・補足資料・動画等を整理していく予定です。"
+    "text": "このページでは、確率統計の入門的な内容に関する授業資料・補足資料・動画等を整理していく予定です。",
+    "crumbs": [
+      "授業",
+      "数学・統計",
+      "確率統計（入門）"
+    ]
   },
   {
     "objectID": "teaching/programming-basics-python.html",
     "href": "teaching/programming-basics-python.html",
     "title": "プログラミング基礎（Python）",
     "section": "",
-    "text": "このページでは、Python を用いたプログラミング基礎に関する授業資料・補足資料・動画等を整理していく予定です。"
+    "text": "このページでは、Python を用いたプログラミング基礎に関する授業資料・補足資料・動画等を整理していく予定です。",
+    "crumbs": [
+      "授業",
+      "プログラミング・データサイエンス",
+      "プログラミング基礎（Python）"
+    ]
   },
   {
     "objectID": "teaching/intermediate-statistics.html",
     "href": "teaching/intermediate-statistics.html",
     "title": "Intermediate Statistics",
     "section": "",
-    "text": "This page will organize lecture materials, supplementary notes, videos, and related resources for Intermediate Statistics."
+    "text": "This page will organize lecture materials, supplementary notes, videos, and related resources for Intermediate Statistics.",
+    "crumbs": [
+      "授業",
+      "数学・統計",
+      "Intermediate Statistics"
+    ]
   },
   {
     "objectID": "teaching/differential-equations.html",
     "href": "teaching/differential-equations.html",
     "title": "微分方程式",
     "section": "",
-    "text": "このページでは、微分方程式に関する授業資料・補足資料・動画等を整理していく予定です。"
+    "text": "このページでは、微分方程式に関する授業資料・補足資料・動画等を整理していく予定です。",
+    "crumbs": [
+      "授業",
+      "数学・統計",
+      "微分方程式"
+    ]
   },
   {
     "objectID": "teaching/fourier-analysis.html",
     "href": "teaching/fourier-analysis.html",
     "title": "フーリエ解析",
     "section": "",
-    "text": "このページでは、フーリエ解析に関する授業資料・補足資料・動画等を整理していく予定です。"
+    "text": "このページでは、フーリエ解析に関する授業資料・補足資料・動画等を整理していく予定です。",
+    "crumbs": [
+      "授業",
+      "数学・統計",
+      "フーリエ解析"
+    ]
   },
   {
     "objectID": "teaching/cpp-programming-2.html",
     "href": "teaching/cpp-programming-2.html",
     "title": "C++プログラミングⅡ",
     "section": "",
-    "text": "このページでは、C++プログラミングⅡに関する授業資料・補足資料・動画等を整理していく予定です。"
+    "text": "このページでは、C++プログラミングⅡに関する授業資料・補足資料・動画等を整理していく予定です。",
+    "crumbs": [
+      "授業",
+      "プログラミング・データサイエンス",
+      "C++プログラミングⅡ"
+    ]
   },
   {
     "objectID": "links.html",
@@ -144,27 +179,39 @@
     "href": "teaching.html",
     "title": "授業",
     "section": "",
-    "text": "担当授業および関連する教材・動画へのリンクをまとめています。"
+    "text": "担当授業および関連する教材・動画へのリンクをまとめています。",
+    "crumbs": [
+      "授業",
+      "授業一覧"
+    ]
   },
   {
     "objectID": "teaching.html#数学統計",
     "href": "teaching.html#数学統計",
     "title": "授業",
     "section": "数学・統計",
-    "text": "数学・統計\n\n微分方程式\nフーリエ解析\n確率統計（入門）\nIntermediate Statistics"
+    "text": "数学・統計\n\n微分方程式\nフーリエ解析\n確率統計（入門）\nIntermediate Statistics",
+    "crumbs": [
+      "授業",
+      "授業一覧"
+    ]
   },
   {
     "objectID": "teaching.html#プログラミングデータサイエンス",
     "href": "teaching.html#プログラミングデータサイエンス",
     "title": "授業",
     "section": "プログラミング・データサイエンス",
-    "text": "プログラミング・データサイエンス\n\nプログラミング基礎（Python）\nC++プログラミングⅠ\nC++プログラミングⅡ"
+    "text": "プログラミング・データサイエンス\n\nプログラミング基礎（Python）\nC++プログラミングⅠ\nC++プログラミングⅡ",
+    "crumbs": [
+      "授業",
+      "授業一覧"
+    ]
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "小林光木",
     "section": "",
-    "text": "小林光木\n\n成蹊大学 理工学部\nデータサイエンス研究室 助教\n\n早稲田大学 理工学術院・国際教養学部\n非常勤講師\n\n解析学、確率論、漸近統計論、確率過程を背景に、確率モデルや統計的推測に関する研究を行っています。\nこのサイトでは、研究活動、業績、担当授業、動画、外部リンク、連絡先とアクセスに関する情報をまとめています。\n研究 業績 授業 動画 リンク 連絡先とアクセス"
+    "text": "小林光木\n\n成蹊大学 理工学部\nデータサイエンス研究室 助教\n\n早稲田大学 理工学術院・国際教養学部\n非常勤講師\n\n解析学、確率論、漸近統計論、確率過程を背景に、確率モデルや統計的推測に関する研究を行っています。\nこのサイトでは、研究活動、業績、担当授業、動画、外部リンク、連絡先とアクセスに関する情報をまとめています。"
   }
 ]
