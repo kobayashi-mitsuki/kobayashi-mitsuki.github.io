@@ -2,38 +2,38 @@
 title: "高階定数係数斉次線形微分方程式"
 ---
 
-次の微分方程式の解をすべて求めよ.ただし, $D=\tfrac{d}{dt}$ とし, $C_k$, $k=1,2,\dots$, を任意定数として用いて良い.
+次の微分方程式の解をすべて求めよ.ただし, $D=\tfrac{d}{dx}$ とし, $C_k$ $(k=1,2,\dots)$ を任意定数として用いて良い.
 
-## (1) 実根のみ
+<div class="problem-heading-row">
+  <h2 id="real-distinct-heading">(1) 実根のみ</h2>
+  <button type="button" class="problem-button" onclick="generateRealDistinct()">問題を変更</button>
+</div>
 
 <div class="practice-box">
 <div id="real-distinct-problem"></div>
-<div class="problem-button-row">
-  <button type="button" class="problem-button" onclick="generateRealDistinct()">問題を変更</button>
-</div>
 <details>
 <summary>解答と解説</summary>
 
 <div id="real-distinct-answer"></div>
 
-- 特性根が異なる実根だけの場合，各実根 $a$ に対して $e^{at}$ が出る。
+- 特性根が異なる実根だけの場合，各実根 $a$ に対して $e^{ax}$ が出る。
 - 一般解はそれらの線形結合。
 
 </details>
 </div>
 
-## (2) 虚根のみ
+<div class="problem-heading-row">
+  <h2 id="complex-distinct-heading">(2) 虚根のみ</h2>
+  <button type="button" class="problem-button" onclick="generateComplexDistinct()">問題を変更</button>
+</div>
 
 <div class="practice-box">
 <div id="complex-distinct-problem"></div>
-<div class="problem-button-row">
-  <button type="button" class="problem-button" onclick="generateComplexDistinct()">問題を変更</button>
-</div>
 <details>
 <summary>略解</summary>
 
 - 因子 $((D-a)^2+b^2)$ は特性根 $a \pm bi$ に対応する。
-- 実数値解として $e^{at}\cos bt$ と $e^{at}\sin bt$ が出る。
+- 実数値解として $e^{ax}\cos bx$ と $e^{ax}\sin bx$ が出る。
 - 一般解は各因子から出る解の線形結合。
 
 <div id="complex-distinct-answer"></div>
@@ -41,51 +41,51 @@ title: "高階定数係数斉次線形微分方程式"
 </details>
 </div>
 
-## (3) 実根が多重度 $m$
+<div class="problem-heading-row">
+  <h2 id="real-repeated-heading">(3) 実根が多重度 $m$</h2>
+  <button type="button" class="problem-button" onclick="generateRealRepeated()">問題を変更</button>
+</div>
 
 <div class="practice-box">
 <div id="real-repeated-problem"></div>
-<div class="problem-button-row">
-  <button type="button" class="problem-button" onclick="generateRealRepeated()">問題を変更</button>
-</div>
 <details>
 <summary>略解</summary>
 
 - $(D-a)^m$ は実根 $a$ が多重度 $m$ であることを表す。
-- $e^{at}, te^{at}, \ldots, t^{m-1}e^{at}$ が出る。
-- 解答は $e^{at}$ に次数 $m-1$ 以下の多項式をかけた形でまとめてよい。
+- $e^{ax}, xe^{ax}, \ldots, x^{m-1}e^{ax}$ が出る。
+- 解答は $e^{ax}$ に次数 $m-1$ 以下の多項式をかけた形でまとめてよい。
 
 <div id="real-repeated-answer"></div>
 
 </details>
 </div>
 
-## (4) 虚根が多重度 $m$
+<div class="problem-heading-row">
+  <h2 id="complex-repeated-heading">(4) 虚根が多重度 $m$</h2>
+  <button type="button" class="problem-button" onclick="generateComplexRepeated()">問題を変更</button>
+</div>
 
 <div class="practice-box">
 <div id="complex-repeated-problem"></div>
-<div class="problem-button-row">
-  <button type="button" class="problem-button" onclick="generateComplexRepeated()">問題を変更</button>
-</div>
 <details>
 <summary>略解</summary>
 
 - $((D-a)^2+b^2)^m$ は虚根 $a \pm bi$ が多重度 $m$ であることを表す。
-- 解答は $e^{at}\{P(t)\cos bt + Q(t)\sin bt\}$ の形でまとめてよい。
-- $P(t), Q(t)$ は次数 $m-1$ 以下の多項式。
+- 解答は $e^{ax}\{P(x)\cos bx + Q(x)\sin bx\}$ の形でまとめてよい。
+- $P(x), Q(x)$ は次数 $m-1$ 以下の多項式。
 
 <div id="complex-repeated-answer"></div>
 
 </details>
 </div>
 
-## (5) 一般の場合
+<div class="problem-heading-row">
+  <h2 id="mixed-repeated-heading">(5) 一般の場合</h2>
+  <button type="button" class="problem-button" onclick="generateMixedRepeated()">問題を変更</button>
+</div>
 
 <div class="practice-box">
 <div id="mixed-repeated-problem"></div>
-<div class="problem-button-row">
-  <button type="button" class="problem-button" onclick="generateMixedRepeated()">問題を変更</button>
-</div>
 <details>
 <summary>略解</summary>
 
@@ -132,20 +132,20 @@ function minusRootFactor(a) {
 
 function expFactor(a) {
   if (a === 0) return "";
-  if (a === 1) return "e^{t}";
-  if (a === -1) return "e^{-t}";
-  return `e^{${a}t}`;
+  if (a === 1) return "e^{x}";
+  if (a === -1) return "e^{-x}";
+  return `e^{${a}x}`;
 }
 
 function trigArg(b, fn) {
-  if (b === 1) return `\\${fn} t`;
-  return `\\${fn} ${b}t`;
+  if (b === 1) return `\\${fn} x`;
+  return `\\${fn} ${b}x`;
 }
 
 function tPower(p) {
   if (p === 0) return "";
-  if (p === 1) return "t";
-  return `t^${p}`;
+  if (p === 1) return "x";
+  return `x^${p}`;
 }
 
 function constantTerm(index, power) {
