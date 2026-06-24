@@ -57,6 +57,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../styles.css">
 </head>
@@ -306,8 +335,16 @@ ul.task-list li input[type="checkbox"] {
 <p>各問題で扱う解は実数値解です。</p>
 <section id="基本ルール" class="level2">
 <h2 class="anchored" data-anchor-id="基本ルール">基本ルール</h2>
-<p>(D-a) に対応する基本解は [ e^{at} ] です。(D-a) が多重度 (m) で現れるときは， [ e^{at},te^{at},t<sup>2e</sup>{at},,t<sup>{m-1}e</sup>{at} ] が現れます。</p>
-<p>((D-a)<sup>2+b</sup>2) に対応する基本解は [ e^{at}bt,e^{at}bt ] です。((D-a)<sup>2+b</sup>2) が多重度 (m) で現れるときは， [ e^{at}{P_{m-1}(t)bt+Q_{m-1}(t)bt} ] の形でまとめて書けます。ここで (P_{m-1}(t),Q_{m-1}(t)) は次数 (m-1) 以下の任意多項式です。</p>
+<p>(D-a) に対応する基本解は <span class="math display">\[
+e^{at}
+\]</span> です。(D-a) が多重度 (m) で現れるときは， <span class="math display">\[
+e^{at},\quad te^{at},\quad t^2e^{at},\quad \ldots,\quad t^{m-1}e^{at}
+\]</span> が現れます。</p>
+<p>((D-a)<sup>2+b</sup>2) に対応する基本解は <span class="math display">\[
+e^{at}\cos bt,\quad e^{at}\sin bt
+\]</span> です。((D-a)<sup>2+b</sup>2) が多重度 (m) で現れるときは， <span class="math display">\[
+e^{at}\{P_{m-1}(t)\cos bt+Q_{m-1}(t)\sin bt\}
+\]</span> の形でまとめて書けます。ここで (P_{m-1}(t),Q_{m-1}(t)) は次数 (m-1) 以下の任意多項式です。</p>
 </section>
 <section id="実根のみ" class="level2">
 <h2 class="anchored" data-anchor-id="実根のみ">実根のみ</h2>
@@ -519,7 +556,7 @@ function complexRepeatedAnswer(pair, m) {
   const p = polynomial(1, m - 1);
   const q = polynomial(m + 1, m - 1);
   const body = `(${p})${trigArg(b, "cos")}+(${q})${trigArg(b, "sin")}`;
-  return e === "" ? `y=${body}` : `y=${e}\\{${body}\\}`;
+  return e === "" ? `y=${body}` : `y=${e}\\left\\{${body}\\right\\}`;
 }
 
 function mixedRepeatedAnswer(a, r, pair) {
@@ -533,18 +570,29 @@ function mixedRepeatedAnswer(a, r, pair) {
   const q = polynomial(start + 2, 1);
   const e2 = expFactor(c);
   const complexBody = `(${p})${trigArg(d, "cos")}+(${q})${trigArg(d, "sin")}`;
-  const complexPart = e2 === "" ? complexBody : `${e2}\\{${complexBody}\\}`;
+  const complexPart = e2 === "" ? complexBody : `${e2}\\left\\{${complexBody}\\right\\}`;
   return `y=${realPart}+${complexPart}`;
 }
 
-function typeset() {
-  if (window.MathJax && window.MathJax.typesetPromise) {
-    window.MathJax.typesetPromise();
+function setMath(id, tex) {
+  const element = document.getElementById(id);
+  element.innerHTML = "";
+
+  if (window.katex) {
+    window.katex.render(tex, element, {
+      displayMode: true,
+      throwOnError: false
+    });
+  } else if (window.MathJax && window.MathJax.typesetPromise) {
+    element.innerHTML = `\\[${tex}\\]`;
+    window.MathJax.typesetPromise([element]);
+  } else {
+    element.textContent = tex;
   }
 }
 
-function setMath(id, tex) {
-  document.getElementById(id).innerHTML = `\\[${tex}\\]`;
+function typeset() {
+  // setMath の中で数式レンダリングするため、この関数は空でよい。
 }
 
 function generateRealDistinct() {
