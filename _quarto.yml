@@ -9,7 +9,28 @@ website:
     right:
       - research.qmd
       - publications.qmd
-      - teaching.qmd
+      - text: "授業"
+        menu:
+          - text: "授業一覧"
+            href: teaching.qmd
+          - text: "数学・統計"
+            href: teaching.qmd#数学統計
+          - text: "微分方程式"
+            href: teaching/differential-equations.qmd
+          - text: "フーリエ解析"
+            href: teaching/fourier-analysis.qmd
+          - text: "確率統計（入門）"
+            href: teaching/statistics-intro.qmd
+          - text: "Intermediate Statistics"
+            href: teaching/intermediate-statistics.qmd
+          - text: "プログラミング・データサイエンス"
+            href: teaching.qmd#プログラミングデータサイエンス
+          - text: "プログラミング基礎（Python）"
+            href: teaching/programming-basics-python.qmd
+          - text: "C++プログラミングⅠ"
+            href: teaching/cpp-programming-1.qmd
+          - text: "C++プログラミングⅡ"
+            href: teaching/cpp-programming-2.qmd
       - videos.qmd
       - links.qmd
       - text: "連絡先とアクセス"

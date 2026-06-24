@@ -2,4 +2,17 @@
 title: "授業"
 ---
 
-準備中です。
+担当授業および関連する教材・動画へのリンクをまとめています。
+
+## 数学・統計
+
+- [微分方程式](teaching/differential-equations.qmd)
+- [フーリエ解析](teaching/fourier-analysis.qmd)
+- [確率統計（入門）](teaching/statistics-intro.qmd)
+- [Intermediate Statistics](teaching/intermediate-statistics.qmd)
+
+## プログラミング・データサイエンス
+
+- [プログラミング基礎（Python）](teaching/programming-basics-python.qmd)
+- [C++プログラミングⅠ](teaching/cpp-programming-1.qmd)
+- [C++プログラミングⅡ](teaching/cpp-programming-2.qmd)
