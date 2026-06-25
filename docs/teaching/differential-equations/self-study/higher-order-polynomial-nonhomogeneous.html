@@ -347,9 +347,19 @@ P(D)y=f(x)
 <summary>
 解答と解説
 </summary>
+<p>
+解答：
+</p>
 <div id="constant-nonzero-answer">
 
 </div>
+<p>
+解説：
+</p>
+<ul>
+<li>定数は <span class="math inline">\(D\)</span> を作用させると <span class="math inline">\(0\)</span> になるため，<span class="math inline">\(P(D)\)</span> は定数に対して <span class="math inline">\(P(0)\)</span> 倍として働く。</li>
+<li><span class="math inline">\(P(0)\ne0\)</span> なので，<span class="math inline">\(y\)</span> を定数とおいて求めればよい。</li>
+</ul>
 </details>
 </div>
 </section>
@@ -366,9 +376,20 @@ P(D)y=f(x)
 <summary>
 解答と解説
 </summary>
+<p>
+解答：
+</p>
 <div id="constant-zero-answer">
 
 </div>
+<p>
+解説：
+</p>
+<ul>
+<li><span class="math inline">\(P(D)=Q(D)D^r\)</span> と見て，<span class="math inline">\(u=D^r y\)</span> とおく。</li>
+<li>先に <span class="math inline">\(Q(D)u=1\)</span> を考えると，<span class="math inline">\(u\)</span> は定数として求まる。</li>
+<li>最後に <span class="math inline">\(D^r y=u\)</span> から <span class="math inline">\(r\)</span> 回積分して <span class="math inline">\(y\)</span> を求める。積分定数は <span class="math inline">\(0\)</span> としてよい。</li>
+</ul>
 </details>
 </div>
 </section>
@@ -385,9 +406,20 @@ P(D)y=f(x)
 <summary>
 解答と解説
 </summary>
+<p>
+解答：
+</p>
 <div id="monomial-nonzero-answer">
 
 </div>
+<p>
+解説：
+</p>
+<ul>
+<li><span class="math inline">\(0\)</span> が特性根でないので，<span class="math inline">\(P(0)\ne0\)</span> である。</li>
+<li>右辺が <span class="math inline">\(x^m\)</span> なので，特殊解は <span class="math inline">\(m\)</span> 次以下の多項式として求まる。</li>
+<li><span class="math inline">\(D\)</span> を作用させると次数が下がるため，多項式の範囲で係数が決まる。</li>
+</ul>
 </details>
 </div>
 </section>
@@ -404,9 +436,20 @@ P(D)y=f(x)
 <summary>
 解答と解説
 </summary>
+<p>
+解答：
+</p>
 <div id="monomial-zero-answer">
 
 </div>
+<p>
+解説：
+</p>
+<ul>
+<li><span class="math inline">\(P(D)=Q(D)D^r\)</span> と見て，<span class="math inline">\(u=D^r y\)</span> とおく。</li>
+<li>先に <span class="math inline">\(Q(D)u=x^m\)</span> を考えると，<span class="math inline">\(u\)</span> は多項式として求まる。</li>
+<li>最後に <span class="math inline">\(D^r y=u\)</span> から <span class="math inline">\(r\)</span> 回積分して <span class="math inline">\(y\)</span> を求める。積分定数は <span class="math inline">\(0\)</span> としてよい。</li>
+</ul>
 </details>
 </div>
 </section>
@@ -423,9 +466,20 @@ P(D)y=f(x)
 <summary>
 解答と解説
 </summary>
+<p>
+解答：
+</p>
 <div id="polynomial-nonzero-answer">
 
 </div>
+<p>
+解説：
+</p>
+<ul>
+<li><span class="math inline">\(0\)</span> が特性根でないので，<span class="math inline">\(P(0)\ne0\)</span> である。</li>
+<li>右辺が多項式なので，特殊解も多項式として求まる。</li>
+<li>各次数の係数を比較すれば，一つの特殊解が決まる。</li>
+</ul>
 </details>
 </div>
 </section>
@@ -442,9 +496,20 @@ P(D)y=f(x)
 <summary>
 解答と解説
 </summary>
+<p>
+解答：
+</p>
 <div id="polynomial-zero-answer">
 
 </div>
+<p>
+解説：
+</p>
+<ul>
+<li><span class="math inline">\(P(D)=Q(D)D^r\)</span> と見て，<span class="math inline">\(u=D^r y\)</span> とおく。</li>
+<li>先に <span class="math inline">\(Q(D)u=f(x)\)</span> を考えると，<span class="math inline">\(u\)</span> は多項式として求まる。</li>
+<li>最後に <span class="math inline">\(D^r y=u\)</span> から <span class="math inline">\(r\)</span> 回積分して <span class="math inline">\(y\)</span> を求める。積分定数は <span class="math inline">\(0\)</span> としてよい。</li>
+</ul>
 </details>
 </div>
 <script>
@@ -699,8 +764,7 @@ function generateConstantNonzero() {
   const p0 = coeffs[0];
   setMath("constant-nonzero-problem", `\\left(${operatorTex(coeffs)}\\right)y=1`);
   setMath("constant-nonzero-answer", answerTex([
-    `P(0)=${p0}`,
-    `y_p=${fracToTex(new Fr(1, p0))}`
+    `y=${fracToTex(new Fr(1, p0))}`
   ]));
 }
 
@@ -716,9 +780,7 @@ function generateConstantZero() {
   yp[r] = ypCoeff;
   setMath("constant-zero-problem", `\\left(${operatorTex(q)}\\right)${dPowerTex(r)}y=1`);
   setMath("constant-zero-answer", answerTex([
-    `u=${dPowerTex(r)}y\,\quad \\left(${operatorTex(q)}\\right)u=1`,
-    `u=${fracToTex(new Fr(1, q0))}`,
-    `y_p=${polynomialFromFractionsTex(yp)}`
+    `y=${polynomialFromFractionsTex(yp)}`
   ]));
 }
 
@@ -730,8 +792,7 @@ function generateMonomialNonzero() {
   const yp = applyInverseOperator(p, rhs);
   setMath("monomial-nonzero-problem", `\\left(${operatorTex(p)}\\right)y=${monomialTex(m)}`);
   setMath("monomial-nonzero-answer", answerTex([
-    `y_p=\\frac{1}{${operatorTex(p)}}${monomialTex(m)}`,
-    `y_p=${polynomialFromFractionsTex(yp)}`
+    `y=${polynomialFromFractionsTex(yp)}`
   ]));
 }
 
@@ -746,9 +807,7 @@ function generateMonomialZero() {
   const yp = integratePoly(u, r);
   setMath("monomial-zero-problem", `\\left(${operatorTex(q)}\\right)${dPowerTex(r)}y=${monomialTex(m)}`);
   setMath("monomial-zero-answer", answerTex([
-    `u=${dPowerTex(r)}y\,\quad \\left(${operatorTex(q)}\\right)u=${monomialTex(m)}`,
-    `u=${polynomialFromFractionsTex(u)}`,
-    `y_p=${dInverseTex(r)}u=${polynomialFromFractionsTex(yp)}`
+    `y=${polynomialFromFractionsTex(yp)}`
   ]));
 }
 
@@ -760,8 +819,7 @@ function generatePolynomialNonzero() {
   const yp = applyInverseOperator(p, rhs);
   setMath("polynomial-nonzero-problem", `\\left(${operatorTex(p)}\\right)y=${polynomialTex(rhs)}`);
   setMath("polynomial-nonzero-answer", answerTex([
-    `y_p=\\frac{1}{${operatorTex(p)}}\\left(${polynomialTex(rhs)}\\right)`,
-    `y_p=${polynomialFromFractionsTex(yp)}`
+    `y=${polynomialFromFractionsTex(yp)}`
   ]));
 }
 
@@ -775,9 +833,7 @@ function generatePolynomialZero() {
   const yp = integratePoly(u, r);
   setMath("polynomial-zero-problem", `\\left(${operatorTex(q)}\\right)${dPowerTex(r)}y=${polynomialTex(rhs)}`);
   setMath("polynomial-zero-answer", answerTex([
-    `u=${dPowerTex(r)}y\,\quad \\left(${operatorTex(q)}\\right)u=${polynomialTex(rhs)}`,
-    `u=${polynomialFromFractionsTex(u)}`,
-    `y_p=${dInverseTex(r)}u=${polynomialFromFractionsTex(yp)}`
+    `y=${polynomialFromFractionsTex(yp)}`
   ]));
 }
 
