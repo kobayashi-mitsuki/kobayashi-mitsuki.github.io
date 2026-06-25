@@ -294,8 +294,18 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">目次</h2>
+   
+  <ul>
+  <li><a href="#実根のみ" id="toc-実根のみ" class="nav-link active" data-scroll-target="#実根のみ">1. 実根のみ</a></li>
+  <li><a href="#虚根のみ" id="toc-虚根のみ" class="nav-link" data-scroll-target="#虚根のみ">2. 虚根のみ</a></li>
+  <li><a href="#実根が多重度-m" id="toc-実根が多重度-m" class="nav-link" data-scroll-target="#実根が多重度-m">3. 実根が多重度 <span class="math inline">\(m\)</span></a></li>
+  <li><a href="#虚根が多重度-m" id="toc-虚根が多重度-m" class="nav-link" data-scroll-target="#虚根が多重度-m">4. 虚根が多重度 <span class="math inline">\(m\)</span></a></li>
+  <li><a href="#一般の場合" id="toc-一般の場合" class="nav-link" data-scroll-target="#一般の場合">5. 一般の場合</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -321,14 +331,11 @@ window.Quarto = {
 
 
 <p>次の微分方程式の解をすべて求めよ.ただし, <span class="math inline">\(D=\tfrac{d}{dx}\)</span> とし, <span class="math inline">\(C_k\)</span> <span class="math inline">\((k=1,2,\dots)\)</span> を任意定数として用いて良い.</p>
-<div class="problem-heading-row">
-<h2 id="real-distinct-heading" class="anchored">
-<ol type="1">
-<li>実根のみ
-</li></ol></h2>
-<button type="button" class="problem-button" onclick="generateRealDistinct()">問題を変更</button>
+<section id="実根のみ" class="level2">
+<h2 class="anchored" data-anchor-id="実根のみ">1. 実根のみ</h2>
+<div class="problem-button-row problem-button-row-heading">
+<p><button type="button" class="problem-button" onclick="generateRealDistinct()">問題を変更</button></p>
 </div>
-
 <div class="practice-box">
 <div id="real-distinct-problem">
 
@@ -346,14 +353,12 @@ window.Quarto = {
 </ul>
 </details>
 </div>
-<div class="problem-heading-row">
-<h2 id="complex-distinct-heading" class="anchored">
-<ol start="2" type="1">
-<li>虚根のみ
-</li></ol></h2>
-<button type="button" class="problem-button" onclick="generateComplexDistinct()">問題を変更</button>
+</section>
+<section id="虚根のみ" class="level2">
+<h2 class="anchored" data-anchor-id="虚根のみ">2. 虚根のみ</h2>
+<div class="problem-button-row problem-button-row-heading">
+<p><button type="button" class="problem-button" onclick="generateComplexDistinct()">問題を変更</button></p>
 </div>
-
 <div class="practice-box">
 <div id="complex-distinct-problem">
 
@@ -372,14 +377,12 @@ window.Quarto = {
 </div>
 </details>
 </div>
-<div class="problem-heading-row">
-<h2 id="real-repeated-heading" class="anchored">
-<ol start="3" type="1">
-<li>実根が多重度 <span class="math inline">\(m\)</span>
-</li></ol></h2>
-<button type="button" class="problem-button" onclick="generateRealRepeated()">問題を変更</button>
+</section>
+<section id="実根が多重度-m" class="level2">
+<h2 class="anchored" data-anchor-id="実根が多重度-m">3. 実根が多重度 <span class="math inline">\(m\)</span></h2>
+<div class="problem-button-row problem-button-row-heading">
+<p><button type="button" class="problem-button" onclick="generateRealRepeated()">問題を変更</button></p>
 </div>
-
 <div class="practice-box">
 <div id="real-repeated-problem">
 
@@ -398,14 +401,12 @@ window.Quarto = {
 </div>
 </details>
 </div>
-<div class="problem-heading-row">
-<h2 id="complex-repeated-heading" class="anchored">
-<ol start="4" type="1">
-<li>虚根が多重度 <span class="math inline">\(m\)</span>
-</li></ol></h2>
-<button type="button" class="problem-button" onclick="generateComplexRepeated()">問題を変更</button>
+</section>
+<section id="虚根が多重度-m" class="level2">
+<h2 class="anchored" data-anchor-id="虚根が多重度-m">4. 虚根が多重度 <span class="math inline">\(m\)</span></h2>
+<div class="problem-button-row problem-button-row-heading">
+<p><button type="button" class="problem-button" onclick="generateComplexRepeated()">問題を変更</button></p>
 </div>
-
 <div class="practice-box">
 <div id="complex-repeated-problem">
 
@@ -424,14 +425,12 @@ window.Quarto = {
 </div>
 </details>
 </div>
-<div class="problem-heading-row">
-<h2 id="mixed-repeated-heading" class="anchored">
-<ol start="5" type="1">
-<li>一般の場合
-</li></ol></h2>
-<button type="button" class="problem-button" onclick="generateMixedRepeated()">問題を変更</button>
+</section>
+<section id="一般の場合" class="level2">
+<h2 class="anchored" data-anchor-id="一般の場合">5. 一般の場合</h2>
+<div class="problem-button-row problem-button-row-heading">
+<p><button type="button" class="problem-button" onclick="generateMixedRepeated()">問題を変更</button></p>
 </div>
-
 <div class="practice-box">
 <div id="mixed-repeated-problem">
 
@@ -665,13 +664,9 @@ window.addEventListener("load", function() {
 </script>
 
 
-</main></div>
+</section>
 
-
-
-
-
- <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -1085,7 +1080,7 @@ window.addEventListener("load", function() {
     }
   });
   </script>
- <!-- /content -->
+</div> <!-- /content -->
 
 
 
