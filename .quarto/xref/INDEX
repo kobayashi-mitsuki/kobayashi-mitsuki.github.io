@@ -19,5 +19,14 @@
   },
   "videos.qmd": {
     "videos.html": "7abb3a74"
+  },
+  "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.qmd": {
+    "higher-order-polynomial-nonhomogeneous.html": "11c481a3"
+  },
+  "teaching/differential-equations.qmd": {
+    "differential-equations.html": "69e93d49"
+  },
+  "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.qmd": {
+    "higher-order-constant-coefficient-homogeneous.html": "a91e61cc"
   }
 }

@@ -3,6 +3,10 @@ body {
   font-weight: 500;
 }
 
+li {
+  margin-bottom: 0.25rem;
+}
+
 details {
   margin: 0.8rem 0 1.2rem 0;
 }

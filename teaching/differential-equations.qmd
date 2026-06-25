@@ -12,7 +12,7 @@ title: "微分方程式"
 
 ## 定期試験の過去問（PDF）
 
-<details>
+<details open>
 <summary>中間試験</summary>
 
 - [令和8年度 中間試験](differential-equations/exam/r8-midterm.pdf)
@@ -22,7 +22,7 @@ title: "微分方程式"
 
 </details>
 
-<details>
+<details open>
 <summary>期末試験</summary>
 
 - [令和7年度 期末試験](differential-equations/exam/r7-final.pdf)
@@ -40,7 +40,7 @@ title: "微分方程式"
 
 </details>
 
-<details>
+<details open>
 <summary>高階線形微分方程式</summary>
 
 - [定数係数斉次式](differential-equations/self-study/higher-order-constant-coefficient-homogeneous.qmd)
