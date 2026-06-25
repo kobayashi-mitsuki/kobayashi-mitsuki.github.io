@@ -4,14 +4,13 @@ title: "高階定数係数斉次線形微分方程式"
 
 次の微分方程式の解をすべて求めよ.ただし, $D=\tfrac{d}{dx}$ とし, $C_k$ $(k=1,2,\dots)$ を任意定数として用いて良い.
 
-## 1. 実根のみ
-
-<div class="problem-button-row problem-button-row-heading">
-  <button type="button" class="problem-button" onclick="generateRealDistinct()">問題を変更</button>
-</div>
+## (1) 実根のみ
 
 <div class="practice-box">
 <div id="real-distinct-problem"></div>
+<div class="problem-button-row">
+  <button type="button" class="problem-button" onclick="generateRealDistinct()">問題を変更</button>
+</div>
 <details>
 <summary>解答と解説</summary>
 
@@ -23,14 +22,13 @@ title: "高階定数係数斉次線形微分方程式"
 </details>
 </div>
 
-## 2. 虚根のみ
-
-<div class="problem-button-row problem-button-row-heading">
-  <button type="button" class="problem-button" onclick="generateComplexDistinct()">問題を変更</button>
-</div>
+## (2) 虚根のみ
 
 <div class="practice-box">
 <div id="complex-distinct-problem"></div>
+<div class="problem-button-row">
+  <button type="button" class="problem-button" onclick="generateComplexDistinct()">問題を変更</button>
+</div>
 <details>
 <summary>略解</summary>
 
@@ -43,14 +41,13 @@ title: "高階定数係数斉次線形微分方程式"
 </details>
 </div>
 
-## 3. 実根が多重度 $m$
-
-<div class="problem-button-row problem-button-row-heading">
-  <button type="button" class="problem-button" onclick="generateRealRepeated()">問題を変更</button>
-</div>
+## (3) 実根が多重度 $m$
 
 <div class="practice-box">
 <div id="real-repeated-problem"></div>
+<div class="problem-button-row">
+  <button type="button" class="problem-button" onclick="generateRealRepeated()">問題を変更</button>
+</div>
 <details>
 <summary>略解</summary>
 
@@ -63,14 +60,13 @@ title: "高階定数係数斉次線形微分方程式"
 </details>
 </div>
 
-## 4. 虚根が多重度 $m$
-
-<div class="problem-button-row problem-button-row-heading">
-  <button type="button" class="problem-button" onclick="generateComplexRepeated()">問題を変更</button>
-</div>
+## (4) 虚根が多重度 $m$
 
 <div class="practice-box">
 <div id="complex-repeated-problem"></div>
+<div class="problem-button-row">
+  <button type="button" class="problem-button" onclick="generateComplexRepeated()">問題を変更</button>
+</div>
 <details>
 <summary>略解</summary>
 
@@ -83,14 +79,13 @@ title: "高階定数係数斉次線形微分方程式"
 </details>
 </div>
 
-## 5. 一般の場合
-
-<div class="problem-button-row problem-button-row-heading">
-  <button type="button" class="problem-button" onclick="generateMixedRepeated()">問題を変更</button>
-</div>
+## (5) 一般の場合
 
 <div class="practice-box">
 <div id="mixed-repeated-problem"></div>
+<div class="problem-button-row">
+  <button type="button" class="problem-button" onclick="generateMixedRepeated()">問題を変更</button>
+</div>
 <details>
 <summary>略解</summary>
 
