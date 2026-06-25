@@ -8,7 +8,7 @@ P(D)y=f(x)
 $$
 の非斉次項 $f(x)$ の形に応じて, 特殊解を一つ求めよ. ただし, $D=\tfrac{d}{dx}$ とし, $P(\lambda)$ を多項式とする.
 
-## (1) 定数項：$0$ を特性根に持たない場合
+## (1) $f(x)\equiv1$, $0$ が特性根でない
 
 <div class="practice-box">
 <div id="constant-nonzero-problem"></div>

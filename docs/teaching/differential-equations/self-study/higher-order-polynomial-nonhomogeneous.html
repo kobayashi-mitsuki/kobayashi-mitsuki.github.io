@@ -39,8 +39,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-bba5ebae505b5c03f3f0d8040a416a6b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-ef329cdfec84d61f1b09d4029da25417.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-e8964db687007ca8dd88d9d9ce58e3ef.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "一致なし",
@@ -299,7 +299,7 @@ window.Quarto = {
     <h2 id="toc-title">目次</h2>
    
   <ul>
-  <li><a href="#定数項0-を特性根に持たない場合" id="toc-定数項0-を特性根に持たない場合" class="nav-link active" data-scroll-target="#定数項0-を特性根に持たない場合">(1) 定数項：<span class="math inline">\(0\)</span> を特性根に持たない場合</a></li>
+  <li><a href="#fxequiv1-かつ-0-が特性根でない" id="toc-fxequiv1-かつ-0-が特性根でない" class="nav-link active" data-scroll-target="#fxequiv1-かつ-0-が特性根でない">(1) <span class="math inline">\(f(x)\equiv1\)</span> かつ <span class="math inline">\(0\)</span> が特性根でない</a></li>
   <li><a href="#定数項0-を特性根に持つ場合" id="toc-定数項0-を特性根に持つ場合" class="nav-link" data-scroll-target="#定数項0-を特性根に持つ場合">(2) 定数項：<span class="math inline">\(0\)</span> を特性根に持つ場合</a></li>
   <li><a href="#xm0-を特性根に持たない場合" id="toc-xm0-を特性根に持たない場合" class="nav-link" data-scroll-target="#xm0-を特性根に持たない場合">(3) <span class="math inline">\(x^m\)</span>：<span class="math inline">\(0\)</span> を特性根に持たない場合</a></li>
   <li><a href="#xm0-を特性根に持つ場合" id="toc-xm0-を特性根に持つ場合" class="nav-link" data-scroll-target="#xm0-を特性根に持つ場合">(4) <span class="math inline">\(x^m\)</span>：<span class="math inline">\(0\)</span> を特性根に持つ場合</a></li>
@@ -334,8 +334,8 @@ window.Quarto = {
 <p>次の各小問において, 微分方程式 <span class="math display">\[
 P(D)y=f(x)
 \]</span> の非斉次項 <span class="math inline">\(f(x)\)</span> の形に応じて, 特殊解を一つ求めよ. ただし, <span class="math inline">\(D=\tfrac{d}{dx}\)</span> とし, <span class="math inline">\(P(\lambda)\)</span> を多項式とする.</p>
-<section id="定数項0-を特性根に持たない場合" class="level2">
-<h2 class="anchored" data-anchor-id="定数項0-を特性根に持たない場合">(1) 定数項：<span class="math inline">\(0\)</span> を特性根に持たない場合</h2>
+<section id="fxequiv1-かつ-0-が特性根でない" class="level2">
+<h2 class="anchored" data-anchor-id="fxequiv1-かつ-0-が特性根でない">(1) <span class="math inline">\(f(x)\equiv1\)</span> かつ <span class="math inline">\(0\)</span> が特性根でない</h2>
 <div class="practice-box">
 <div id="constant-nonzero-problem">
 
@@ -767,7 +767,7 @@ function answerTex(lines) {
 
 function generateConstantNonzero() {
   const deg = randInt(3, 5);
-  const coeffs = Array.from({ length: deg + 1 }, () => nonzeroRand(-99, 99));
+  const coeffs = Array.from({ length: deg + 1 }, () => nonzeroRand(-20, 20));
   const p0 = coeffs[0];
   setMath("constant-nonzero-problem", `\\left(${operatorTex(coeffs)}\\right)y=1`);
   setMath("constant-nonzero-answer", answerTex([

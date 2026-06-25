@@ -299,5 +299,12 @@
     "title": "小林光木",
     "section": "",
     "text": "小林光木\n\n成蹊大学 理工学部\nデータサイエンス研究室 助教\n\n早稲田大学 理工学術院・国際教養学部\n非常勤講師\n\n解析学、確率論、漸近統計論、確率過程を背景に、確率モデルや統計的推測に関する研究を行っています。"
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv1-かつ-0-が特性根でない",
+    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv1-かつ-0-が特性根でない",
+    "title": "多項式を非斉次項にもつ場合",
+    "section": "(1) \\(f(x)\\equiv1\\) かつ \\(0\\) が特性根でない",
+    "text": "(1) \\(f(x)\\equiv1\\) かつ \\(0\\) が特性根でない\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n\n解答：\n\n\n\n\n公式： \\[\ny = \\frac{1}{P(0)}\n\\] 公式の導出：\n\n定数解 \\(y=y_0\\) で探せば良い.\n\\(Dy_0=0\\) より \\(P(D)y_0=P(0)y_0\\).\n\\(P(0)y_0=1\\) を解いて \\(y_0=1/P(0)\\) を得る.\n\n定数解で探せば良い理由：\n\n求める特殊解を \\(y_p\\) とする.\n\\(DP(D)y_p=0\\) より, \\(y_p\\) は式 \\(Dy=0\\) と式 \\(P(D)y=0\\) それぞれの一般解の和で表せる.\n\\(P(D)y=0\\) は与式の斉次式にあたるため, 式 \\(Dy=0\\)　の一般解の形で探せば良い."
   }
 ]
