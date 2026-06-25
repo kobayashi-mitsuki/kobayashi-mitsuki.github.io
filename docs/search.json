@@ -179,7 +179,7 @@
     "href": "teaching/differential-equations.html#自習用教材",
     "title": "微分方程式",
     "section": "自習用教材",
-    "text": "自習用教材\n\n\n2階線形微分方程式（準備中）\n\n準備中\n\n\n\n高階線形微分方程式\n\n\n高階定数係数斉次線形微分方程式\n高階定数係数斉次線形：多項式型非斉次項\n\n\n\n\n冪級数解法（準備中）\n\n準備中\n\n\n\n連立線形微分方程式（準備中）\n\n準備中"
+    "text": "自習用教材\n\n\n2階線形微分方程式（準備中）\n\n準備中\n\n\n\n高階線形微分方程式\n\n\n定数係数斉次式\n定数係数非斉次式：多項式型非斉次項\n\n\n\n\n冪級数解法（準備中）\n\n準備中\n\n\n\n連立線形微分方程式（準備中）\n\n準備中"
   },
   {
     "objectID": "teaching/fourier-analysis.html",
@@ -207,7 +207,7 @@
     "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#定数項0-を特性根に持たない場合",
     "title": "多項式を非斉次項にもつ場合",
     "section": "(1) 定数項：\\(0\\) を特性根に持たない場合",
-    "text": "(1) 定数項：\\(0\\) を特性根に持たない場合\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n\n解答：\n\n\n\n\n\n解説：\n\n\n定数は \\(D\\) を作用させると \\(0\\) になるため，\\(P(D)\\) は定数に対して \\(P(0)\\) 倍として働く。\n\\(P(0)\\ne0\\) なので，\\(y\\) を定数とおいて求めればよい。"
+    "text": "(1) 定数項：\\(0\\) を特性根に持たない場合\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n\n解答：\n\n\n\n\n\n解説：\n\n定数解 \\(y=y_0\\) で探せば良い. \\(Dy_0=0\\) より \\(P(D)y_0=P(0)y_0\\) であるから, \\(P(0)y_0=1\\) を解いて \\(y_0=1/P(0)\\) を得る.\n定数解で探せば良い理由：求める特殊解を \\(y_p\\) とおく. \\(DP(D)y_p=0\\) より, \\(y_p\\) は式 \\(Dy=0\\) と式 \\(P(D)y=0\\) の一般解の和. 一方, \\(P(D)y=0\\) は与式の斉次式にあたるため, 特殊解 \\(y_p\\) は式 \\(Dy=0\\)　の解, すなわち定数として求めれば良いことがわかる."
   },
   {
     "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#定数項0-を特性根に持つ場合",
