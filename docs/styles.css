@@ -25,11 +25,7 @@ details ul {
 .problem-button-row {
   display: flex;
   justify-content: flex-end;
-}
-
-.problem-button-row-heading {
-  margin-top: -2.9rem;
-  margin-bottom: 1.4rem;
+  margin: 0.1rem 0 0.6rem 0;
 }
 
 .problem-button {
@@ -46,11 +42,4 @@ details ul {
 .problem-button:hover {
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.08);
-}
-
-@media (max-width: 768px) {
-  .problem-button-row-heading {
-    margin-top: 0;
-    margin-bottom: 0.8rem;
-  }
 }
