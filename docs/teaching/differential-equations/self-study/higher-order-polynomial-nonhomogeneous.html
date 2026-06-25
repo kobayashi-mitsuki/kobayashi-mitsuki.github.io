@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>微分方程式 – 小林光木 | 成蹊大学 理工学部 データサイエンス研究室 助教</title>
+<title>多項式を非斉次項にもつ場合 – 小林光木 | 成蹊大学 理工学部 データサイエンス研究室 助教</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,21 +26,21 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-bba5ebae505b5c03f3f0d8040a416a6b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-ef329cdfec84d61f1b09d4029da25417.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-bba5ebae505b5c03f3f0d8040a416a6b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-ef329cdfec84d61f1b09d4029da25417.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "一致なし",
@@ -57,8 +57,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
@@ -228,7 +257,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">小林光木 | 成蹊大学 理工学部 データサイエンス研究室 助教</span>
     </a>
   </div>
@@ -238,19 +267,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../research.html"> 
+    <a class="nav-link" href="../../../research.html"> 
 <span class="menu-text">研究活動</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../teaching.html"> 
+    <a class="nav-link" href="../../../teaching.html"> 
 <span class="menu-text">授業・教材</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../contact.html"> 
+    <a class="nav-link" href="../../../contact.html"> 
 <span class="menu-text">連絡先・アクセス</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../links.html"> 
+    <a class="nav-link" href="../../../links.html"> 
 <span class="menu-text">外部リンク</span></a>
   </li>  
 </ul>
@@ -270,10 +299,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">目次</h2>
    
   <ul>
-  <li><a href="#シラバス" id="toc-シラバス" class="nav-link active" data-scroll-target="#シラバス">シラバス</a></li>
-  <li><a href="#授業資料" id="toc-授業資料" class="nav-link" data-scroll-target="#授業資料">授業資料</a></li>
-  <li><a href="#定期試験の過去問pdf" id="toc-定期試験の過去問pdf" class="nav-link" data-scroll-target="#定期試験の過去問pdf">定期試験の過去問（PDF）</a></li>
-  <li><a href="#自習用教材" id="toc-自習用教材" class="nav-link" data-scroll-target="#自習用教材">自習用教材</a></li>
+  <li><a href="#定数項0-を特性根に持たない場合" id="toc-定数項0-を特性根に持たない場合" class="nav-link active" data-scroll-target="#定数項0-を特性根に持たない場合">(1) 定数項：<span class="math inline">\(0\)</span> を特性根に持たない場合</a></li>
+  <li><a href="#定数項0-を特性根に持つ場合" id="toc-定数項0-を特性根に持つ場合" class="nav-link" data-scroll-target="#定数項0-を特性根に持つ場合">(2) 定数項：<span class="math inline">\(0\)</span> を特性根に持つ場合</a></li>
+  <li><a href="#xm0-を特性根に持たない場合" id="toc-xm0-を特性根に持たない場合" class="nav-link" data-scroll-target="#xm0-を特性根に持たない場合">(3) <span class="math inline">\(x^m\)</span>：<span class="math inline">\(0\)</span> を特性根に持たない場合</a></li>
+  <li><a href="#xm0-を特性根に持つ場合" id="toc-xm0-を特性根に持つ場合" class="nav-link" data-scroll-target="#xm0-を特性根に持つ場合">(4) <span class="math inline">\(x^m\)</span>：<span class="math inline">\(0\)</span> を特性根に持つ場合</a></li>
+  <li><a href="#一般の多項式0-を特性根に持たない場合" id="toc-一般の多項式0-を特性根に持たない場合" class="nav-link" data-scroll-target="#一般の多項式0-を特性根に持たない場合">(5) 一般の多項式：<span class="math inline">\(0\)</span> を特性根に持たない場合</a></li>
+  <li><a href="#一般の多項式0-を特性根に持つ場合" id="toc-一般の多項式0-を特性根に持つ場合" class="nav-link" data-scroll-target="#一般の多項式0-を特性根に持つ場合">(6) 一般の多項式：<span class="math inline">\(0\)</span> を特性根に持つ場合</a></li>
   </ul>
 </nav>
     </div>
@@ -283,7 +314,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">微分方程式</h1>
+<h1 class="title">多項式を非斉次項にもつ場合</h1>
 </div>
 
 
@@ -300,69 +331,465 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="シラバス" class="level2">
-<h2 class="anchored" data-anchor-id="シラバス">シラバス</h2>
-<ul>
-<li><a href="https://www.wsl.waseda.jp/syllabus/JAA104.php?pKey=2800210007032026280021000728&amp;pLng=jp">2026年度 シラバス</a></li>
-</ul>
+<p>次の各小問において, 微分方程式 <span class="math display">\[
+P(D)y=f(x)
+\]</span> の非斉次項 <span class="math inline">\(f(x)\)</span> の形に応じて, 特殊解を一つ求めよ. ただし, <span class="math inline">\(D=\tfrac{d}{dx}\)</span> とし, <span class="math inline">\(P(\lambda)\)</span> を多項式とする.</p>
+<section id="定数項0-を特性根に持たない場合" class="level2">
+<h2 class="anchored" data-anchor-id="定数項0-を特性根に持たない場合">(1) 定数項：<span class="math inline">\(0\)</span> を特性根に持たない場合</h2>
+<div class="practice-box">
+<div id="constant-nonzero-problem">
+
+</div>
+<div class="problem-button-row">
+<p><button type="button" class="problem-button" onclick="generateConstantNonzero()">問題を変更</button></p>
+</div>
+<details>
+<summary>
+解答と解説
+</summary>
+<div id="constant-nonzero-answer">
+
+</div>
+</details>
+</div>
 </section>
-<section id="授業資料" class="level2">
-<h2 class="anchored" data-anchor-id="授業資料">授業資料</h2>
-<p>準備中</p>
+<section id="定数項0-を特性根に持つ場合" class="level2">
+<h2 class="anchored" data-anchor-id="定数項0-を特性根に持つ場合">(2) 定数項：<span class="math inline">\(0\)</span> を特性根に持つ場合</h2>
+<div class="practice-box">
+<div id="constant-zero-problem">
+
+</div>
+<div class="problem-button-row">
+<p><button type="button" class="problem-button" onclick="generateConstantZero()">問題を変更</button></p>
+</div>
+<details>
+<summary>
+解答と解説
+</summary>
+<div id="constant-zero-answer">
+
+</div>
+</details>
+</div>
 </section>
-<section id="定期試験の過去問pdf" class="level2">
-<h2 class="anchored" data-anchor-id="定期試験の過去問pdf">定期試験の過去問（PDF）</h2>
+<section id="xm0-を特性根に持たない場合" class="level2">
+<h2 class="anchored" data-anchor-id="xm0-を特性根に持たない場合">(3) <span class="math inline">\(x^m\)</span>：<span class="math inline">\(0\)</span> を特性根に持たない場合</h2>
+<div class="practice-box">
+<div id="monomial-nonzero-problem">
+
+</div>
+<div class="problem-button-row">
+<p><button type="button" class="problem-button" onclick="generateMonomialNonzero()">問題を変更</button></p>
+</div>
 <details>
 <summary>
-中間試験
+解答と解説
 </summary>
-<ul>
-<li><a href="differential-equations/exam/r8-midterm.pdf">令和8年度 中間試験</a></li>
-<li><a href="differential-equations/exam/r7-midterm.pdf">令和7年度 中間試験</a></li>
-<li><a href="differential-equations/exam/r6-midterm.pdf">令和6年度 中間試験</a></li>
-<li><a href="differential-equations/exam/r6-midterm-practice.pdf">令和6年度 中間試験 練習用</a></li>
-</ul>
+<div id="monomial-nonzero-answer">
+
+</div>
 </details>
-<details>
-<summary>
-期末試験
-</summary>
-<ul>
-<li><a href="differential-equations/exam/r7-final.pdf">令和7年度 期末試験</a></li>
-<li><a href="differential-equations/exam/r6-final.pdf">令和6年度 期末試験</a></li>
-<li><a href="differential-equations/exam/r6-final-practice.pdf">令和6年度 期末試験 練習用</a></li>
-</ul>
-</details>
+</div>
 </section>
-<section id="自習用教材" class="level2">
-<h2 class="anchored" data-anchor-id="自習用教材">自習用教材</h2>
+<section id="xm0-を特性根に持つ場合" class="level2">
+<h2 class="anchored" data-anchor-id="xm0-を特性根に持つ場合">(4) <span class="math inline">\(x^m\)</span>：<span class="math inline">\(0\)</span> を特性根に持つ場合</h2>
+<div class="practice-box">
+<div id="monomial-zero-problem">
+
+</div>
+<div class="problem-button-row">
+<p><button type="button" class="problem-button" onclick="generateMonomialZero()">問題を変更</button></p>
+</div>
 <details>
 <summary>
-2階線形微分方程式（準備中）
+解答と解説
 </summary>
-<p>準備中</p>
+<div id="monomial-zero-answer">
+
+</div>
 </details>
+</div>
+</section>
+<section id="一般の多項式0-を特性根に持たない場合" class="level2">
+<h2 class="anchored" data-anchor-id="一般の多項式0-を特性根に持たない場合">(5) 一般の多項式：<span class="math inline">\(0\)</span> を特性根に持たない場合</h2>
+<div class="practice-box">
+<div id="polynomial-nonzero-problem">
+
+</div>
+<div class="problem-button-row">
+<p><button type="button" class="problem-button" onclick="generatePolynomialNonzero()">問題を変更</button></p>
+</div>
 <details>
 <summary>
-高階線形微分方程式
+解答と解説
 </summary>
-<ul>
-<li><a href="../teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html">高階定数係数斉次線形微分方程式</a></li>
-<li><a href="../teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html">高階定数係数斉次線形：多項式型非斉次項</a></li>
-</ul>
+<div id="polynomial-nonzero-answer">
+
+</div>
 </details>
+</div>
+</section>
+<section id="一般の多項式0-を特性根に持つ場合" class="level2">
+<h2 class="anchored" data-anchor-id="一般の多項式0-を特性根に持つ場合">(6) 一般の多項式：<span class="math inline">\(0\)</span> を特性根に持つ場合</h2>
+<div class="practice-box">
+<div id="polynomial-zero-problem">
+
+</div>
+<div class="problem-button-row">
+<p><button type="button" class="problem-button" onclick="generatePolynomialZero()">問題を変更</button></p>
+</div>
 <details>
 <summary>
-冪級数解法（準備中）
+解答と解説
 </summary>
-<p>準備中</p>
+<div id="polynomial-zero-answer">
+
+</div>
 </details>
-<details>
-<summary>
-連立線形微分方程式（準備中）
-</summary>
-<p>準備中</p>
-</details>
+</div>
+<script>
+function randInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function range(min, max) {
+  const out = [];
+  for (let i = min; i <= max; i++) out.push(i);
+  return out;
+}
+
+function nonzeroRand(min, max) {
+  let n = 0;
+  while (n === 0) n = randInt(min, max);
+  return n;
+}
+
+function gcd(a, b) {
+  a = Math.abs(a);
+  b = Math.abs(b);
+  while (b !== 0) {
+    const t = a % b;
+    a = b;
+    b = t;
+  }
+  return a || 1;
+}
+
+class Fr {
+  constructor(num, den = 1) {
+    if (den === 0) throw new Error("zero denominator");
+    if (den < 0) {
+      num = -num;
+      den = -den;
+    }
+    const g = gcd(num, den);
+    this.n = num / g;
+    this.d = den / g;
+  }
+  add(other) { return new Fr(this.n * other.d + other.n * this.d, this.d * other.d); }
+  sub(other) { return new Fr(this.n * other.d - other.n * this.d, this.d * other.d); }
+  mul(other) { return new Fr(this.n * other.n, this.d * other.d); }
+  div(other) { return new Fr(this.n * other.d, this.d * other.n); }
+  neg() { return new Fr(-this.n, this.d); }
+  isZero() { return this.n === 0; }
+  abs() { return new Fr(Math.abs(this.n), this.d); }
+}
+
+function fact(n) {
+  let out = 1;
+  for (let i = 2; i <= n; i++) out *= i;
+  return out;
+}
+
+function fracToTex(fr) {
+  if (fr.d === 1) return String(fr.n);
+  if (fr.n < 0) return `-\\frac{${-fr.n}}{${fr.d}}`;
+  return `\\frac{${fr.n}}{${fr.d}}`;
+}
+
+function fracAbsToTex(fr) {
+  const a = fr.abs();
+  if (a.d === 1) return String(a.n);
+  return `\\frac{${a.n}}{${a.d}}`;
+}
+
+function monomialTex(power) {
+  if (power === 0) return "1";
+  if (power === 1) return "x";
+  return `x^${power}`;
+}
+
+function dPowerTex(power) {
+  if (power === 1) return "D";
+  return `D^${power}`;
+}
+
+function dInverseTex(power) {
+  if (power === 1) return "D^{-1}";
+  return `D^{-${power}}`;
+}
+
+function coeffPowerTerm(coeff, variable, power) {
+  if (coeff === 0) return "";
+  const absCoeff = Math.abs(coeff);
+  let body = "";
+  if (power === 0) {
+    body = String(absCoeff);
+  } else {
+    const v = power === 1 ? variable : `${variable}^${power}`;
+    body = absCoeff === 1 ? v : `${absCoeff}${v}`;
+  }
+  return coeff < 0 ? `-${body}` : body;
+}
+
+function signedJoin(terms) {
+  const nonempty = terms.filter(t => t !== "");
+  if (nonempty.length === 0) return "0";
+  let out = nonempty[0];
+  for (let i = 1; i < nonempty.length; i++) {
+    if (nonempty[i].startsWith("-")) out += nonempty[i];
+    else out += "+" + nonempty[i];
+  }
+  return out;
+}
+
+function operatorTex(coeffs) {
+  const terms = coeffs.map((c, i) => coeffPowerTerm(c, "D", i));
+  return signedJoin(terms);
+}
+
+function lambdaPolynomialTex(coeffs) {
+  const terms = coeffs.map((c, i) => coeffPowerTerm(c, "\\lambda", i));
+  return signedJoin(terms);
+}
+
+function polynomialTex(coeffs) {
+  const terms = coeffs.map((c, i) => coeffPowerTerm(c, "x", i));
+  return signedJoin(terms);
+}
+
+function polynomialFromFractionsTex(coeffs) {
+  const terms = [];
+  for (let i = coeffs.length - 1; i >= 0; i--) {
+    const c = coeffs[i];
+    if (c.isZero()) continue;
+    const abs = fracAbsToTex(c);
+    let body = "";
+    if (i === 0) {
+      body = abs;
+    } else {
+      const xpart = i === 1 ? "x" : `x^${i}`;
+      body = abs === "1" ? xpart : `${abs}${xpart}`;
+    }
+    terms.push((c.n < 0 ? "-" : "") + body);
+  }
+  return signedJoin(terms);
+}
+
+function randomOperatorCoeffs(deg, nonzeroConstant = true) {
+  const coeffs = [];
+  for (let i = 0; i <= deg; i++) {
+    if (i === 0 && nonzeroConstant) coeffs.push(nonzeroRand(-4, 4));
+    else if (i === deg) coeffs.push(nonzeroRand(-3, 3));
+    else coeffs.push(randInt(-3, 3));
+  }
+  return coeffs;
+}
+
+function randomPolynomialCoeffs(deg) {
+  const coeffs = [];
+  for (let i = 0; i <= deg; i++) {
+    if (i === deg) coeffs.push(nonzeroRand(-3, 3));
+    else coeffs.push(randInt(-3, 3));
+  }
+  return coeffs;
+}
+
+function inverseSeries(coeffs, maxDegree) {
+  const c = coeffs.map(v => new Fr(v));
+  const b = [new Fr(1).div(c[0])];
+  for (let n = 1; n <= maxDegree; n++) {
+    let sum = new Fr(0);
+    for (let k = 1; k <= Math.min(n, coeffs.length - 1); k++) {
+      sum = sum.add(c[k].mul(b[n - k]));
+    }
+    b[n] = sum.neg().div(c[0]);
+  }
+  return b;
+}
+
+function derivativePolynomial(poly, k) {
+  let current = poly.map(v => v instanceof Fr ? v : new Fr(v));
+  for (let t = 0; t < k; t++) {
+    const next = [];
+    for (let i = 1; i < current.length; i++) {
+      next.push(current[i].mul(new Fr(i)));
+    }
+    current = next.length === 0 ? [new Fr(0)] : next;
+  }
+  return current;
+}
+
+function addPoly(a, b) {
+  const n = Math.max(a.length, b.length);
+  const out = [];
+  for (let i = 0; i < n; i++) {
+    out[i] = (a[i] || new Fr(0)).add(b[i] || new Fr(0));
+  }
+  return trimPoly(out);
+}
+
+function scalePoly(a, scalar) {
+  return trimPoly(a.map(v => v.mul(scalar)));
+}
+
+function trimPoly(poly) {
+  const out = poly.slice();
+  while (out.length > 1 && out[out.length - 1].isZero()) out.pop();
+  return out;
+}
+
+function applyInverseOperator(coeffs, poly) {
+  const degree = poly.length - 1;
+  const inv = inverseSeries(coeffs, degree);
+  let out = [new Fr(0)];
+  for (let k = 0; k <= degree; k++) {
+    const deriv = derivativePolynomial(poly, k);
+    out = addPoly(out, scalePoly(deriv, inv[k]));
+  }
+  return trimPoly(out);
+}
+
+function integratePoly(poly, r) {
+  let out = poly.map(v => v instanceof Fr ? v : new Fr(v));
+  for (let t = 0; t < r; t++) {
+    const next = [new Fr(0)];
+    for (let i = 0; i < out.length; i++) {
+      next[i + 1] = out[i].div(new Fr(i + 1));
+    }
+    out = next;
+  }
+  return trimPoly(out);
+}
+
+function setMath(id, tex) {
+  const element = document.getElementById(id);
+  element.innerHTML = "";
+
+  if (window.MathJax && window.MathJax.typesetPromise) {
+    element.innerHTML = `\\[${tex}\\]`;
+    window.MathJax.typesetPromise([element]);
+  } else if (window.katex) {
+    window.katex.render(tex, element, {
+      displayMode: true,
+      throwOnError: false
+    });
+  } else {
+    element.textContent = tex;
+  }
+}
+
+function answerTex(lines) {
+  return `\\begin{aligned}${lines.join("\\\\")}\\end{aligned}`;
+}
+
+function generateConstantNonzero() {
+  const deg = randInt(3, 5);
+  const coeffs = randomOperatorCoeffs(deg, true);
+  const p0 = coeffs[0];
+  setMath("constant-nonzero-problem", `\\left(${operatorTex(coeffs)}\\right)y=1`);
+  setMath("constant-nonzero-answer", answerTex([
+    `P(0)=${p0}`,
+    `y_p=${fracToTex(new Fr(1, p0))}`
+  ]));
+}
+
+function generateConstantZero() {
+  const r = randInt(1, 3);
+  const minQDeg = Math.max(1, 3 - r);
+  const maxQDeg = Math.min(3, 6 - r);
+  const qdeg = randInt(minQDeg, maxQDeg);
+  const q = randomOperatorCoeffs(qdeg, true);
+  const q0 = q[0];
+  const ypCoeff = new Fr(1, fact(r) * q0);
+  const yp = new Array(r + 1).fill(null).map(() => new Fr(0));
+  yp[r] = ypCoeff;
+  setMath("constant-zero-problem", `\\left(${operatorTex(q)}\\right)${dPowerTex(r)}y=1`);
+  setMath("constant-zero-answer", answerTex([
+    `u=${dPowerTex(r)}y\,\quad \\left(${operatorTex(q)}\\right)u=1`,
+    `u=${fracToTex(new Fr(1, q0))}`,
+    `y_p=${polynomialFromFractionsTex(yp)}`
+  ]));
+}
+
+function generateMonomialNonzero() {
+  const m = randInt(1, 4);
+  const deg = randInt(1, 3);
+  const p = randomOperatorCoeffs(deg, true);
+  const rhs = new Array(m + 1).fill(0).map((_, i) => i === m ? 1 : 0);
+  const yp = applyInverseOperator(p, rhs);
+  setMath("monomial-nonzero-problem", `\\left(${operatorTex(p)}\\right)y=${monomialTex(m)}`);
+  setMath("monomial-nonzero-answer", answerTex([
+    `y_p=\\frac{1}{${operatorTex(p)}}${monomialTex(m)}`,
+    `y_p=${polynomialFromFractionsTex(yp)}`
+  ]));
+}
+
+function generateMonomialZero() {
+  const r = randInt(1, 3);
+  const mChoices = range(1, 3).filter(m => r + m <= 4);
+  const m = mChoices[randInt(0, mChoices.length - 1)];
+  const qdeg = randInt(1, 2);
+  const q = randomOperatorCoeffs(qdeg, true);
+  const rhs = new Array(m + 1).fill(0).map((_, i) => i === m ? 1 : 0);
+  const u = applyInverseOperator(q, rhs);
+  const yp = integratePoly(u, r);
+  setMath("monomial-zero-problem", `\\left(${operatorTex(q)}\\right)${dPowerTex(r)}y=${monomialTex(m)}`);
+  setMath("monomial-zero-answer", answerTex([
+    `u=${dPowerTex(r)}y\,\quad \\left(${operatorTex(q)}\\right)u=${monomialTex(m)}`,
+    `u=${polynomialFromFractionsTex(u)}`,
+    `y_p=${dInverseTex(r)}u=${polynomialFromFractionsTex(yp)}`
+  ]));
+}
+
+function generatePolynomialNonzero() {
+  const pdeg = randInt(1, 3);
+  const rhs = randomPolynomialCoeffs(pdeg);
+  const deg = randInt(1, 3);
+  const p = randomOperatorCoeffs(deg, true);
+  const yp = applyInverseOperator(p, rhs);
+  setMath("polynomial-nonzero-problem", `\\left(${operatorTex(p)}\\right)y=${polynomialTex(rhs)}`);
+  setMath("polynomial-nonzero-answer", answerTex([
+    `y_p=\\frac{1}{${operatorTex(p)}}\\left(${polynomialTex(rhs)}\\right)`,
+    `y_p=${polynomialFromFractionsTex(yp)}`
+  ]));
+}
+
+function generatePolynomialZero() {
+  const r = randInt(1, 2);
+  const pdeg = randInt(1, 2);
+  const rhs = randomPolynomialCoeffs(pdeg);
+  const qdeg = randInt(1, 2);
+  const q = randomOperatorCoeffs(qdeg, true);
+  const u = applyInverseOperator(q, rhs);
+  const yp = integratePoly(u, r);
+  setMath("polynomial-zero-problem", `\\left(${operatorTex(q)}\\right)${dPowerTex(r)}y=${polynomialTex(rhs)}`);
+  setMath("polynomial-zero-answer", answerTex([
+    `u=${dPowerTex(r)}y\,\quad \\left(${operatorTex(q)}\\right)u=${polynomialTex(rhs)}`,
+    `u=${polynomialFromFractionsTex(u)}`,
+    `y_p=${dInverseTex(r)}u=${polynomialFromFractionsTex(yp)}`
+  ]));
+}
+
+window.addEventListener("load", function() {
+  generateConstantNonzero();
+  generateConstantZero();
+  generateMonomialNonzero();
+  generateMonomialZero();
+  generatePolynomialNonzero();
+  generatePolynomialZero();
+});
+</script>
 
 
 </section>

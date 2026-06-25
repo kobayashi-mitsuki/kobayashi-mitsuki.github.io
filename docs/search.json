@@ -119,16 +119,30 @@
     "text": "(5) 一般の場合\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n\n\n\n\n実根部分と虚根部分をそれぞれ処理し，それらを足し合わせる。\n実根の重根から出る項と，虚根の重根から出る項を分けて書く。"
   },
   {
-    "objectID": "teaching/cpp-programming-2.html",
-    "href": "teaching/cpp-programming-2.html",
-    "title": "C++プログラミングⅡ",
+    "objectID": "teaching/cpp-programming-1.html",
+    "href": "teaching/cpp-programming-1.html",
+    "title": "C++プログラミングⅠ",
     "section": "",
     "text": "準備中"
   },
   {
-    "objectID": "teaching/fourier-analysis.html",
-    "href": "teaching/fourier-analysis.html",
-    "title": "フーリエ解析",
+    "objectID": "teaching/statistics-intro.html",
+    "href": "teaching/statistics-intro.html",
+    "title": "確率統計（入門）",
+    "section": "",
+    "text": "準備中"
+  },
+  {
+    "objectID": "teaching/programming-basics-python.html",
+    "href": "teaching/programming-basics-python.html",
+    "title": "プログラミング基礎（Python）",
+    "section": "",
+    "text": "準備中"
+  },
+  {
+    "objectID": "teaching/intermediate-statistics.html",
+    "href": "teaching/intermediate-statistics.html",
+    "title": "Intermediate Statistics",
     "section": "",
     "text": "準備中"
   },
@@ -165,35 +179,70 @@
     "href": "teaching/differential-equations.html#自習用教材",
     "title": "微分方程式",
     "section": "自習用教材",
-    "text": "自習用教材\n\n\n2階線形微分方程式（準備中）\n\n準備中\n\n\n\n高階線形微分方程式\n\n\n高階定数係数斉次線形微分方程式\n\n準備中\n\n\n\n冪級数解法（準備中）\n\n準備中\n\n\n\n連立線形微分方程式（準備中）\n\n準備中"
+    "text": "自習用教材\n\n\n2階線形微分方程式（準備中）\n\n準備中\n\n\n\n高階線形微分方程式\n\n\n高階定数係数斉次線形微分方程式\n高階定数係数斉次線形：多項式型非斉次項\n\n\n\n\n冪級数解法（準備中）\n\n準備中\n\n\n\n連立線形微分方程式（準備中）\n\n準備中"
   },
   {
-    "objectID": "teaching/intermediate-statistics.html",
-    "href": "teaching/intermediate-statistics.html",
-    "title": "Intermediate Statistics",
+    "objectID": "teaching/fourier-analysis.html",
+    "href": "teaching/fourier-analysis.html",
+    "title": "フーリエ解析",
     "section": "",
     "text": "準備中"
   },
   {
-    "objectID": "teaching/programming-basics-python.html",
-    "href": "teaching/programming-basics-python.html",
-    "title": "プログラミング基礎（Python）",
+    "objectID": "teaching/cpp-programming-2.html",
+    "href": "teaching/cpp-programming-2.html",
+    "title": "C++プログラミングⅡ",
     "section": "",
     "text": "準備中"
   },
   {
-    "objectID": "teaching/statistics-intro.html",
-    "href": "teaching/statistics-intro.html",
-    "title": "確率統計（入門）",
+    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html",
+    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html",
+    "title": "多項式を非斉次項にもつ場合",
     "section": "",
-    "text": "準備中"
+    "text": "次の各小問において, 微分方程式 \\[\nP(D)y=f(x)\n\\] の非斉次項 \\(f(x)\\) の形に応じて, 特殊解を一つ求めよ. ただし, \\(D=\\tfrac{d}{dx}\\) とし, \\(P(\\lambda)\\) を多項式とする."
   },
   {
-    "objectID": "teaching/cpp-programming-1.html",
-    "href": "teaching/cpp-programming-1.html",
-    "title": "C++プログラミングⅠ",
-    "section": "",
-    "text": "準備中"
+    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#定数項0-を特性根に持たない場合",
+    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#定数項0-を特性根に持たない場合",
+    "title": "多項式を非斉次項にもつ場合",
+    "section": "(1) 定数項：\\(0\\) を特性根に持たない場合",
+    "text": "(1) 定数項：\\(0\\) を特性根に持たない場合\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説"
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#定数項0-を特性根に持つ場合",
+    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#定数項0-を特性根に持つ場合",
+    "title": "多項式を非斉次項にもつ場合",
+    "section": "(2) 定数項：\\(0\\) を特性根に持つ場合",
+    "text": "(2) 定数項：\\(0\\) を特性根に持つ場合\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説"
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#xm0-を特性根に持たない場合",
+    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#xm0-を特性根に持たない場合",
+    "title": "多項式を非斉次項にもつ場合",
+    "section": "(3) \\(x^m\\)：\\(0\\) を特性根に持たない場合",
+    "text": "(3) \\(x^m\\)：\\(0\\) を特性根に持たない場合\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説"
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#xm0-を特性根に持つ場合",
+    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#xm0-を特性根に持つ場合",
+    "title": "多項式を非斉次項にもつ場合",
+    "section": "(4) \\(x^m\\)：\\(0\\) を特性根に持つ場合",
+    "text": "(4) \\(x^m\\)：\\(0\\) を特性根に持つ場合\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説"
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#一般の多項式0-を特性根に持たない場合",
+    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#一般の多項式0-を特性根に持たない場合",
+    "title": "多項式を非斉次項にもつ場合",
+    "section": "(5) 一般の多項式：\\(0\\) を特性根に持たない場合",
+    "text": "(5) 一般の多項式：\\(0\\) を特性根に持たない場合\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説"
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#一般の多項式0-を特性根に持つ場合",
+    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#一般の多項式0-を特性根に持つ場合",
+    "title": "多項式を非斉次項にもつ場合",
+    "section": "(6) 一般の多項式：\\(0\\) を特性根に持つ場合",
+    "text": "(6) 一般の多項式：\\(0\\) を特性根に持つ場合\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説"
   },
   {
     "objectID": "links.html",
