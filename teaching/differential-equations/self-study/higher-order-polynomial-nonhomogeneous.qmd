@@ -18,7 +18,13 @@ $$
 <details>
 <summary>解答と解説</summary>
 
+<p>解答：</p>
 <div id="constant-nonzero-answer"></div>
+
+<p>解説：</p>
+
+- 定数は $D$ を作用させると $0$ になるため，$P(D)$ は定数に対して $P(0)$ 倍として働く。
+- $P(0)\ne0$ なので，$y$ を定数とおいて求めればよい。
 
 </details>
 </div>
@@ -33,7 +39,14 @@ $$
 <details>
 <summary>解答と解説</summary>
 
+<p>解答：</p>
 <div id="constant-zero-answer"></div>
+
+<p>解説：</p>
+
+- $P(D)=Q(D)D^r$ と見て，$u=D^r y$ とおく。
+- 先に $Q(D)u=1$ を考えると，$u$ は定数として求まる。
+- 最後に $D^r y=u$ から $r$ 回積分して $y$ を求める。積分定数は $0$ としてよい。
 
 </details>
 </div>
@@ -48,7 +61,14 @@ $$
 <details>
 <summary>解答と解説</summary>
 
+<p>解答：</p>
 <div id="monomial-nonzero-answer"></div>
+
+<p>解説：</p>
+
+- $0$ が特性根でないので，$P(0)\ne0$ である。
+- 右辺が $x^m$ なので，特殊解は $m$ 次以下の多項式として求まる。
+- $D$ を作用させると次数が下がるため，多項式の範囲で係数が決まる。
 
 </details>
 </div>
@@ -63,7 +83,14 @@ $$
 <details>
 <summary>解答と解説</summary>
 
+<p>解答：</p>
 <div id="monomial-zero-answer"></div>
+
+<p>解説：</p>
+
+- $P(D)=Q(D)D^r$ と見て，$u=D^r y$ とおく。
+- 先に $Q(D)u=x^m$ を考えると，$u$ は多項式として求まる。
+- 最後に $D^r y=u$ から $r$ 回積分して $y$ を求める。積分定数は $0$ としてよい。
 
 </details>
 </div>
@@ -78,7 +105,14 @@ $$
 <details>
 <summary>解答と解説</summary>
 
+<p>解答：</p>
 <div id="polynomial-nonzero-answer"></div>
+
+<p>解説：</p>
+
+- $0$ が特性根でないので，$P(0)\ne0$ である。
+- 右辺が多項式なので，特殊解も多項式として求まる。
+- 各次数の係数を比較すれば，一つの特殊解が決まる。
 
 </details>
 </div>
@@ -93,7 +127,14 @@ $$
 <details>
 <summary>解答と解説</summary>
 
+<p>解答：</p>
 <div id="polynomial-zero-answer"></div>
+
+<p>解説：</p>
+
+- $P(D)=Q(D)D^r$ と見て，$u=D^r y$ とおく。
+- 先に $Q(D)u=f(x)$ を考えると，$u$ は多項式として求まる。
+- 最後に $D^r y=u$ から $r$ 回積分して $y$ を求める。積分定数は $0$ としてよい。
 
 </details>
 </div>
@@ -350,8 +391,7 @@ function generateConstantNonzero() {
   const p0 = coeffs[0];
   setMath("constant-nonzero-problem", `\\left(${operatorTex(coeffs)}\\right)y=1`);
   setMath("constant-nonzero-answer", answerTex([
-    `P(0)=${p0}`,
-    `y_p=${fracToTex(new Fr(1, p0))}`
+    `y=${fracToTex(new Fr(1, p0))}`
   ]));
 }
 
@@ -367,9 +407,7 @@ function generateConstantZero() {
   yp[r] = ypCoeff;
   setMath("constant-zero-problem", `\\left(${operatorTex(q)}\\right)${dPowerTex(r)}y=1`);
   setMath("constant-zero-answer", answerTex([
-    `u=${dPowerTex(r)}y\,\quad \\left(${operatorTex(q)}\\right)u=1`,
-    `u=${fracToTex(new Fr(1, q0))}`,
-    `y_p=${polynomialFromFractionsTex(yp)}`
+    `y=${polynomialFromFractionsTex(yp)}`
   ]));
 }
 
@@ -381,8 +419,7 @@ function generateMonomialNonzero() {
   const yp = applyInverseOperator(p, rhs);
   setMath("monomial-nonzero-problem", `\\left(${operatorTex(p)}\\right)y=${monomialTex(m)}`);
   setMath("monomial-nonzero-answer", answerTex([
-    `y_p=\\frac{1}{${operatorTex(p)}}${monomialTex(m)}`,
-    `y_p=${polynomialFromFractionsTex(yp)}`
+    `y=${polynomialFromFractionsTex(yp)}`
   ]));
 }
 
@@ -397,9 +434,7 @@ function generateMonomialZero() {
   const yp = integratePoly(u, r);
   setMath("monomial-zero-problem", `\\left(${operatorTex(q)}\\right)${dPowerTex(r)}y=${monomialTex(m)}`);
   setMath("monomial-zero-answer", answerTex([
-    `u=${dPowerTex(r)}y\,\quad \\left(${operatorTex(q)}\\right)u=${monomialTex(m)}`,
-    `u=${polynomialFromFractionsTex(u)}`,
-    `y_p=${dInverseTex(r)}u=${polynomialFromFractionsTex(yp)}`
+    `y=${polynomialFromFractionsTex(yp)}`
   ]));
 }
 
@@ -411,8 +446,7 @@ function generatePolynomialNonzero() {
   const yp = applyInverseOperator(p, rhs);
   setMath("polynomial-nonzero-problem", `\\left(${operatorTex(p)}\\right)y=${polynomialTex(rhs)}`);
   setMath("polynomial-nonzero-answer", answerTex([
-    `y_p=\\frac{1}{${operatorTex(p)}}\\left(${polynomialTex(rhs)}\\right)`,
-    `y_p=${polynomialFromFractionsTex(yp)}`
+    `y=${polynomialFromFractionsTex(yp)}`
   ]));
 }
 
@@ -426,9 +460,7 @@ function generatePolynomialZero() {
   const yp = integratePoly(u, r);
   setMath("polynomial-zero-problem", `\\left(${operatorTex(q)}\\right)${dPowerTex(r)}y=${polynomialTex(rhs)}`);
   setMath("polynomial-zero-answer", answerTex([
-    `u=${dPowerTex(r)}y\,\quad \\left(${operatorTex(q)}\\right)u=${polynomialTex(rhs)}`,
-    `u=${polynomialFromFractionsTex(u)}`,
-    `y_p=${dInverseTex(r)}u=${polynomialFromFractionsTex(yp)}`
+    `y=${polynomialFromFractionsTex(yp)}`
   ]));
 }
 
