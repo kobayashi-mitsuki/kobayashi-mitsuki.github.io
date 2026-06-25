@@ -398,7 +398,7 @@ function answerTex(lines) {
 
 function generateConstantNonzero() {
   const deg = randInt(3, 5);
-  const coeffs = randomOperatorCoeffs(deg, true);
+  const coeffs = Array.from({ length: deg + 1 }, () => nonzeroRand(-99, 99));
   const p0 = coeffs[0];
   setMath("constant-nonzero-problem", `\\left(${operatorTex(coeffs)}\\right)y=1`);
   setMath("constant-nonzero-answer", answerTex([
