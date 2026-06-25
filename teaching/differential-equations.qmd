@@ -44,8 +44,7 @@ title: "微分方程式"
 <summary>高階線形微分方程式</summary>
 
 - [高階定数係数斉次線形微分方程式](differential-equations/self-study/higher-order-constant-coefficient-homogeneous.qmd)
-
-準備中
+- [高階定数係数斉次線形：多項式型非斉次項](differential-equations/self-study/higher-order-polynomial-nonhomogeneous.qmd)
 
 </details>
 
