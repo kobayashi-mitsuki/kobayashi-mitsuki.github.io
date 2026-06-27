@@ -1,4 +1,4 @@
----
+﻿---
 title: "多項式を非斉次項にもつ場合"
 ---
 
@@ -8,92 +8,176 @@ P(D)y=f(x)
 $$
 の非斉次項 $f(x)$ の形に応じて, 特殊解を一つ求めよ. ただし, $D=\tfrac{d}{dx}$ とし, $P(\lambda)$ を多項式とする.
 
-## (1) $f(x)\equiv1$；$0$ が非特性根
+## (1) $f(x)\equiv1$, $0$ が非特性根
 
-<div class="practice-box">
+::::: {.callout-note title="問題" appearance="default" icon=false}
+
 <div id="constant-nonzero-problem"></div>
 <div class="problem-button-row">
   <button type="button" class="problem-button" onclick="generateConstantNonzero()">問題を変更</button>
 </div>
-<details>
-<summary>解答と解説</summary>
 
-解答：
+:::: {.callout-note title="解答と解説" appearance="default" icon=false collapse=true}
+
+::: {.callout-important title="解答" appearance="default" icon=false}
 
 <div id="constant-nonzero-answer"></div>
 
-公式：
+:::
+
+::: {.callout-tip title="公式" appearance="default" icon=false}
 
 $$
 y = \frac{1}{P(0)}
 $$
 
-公式の導出：
+:::
 
-- 定数解 $y=y_0$ で探せば良い.
-- $Dy_0=0$ より $P(D)y_0=P(0)y_0$.
-- $P(0)y_0=1$ を解いて $y_0=1/P(0)$ を得る.
+::: {.callout-tip title="公式の導出" appearance="default" icon=false}
 
-補足（定数解で探せば良い理由）：
+まず, 定数解 $y=y_0$ の形で探せば良いことは認める (理由は補足参照).
 
-- 求める特殊解を $y_p$ とする.
-- $DP(D)y_p=0$ より, $y_p$ は式 $Dy=0$ と式 $P(D)y=0$ それぞれの一般解の和で表せる.
-- $P(D)y=0$ は与式の斉次式にあたるため, 式 $Dy=0$ の一般解の形で探せば良い.
+定数であるため, 
+$$
+Dy_0=0
+$$ 
+であり, このことから微分作用素 $P(D)$ を $y=y_0$ に作用させたときに, $P(D)$ の定数項以外の部分はすべて消えることがわかる. $P(D)$ の定数項は当然 $P(0)$ であるため,
+$$
+P(D)y_0=P(0)y_0.
+$$
+よって, 与式 
+$$
+P(D)y=1
+$$ 
+に代入して, 
+$$
+P(0)y_0=1, 
+\quad \text{\emph{i.e.}}, \quad 
+y_0=\frac{1}{P(0)}
+$$ 
+を得る.
 
-</details>
-</div>
+:::
 
-## (2) $f(x)\equiv1$；$0$ が特性根
+::: {.callout-tip title="補足" appearance="default" icon=false}
 
-<div class="practice-box">
+定数解だけ考えれば良い理由は次の通り：
+
+まず, 混乱を避けるため, 求める特殊解を $y_p$ としておく. 与式の両辺を微分して, 
+$$
+DP(D)y_p=0
+$$ 
+を得る. $\lambda P(\lambda)=0$ の特性根 $0$ が多重度 $1$ であることから, $y_p$ は 
+$$ 
+Dy_1=0, \quad P(D)y_2=0
+$$ 
+それぞれの一般解の和
+$$
+y_p=y_1+y_2
+$$
+で表せる. ここで, $y_2$ は与式の斉次解でもあることから,
+特殊解 $y_p$ を探すときに無視してよいことがわかり, $y_p$ として
+$$
+Dy_1=0
+$$ 
+の一般解の形, すなわち, 定数の形で探せば良いことがわかる.
+
+:::
+
+::::
+
+:::::
+
+## (2) $f(x)\equiv1$, $0$ が特性根
+
+::::: {.callout-note title="問題" appearance="default" icon=false}
+
 <div id="constant-zero-problem"></div>
 <div class="problem-button-row">
   <button type="button" class="problem-button" onclick="generateConstantZero()">問題を変更</button>
 </div>
-<details>
-<summary>解答と解説</summary>
 
-解答：
+:::: {.callout-note title="解答と解説" appearance="default" icon=false collapse=true}
+
+::: {.callout-important title="解答" appearance="default" icon=false}
 
 <div id="constant-zero-answer"></div>
 
-公式：
+:::
+
+::: {.callout-tip title="公式" appearance="default" icon=false}
 
 $$
 y = \frac{x^m}{m!\,Q(0)}
 $$
-ただし, $P(D)=Q(D)D^m$, $Q(0)\neq0$.
+ただし, $m$ を $P(\lambda)=0$ の特性根 $0$ の多重度とし, 多項式 $Q(\lambda)$ を $P(\lambda)/\lambda^m$ で定める. すなわち, 整数 $m\geq1$ と多項式 $Q(\lambda)$ を次が成り立つように定める： 
+$$
+P(\lambda) = \lambda^m Q(\lambda), \quad Q(0) \neq 0.
+$$
 
-公式の導出：
+:::
 
-- $u=D^my$ とおいて, $Q(D)u=1$ を得る.
-- $Q(D)u=1$ の特殊解は $u = \frac{1}{Q(0)}$.
-- $D^my = \frac{1}{Q(0)}$ の特殊解は右辺を $m$ 回積分すれば得られる.
-- 不定積分では非斉次解の一般解が現れるだけなので, 毎回の積分定数を $0$ として計算すれば良い.
+::: {.callout-tip title="公式の導出" appearance="default" icon=false}
 
-補足：
+\(1) に帰着させるため, まず
+$$
+u=D^my
+$$ 
+とおいて, 
+$$
+Q(D)u=1
+$$ 
+を得る.
+この式の特殊解は, (1) より, 
+$$
+u = \frac{1}{Q(0)}.
+$$
+これに $u=D^my$ を代入して, 
+$$
+D^my = \frac{1}{Q(0)}.
+$$ 
+となり, 求める特殊解 $y$ はこの右辺を $m$ 回積分すれば得られる.
+ここで, 不定積分では非斉次解の一般解が現れるだけなので, 毎回の積分定数を $0$ として計算すれば良い.
+よって,
+$$
+\begin{aligned}
+y &= \int_0^x \left( \dots \left( \int_0^{x_{m-1}} \frac{1}{Q(0)} \, dx_m \right) \dots \right) dx_1 \\
+&= \frac{1}{m!} \frac{x^m}{Q(0)}
+\end{aligned}
+$$
 
-- \(1) との本質的な違いは $y$ が $D^my$ に変化した点のみ.
-- 実はこれを意識して, 問題の式もあえて $D^my$ という塊ができるように出題している. 果たしてこれに気づいてくれただろうか$\ldots$
+:::
 
-</details>
-</div>
+::: {.callout-tip title="補足" appearance="default" icon=false}
 
-## (3) $f(x)=x^\ell$；$0$ が非特性根
+\(1) との本質的な違いは $y$ が $D^my$ に変化した点のみ.  
+実はこれを意識して, 問題の式もあえて $D^my$ という塊ができるように出題した.  
+果たしてこれに気づいてくれただろうか$\ldots$
 
-<div class="practice-box">
+:::
+
+::::
+
+:::::
+
+## (3) $f(x)=x^\ell$, $0$ が非特性根
+
+::::: {.callout-note title="問題" appearance="default" icon=false}
+
 <div id="monomial-nonzero-problem"></div>
 <div class="problem-button-row">
   <button type="button" class="problem-button" onclick="generateMonomialNonzero()">問題を変更</button>
 </div>
-<details>
-<summary>解答と解説</summary>
 
-解答：
+:::: {.callout-note title="解答と解説" appearance="default" icon=false collapse=true}
+
+::: {.callout-important title="解答" appearance="default" icon=false}
 
 <div id="monomial-nonzero-answer"></div>
 
-公式：
+:::
+
+::: {.callout-tip title="公式" appearance="default" icon=false}
 
 $$
 y = \sum_{k=0}^{\ell} c_k \frac{\ell!}{(\ell-k)!} x^{\ell-k}
@@ -103,9 +187,13 @@ $$
 \frac{1}{P(z)}=c_0+c_1z+c_2z^2+\cdots.
 $$
 
-公式の導出：
+:::
 
-- $y=\frac{1}{P(D)}x^\ell$ として計算することを考える.
+::: {.callout-tip title="公式の導出" appearance="default" icon=false}
+
+特殊解を見つければ良いだけなので, 数学的な厳密性は脇に置いておいて,
+$y=\frac{1}{P(D)}x^\ell$ として計算することを考える.
+
 - $P(0)\neq0$ なので, $\frac{1}{P(z)}$ は $z=0$ のまわりでテイラー展開できる.
 - $z$ を $D$ に置き換えて, $\frac{1}{P(D)}=c_0+c_1D+c_2D^2+\cdots$ と考える.
 - $D^{\ell+1}x^\ell=0$ なので, $k=\ell$ まで計算すればよく, 次を得る:
@@ -117,30 +205,38 @@ $$
   \end{aligned}
   $$
 
-補足：
+:::
+
+::: {.callout-tip title="補足" appearance="default" icon=false}
 
 - \(1) を参考に $D^\ell P(D)y=\ell!$ から考えてくれた学生もいると思う. こうすると一見 \(2) に帰着するわけだが, ここではまだ見つけるべき $y$ の形がわかっていないので, \(2) の *特殊解* を採用するわけにはいかない. 
 - $D^{\ell+1}P(D)y=0$ を考えた場合はどうであろうか？こちらを考えてくれた学生もいると思うが, 実はこちらの方が (1) の考え方に忠実で素直なため, 先ほどより少し見通しが良い. 実際, 見つけるべき特殊解 $y_p$ は式 $D^{\ell+1}y=0$ と式 $P(D)y=0$ それぞれの一般解の和で表せて, $P(D)y=0$ が与式の斉次式であることを考えると, $y_p$ は式 $D^{\ell+1}y=0$ の一般解の形で探せば良いことがわかる. こうして次の別手法を得るわけである.
 - $y=a_0 + a_1 x + \cdots + a_\ell x^\ell$ と置いて与式に代入し, 恒等式の係数比較をすることで, $a_0,\dots,a_\ell$ の値を決定する. ただし, この方法は意外と計算が面倒なため, 上の計算手法が実は楽なのである.
 
-</details>
-</div>
+:::
 
-## (4) $f(x)=x^\ell$；$0$ が特性根
+::::
 
-<div class="practice-box">
+:::::
+
+## (4) $f(x)=x^\ell$, $0$ が特性根
+
+::::: {.callout-note title="問題" appearance="default" icon=false}
+
 <div id="monomial-zero-problem"></div>
 <div class="problem-button-row">
   <button type="button" class="problem-button" onclick="generateMonomialZero()">問題を変更</button>
 </div>
-<details>
-<summary>解答と解説</summary>
 
-解答：
+:::: {.callout-note title="解答と解説" appearance="default" icon=false collapse=true}
+
+::: {.callout-important title="解答" appearance="default" icon=false}
 
 <div id="monomial-zero-answer"></div>
 
-公式：
+:::
+
+::: {.callout-tip title="公式" appearance="default" icon=false}
 
 $$
 y
@@ -156,7 +252,9 @@ $$
 \frac{1}{Q(z)}=c_0+c_1z+c_2z^2+\cdots.
 $$
 
-公式の導出：
+:::
+
+::: {.callout-tip title="公式の導出" appearance="default" icon=false}
 
 - $u=D^my$ とおいて, $Q(D)u=x^\ell$ を得る.
 - $Q(D)u=x^\ell$ の特殊解は
@@ -170,29 +268,37 @@ $$
   $$
 - $D^my=u$ を積分定数 $0$ として $m$ 回積分し, 特殊解を得る.
 
-補足：
+:::
+
+::: {.callout-tip title="補足" appearance="default" icon=false}
 
 - これまでの問題から, 今回の解法に自力で気づいた方が多かったと思われる. 
 - \(3) との本質的な違いは, \(1) と \(2) のときの関係と同様で, $y$ が $D^my$ に置き換わっていることだけである.
 
-</details>
-</div>
+:::
 
-## (5) 多項式；$0$ が非特性根
+::::
 
-<div class="practice-box">
+:::::
+
+## (5) 多項式, $0$ が非特性根
+
+::::: {.callout-note title="問題" appearance="default" icon=false}
+
 <div id="polynomial-nonzero-problem"></div>
 <div class="problem-button-row">
   <button type="button" class="problem-button" onclick="generatePolynomialNonzero()">問題を変更</button>
 </div>
-<details>
-<summary>解答と解説</summary>
 
-解答：
+:::: {.callout-note title="解答と解説" appearance="default" icon=false collapse=true}
+
+::: {.callout-important title="解答" appearance="default" icon=false}
 
 <div id="polynomial-nonzero-answer"></div>
 
-公式：
+:::
+
+::: {.callout-tip title="公式" appearance="default" icon=false}
 
 $$
 y
@@ -213,7 +319,9 @@ $$
 \frac{1}{P(z)}=c_0+c_1z+c_2z^2+\cdots.
 $$
 
-公式の導出：
+:::
+
+::: {.callout-tip title="公式の導出" appearance="default" icon=false}
 
 - \(3) より, 各単項式 $x^j$ に対して,
   $$
@@ -257,31 +365,39 @@ $$
   \end{aligned}
   $$
 
-補足：
+:::
+
+::: {.callout-tip title="補足" appearance="default" icon=false}
 
 - \(5) は \(3) を足し合わせただけで, 計算自体に新しいことはない.
 - 公式だけを見ると少し重たく見えるが, やっていることは各単項式に対する計算の足し算で, 公式を使って計算する人はまずいないだろう.
 - 公式の導出自体はそれなりに面白く, 最後に $x^i$ の係数として整理するため, $i=j-k$ と置き換えている.
 - 和の交換をする際, $i,j$ の動かし方が変わることに気をつけよう. 足し算は  $0\leq i\leq j\leq\ell$ の範囲で行われるので, $j$ を止めて $i$ で先に足し上げるときは $0\leq i\leq j$, $i$ を止めて $j$ で先に足し上げるときは $i\leq j\leq\ell$ であることに注意する.
 
-</details>
-</div>
+:::
 
-## (6) 多項式；$0$ が特性根
+::::
 
-<div class="practice-box">
+:::::
+
+## (6) 多項式, $0$ が特性根
+
+::::: {.callout-note title="問題" appearance="default" icon=false}
+
 <div id="polynomial-zero-problem"></div>
 <div class="problem-button-row">
   <button type="button" class="problem-button" onclick="generatePolynomialZero()">問題を変更</button>
 </div>
-<details>
-<summary>解答と解説</summary>
 
-解答：
+:::: {.callout-note title="解答と解説" appearance="default" icon=false collapse=true}
+
+::: {.callout-important title="解答" appearance="default" icon=false}
 
 <div id="polynomial-zero-answer"></div>
 
-公式：
+:::
+
+::: {.callout-tip title="公式" appearance="default" icon=false}
 
 $$
 y
@@ -302,7 +418,9 @@ $$
 \frac{1}{Q(z)}=c_0+c_1z+c_2z^2+\cdots.
 $$
 
-公式の導出：
+:::
+
+::: {.callout-tip title="公式の導出" appearance="default" icon=false}
 
 - $u=D^my$ とおいて, $Q(D)u=f(x)$ を得る.
 - \(5) より, $Q(D)u=f(x)$ の特殊解は
@@ -346,7 +464,9 @@ $$
   \end{aligned}
   $$
 
-補足：
+:::
+
+::: {.callout-tip title="補足" appearance="default" icon=false}
 
 - ここまで丁寧に見ていただいた学生はすでに気づいていると思うが, このページの問題において, 公式を覚える必要は全くない.
 - いずれも $y=\tfrac{1}{D^m}\tfrac{1}{Q(D)}f(x)$ を計算するだけである. あとは, $\tfrac{1}{Q(D)}$ のテイラー展開を利用するだけである.
@@ -355,8 +475,11 @@ $$
 - この性質が非常に強く, このページの問題を簡単にしている一番の要因となっている. 
 <!-- 補足最後の説明では、次のページで指数型を作ることを考えて、それに繋がるような締めにすることを意識しました。作業を再開するときはこの意識を思い出してもらえると嬉しいです。 -->
 
-</details>
-</div>
+:::
+
+::::
+
+:::::
 
 <script>
 function randInt(min, max) {

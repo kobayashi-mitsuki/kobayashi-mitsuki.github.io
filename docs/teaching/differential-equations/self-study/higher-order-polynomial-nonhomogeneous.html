@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>多項式を非斉次項にもつ場合 – 小林光木 | 成蹊大学 理工学部 データサイエンス研究室 助教</title>
+<title>higher-order-polynomial-nonhomogeneous – 小林光木 | 成蹊大学 理工学部 データサイエンス研究室 助教</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -299,12 +299,12 @@ window.Quarto = {
     <h2 id="toc-title">目次</h2>
    
   <ul>
-  <li><a href="#fxequiv10-が非特性根" id="toc-fxequiv10-が非特性根" class="nav-link active" data-scroll-target="#fxequiv10-が非特性根">(1) <span class="math inline">\(f(x)\equiv1\)</span>；<span class="math inline">\(0\)</span> が非特性根</a></li>
-  <li><a href="#fxequiv10-が特性根" id="toc-fxequiv10-が特性根" class="nav-link" data-scroll-target="#fxequiv10-が特性根">(2) <span class="math inline">\(f(x)\equiv1\)</span>；<span class="math inline">\(0\)</span> が特性根</a></li>
-  <li><a href="#fxxell0-が非特性根" id="toc-fxxell0-が非特性根" class="nav-link" data-scroll-target="#fxxell0-が非特性根">(3) <span class="math inline">\(f(x)=x^\ell\)</span>；<span class="math inline">\(0\)</span> が非特性根</a></li>
-  <li><a href="#fxxell0-が特性根" id="toc-fxxell0-が特性根" class="nav-link" data-scroll-target="#fxxell0-が特性根">(4) <span class="math inline">\(f(x)=x^\ell\)</span>；<span class="math inline">\(0\)</span> が特性根</a></li>
-  <li><a href="#多項式0-が非特性根" id="toc-多項式0-が非特性根" class="nav-link" data-scroll-target="#多項式0-が非特性根">(5) 多項式；<span class="math inline">\(0\)</span> が非特性根</a></li>
-  <li><a href="#多項式0-が特性根" id="toc-多項式0-が特性根" class="nav-link" data-scroll-target="#多項式0-が特性根">(6) 多項式；<span class="math inline">\(0\)</span> が特性根</a></li>
+  <li><a href="#fxequiv1-0-が非特性根" id="toc-fxequiv1-0-が非特性根" class="nav-link active" data-scroll-target="#fxequiv1-0-が非特性根">(1) <span class="math inline">\(f(x)\equiv1\)</span>, <span class="math inline">\(0\)</span> が非特性根</a></li>
+  <li><a href="#fxequiv1-0-が特性根" id="toc-fxequiv1-0-が特性根" class="nav-link" data-scroll-target="#fxequiv1-0-が特性根">(2) <span class="math inline">\(f(x)\equiv1\)</span>, <span class="math inline">\(0\)</span> が特性根</a></li>
+  <li><a href="#fxxell-0-が非特性根" id="toc-fxxell-0-が非特性根" class="nav-link" data-scroll-target="#fxxell-0-が非特性根">(3) <span class="math inline">\(f(x)=x^\ell\)</span>, <span class="math inline">\(0\)</span> が非特性根</a></li>
+  <li><a href="#fxxell-0-が特性根" id="toc-fxxell-0-が特性根" class="nav-link" data-scroll-target="#fxxell-0-が特性根">(4) <span class="math inline">\(f(x)=x^\ell\)</span>, <span class="math inline">\(0\)</span> が特性根</a></li>
+  <li><a href="#多項式-0-が非特性根" id="toc-多項式-0-が非特性根" class="nav-link" data-scroll-target="#多項式-0-が非特性根">(5) 多項式, <span class="math inline">\(0\)</span> が非特性根</a></li>
+  <li><a href="#多項式-0-が特性根" id="toc-多項式-0-が特性根" class="nav-link" data-scroll-target="#多項式-0-が特性根">(6) 多項式, <span class="math inline">\(0\)</span> が特性根</a></li>
   </ul>
 </nav>
     </div>
@@ -334,141 +334,386 @@ window.Quarto = {
 <p>次の各小問において, 微分方程式 <span class="math display">\[
 P(D)y=f(x)
 \]</span> の非斉次項 <span class="math inline">\(f(x)\)</span> の形に応じて, 特殊解を一つ求めよ. ただし, <span class="math inline">\(D=\tfrac{d}{dx}\)</span> とし, <span class="math inline">\(P(\lambda)\)</span> を多項式とする.</p>
-<section id="fxequiv10-が非特性根" class="level2">
-<h2 class="anchored" data-anchor-id="fxequiv10-が非特性根">(1) <span class="math inline">\(f(x)\equiv1\)</span>；<span class="math inline">\(0\)</span> が非特性根</h2>
-<div class="practice-box">
+<section id="fxequiv1-0-が非特性根" class="level2">
+<h2 class="anchored" data-anchor-id="fxequiv1-0-が非特性根">(1) <span class="math inline">\(f(x)\equiv1\)</span>, <span class="math inline">\(0\)</span> が非特性根</h2>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="問題">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>問題
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div id="constant-nonzero-problem">
 
 </div>
 <div class="problem-button-row">
 <p><button type="button" class="problem-button" onclick="generateConstantNonzero()">問題を変更</button></p>
 </div>
-<details>
-<summary>
-解答と解説
-</summary>
-<p>解答：</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="解答と解説">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>解答と解説
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="解答">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">重要</span>解答
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div id="constant-nonzero-answer">
 
 </div>
-<p>公式：</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="公式">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>公式
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p><span class="math display">\[
 y = \frac{1}{P(0)}
 \]</span></p>
-<p>公式の導出：</p>
-<ul>
-<li>定数解 <span class="math inline">\(y=y_0\)</span> で探せば良い.</li>
-<li><span class="math inline">\(Dy_0=0\)</span> より <span class="math inline">\(P(D)y_0=P(0)y_0\)</span>.</li>
-<li><span class="math inline">\(P(0)y_0=1\)</span> を解いて <span class="math inline">\(y_0=1/P(0)\)</span> を得る.</li>
-</ul>
-<p>補足（定数解で探せば良い理由）：</p>
-<ul>
-<li>求める特殊解を <span class="math inline">\(y_p\)</span> とする.</li>
-<li><span class="math inline">\(DP(D)y_p=0\)</span> より, <span class="math inline">\(y_p\)</span> は式 <span class="math inline">\(Dy=0\)</span> と式 <span class="math inline">\(P(D)y=0\)</span> それぞれの一般解の和で表せる.</li>
-<li><span class="math inline">\(P(D)y=0\)</span> は与式の斉次式にあたるため, 式 <span class="math inline">\(Dy=0\)</span> の一般解の形で探せば良い.</li>
-</ul>
-</details>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="公式の導出">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>公式の導出
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>まず, 定数解 <span class="math inline">\(y=y_0\)</span> の形で探せば良いことは認める (理由は補足参照).</p>
+<p>定数であるため, <span class="math display">\[
+Dy_0=0
+\]</span> であり, このことから微分作用素 <span class="math inline">\(P(D)\)</span> を <span class="math inline">\(y=y_0\)</span> に作用させたときに, <span class="math inline">\(P(D)\)</span> の定数項以外の部分はすべて消えることがわかる. <span class="math inline">\(P(D)\)</span> の定数項は当然 <span class="math inline">\(P(0)\)</span> であるため, <span class="math display">\[
+P(D)y_0=P(0)y_0.
+\]</span> よって, 与式 <span class="math display">\[
+P(D)y=1
+\]</span> に代入して, <span class="math display">\[
+P(0)y_0=1,
+\quad \text{\emph{i.e.}}, \quad
+y_0=\frac{1}{P(0)}
+\]</span> を得る.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="補足">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>補足
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>定数解だけ考えれば良い理由は次の通り：</p>
+<p>まず, 混乱を避けるため, 求める特殊解を <span class="math inline">\(y_p\)</span> としておく. 与式の両辺を微分して, <span class="math display">\[
+DP(D)y_p=0
+\]</span> を得る. <span class="math inline">\(\lambda P(\lambda)=0\)</span> の特性根 <span class="math inline">\(0\)</span> が多重度 <span class="math inline">\(1\)</span> であることから, <span class="math inline">\(y_p\)</span> は <span class="math display">\[
+Dy_1=0, \quad P(D)y_2=0
+\]</span> それぞれの一般解の和 <span class="math display">\[
+y_p=y_1+y_2
+\]</span> で表せる. ここで, <span class="math inline">\(y_2\)</span> は与式の斉次解でもあることから, 特殊解 <span class="math inline">\(y_p\)</span> を探すときに無視してよいことがわかり, <span class="math inline">\(y_p\)</span> として <span class="math display">\[
+Dy_1=0
+\]</span> の一般解の形, すなわち, 定数の形で探せば良いことがわかる.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
-<section id="fxequiv10-が特性根" class="level2">
-<h2 class="anchored" data-anchor-id="fxequiv10-が特性根">(2) <span class="math inline">\(f(x)\equiv1\)</span>；<span class="math inline">\(0\)</span> が特性根</h2>
-<div class="practice-box">
+<section id="fxequiv1-0-が特性根" class="level2">
+<h2 class="anchored" data-anchor-id="fxequiv1-0-が特性根">(2) <span class="math inline">\(f(x)\equiv1\)</span>, <span class="math inline">\(0\)</span> が特性根</h2>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="問題">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>問題
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div id="constant-zero-problem">
 
 </div>
 <div class="problem-button-row">
 <p><button type="button" class="problem-button" onclick="generateConstantZero()">問題を変更</button></p>
 </div>
-<details>
-<summary>
-解答と解説
-</summary>
-<p>解答：</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="解答と解説">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>解答と解説
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="解答">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">重要</span>解答
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div id="constant-zero-answer">
 
 </div>
-<p>公式：</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="公式">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>公式
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p><span class="math display">\[
 y = \frac{x^m}{m!\,Q(0)}
-\]</span> ただし, <span class="math inline">\(P(D)=Q(D)D^m\)</span>, <span class="math inline">\(Q(0)\neq0\)</span>.</p>
-<p>公式の導出：</p>
-<ul>
-<li><span class="math inline">\(u=D^my\)</span> とおいて, <span class="math inline">\(Q(D)u=1\)</span> を得る.</li>
-<li><span class="math inline">\(Q(D)u=1\)</span> の特殊解は <span class="math inline">\(u = \frac{1}{Q(0)}\)</span>.</li>
-<li><span class="math inline">\(D^my = \frac{1}{Q(0)}\)</span> の特殊解は右辺を <span class="math inline">\(m\)</span> 回積分すれば得られる.</li>
-<li>不定積分では非斉次解の一般解が現れるだけなので, 毎回の積分定数を <span class="math inline">\(0\)</span> として計算すれば良い.</li>
-</ul>
-<p>補足：</p>
-<ul>
-<li>(1) との本質的な違いは <span class="math inline">\(y\)</span> が <span class="math inline">\(D^my\)</span> に変化した点のみ.</li>
-<li>実はこれを意識して, 問題の式もあえて <span class="math inline">\(D^my\)</span> という塊ができるように出題している. 果たしてこれに気づいてくれただろうか<span class="math inline">\(\ldots\)</span></li>
-</ul>
-</details>
+\]</span> ただし, <span class="math inline">\(m\)</span> を <span class="math inline">\(P(\lambda)=0\)</span> の特性根 <span class="math inline">\(0\)</span> の多重度とし, 多項式 <span class="math inline">\(Q(\lambda)\)</span> を <span class="math inline">\(P(\lambda)/\lambda^m\)</span> で定める. すなわち, 整数 <span class="math inline">\(m\geq1\)</span> と多項式 <span class="math inline">\(Q(\lambda)\)</span> を次が成り立つように定める： <span class="math display">\[
+P(\lambda) = \lambda^m Q(\lambda), \quad Q(0) \neq 0.
+\]</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="公式の導出">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>公式の導出
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>(1) に帰着させるため, まず <span class="math display">\[
+u=D^my
+\]</span> とおいて, <span class="math display">\[
+Q(D)u=1
+\]</span> を得る. この式の特殊解は, (1) より, <span class="math display">\[
+u = \frac{1}{Q(0)}.
+\]</span> これに <span class="math inline">\(u=D^my\)</span> を代入して, <span class="math display">\[
+D^my = \frac{1}{Q(0)}.
+\]</span> となり, 求める特殊解 <span class="math inline">\(y\)</span> はこの右辺を <span class="math inline">\(m\)</span> 回積分すれば得られる. ここで, 不定積分では非斉次解の一般解が現れるだけなので, 毎回の積分定数を <span class="math inline">\(0\)</span> として計算すれば良い. よって, <span class="math display">\[
+\begin{aligned}
+y &amp;= \int_0^x \left( \dots \left( \int_0^{x_{m-1}} \frac{1}{Q(0)} \, dx_m \right) \dots \right) dx_1 \\
+&amp;= \frac{1}{m!} \frac{x^m}{Q(0)}
+\end{aligned}
+\]</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="補足">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>補足
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>(1) との本質的な違いは <span class="math inline">\(y\)</span> が <span class="math inline">\(D^my\)</span> に変化した点のみ.<br>
+実はこれを意識して, 問題の式もあえて <span class="math inline">\(D^my\)</span> という塊ができるように出題した.<br>
+果たしてこれに気づいてくれただろうか<span class="math inline">\(\ldots\)</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
-<section id="fxxell0-が非特性根" class="level2">
-<h2 class="anchored" data-anchor-id="fxxell0-が非特性根">(3) <span class="math inline">\(f(x)=x^\ell\)</span>；<span class="math inline">\(0\)</span> が非特性根</h2>
-<div class="practice-box">
+<section id="fxxell-0-が非特性根" class="level2">
+<h2 class="anchored" data-anchor-id="fxxell-0-が非特性根">(3) <span class="math inline">\(f(x)=x^\ell\)</span>, <span class="math inline">\(0\)</span> が非特性根</h2>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="問題">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>問題
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div id="monomial-nonzero-problem">
 
 </div>
 <div class="problem-button-row">
 <p><button type="button" class="problem-button" onclick="generateMonomialNonzero()">問題を変更</button></p>
 </div>
-<details>
-<summary>
-解答と解説
-</summary>
-<p>解答：</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="解答と解説">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>解答と解説
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="解答">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">重要</span>解答
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div id="monomial-nonzero-answer">
 
 </div>
-<p>公式：</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="公式">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>公式
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p><span class="math display">\[
 y = \sum_{k=0}^{\ell} c_k \frac{\ell!}{(\ell-k)!} x^{\ell-k}
 \]</span> ただし, <span class="math inline">\(c_k\)</span> は <span class="math inline">\(\frac{1}{P(z)}\)</span> をマクローリン展開した時の係数として次のように定める： <span class="math display">\[
 \frac{1}{P(z)}=c_0+c_1z+c_2z^2+\cdots.
 \]</span></p>
-<p>公式の導出：</p>
-<ul>
-<li><span class="math inline">\(y=\frac{1}{P(D)}x^\ell\)</span> として計算することを考える.</li>
-<li><span class="math inline">\(P(0)\neq0\)</span> なので, <span class="math inline">\(\frac{1}{P(z)}\)</span> は <span class="math inline">\(z=0\)</span> のまわりでテイラー展開できる.</li>
-<li><span class="math inline">\(z\)</span> を <span class="math inline">\(D\)</span> に置き換えて, <span class="math inline">\(\frac{1}{P(D)}=c_0+c_1D+c_2D^2+\cdots\)</span> と考える.</li>
-<li><span class="math inline">\(D^{\ell+1}x^\ell=0\)</span> なので, <span class="math inline">\(k=\ell\)</span> まで計算すればよく, 次を得る: <span class="math display">\[
-\begin{aligned}
-\frac{1}{P(D)} x^\ell
-&amp;= \left( c_0 + c_1 D + c_2 D^2 + \cdots + c_\ell D^\ell \right) \, x^\ell \\
-&amp;= \sum_{k=0}^{\ell} c_k \frac{\ell!}{(\ell-k)!} x^{\ell-k}.
-\end{aligned}
-\]</span></li>
-</ul>
-<p>補足：</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="公式の導出">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>公式の導出
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>特殊解を見つければ良いだけなので, 数学的な厳密性は脇に置いておいて, <span class="math inline">\(y=\frac{1}{P(D)}x^\ell\)</span> として計算することを考える. - <span class="math inline">\(P(0)\neq0\)</span> なので, <span class="math inline">\(\frac{1}{P(z)}\)</span> は <span class="math inline">\(z=0\)</span> のまわりでテイラー展開できる. - <span class="math inline">\(z\)</span> を <span class="math inline">\(D\)</span> に置き換えて, <span class="math inline">\(\frac{1}{P(D)}=c_0+c_1D+c_2D^2+\cdots\)</span> と考える. - <span class="math inline">\(D^{\ell+1}x^\ell=0\)</span> なので, <span class="math inline">\(k=\ell\)</span> まで計算すればよく, 次を得る: <span class="math display">\[
+  \begin{aligned}
+  \frac{1}{P(D)} x^\ell
+  &amp;= \left( c_0 + c_1 D + c_2 D^2 + \cdots + c_\ell D^\ell \right) \, x^\ell \\
+  &amp;= \sum_{k=0}^{\ell} c_k \frac{\ell!}{(\ell-k)!} x^{\ell-k}.
+  \end{aligned}
+  \]</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="補足">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>補足
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li>(1) を参考に <span class="math inline">\(D^\ell P(D)y=\ell!\)</span> から考えてくれた学生もいると思う. こうすると一見 (2) に帰着するわけだが, ここではまだ見つけるべき <span class="math inline">\(y\)</span> の形がわかっていないので, (2) の <em>特殊解</em> を採用するわけにはいかない.</li>
 <li><span class="math inline">\(D^{\ell+1}P(D)y=0\)</span> を考えた場合はどうであろうか？こちらを考えてくれた学生もいると思うが, 実はこちらの方が (1) の考え方に忠実で素直なため, 先ほどより少し見通しが良い. 実際, 見つけるべき特殊解 <span class="math inline">\(y_p\)</span> は式 <span class="math inline">\(D^{\ell+1}y=0\)</span> と式 <span class="math inline">\(P(D)y=0\)</span> それぞれの一般解の和で表せて, <span class="math inline">\(P(D)y=0\)</span> が与式の斉次式であることを考えると, <span class="math inline">\(y_p\)</span> は式 <span class="math inline">\(D^{\ell+1}y=0\)</span> の一般解の形で探せば良いことがわかる. こうして次の別手法を得るわけである.</li>
 <li><span class="math inline">\(y=a_0 + a_1 x + \cdots + a_\ell x^\ell\)</span> と置いて与式に代入し, 恒等式の係数比較をすることで, <span class="math inline">\(a_0,\dots,a_\ell\)</span> の値を決定する. ただし, この方法は意外と計算が面倒なため, 上の計算手法が実は楽なのである.</li>
 </ul>
-</details>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
-<section id="fxxell0-が特性根" class="level2">
-<h2 class="anchored" data-anchor-id="fxxell0-が特性根">(4) <span class="math inline">\(f(x)=x^\ell\)</span>；<span class="math inline">\(0\)</span> が特性根</h2>
-<div class="practice-box">
+<section id="fxxell-0-が特性根" class="level2">
+<h2 class="anchored" data-anchor-id="fxxell-0-が特性根">(4) <span class="math inline">\(f(x)=x^\ell\)</span>, <span class="math inline">\(0\)</span> が特性根</h2>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="問題">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>問題
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div id="monomial-zero-problem">
 
 </div>
 <div class="problem-button-row">
 <p><button type="button" class="problem-button" onclick="generateMonomialZero()">問題を変更</button></p>
 </div>
-<details>
-<summary>
-解答と解説
-</summary>
-<p>解答：</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="解答と解説">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>解答と解説
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-23" class="callout-23-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="解答">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">重要</span>解答
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div id="monomial-zero-answer">
 
 </div>
-<p>公式：</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="公式">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>公式
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p><span class="math display">\[
 y
 =
@@ -478,7 +723,18 @@ c_j
 \]</span> ただし, <span class="math inline">\(P(D)=Q(D)D^m\)</span>, <span class="math inline">\(Q(0)\neq0\)</span> とし, <span class="math inline">\(c_k\)</span> は <span class="math inline">\(\frac{1}{Q(z)}\)</span> をマクローリン展開した時の係数として次のように定める： <span class="math display">\[
 \frac{1}{Q(z)}=c_0+c_1z+c_2z^2+\cdots.
 \]</span></p>
-<p>公式の導出：</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="公式の導出">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>公式の導出
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li><span class="math inline">\(u=D^my\)</span> とおいて, <span class="math inline">\(Q(D)u=x^\ell\)</span> を得る.</li>
 <li><span class="math inline">\(Q(D)u=x^\ell\)</span> の特殊解は <span class="math display">\[
@@ -491,32 +747,85 @@ x^{\ell-j}.
 \]</span></li>
 <li><span class="math inline">\(D^my=u\)</span> を積分定数 <span class="math inline">\(0\)</span> として <span class="math inline">\(m\)</span> 回積分し, 特殊解を得る.</li>
 </ul>
-<p>補足：</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="補足">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>補足
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li>これまでの問題から, 今回の解法に自力で気づいた方が多かったと思われる.</li>
 <li>(3) との本質的な違いは, (1) と (2) のときの関係と同様で, <span class="math inline">\(y\)</span> が <span class="math inline">\(D^my\)</span> に置き換わっていることだけである.</li>
 </ul>
-</details>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
-<section id="多項式0-が非特性根" class="level2">
-<h2 class="anchored" data-anchor-id="多項式0-が非特性根">(5) 多項式；<span class="math inline">\(0\)</span> が非特性根</h2>
-<div class="practice-box">
+<section id="多項式-0-が非特性根" class="level2">
+<h2 class="anchored" data-anchor-id="多項式-0-が非特性根">(5) 多項式, <span class="math inline">\(0\)</span> が非特性根</h2>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="問題">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>問題
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div id="polynomial-nonzero-problem">
 
 </div>
 <div class="problem-button-row">
 <p><button type="button" class="problem-button" onclick="generatePolynomialNonzero()">問題を変更</button></p>
 </div>
-<details>
-<summary>
-解答と解説
-</summary>
-<p>解答：</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="解答と解説">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-29-contents" aria-controls="callout-29" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>解答と解説
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-29" class="callout-29-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="解答">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">重要</span>解答
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div id="polynomial-nonzero-answer">
 
 </div>
-<p>公式：</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="公式">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>公式
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p><span class="math display">\[
 y
 =
@@ -531,7 +840,18 @@ f(x)=b_0 + b_1 x + \cdots + b_\ell x^\ell
 \]</span> とし, <span class="math inline">\(c_k\)</span> は <span class="math inline">\(\frac{1}{P(z)}\)</span> をマクローリン展開した時の係数として次のように定める： <span class="math display">\[
 \frac{1}{P(z)}=c_0+c_1z+c_2z^2+\cdots.
 \]</span></p>
-<p>公式の導出：</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="公式の導出">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>公式の導出
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li>(3) より, 各単項式 <span class="math inline">\(x^j\)</span> に対して, <span class="math display">\[
 \frac{1}{P(D)}x^j
@@ -571,34 +891,87 @@ x^{j-k}.
 \end{aligned}
 \]</span></li>
 </ul>
-<p>補足：</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="補足">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>補足
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li>(5) は (3) を足し合わせただけで, 計算自体に新しいことはない.</li>
 <li>公式だけを見ると少し重たく見えるが, やっていることは各単項式に対する計算の足し算で, 公式を使って計算する人はまずいないだろう.</li>
 <li>公式の導出自体はそれなりに面白く, 最後に <span class="math inline">\(x^i\)</span> の係数として整理するため, <span class="math inline">\(i=j-k\)</span> と置き換えている.</li>
 <li>和の交換をする際, <span class="math inline">\(i,j\)</span> の動かし方が変わることに気をつけよう. 足し算は <span class="math inline">\(0\leq i\leq j\leq\ell\)</span> の範囲で行われるので, <span class="math inline">\(j\)</span> を止めて <span class="math inline">\(i\)</span> で先に足し上げるときは <span class="math inline">\(0\leq i\leq j\)</span>, <span class="math inline">\(i\)</span> を止めて <span class="math inline">\(j\)</span> で先に足し上げるときは <span class="math inline">\(i\leq j\leq\ell\)</span> であることに注意する.</li>
 </ul>
-</details>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
-<section id="多項式0-が特性根" class="level2">
-<h2 class="anchored" data-anchor-id="多項式0-が特性根">(6) 多項式；<span class="math inline">\(0\)</span> が特性根</h2>
-<div class="practice-box">
+<section id="多項式-0-が特性根" class="level2">
+<h2 class="anchored" data-anchor-id="多項式-0-が特性根">(6) 多項式, <span class="math inline">\(0\)</span> が特性根</h2>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="問題">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>問題
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div id="polynomial-zero-problem">
 
 </div>
 <div class="problem-button-row">
 <p><button type="button" class="problem-button" onclick="generatePolynomialZero()">問題を変更</button></p>
 </div>
-<details>
-<summary>
-解答と解説
-</summary>
-<p>解答：</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="解答と解説">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-35-contents" aria-controls="callout-35" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>解答と解説
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-35" class="callout-35-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="解答">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">重要</span>解答
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div id="polynomial-zero-answer">
 
 </div>
-<p>公式：</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="公式">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>公式
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p><span class="math display">\[
 y
 =
@@ -613,7 +986,18 @@ f(x)=b_0 + b_1 x + \cdots + b_\ell x^\ell
 \]</span> とし, <span class="math inline">\(P(D)=Q(D)D^m\)</span>, <span class="math inline">\(Q(0)\neq0\)</span> とする. また, <span class="math inline">\(c_k\)</span> は <span class="math inline">\(\frac{1}{Q(z)}\)</span> をマクローリン展開した時の係数として次のように定める： <span class="math display">\[
 \frac{1}{Q(z)}=c_0+c_1z+c_2z^2+\cdots.
 \]</span></p>
-<p>公式の導出：</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="公式の導出">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>公式の導出
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li><span class="math inline">\(u=D^my\)</span> とおいて, <span class="math inline">\(Q(D)u=f(x)\)</span> を得る.</li>
 <li>(5) より, <span class="math inline">\(Q(D)u=f(x)\)</span> の特殊解は <span class="math display">\[
@@ -651,7 +1035,18 @@ x^{i+m}.
 \end{aligned}
 \]</span></li>
 </ul>
-<p>補足：</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="補足">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>補足
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li>ここまで丁寧に見ていただいた学生はすでに気づいていると思うが, このページの問題において, 公式を覚える必要は全くない.</li>
 <li>いずれも <span class="math inline">\(y=\tfrac{1}{D^m}\tfrac{1}{Q(D)}f(x)\)</span> を計算するだけである. あとは, <span class="math inline">\(\tfrac{1}{Q(D)}\)</span> のテイラー展開を利用するだけである.</li>
@@ -659,7 +1054,12 @@ x^{i+m}.
 <li><span class="math inline">\(\tfrac{1}{Q(D)}\)</span> は本来, 積分核を用いて表される積分作用素である. しかし, 多項式 <span class="math inline">\(f(x)\)</span> に作用させる場合, <span class="math inline">\(\tfrac{1}{Q(D)}\)</span> を有限回の微分操作に置き換えられる.</li>
 <li>この性質が非常に強く, このページの問題を簡単にしている一番の要因となっている. <!-- 補足最後の説明では、次のページで指数型を作ることを考えて、それに繋がるような締めにすることを意識しました。作業を再開するときはこの意識を思い出してもらえると嬉しいです。 --></li>
 </ul>
-</details>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <script>
 function randInt(min, max) {
