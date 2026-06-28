@@ -520,15 +520,15 @@ P(\lambda) = \lambda^m Q(\lambda), \quad Q(0) \neq 0.
 <div class="callout-body-container callout-body">
 <p>(1) に帰着させるため, まず <span class="math display">\[
 u=D^my
-\]</span> とおいて, <span class="math display">\[
+\]</span> とおく. このとき, <span class="math display">\[
 Q(D)u=1
-\]</span> を得る. この式の特殊解は, (1) より, <span class="math display">\[
-u = \frac{1}{Q(0)}.
-\]</span> これに <span class="math inline">\(u=D^my\)</span> を代入して, <span class="math display">\[
-D^my = \frac{1}{Q(0)}.
-\]</span> となり, 求める特殊解 <span class="math inline">\(y\)</span> はこの右辺を <span class="math inline">\(m\)</span> 回積分すれば得られる. ここで, 不定積分では非斉次解の一般解が現れるだけなので, 毎回の積分定数を <span class="math inline">\(0\)</span> として計算すれば良い. よって, <span class="math display">\[
+\]</span> であるから, (1) より, 特殊解 <span class="math display">\[
+u = \frac{1}{Q(0)}
+\]</span> を得る. これに <span class="math inline">\(u=D^my\)</span> を代入して, <span class="math display">\[
+D^my = \frac{1}{Q(0)}
+\]</span> を得るので, 求める特殊解 <span class="math inline">\(y\)</span> はこの右辺を <span class="math inline">\(m\)</span> 回積分すれば得られる. ここで, 不定積分では積分定数に由来する斉次解が加わるだけなので, 毎回の積分定数を <span class="math inline">\(0\)</span> として計算すれば良い. よって, <span class="math display">\[
 \begin{aligned}
-y &amp;= \int_0^x \left( \dots \left( \int_0^{x_{m-1}} \frac{1}{Q(0)} \, dx_m \right) \dots \right) dx_1 \\
+y &amp;= \int_0^x \cdots \int_0^{x_2} \frac{1}{Q(0)} \, dx_1\, \cdots \,dx_m \\
 &amp;= \frac{1}{m!} \frac{x^m}{Q(0)}
 \end{aligned}
 \]</span></p>
@@ -627,18 +627,19 @@ y = \sum_{k=0}^{\ell} c_k \frac{\ell!}{(\ell-k)!} x^{\ell-k}
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>特殊解を見つければ良いだけなので, 数学的な厳密性は脇に置いておいて, <span class="math inline">\(y=\frac{1}{P(D)}x^\ell\)</span> として計算することを考える.</p>
-<ul>
-<li><span class="math inline">\(P(0)\neq0\)</span> なので, <span class="math inline">\(\frac{1}{P(z)}\)</span> は <span class="math inline">\(z=0\)</span> のまわりでテイラー展開できる.</li>
-<li><span class="math inline">\(z\)</span> を <span class="math inline">\(D\)</span> に置き換えて, <span class="math inline">\(\frac{1}{P(D)}=c_0+c_1D+c_2D^2+\cdots\)</span> と考える.</li>
-<li><span class="math inline">\(D^{\ell+1}x^\ell=0\)</span> なので, <span class="math inline">\(k=\ell\)</span> まで計算すればよく, 次を得る: <span class="math display">\[
+<p>特殊解を見つければ良いだけなので, 数学的な厳密性は脇に置いておいて, <span class="math display">\[
+y=\frac{1}{P(D)}x^\ell
+\]</span> として計算することを考える. まず, <span class="math inline">\(P(0)\neq0\)</span> なので, <span class="math inline">\(\frac{1}{P(z)}\)</span> は <span class="math inline">\(z=0\)</span> のまわりでテイラー展開できる. このテイラー展開の式において, <span class="math inline">\(z\)</span> を <span class="math inline">\(D\)</span> に置き換えることで, <span class="math display">\[
+\frac{1}{P(D)}=c_0+c_1D+c_2D^2+\cdots
+\]</span> を得る. ここで, <span class="math display">\[
+D^{\ell+1}x^\ell=0
+\]</span> であることに注意すると, <span class="math inline">\(k=\ell\)</span> まで計算すれば良いことがわり, よって, <span class="math display">\[
 \begin{aligned}
 \frac{1}{P(D)} x^\ell
 &amp;= \left( c_0 + c_1 D + c_2 D^2 + \cdots + c_\ell D^\ell \right) \, x^\ell \\
-&amp;= \sum_{k=0}^{\ell} c_k \frac{\ell!}{(\ell-k)!} x^{\ell-k}.
+&amp;= \sum_{k=0}^{\ell} c_k \frac{\ell!}{(\ell-k)!} x^{\ell-k}
 \end{aligned}
-\]</span></li>
-</ul>
+\]</span> を得る.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip no-icon callout-titled" title="補足">
@@ -651,11 +652,19 @@ y = \sum_{k=0}^{\ell} c_k \frac{\ell!}{(\ell-k)!} x^{\ell-k}
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>(1) を参考に <span class="math inline">\(D^\ell P(D)y=\ell!\)</span> から考えてくれた学生もいると思う. こうすると一見 (2) に帰着するわけだが, ここではまだ見つけるべき <span class="math inline">\(y\)</span> の形がわかっていないので, (2) の <em>特殊解</em> を採用するわけにはいかない.</li>
-<li><span class="math inline">\(D^{\ell+1}P(D)y=0\)</span> を考えた場合はどうであろうか？こちらを考えてくれた学生もいると思うが, 実はこちらの方が (1) の考え方に忠実で素直なため, 先ほどより少し見通しが良い. 実際, 見つけるべき特殊解 <span class="math inline">\(y_p\)</span> は式 <span class="math inline">\(D^{\ell+1}y=0\)</span> と式 <span class="math inline">\(P(D)y=0\)</span> それぞれの一般解の和で表せて, <span class="math inline">\(P(D)y=0\)</span> が与式の斉次式であることを考えると, <span class="math inline">\(y_p\)</span> は式 <span class="math inline">\(D^{\ell+1}y=0\)</span> の一般解の形で探せば良いことがわかる. こうして次の別手法を得るわけである.</li>
-<li><span class="math inline">\(y=a_0 + a_1 x + \cdots + a_\ell x^\ell\)</span> と置いて与式に代入し, 恒等式の係数比較をすることで, <span class="math inline">\(a_0,\dots,a_\ell\)</span> の値を決定する. ただし, この方法は意外と計算が面倒なため, 上の計算手法が実は楽なのである.</li>
-</ul>
+<p>(1) を参考に <span class="math display">\[
+D^\ell P(D)y=\ell!
+\]</span> から考えてくれた学生もいると思う. こうすると一見 (2) に帰着するわけだが, ここではまだ見つけるべき <span class="math inline">\(y\)</span> の形がわかっていないので, (2) の <em>特殊解</em> を採用するわけにはいかない.</p>
+<p>では更にもう一回微分した <span class="math display">\[
+D^{\ell+1}P(D)y=0
+\]</span> を考えた場合はどうであろうか？ こちらを考えてくれた学生もいると思うが, 実はこちらの方が (1) の考え方に忠実で素直なため, 先ほどより少し見通しが良い. 実際, 見つけるべき特殊解 <span class="math inline">\(y_p\)</span> は <span class="math display">\[
+D^{\ell+1}y_1=0, \quad P(D)y_2=0
+\]</span> それぞれの一般解の和 <span class="math display">\[
+y_p=y_1+y_2
+\]</span> と表せる. よって, (1) のときと同様, <span class="math inline">\(y_2\)</span> が与式の斉次解より, <span class="math inline">\(y_p\)</span> を探すときに無視してよく, <span class="math inline">\(y_1\)</span> の形で探せば良いことがわかる. こうして次の別手法を得るわけである.</p>
+<p>特殊解として <span class="math display">\[
+y=a_0 + a_1 x + \cdots + a_\ell x^\ell
+\]</span> の形を考えて与式に代入し, 恒等式の係数比較をする. それにより <span class="math inline">\(\ell+1\)</span> 本の式からなる連立方程式を得るので, それを解いて <span class="math inline">\(a_0,\dots,a_\ell\)</span> の値を決定する. ただし, この方法は意外と計算が面倒なため, 上の計算手法が実は楽なのである.</p>
 </div>
 </div>
 </div>
