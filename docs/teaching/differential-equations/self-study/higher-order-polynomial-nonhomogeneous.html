@@ -407,7 +407,7 @@ y = \frac{1}{P(0)}
 <p>まず, 定数解 <span class="math inline">\(y=y_0\)</span> の形で探せば良いことは認める (理由は補足参照).</p>
 <p>定数であるため, <span class="math display">\[
 Dy_0=0
-\]</span> であり, このことから微分作用素 <span class="math inline">\(P(D)\)</span> を <span class="math inline">\(y=y_0\)</span> に作用させたときに, <span class="math inline">\(P(D)\)</span> の定数項以外の部分はすべて消えることがわかる. <span class="math inline">\(P(D)\)</span> の定数項は当然 <span class="math inline">\(P(0)\)</span> であるため, <span class="math display">\[
+\]</span> であり, このことから微分作用素 <span class="math inline">\(P(D)\)</span> を <span class="math inline">\(y=y_0\)</span> に作用させたときに, <span class="math inline">\(P(D)\)</span> の定数項以外の部分はすべて消えることがわかる. <span class="math inline">\(P(D)\)</span> の定数項は <span class="math inline">\(P(0)\)</span> であるため, <span class="math display">\[
 P(D)y_0=P(0)y_0.
 \]</span> よって, 与式 <span class="math display">\[
 P(D)y=1
@@ -734,7 +734,9 @@ y
 \sum_{j=0}^{\ell}
 c_j
 \frac{\ell!}{(\ell-j+m)!} x^{\ell-j+m}
-\]</span> ただし, <span class="math inline">\(P(D)=Q(D)D^m\)</span>, <span class="math inline">\(Q(0)\neq0\)</span> とし, <span class="math inline">\(c_k\)</span> は <span class="math inline">\(\frac{1}{Q(z)}\)</span> をマクローリン展開した時の係数として次のように定める： <span class="math display">\[
+\]</span> ただし, <span class="math display">\[
+P(D)=Q(D)D^m, \quad Q(0)\neq0
+\]</span> とし, <span class="math inline">\(c_k\)</span> は <span class="math inline">\(\frac{1}{Q(z)}\)</span> をマクローリン展開した時の係数として次のように定める： <span class="math display">\[
 \frac{1}{Q(z)}=c_0+c_1z+c_2z^2+\cdots.
 \]</span></p>
 </div>
@@ -749,18 +751,11 @@ c_j
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li><span class="math inline">\(u=D^my\)</span> とおいて, <span class="math inline">\(Q(D)u=x^\ell\)</span> を得る.</li>
-<li><span class="math inline">\(Q(D)u=x^\ell\)</span> の特殊解は <span class="math display">\[
-u
-=
-\sum_{j=0}^{\ell}
-c_j
-\frac{\ell!}{(\ell-j)!}
-x^{\ell-j}.
-\]</span></li>
-<li><span class="math inline">\(D^my=u\)</span> を積分定数 <span class="math inline">\(0\)</span> として <span class="math inline">\(m\)</span> 回積分し, 特殊解を得る.</li>
-</ul>
+<p><span class="math inline">\(u=D^my\)</span> とおいて, <span class="math display">\[
+Q(D)u=x^\ell
+\]</span> を得る. この微分方程式の特殊解は, (3) より, <span class="math display">\[
+u = \sum_{j=0}^{\ell} c_j \frac{\ell!}{(\ell-j)!} x^{\ell-j}
+\]</span> であるから, あとは <span class="math inline">\(D^my=u\)</span> を積分定数 <span class="math inline">\(0\)</span> として <span class="math inline">\(m\)</span> 回積分すれば, 特殊解を得る.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip no-icon callout-titled" title="補足">
@@ -773,10 +768,8 @@ x^{\ell-j}.
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>これまでの問題から, 今回の解法に自力で気づいた方が多かったと思われる.</li>
-<li>(3) との本質的な違いは, (1) と (2) のときの関係と同様で, <span class="math inline">\(y\)</span> が <span class="math inline">\(D^my\)</span> に置き換わっていることだけである.</li>
-</ul>
+<p>これまでの問題から, 今回の解法に自力で気づいた方も多かったのではないだろうか.</p>
+<p>(3) との本質的な違いは, (1) と (2) のときの関係と同様で, <span class="math inline">\(y\)</span> が <span class="math inline">\(D^my\)</span> に置き換わっていることだけである.</p>
 </div>
 </div>
 </div>
@@ -866,16 +859,14 @@ f(x)=b_0 + b_1 x + \cdots + b_\ell x^\ell
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>(3) より, 各単項式 <span class="math inline">\(x^j\)</span> に対して, <span class="math display">\[
+<p>(3) より, 各単項式 <span class="math inline">\(x^j\)</span> に対して, <span class="math display">\[
 \frac{1}{P(D)}x^j
 =
 \sum_{k=0}^{j}
 c_k
 \frac{j!}{(j-k)!}
-x^{j-k}.
-\]</span></li>
-<li>作用素 <span class="math inline">\(\tfrac{1}{P(D)}\)</span> は線形なので, これを <span class="math inline">\(b_j\)</span> 倍して, 足し合わせれば, <span class="math display">\[
+x^{j-k}
+\]</span> を得る. 作用素 <span class="math inline">\(\tfrac{1}{P(D)}\)</span> が線形より, これを <span class="math inline">\(b_j\)</span> 倍して, 足し合わせることにより, <span class="math display">\[
 \frac{1}{P(D)}f(x)
 =
 \sum_{j=0}^{\ell}
@@ -883,9 +874,8 @@ b_j
 \sum_{k=0}^{j}
 c_k
 \frac{j!}{(j-k)!}
-x^{j-k}.
-\]</span></li>
-<li><span class="math inline">\(i=j-k\)</span> とおいて, 和の順序を交換すれば, <span class="math display">\[
+x^{j-k}
+\]</span> を得る. <span class="math inline">\(i=j-k\)</span> とおいて, 和の順序を交換すれば, <span class="math display">\[
 \begin{aligned}
   \frac{1}{P(D)}f(x)
   &amp;=
@@ -901,10 +891,9 @@ x^{j-k}.
   \sum_{j=i}^{\ell}
   b_j c_{j-i}\frac{j!}{i!}
   \right)
-  x^i.
+  x^i
 \end{aligned}
-\]</span></li>
-</ul>
+\]</span> を得る.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip no-icon callout-titled" title="補足">
@@ -917,12 +906,8 @@ x^{j-k}.
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>(5) は (3) を足し合わせただけで, 計算自体に新しいことはない.</li>
-<li>公式だけを見ると少し重たく見えるが, やっていることは各単項式に対する計算の足し算で, 公式を使って計算する人はまずいないだろう.</li>
-<li>公式の導出自体はそれなりに面白く, 最後に <span class="math inline">\(x^i\)</span> の係数として整理するため, <span class="math inline">\(i=j-k\)</span> と置き換えている.</li>
-<li>和の交換をする際, <span class="math inline">\(i,j\)</span> の動かし方が変わることに気をつけよう. 足し算は <span class="math inline">\(0\leq i\leq j\leq\ell\)</span> の範囲で行われるので, <span class="math inline">\(j\)</span> を止めて <span class="math inline">\(i\)</span> で先に足し上げるときは <span class="math inline">\(0\leq i\leq j\)</span>, <span class="math inline">\(i\)</span> を止めて <span class="math inline">\(j\)</span> で先に足し上げるときは <span class="math inline">\(i\leq j\leq\ell\)</span> であることに注意する.</li>
-</ul>
+<p>(5) は (3) を足し合わせただけで, 計算自体に新しいことはない. 公式だけを見ると少し重たく見えるが, やっていることは各単項式に対する計算の足し算で, 公式を使って計算する人はまずいないだろう.</p>
+<p>公式の導出自体はそれなりに面白く, 最後に <span class="math inline">\(x^i\)</span> の係数として整理するため, <span class="math inline">\(i=j-k\)</span> と置き換えている. 和の交換をする際, <span class="math inline">\(i,j\)</span> の動かし方が変わることに気をつけよう. 足し算は <span class="math inline">\(0\leq i\leq j\leq\ell\)</span> の範囲で行われるので, <span class="math inline">\(j\)</span> を止めて <span class="math inline">\(i\)</span> で先に足し上げるときは <span class="math inline">\(0\leq i\leq j\)</span> となっている. 一方, <span class="math inline">\(i\)</span> を止めて <span class="math inline">\(j\)</span> で先に足し上げるときは <span class="math inline">\(i\leq j\leq\ell\)</span> となっている. 足し算の順序交換で, この違いが出ているので, 気をつけてほしい.</p>
 </div>
 </div>
 </div>
@@ -997,7 +982,9 @@ b_j c_{j-i}\frac{j!}{(i+m)!}
 x^{i+m}
 \]</span> ただし, <span class="math display">\[
 f(x)=b_0 + b_1 x + \cdots + b_\ell x^\ell
-\]</span> とし, <span class="math inline">\(P(D)=Q(D)D^m\)</span>, <span class="math inline">\(Q(0)\neq0\)</span> とする. また, <span class="math inline">\(c_k\)</span> は <span class="math inline">\(\frac{1}{Q(z)}\)</span> をマクローリン展開した時の係数として次のように定める： <span class="math display">\[
+\]</span> とし, <span class="math display">\[
+P(D)=Q(D)D^m, \quad Q(0)\neq0
+\]</span> とする. また, <span class="math inline">\(c_k\)</span> は <span class="math inline">\(\frac{1}{Q(z)}\)</span> をマクローリン展開した時の係数として次のように定める： <span class="math display">\[
 \frac{1}{Q(z)}=c_0+c_1z+c_2z^2+\cdots.
 \]</span></p>
 </div>
@@ -1012,43 +999,30 @@ f(x)=b_0 + b_1 x + \cdots + b_\ell x^\ell
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li><span class="math inline">\(u=D^my\)</span> とおいて, <span class="math inline">\(Q(D)u=f(x)\)</span> を得る.</li>
-<li>(5) より, <span class="math inline">\(Q(D)u=f(x)\)</span> の特殊解は <span class="math display">\[
-u
-=
-\sum_{i=0}^{\ell}
+<p><span class="math inline">\(u=D^my\)</span> とおくと, <span class="math display">\[
+Q(D)u=f(x)
+\]</span> であるから, (5) より, 特殊解 <span class="math display">\[
+u = \sum_{i=0}^{\ell}
 \left(
-\sum_{j=i}^{\ell}
-b_j c_{j-i}\frac{j!}{i!}
+  \sum_{j=i}^{\ell} b_j c_{j-i}\frac{j!}{i!}
 \right)
-x^i.
-\]</span></li>
-<li><span class="math inline">\(D^my=u\)</span> を積分定数 <span class="math inline">\(0\)</span> として <span class="math inline">\(m\)</span> 回積分すれば, 特殊解 <span class="math inline">\(y\)</span> が得られる.</li>
-<li>実際, <span class="math display">\[
 x^i
-\]</span> を <span class="math inline">\(m\)</span> 回積分すると <span class="math display">\[
+\]</span> を得る. あとは <span class="math inline">\(D^my=u\)</span> を積分定数 <span class="math inline">\(0\)</span> として <span class="math inline">\(m\)</span> 回積分すれば, 求める特殊解 <span class="math inline">\(y\)</span> が得られる. 実際, <span class="math inline">\(x^i\)</span> を <span class="math inline">\(m\)</span> 回積分すると, <span class="math display">\[
 \frac{i!}{(i+m)!}x^{i+m}
-\]</span> となるので, <span class="math display">\[
+\]</span> であるから, <span class="math display">\[
 \begin{aligned}
-y
-&amp;=
-\sum_{i=0}^{\ell}
-\left(
-\sum_{j=i}^{\ell}
-b_j c_{j-i}\frac{j!}{i!}
-\right)
-\frac{i!}{(i+m)!}x^{i+m} \\
-&amp;=
-\sum_{i=0}^{\ell}
-\left(
-\sum_{j=i}^{\ell}
-b_j c_{j-i}\frac{j!}{(i+m)!}
-\right)
-x^{i+m}.
+  y &amp;= \sum_{i=0}^{\ell}
+  \left(
+    \sum_{j=i}^{\ell} b_j c_{j-i} \frac{j!}{i!}
+  \right)
+  \frac{i!}{(i+m)!}x^{i+m} \\
+  &amp;= \sum_{i=0}^{\ell}
+  \left(
+    \sum_{j=i}^{\ell} b_j c_{j-i} \frac{j!}{(i+m)!}
+  \right)
+  x^{i+m}
 \end{aligned}
-\]</span></li>
-</ul>
+\]</span> を得る.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip no-icon callout-titled" title="補足">
@@ -1061,13 +1035,12 @@ x^{i+m}.
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>ここまで丁寧に見ていただいた学生はすでに気づいていると思うが, このページの問題において, 公式を覚える必要は全くない.</li>
-<li>いずれも <span class="math inline">\(y=\tfrac{1}{D^m}\tfrac{1}{Q(D)}f(x)\)</span> を計算するだけである. あとは, <span class="math inline">\(\tfrac{1}{Q(D)}\)</span> のテイラー展開を利用するだけである.</li>
-<li>もちろん <span class="math inline">\(y=\tfrac{1}{Q(D)}\tfrac{1}{D^m}f(x)\)</span> などでも良いが, 最後に積分をした方が計算量は少なく済むのも, 細かい注意点だろう.</li>
-<li><span class="math inline">\(\tfrac{1}{Q(D)}\)</span> は本来, 積分核を用いて表される積分作用素である. しかし, 多項式 <span class="math inline">\(f(x)\)</span> に作用させる場合, <span class="math inline">\(\tfrac{1}{Q(D)}\)</span> を有限回の微分操作に置き換えられる.</li>
-<li>この性質が非常に強く, このページの問題を簡単にしている一番の要因となっている. <!-- 補足最後の説明では、次のページで指数型を作ることを考えて、それに繋がるような締めにすることを意識しました。作業を再開するときはこの意識を思い出してもらえると嬉しいです。 --></li>
-</ul>
+<p>ここまで丁寧に見た方はすでに気づいていると思うが, このページの問題において, 公式を覚える必要は全くない. いずれも <span class="math display">\[
+y=\frac{1}{D^m}\frac{1}{Q(D)}f(x)
+\]</span> として, あとは <span class="math inline">\(\tfrac{1}{Q(D)}\)</span> のテイラー展開を利用するだけである. もちろん <span class="math display">\[
+y=\frac{1}{Q(D)}\frac{1}{D^m}f(x)
+\]</span> なとして考えても良いが, 最後に積分をした方が計算量は少なく済む. 細かい点だが, 手計算するときは気をつけたいところだ.</p>
+<p>さて, なぜここまで計算が簡単になるのか, 最後に軽く触れておこう. <span class="math inline">\(\tfrac{1}{Q(D)}\)</span> は本来, 積分核を用いて表される積分作用素でり, <span class="math inline">\(\tfrac{1}{Q(D)}\)</span> をテイラー展開しても, 無限に微分作用素が現れてしまう. しかし, 多項式 <span class="math inline">\(f(x)\)</span> に作用させる場合においては, <span class="math inline">\(\tfrac{1}{Q(D)}\)</span> を有限回の微分操作に置き換えられる. この性質が非常に強く, このページの問題を簡単にしていたのだ. <!-- 補足最後の説明では、次のページで指数型を作ることを考えて、それに繋がるような締めにすることを意識しました。作業を再開するときはこの意識を思い出してもらえると嬉しいです。 --></p>
 </div>
 </div>
 </div>
