@@ -90,7 +90,7 @@ window.Quarto = {
 <link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="nav-fixed quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-sidebar floating nav-fixed quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -271,7 +271,7 @@ window.Quarto = {
 <span class="menu-text">研究活動</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../teaching.html"> 
+    <a class="nav-link active" href="../../../teaching.html" aria-current="page"> 
 <span class="menu-text">授業・教材</span></a>
   </li>  
   <li class="nav-item">
@@ -289,10 +289,61 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../teaching.html">授業・教材</a></li><li class="breadcrumb-item"><a href="../../../teaching/differential-equations.html">微分方程式</a></li><li class="breadcrumb-item"><a href="../../../teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html">多項式を非斉次項にもつ場合</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../teaching.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">授業・教材</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="セクションを切り替え">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../teaching/differential-equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">微分方程式</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="セクションを切り替え">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">高階定数係数斉次線形微分方程式</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">多項式を非斉次項にもつ場合</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -312,7 +363,7 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../teaching.html">授業・教材</a></li><li class="breadcrumb-item"><a href="../../../teaching/differential-equations.html">微分方程式</a></li><li class="breadcrumb-item"><a href="../../../teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html">多項式を非斉次項にもつ場合</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">多項式を非斉次項にもつ場合</h1>
 </div>
@@ -349,11 +400,10 @@ P(D)y=f(x)
 <div id="constant-nonzero-problem">
 
 </div>
-<div class="problem-button-row">
-<p><button type="button" class="problem-button" onclick="generateConstantNonzero()">問題を変更</button></p>
+</div>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled" title="解答と解説">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -362,7 +412,7 @@ P(D)y=f(x)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="callout callout-style-default callout-important no-icon callout-titled" title="解答">
 <div class="callout-header d-flex align-content-center">
@@ -443,8 +493,6 @@ Dy_1=0
 </div>
 </div>
 </div>
-</div>
-</div>
 </section>
 <section id="fxequiv1-0-が特性根" class="level2">
 <h2 class="anchored" data-anchor-id="fxequiv1-0-が特性根">(2) <span class="math inline">\(f(x)\equiv1\)</span>, <span class="math inline">\(0\)</span> が特性根</h2>
@@ -461,11 +509,10 @@ Dy_1=0
 <div id="constant-zero-problem">
 
 </div>
-<div class="problem-button-row">
-<p><button type="button" class="problem-button" onclick="generateConstantZero()">問題を変更</button></p>
+</div>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled" title="解答と解説">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -474,7 +521,7 @@ Dy_1=0
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="callout callout-style-default callout-important no-icon callout-titled" title="解答">
 <div class="callout-header d-flex align-content-center">
@@ -552,8 +599,6 @@ y &amp;= \int_0^x \cdots \int_0^{x_2} \frac{1}{Q(0)} \, dx_1\, \cdots \,dx_m \\
 </div>
 </div>
 </div>
-</div>
-</div>
 </section>
 <section id="fxxell-0-が非特性根" class="level2">
 <h2 class="anchored" data-anchor-id="fxxell-0-が非特性根">(3) <span class="math inline">\(f(x)=x^\ell\)</span>, <span class="math inline">\(0\)</span> が非特性根</h2>
@@ -570,11 +615,10 @@ y &amp;= \int_0^x \cdots \int_0^{x_2} \frac{1}{Q(0)} \, dx_1\, \cdots \,dx_m \\
 <div id="monomial-nonzero-problem">
 
 </div>
-<div class="problem-button-row">
-<p><button type="button" class="problem-button" onclick="generateMonomialNonzero()">問題を変更</button></p>
+</div>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled" title="解答と解説">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -583,7 +627,7 @@ y &amp;= \int_0^x \cdots \int_0^{x_2} \frac{1}{Q(0)} \, dx_1\, \cdots \,dx_m \\
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="callout callout-style-default callout-important no-icon callout-titled" title="解答">
 <div class="callout-header d-flex align-content-center">
@@ -670,8 +714,6 @@ y=a_0 + a_1 x + \cdots + a_\ell x^\ell
 </div>
 </div>
 </div>
-</div>
-</div>
 </section>
 <section id="fxxell-0-が特性根" class="level2">
 <h2 class="anchored" data-anchor-id="fxxell-0-が特性根">(4) <span class="math inline">\(f(x)=x^\ell\)</span>, <span class="math inline">\(0\)</span> が特性根</h2>
@@ -688,11 +730,10 @@ y=a_0 + a_1 x + \cdots + a_\ell x^\ell
 <div id="monomial-zero-problem">
 
 </div>
-<div class="problem-button-row">
-<p><button type="button" class="problem-button" onclick="generateMonomialZero()">問題を変更</button></p>
+</div>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled" title="解答と解説">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-24-contents" aria-controls="callout-24" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -701,7 +742,7 @@ y=a_0 + a_1 x + \cdots + a_\ell x^\ell
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-23" class="callout-23-contents callout-collapse collapse">
+<div id="callout-24" class="callout-24-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="callout callout-style-default callout-important no-icon callout-titled" title="解答">
 <div class="callout-header d-flex align-content-center">
@@ -775,8 +816,6 @@ u = \sum_{j=0}^{\ell} c_j \frac{\ell!}{(\ell-j)!} x^{\ell-j}
 </div>
 </div>
 </div>
-</div>
-</div>
 </section>
 <section id="多項式-0-が非特性根" class="level2">
 <h2 class="anchored" data-anchor-id="多項式-0-が非特性根">(5) 多項式, <span class="math inline">\(0\)</span> が非特性根</h2>
@@ -793,11 +832,10 @@ u = \sum_{j=0}^{\ell} c_j \frac{\ell!}{(\ell-j)!} x^{\ell-j}
 <div id="polynomial-nonzero-problem">
 
 </div>
-<div class="problem-button-row">
-<p><button type="button" class="problem-button" onclick="generatePolynomialNonzero()">問題を変更</button></p>
+</div>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled" title="解答と解説">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-29-contents" aria-controls="callout-29" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-30-contents" aria-controls="callout-30" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -806,7 +844,7 @@ u = \sum_{j=0}^{\ell} c_j \frac{\ell!}{(\ell-j)!} x^{\ell-j}
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-29" class="callout-29-contents callout-collapse collapse">
+<div id="callout-30" class="callout-30-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="callout callout-style-default callout-important no-icon callout-titled" title="解答">
 <div class="callout-header d-flex align-content-center">
@@ -913,8 +951,6 @@ x^{j-k}
 </div>
 </div>
 </div>
-</div>
-</div>
 </section>
 <section id="多項式-0-が特性根" class="level2">
 <h2 class="anchored" data-anchor-id="多項式-0-が特性根">(6) 多項式, <span class="math inline">\(0\)</span> が特性根</h2>
@@ -931,11 +967,10 @@ x^{j-k}
 <div id="polynomial-zero-problem">
 
 </div>
-<div class="problem-button-row">
-<p><button type="button" class="problem-button" onclick="generatePolynomialZero()">問題を変更</button></p>
+</div>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled" title="解答と解説">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-35-contents" aria-controls="callout-35" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-36-contents" aria-controls="callout-36" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -944,7 +979,7 @@ x^{j-k}
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-35" class="callout-35-contents callout-collapse collapse">
+<div id="callout-36" class="callout-36-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="callout callout-style-default callout-important no-icon callout-titled" title="解答">
 <div class="callout-header d-flex align-content-center">
@@ -1041,8 +1076,6 @@ y=\frac{1}{D^m}\frac{1}{Q(D)}f(x)
 y=\frac{1}{Q(D)}\frac{1}{D^m}f(x)
 \]</span> なとして考えても良いが, 最後に積分をした方が計算量は少なく済む. 細かい点だが, 手計算するときは気をつけたいところだ.</p>
 <p>さて, なぜここまで計算が簡単になるのか, 最後に軽く触れておこう. <span class="math inline">\(\tfrac{1}{Q(D)}\)</span> は本来, 積分核を用いて表される積分作用素でり, <span class="math inline">\(\tfrac{1}{Q(D)}\)</span> をテイラー展開しても, 無限に微分作用素が現れてしまう. しかし, 多項式 <span class="math inline">\(f(x)\)</span> に作用させる場合においては, <span class="math inline">\(\tfrac{1}{Q(D)}\)</span> を有限回の微分操作に置き換えられる. この性質が非常に強く, このページの問題を簡単にしていたのだ. <!-- 補足最後の説明では、次のページで指数型を作ることを考えて、それに繋がるような締めにすることを意識しました。作業を再開するときはこの意識を思い出してもらえると嬉しいです。 --></p>
-</div>
-</div>
 </div>
 </div>
 </div>

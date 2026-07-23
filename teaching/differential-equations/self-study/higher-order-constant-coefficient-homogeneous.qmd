@@ -6,96 +6,131 @@ title: "高階定数係数斉次線形微分方程式"
 
 ## (1) 実根のみ
 
-<div class="practice-box">
+::: {.callout-note title="問題" appearance="default" icon=false}
+
 <div id="real-distinct-problem"></div>
-<div class="problem-button-row">
-  <button type="button" class="problem-button" onclick="generateRealDistinct()">問題を変更</button>
-</div>
-<details>
-<summary>解答と解説</summary>
+
+:::
+
+:::: {.callout-note title="解答と解説" appearance="default" icon=false collapse=true}
+
+::: {.callout-important title="解答" appearance="default" icon=false}
 
 <div id="real-distinct-answer"></div>
+
+:::
+
+::: {.callout-tip title="補足" appearance="default" icon=false}
 
 - 特性根が異なる実根だけの場合，各実根 $a$ に対して $e^{ax}$ が出る。
 - 一般解はそれらの線形結合。
 
-</details>
-</div>
+:::
+
+::::
 
 ## (2) 虚根のみ
 
-<div class="practice-box">
+::: {.callout-note title="問題" appearance="default" icon=false}
+
 <div id="complex-distinct-problem"></div>
-<div class="problem-button-row">
-  <button type="button" class="problem-button" onclick="generateComplexDistinct()">問題を変更</button>
-</div>
-<details>
-<summary>解答と解説</summary>
+
+:::
+
+:::: {.callout-note title="解答と解説" appearance="default" icon=false collapse=true}
+
+::: {.callout-important title="解答" appearance="default" icon=false}
 
 <div id="complex-distinct-answer"></div>
+
+:::
+
+::: {.callout-tip title="補足" appearance="default" icon=false}
 
 - 因子 $((D-a)^2+b^2)$ は特性根 $a \pm bi$ に対応する。
 - 実数値解として $e^{ax}\cos bx$ と $e^{ax}\sin bx$ が出る。
 - 一般解は各因子から出る解の線形結合。
 
-</details>
-</div>
+:::
+
+::::
 
 ## (3) 実根が多重度 $m$
 
-<div class="practice-box">
+::: {.callout-note title="問題" appearance="default" icon=false}
+
 <div id="real-repeated-problem"></div>
-<div class="problem-button-row">
-  <button type="button" class="problem-button" onclick="generateRealRepeated()">問題を変更</button>
-</div>
-<details>
-<summary>解答と解説</summary>
+
+:::
+
+:::: {.callout-note title="解答と解説" appearance="default" icon=false collapse=true}
+
+::: {.callout-important title="解答" appearance="default" icon=false}
 
 <div id="real-repeated-answer"></div>
+
+:::
+
+::: {.callout-tip title="補足" appearance="default" icon=false}
 
 - $(D-a)^m$ は実根 $a$ が多重度 $m$ であることを表す。
 - $e^{ax}, xe^{ax}, \ldots, x^{m-1}e^{ax}$ が出る。
 - 解答は $e^{ax}$ に次数 $m-1$ 以下の多項式をかけた形でまとめてよい。
 
-</details>
-</div>
+:::
+
+::::
 
 ## (4) 虚根が多重度 $m$
 
-<div class="practice-box">
+::: {.callout-note title="問題" appearance="default" icon=false}
+
 <div id="complex-repeated-problem"></div>
-<div class="problem-button-row">
-  <button type="button" class="problem-button" onclick="generateComplexRepeated()">問題を変更</button>
-</div>
-<details>
-<summary>解答と解説</summary>
+
+:::
+
+:::: {.callout-note title="解答と解説" appearance="default" icon=false collapse=true}
+
+::: {.callout-important title="解答" appearance="default" icon=false}
 
 <div id="complex-repeated-answer"></div>
+
+:::
+
+::: {.callout-tip title="補足" appearance="default" icon=false}
 
 - $((D-a)^2+b^2)^m$ は虚根 $a \pm bi$ が多重度 $m$ であることを表す。
 - 解答は $e^{ax}\{P(x)\cos bx + Q(x)\sin bx\}$ の形でまとめてよい。
 - $P(x), Q(x)$ は次数 $m-1$ 以下の多項式。
 
-</details>
-</div>
+:::
+
+::::
 
 ## (5) 一般の場合
 
-<div class="practice-box">
+::: {.callout-note title="問題" appearance="default" icon=false}
+
 <div id="mixed-repeated-problem"></div>
-<div class="problem-button-row">
-  <button type="button" class="problem-button" onclick="generateMixedRepeated()">問題を変更</button>
-</div>
-<details>
-<summary>解答と解説</summary>
+
+:::
+
+:::: {.callout-note title="解答と解説" appearance="default" icon=false collapse=true}
+
+::: {.callout-important title="解答" appearance="default" icon=false}
 
 <div id="mixed-repeated-answer"></div>
+
+:::
+
+::: {.callout-tip title="補足" appearance="default" icon=false}
 
 - 実根部分と虚根部分をそれぞれ処理し，それらを足し合わせる。
 - 実根の重根から出る項と，虚根の重根から出る項を分けて書く。
 
-</details>
-</div>
+:::
+
+::::
 
 <script>
 function randInt(min, max) {

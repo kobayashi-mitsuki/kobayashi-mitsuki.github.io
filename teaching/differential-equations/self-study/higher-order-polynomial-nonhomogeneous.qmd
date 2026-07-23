@@ -10,12 +10,11 @@ $$
 
 ## (1) $f(x)\equiv1$, $0$ が非特性根
 
-::::: {.callout-note title="問題" appearance="default" icon=false}
+::: {.callout-note title="問題" appearance="default" icon=false}
 
 <div id="constant-nonzero-problem"></div>
-<div class="problem-button-row">
-  <button type="button" class="problem-button" onclick="generateConstantNonzero()">問題を変更</button>
-</div>
+
+:::
 
 :::: {.callout-note title="解答と解説" appearance="default" icon=false collapse=true}
 
@@ -86,16 +85,13 @@ $$
 
 ::::
 
-:::::
-
 ## (2) $f(x)\equiv1$, $0$ が特性根
 
-::::: {.callout-note title="問題" appearance="default" icon=false}
+::: {.callout-note title="問題" appearance="default" icon=false}
 
 <div id="constant-zero-problem"></div>
-<div class="problem-button-row">
-  <button type="button" class="problem-button" onclick="generateConstantZero()">問題を変更</button>
-</div>
+
+:::
 
 :::: {.callout-note title="解答と解説" appearance="default" icon=false collapse=true}
 
@@ -157,16 +153,13 @@ $$
 
 ::::
 
-:::::
-
 ## (3) $f(x)=x^\ell$, $0$ が非特性根
 
-::::: {.callout-note title="問題" appearance="default" icon=false}
+::: {.callout-note title="問題" appearance="default" icon=false}
 
 <div id="monomial-nonzero-problem"></div>
-<div class="problem-button-row">
-  <button type="button" class="problem-button" onclick="generateMonomialNonzero()">問題を変更</button>
-</div>
+
+:::
 
 :::: {.callout-note title="解答と解説" appearance="default" icon=false collapse=true}
 
@@ -254,16 +247,13 @@ $$
 
 ::::
 
-:::::
-
 ## (4) $f(x)=x^\ell$, $0$ が特性根
 
-::::: {.callout-note title="問題" appearance="default" icon=false}
+::: {.callout-note title="問題" appearance="default" icon=false}
 
 <div id="monomial-zero-problem"></div>
-<div class="problem-button-row">
-  <button type="button" class="problem-button" onclick="generateMonomialZero()">問題を変更</button>
-</div>
+
+:::
 
 :::: {.callout-note title="解答と解説" appearance="default" icon=false collapse=true}
 
@@ -318,16 +308,13 @@ $$
 
 ::::
 
-:::::
-
 ## (5) 多項式, $0$ が非特性根
 
-::::: {.callout-note title="問題" appearance="default" icon=false}
+::: {.callout-note title="問題" appearance="default" icon=false}
 
 <div id="polynomial-nonzero-problem"></div>
-<div class="problem-button-row">
-  <button type="button" class="problem-button" onclick="generatePolynomialNonzero()">問題を変更</button>
-</div>
+
+:::
 
 :::: {.callout-note title="解答と解説" appearance="default" icon=false collapse=true}
 
@@ -419,16 +406,13 @@ $$
 
 ::::
 
-:::::
-
 ## (6) 多項式, $0$ が特性根
 
-::::: {.callout-note title="問題" appearance="default" icon=false}
+::: {.callout-note title="問題" appearance="default" icon=false}
 
 <div id="polynomial-zero-problem"></div>
-<div class="problem-button-row">
-  <button type="button" class="problem-button" onclick="generatePolynomialZero()">問題を変更</button>
-</div>
+
+:::
 
 :::: {.callout-note title="解答と解説" appearance="default" icon=false collapse=true}
 
@@ -526,8 +510,6 @@ $\tfrac{1}{Q(D)}$ は本来, 積分核を用いて表される積分作用素で
 :::
 
 ::::
-
-:::::
 
 <script>
 function randInt(min, max) {

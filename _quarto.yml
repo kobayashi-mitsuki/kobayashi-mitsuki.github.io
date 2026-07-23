@@ -15,6 +15,16 @@ website:
         href: contact.qmd
       - text: "外部リンク"
         href: links.qmd
+  sidebar:
+    - id: teaching
+      contents:
+        - section: "授業・教材"
+          href: teaching.qmd
+          contents:
+            - section: "微分方程式"
+              href: teaching/differential-equations.qmd
+              contents:
+                - auto: teaching/differential-equations/self-study/*.qmd
 
 format:
   html:

@@ -90,7 +90,7 @@ window.Quarto = {
 <link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="nav-fixed quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-sidebar floating nav-fixed quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -271,7 +271,7 @@ window.Quarto = {
 <span class="menu-text">研究活動</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../teaching.html"> 
+    <a class="nav-link active" href="../../../teaching.html" aria-current="page"> 
 <span class="menu-text">授業・教材</span></a>
   </li>  
   <li class="nav-item">
@@ -289,10 +289,61 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../teaching.html">授業・教材</a></li><li class="breadcrumb-item"><a href="../../../teaching/differential-equations.html">微分方程式</a></li><li class="breadcrumb-item"><a href="../../../teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html">高階定数係数斉次線形微分方程式</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../teaching.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">授業・教材</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="セクションを切り替え">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../teaching/differential-equations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">微分方程式</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="セクションを切り替え">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">高階定数係数斉次線形微分方程式</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">多項式を非斉次項にもつ場合</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -311,7 +362,7 @@ window.Quarto = {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../teaching.html">授業・教材</a></li><li class="breadcrumb-item"><a href="../../../teaching/differential-equations.html">微分方程式</a></li><li class="breadcrumb-item"><a href="../../../teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html">高階定数係数斉次線形微分方程式</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">高階定数係数斉次線形微分方程式</h1>
 </div>
@@ -333,120 +384,325 @@ window.Quarto = {
 <p>次の各小問において, 微分方程式の解をすべて求めよ. ただし, <span class="math inline">\(D=\tfrac{d}{dx}\)</span> とし, <span class="math inline">\(C_k\)</span> <span class="math inline">\((k=1,2,\dots)\)</span> を任意定数として用いて良い.</p>
 <section id="実根のみ" class="level2">
 <h2 class="anchored" data-anchor-id="実根のみ">(1) 実根のみ</h2>
-<div class="practice-box">
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="問題">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>問題
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div id="real-distinct-problem">
 
 </div>
-<div class="problem-button-row">
-<p><button type="button" class="problem-button" onclick="generateRealDistinct()">問題を変更</button></p>
 </div>
-<details>
-<summary>
-解答と解説
-</summary>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="解答と解説">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>解答と解説
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="解答">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">重要</span>解答
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div id="real-distinct-answer">
 
 </div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="補足">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>補足
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li>特性根が異なる実根だけの場合，各実根 <span class="math inline">\(a\)</span> に対して <span class="math inline">\(e^{ax}\)</span> が出る。</li>
 <li>一般解はそれらの線形結合。</li>
 </ul>
-</details>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="虚根のみ" class="level2">
 <h2 class="anchored" data-anchor-id="虚根のみ">(2) 虚根のみ</h2>
-<div class="practice-box">
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="問題">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>問題
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div id="complex-distinct-problem">
 
 </div>
-<div class="problem-button-row">
-<p><button type="button" class="problem-button" onclick="generateComplexDistinct()">問題を変更</button></p>
 </div>
-<details>
-<summary>
-解答と解説
-</summary>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="解答と解説">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>解答と解説
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="解答">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">重要</span>解答
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div id="complex-distinct-answer">
 
 </div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="補足">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>補足
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li>因子 <span class="math inline">\(((D-a)^2+b^2)\)</span> は特性根 <span class="math inline">\(a \pm bi\)</span> に対応する。</li>
 <li>実数値解として <span class="math inline">\(e^{ax}\cos bx\)</span> と <span class="math inline">\(e^{ax}\sin bx\)</span> が出る。</li>
 <li>一般解は各因子から出る解の線形結合。</li>
 </ul>
-</details>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="実根が多重度-m" class="level2">
 <h2 class="anchored" data-anchor-id="実根が多重度-m">(3) 実根が多重度 <span class="math inline">\(m\)</span></h2>
-<div class="practice-box">
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="問題">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>問題
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div id="real-repeated-problem">
 
 </div>
-<div class="problem-button-row">
-<p><button type="button" class="problem-button" onclick="generateRealRepeated()">問題を変更</button></p>
 </div>
-<details>
-<summary>
-解答と解説
-</summary>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="解答と解説">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>解答と解説
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="解答">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">重要</span>解答
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div id="real-repeated-answer">
 
 </div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="補足">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>補足
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li><span class="math inline">\((D-a)^m\)</span> は実根 <span class="math inline">\(a\)</span> が多重度 <span class="math inline">\(m\)</span> であることを表す。</li>
 <li><span class="math inline">\(e^{ax}, xe^{ax}, \ldots, x^{m-1}e^{ax}\)</span> が出る。</li>
 <li>解答は <span class="math inline">\(e^{ax}\)</span> に次数 <span class="math inline">\(m-1\)</span> 以下の多項式をかけた形でまとめてよい。</li>
 </ul>
-</details>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="虚根が多重度-m" class="level2">
 <h2 class="anchored" data-anchor-id="虚根が多重度-m">(4) 虚根が多重度 <span class="math inline">\(m\)</span></h2>
-<div class="practice-box">
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="問題">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>問題
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div id="complex-repeated-problem">
 
 </div>
-<div class="problem-button-row">
-<p><button type="button" class="problem-button" onclick="generateComplexRepeated()">問題を変更</button></p>
 </div>
-<details>
-<summary>
-解答と解説
-</summary>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="解答と解説">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>解答と解説
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="解答">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">重要</span>解答
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div id="complex-repeated-answer">
 
 </div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="補足">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>補足
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li><span class="math inline">\(((D-a)^2+b^2)^m\)</span> は虚根 <span class="math inline">\(a \pm bi\)</span> が多重度 <span class="math inline">\(m\)</span> であることを表す。</li>
 <li>解答は <span class="math inline">\(e^{ax}\{P(x)\cos bx + Q(x)\sin bx\}\)</span> の形でまとめてよい。</li>
 <li><span class="math inline">\(P(x), Q(x)\)</span> は次数 <span class="math inline">\(m-1\)</span> 以下の多項式。</li>
 </ul>
-</details>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="一般の場合" class="level2">
 <h2 class="anchored" data-anchor-id="一般の場合">(5) 一般の場合</h2>
-<div class="practice-box">
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="問題">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>問題
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div id="mixed-repeated-problem">
 
 </div>
-<div class="problem-button-row">
-<p><button type="button" class="problem-button" onclick="generateMixedRepeated()">問題を変更</button></p>
 </div>
-<details>
-<summary>
-解答と解説
-</summary>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="解答と解説">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>解答と解説
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-20" class="callout-20-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="解答">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">重要</span>解答
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <div id="mixed-repeated-answer">
 
 </div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="補足">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ヒント</span>補足
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li>実根部分と虚根部分をそれぞれ処理し，それらを足し合わせる。</li>
 <li>実根の重根から出る項と，虚根の重根から出る項を分けて書く。</li>
 </ul>
-</details>
+</div>
+</div>
+</div>
+</div>
 </div>
 <script>
 function randInt(min, max) {

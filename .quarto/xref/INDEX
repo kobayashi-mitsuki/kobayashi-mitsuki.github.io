@@ -28,5 +28,11 @@
   },
   "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.qmd": {
     "higher-order-constant-coefficient-homogeneous.html": "a91e61cc"
+  },
+  "teaching/programming-basics-python.qmd": {
+    "programming-basics-python.html": "05c2f59f"
+  },
+  "contact.qmd": {
+    "contact.html": "91ff5e43"
   }
 }
