@@ -1,0 +1,100 @@
+.answer-check-widget {
+  --answer-check-border: color-mix(in srgb, currentColor 30%, transparent);
+  --answer-check-surface: color-mix(in srgb, currentColor 5%, transparent);
+  --answer-check-success: #19733a;
+  --answer-check-error: #a22a2a;
+  margin: 0.8rem 0 1rem;
+  padding: 0.8rem;
+  border: 1px solid var(--answer-check-border);
+  border-radius: 0.4rem;
+  background: var(--answer-check-surface);
+}
+
+.answer-check-widget__form {
+  display: grid;
+  grid-template-columns: auto minmax(8rem, 14rem) auto;
+  gap: 0.55rem;
+  align-items: center;
+}
+
+.answer-check-widget__label {
+  margin: 0;
+  font-weight: 700;
+}
+
+.answer-check-widget__input {
+  width: 100%;
+  min-height: 2.35rem;
+  color: inherit;
+  background: var(--bs-body-bg, Canvas);
+  border: 1px solid var(--answer-check-border);
+  border-radius: 0.3rem;
+  padding: 0.35rem 0.5rem;
+}
+
+.answer-check-widget__button {
+  justify-self: start;
+  color: inherit;
+  background: var(--bs-body-bg, Canvas);
+  border: 1px solid currentColor;
+  border-radius: 0.3rem;
+  padding: 0.42rem 0.8rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.answer-check-widget__button:hover {
+  background: color-mix(in srgb, #2c7be5 18%, transparent);
+}
+
+.answer-check-widget__input:focus,
+.answer-check-widget__button:focus-visible {
+  outline: 0.18rem solid currentColor;
+  outline-offset: 0.12rem;
+}
+
+.answer-check-widget__feedback {
+  grid-column: 1 / -1;
+  min-height: 1.5em;
+  margin: 0;
+  font-weight: 700;
+}
+
+.answer-check-widget__feedback--correct {
+  color: var(--answer-check-success);
+}
+
+.answer-check-widget__feedback--incorrect {
+  color: var(--answer-check-error);
+}
+
+.answer-check-widget__feedback--correct::before {
+  content: "✓ ";
+}
+
+.answer-check-widget__feedback--incorrect::before {
+  content: "！ ";
+}
+
+@media (prefers-color-scheme: dark) {
+  .answer-check-widget {
+    --answer-check-success: #79d99a;
+    --answer-check-error: #ff9b9b;
+  }
+}
+
+body.quarto-dark .answer-check-widget {
+  --answer-check-success: #79d99a;
+  --answer-check-error: #ff9b9b;
+}
+
+@media (max-width: 520px) {
+  .answer-check-widget__form {
+    grid-template-columns: 1fr;
+  }
+
+  .answer-check-widget__feedback {
+    grid-column: 1;
+  }
+}

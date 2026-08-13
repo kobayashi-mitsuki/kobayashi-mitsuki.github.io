@@ -2,4 +2,82 @@
 title: "プログラミング基礎（Python）"
 ---
 
+## 授業案内
+
+- [シラバス](<https://portal.seikei.ac.jp/campusweb/slbssbdr.do?value%28risyunen%29=2026&value%28semekikn%29=1&value%28kougicd%29=123020020&value%28crclumcd%29=58888-0110>){target="_blank"}
+- [履修上の注意](programming-basics-python/course-guidance.qmd)
+
+## オンライン教材
+
+<details>
+<summary>第1部　Pythonの基礎</summary>
+
+1. 値・データ型・式（準備中）
+2. [変数と代入](programming-basics-python/fundamentals/variables-assignment.qmd)
+3. 入出力（準備中）
+4. 制御構造（準備中）
+5. データ構造（準備中）
+6. 関数（準備中）
+7. モジュール（準備中）
+8. ファイル入出力（準備中）
+
+</details>
+
+<details>
+<summary>第2部　数学・データへの応用</summary>
+
+1. NumPyによる数値計算（準備中）
+2. グラフによる可視化（準備中）
+3. 基本統計量（準備中）
+4. CSVデータの処理（準備中）
+5. 集合（準備中）
+6. 確率シミュレーション（準備中）
+
+</details>
+
+<details>
+<summary>付録　Jupyter Notebookの使い方</summary>
+
+1. Jupyter Notebookの基本（準備中）
+2. コードセルの実行（準備中）
+3. Markdownセル（準備中）
+4. 数式の入力（準備中）
+5. ノートの整理と保存（準備中）
+
+</details>
+
+<details>
+<summary>スライド資料</summary>
+
+1. 第1回　環境構築（準備中）
+2. [第2回　プログラムの基本](programming-basics-python/slides/variables-assignment.qmd)
+3. 第3回　基本データ型と変数，数学関数（準備中）
+4. 第4回　条件分岐（準備中）
+5. 第5回　リストとタプル（準備中）
+6. 第6回　繰り返し（準備中）
+7. 第7回　関数の定義（準備中）
+8. 第8回　行列の扱い（NumPy）（準備中）
+9. 第9回　グラフによる可視化1（準備中）
+10. 第10回　グラフによる可視化2（準備中）
+11. 第11回　統計量の計算1（準備中）
+12. 第12回　統計量の計算2（準備中）
+13. 第13回　ファイルからのデータ読み込み（準備中）
+14. 第14回　集合と確率（準備中）
+
+</details>
+
+## 練習問題
+
+<details>
+<summary>第1部　Pythonの基礎</summary>
+
 準備中
+
+</details>
+
+<details>
+<summary>第2部　数学・データへの応用</summary>
+
+準備中
+
+</details>

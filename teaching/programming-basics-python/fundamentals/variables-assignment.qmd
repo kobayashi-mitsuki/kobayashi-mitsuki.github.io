@@ -1,0 +1,204 @@
+---
+title: "第2章　変数と代入"
+format:
+  html:
+    css:
+      - ../assets/trace-widget.css
+      - ../assets/answer-check.css
+header-includes:
+  - |
+    <script src="../assets/trace-widget.js" defer></script>
+  - |
+    <script src="../assets/answer-check.js" defer></script>
+---
+
+## 2.1 変数
+
+変数は、プログラムで扱う値に名前を付けるためのものです。  
+例えば、次の1行を実行すると、整数 `2` を変数 `x` という名前で利用できるようになります。
+
+```python
+x = 2
+```
+
+この時点で `x` の値は `2` です。  
+`x` という文字そのものと、`x` が表す値 `2` を区別しましょう。
+
+## 2.2 代入文
+
+```python
+x = 2
+```
+
+このコードは、右辺の値 `2` を左辺の変数 `x` に代入する文です。  
+Python の `=` は「左右が等しい」と主張する数学の等号ではなく、代入を指示する記号です。
+
+次のコードを実行する前に、表示される値を予想してください。
+
+```python
+x = 2
+print(x)
+```
+
+<div class="answer-check-widget" data-answer-check="assignment-print"></div>
+
+<details>
+<summary>解説を見る</summary>
+
+`2` と表示されます。1行目の代入によって、2行目の `x` は値 `2` を表します。
+
+</details>
+
+## 2.3 右辺の評価と左辺への代入
+
+代入文は、次の順序で処理されます。
+
+1. まず、`=` の右辺の式を評価して値を求める。
+2. 次に、その値を左辺の変数に代入する。
+
+たとえば、次のコードを考えます。
+
+```python
+x = 2
+y = x + 3
+```
+
+2行目では、現在の `x` の値 `2` を使って右辺の `x + 3` を評価します。その結果は `5` です。最後に、その `5` を左辺の変数 `y` に代入します。したがって、実行後は `x = 2`、`y = 5` です。
+
+## 2.4 再代入
+
+変数には、後から別の値を代入できます。これを再代入といいます。
+
+```python
+x = 2
+x = x + 1
+print(x)
+```
+
+実行前に、最後に表示される値を予想してください。
+
+<div class="answer-check-widget" data-answer-check="reassignment-print"></div>
+
+<details>
+<summary>詳しい解説</summary>
+
+2行目の `x = x + 1` は、数学の等式として読むと不自然です。プログラムでは、まず右辺の `x + 1` を**現在の `x` の値**で評価します。現在の値は `2` なので、右辺の評価結果は `3` です。その後、その結果を左辺の `x` に代入し、`x` の値を `2` から `3` に更新します。したがって、表示される値は `3` です。
+
+| 実行した行 | 実行後の `x` |
+|---|---:|
+| 実行前 | 未定義 |
+| `x = 2` | 2 |
+| `x = x + 1` | 3 |
+
+</details>
+
+コードの `1` を `4` に変更すると、最後の `x` はいくつになるでしょうか。予想してから実行し、確かめてください。
+
+## 2.5 複数の変数
+
+複数の変数を使うと、一つの計算結果を別の計算で利用できます。
+
+```python
+width = 4
+height = 3
+area = width * height
+print(area)
+```
+
+各行を実行した後の `width`、`height`、`area` の値を順に書き出し、最後の出力を入力してください。
+
+<div class="answer-check-widget" data-answer-check="rectangle-area"></div>
+
+次に `width = 4` を `width = 6` に変更します。どの行の結果が変わるかを考え、変更後の出力を入力してください。
+
+<div class="answer-check-widget" data-answer-check="rectangle-area-changed"></div>
+
+<details>
+<summary>詳しい解説</summary>
+
+最初は `width = 4`、`height = 3` なので、`area = 12` です。`width` を `6` に変更すると、`height` は `3` のままですが、`area` は `18` に変わります。
+
+</details>
+
+## 2.6 変数名
+
+変数名には、その値の役割が分かる名前を付けます。`width` や `student_count` のような名前は、`a` や `n` よりも用途を読み取りやすくします。
+
+Python の変数名には、主に次の規則があります。
+
+- 英字、数字、アンダースコア `_` を使える。
+- 数字から始めることはできない。
+- 大文字と小文字は区別される。たとえば `score` と `Score` は別の名前である。
+- `for` や `if` など、Python が特別な意味で使う予約語は変数名にできない。
+
+短い計算でも、値の意味が伝わる名前を選ぶ習慣を付けましょう。
+
+## 2.7 変数の値を追跡する
+
+コードは原則として上から順に、1行ずつ実行されます。次のコードについて、現在の行を実行した**後**の `x`、`y`、出力を予想してください。「確認」で答え合わせをし、正解すると次の行へ進みます。
+
+::: {.callout-tip title="入力方法" icon=false}
+値は半角数字で入力します。まだ値を持たない変数には「未定義」、何も表示されていないときの出力には「なし」と入力してください。入力欄で Enter キーを押しても確認できます。
+:::
+
+<div class="trace-widget" data-trace-widget="variables-assignment"></div>
+
+最後まで進めたら、3行目を `x = y * 3` に変更した場合の出力を予想してください。どの状態が変わり、どの状態は変わらないでしょうか。
+
+<div class="answer-check-widget" data-answer-check="trace-multiplier-changed"></div>
+
+## 練習問題
+
+### 問題1
+
+次のコードを1行ずつ追跡し、最後に表示される値を予想してください。
+
+```python
+a = 3
+b = a + 4
+a = b - 1
+print(a)
+```
+
+<div class="answer-check-widget" data-answer-check="practice-trace"></div>
+
+<details>
+<summary>詳しい解説</summary>
+
+1行目の後は `a = 3`、2行目の後は `a = 3`、`b = 7`、3行目の後は `a = 6`、`b = 7` です。最後に `6` が表示されます。
+
+</details>
+
+### 問題2
+
+次のコードの出力を予想した後、`price = 120` を `price = 150` に変更して、もう一度考えてください。
+
+```python
+price = 120
+count = 3
+total = price * count
+print(total)
+```
+
+まず、変更前の出力を入力してください。
+
+<div class="answer-check-widget" data-answer-check="practice-total"></div>
+
+次に `price = 120` を `price = 150` に変更した場合の出力を入力してください。
+
+<div class="answer-check-widget" data-answer-check="practice-total-changed"></div>
+
+<details>
+<summary>詳しい解説</summary>
+
+最初の出力は `360` です。`price` を `150` に変更すると、`total` は `450` になり、出力も `450` に変わります。`count` の値は変わりません。
+
+</details>
+
+## まとめ
+
+- 変数は、プログラムで扱う値に名前を付けるために使う。
+- `=` は数学の等号ではなく、右辺の評価結果を左辺の変数に代入する記号である。
+- 同じ変数に再代入すると、その変数の値が更新される。
+- コードを理解するときは、各行の実行後に変数の値がどう変わったかを記録するとよい。
+- 結果を予想し、実行して確かめ、コードの一部を変更してもう一度考えることで理解を深められる。

@@ -34,5 +34,29 @@
   },
   "contact.qmd": {
     "contact.html": "91ff5e43"
+  },
+  "teaching/programming-basics-python/fundamentals/variables-assignment.qmd": {
+    "variables-assignment.html": "87bf6c9d"
+  },
+  "teaching/programming-basics-python/slides/variables-assignment.qmd": {
+    "variables-assignment.html": "bffd4191"
+  },
+  "teaching/cpp-programming-1.qmd": {
+    "cpp-programming-1.html": "8edc59d4"
+  },
+  "teaching/cpp-programming-2.qmd": {
+    "cpp-programming-2.html": "f426d54e"
+  },
+  "teaching/fourier-analysis.qmd": {
+    "fourier-analysis.html": "bc2ad6da"
+  },
+  "teaching/intermediate-statistics.qmd": {
+    "intermediate-statistics.html": "68695eb3"
+  },
+  "teaching/programming-basics-python/course-guidance.qmd": {
+    "course-guidance.html": "3e777d2c"
+  },
+  "teaching/statistics-intro.qmd": {
+    "statistics-intro.html": "27216516"
   }
 }

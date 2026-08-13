@@ -24,7 +24,29 @@ website:
             - section: "微分方程式"
               href: teaching/differential-equations.qmd
               contents:
-                - auto: teaching/differential-equations/self-study/*.qmd
+                - text: "高階定数係数斉次線形微分方程式"
+                  href: teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.qmd
+                - text: "多項式を非斉次項にもつ場合"
+                  href: teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.qmd
+            - section: "プログラミング基礎（Python）"
+              href: teaching/programming-basics-python.qmd
+              contents:
+                - section: "授業案内"
+                  contents:
+                    - text: "シラバス"
+                      href: "https://portal.seikei.ac.jp/campusweb/slbssbdr.do?value%28risyunen%29=2026&value%28semekikn%29=1&value%28kougicd%29=123020020&value%28crclumcd%29=58888-0110"
+                    - text: "履修上の注意"
+                      href: teaching/programming-basics-python/course-guidance.qmd
+                - section: "オンライン教材"
+                  contents:
+                    - section: "第1部　Pythonの基礎"
+                      contents:
+                        - text: "第2章　変数と代入"
+                          href: teaching/programming-basics-python/fundamentals/variables-assignment.qmd
+                    - section: "スライド資料"
+                      contents:
+                        - text: "第2回　プログラムの基本"
+                          href: teaching/programming-basics-python/slides/variables-assignment.qmd
 
 format:
   html:

@@ -1,5 +1,284 @@
 [
   {
+    "objectID": "videos.html",
+    "href": "videos.html",
+    "title": "動画",
+    "section": "",
+    "text": "準備中です。"
+  },
+  {
+    "objectID": "teaching/statistics-intro.html",
+    "href": "teaching/statistics-intro.html",
+    "title": "確率統計（入門）",
+    "section": "",
+    "text": "準備中"
+  },
+  {
+    "objectID": "teaching/programming-basics-python/slides/variables-assignment.html#今日の問い",
+    "href": "teaching/programming-basics-python/slides/variables-assignment.html#今日の問い",
+    "title": "第2回　プログラムの基本",
+    "section": "今日の問い",
+    "text": "今日の問い\nx = 2\ny = x + 3\nx = y * 2\nprint(x)\n最後に表示される値は何でしょうか。\nすぐに実行せず、まず予想してみましょう。",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）",
+      "オンライン教材",
+      "スライド資料",
+      "第2回　プログラムの基本"
+    ]
+  },
+  {
+    "objectID": "teaching/programming-basics-python/slides/variables-assignment.html#コードは上から順に進む",
+    "href": "teaching/programming-basics-python/slides/variables-assignment.html#コードは上から順に進む",
+    "title": "第2回　プログラムの基本",
+    "section": "コードは上から順に進む",
+    "text": "コードは上から順に進む\nx = 2          # 1番目\ny = x + 3      # 2番目\nx = y * 2      # 3番目\nprint(x)       # 4番目\n原則として、一度に確認するのは1行です。",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）",
+      "オンライン教材",
+      "スライド資料",
+      "第2回　プログラムの基本"
+    ]
+  },
+  {
+    "objectID": "teaching/programming-basics-python/slides/variables-assignment.html#実行する行を確認する",
+    "href": "teaching/programming-basics-python/slides/variables-assignment.html#実行する行を確認する",
+    "title": "第2回　プログラムの基本",
+    "section": "実行する行を確認する",
+    "text": "実行する行を確認する\n最初に実行する行はどれでしょうか。\n▶ x = 2\n  y = x + 3\n  x = y * 2\n  print(x)\n実行前は、x も y もまだ定義されていません。",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）",
+      "オンライン教材",
+      "スライド資料",
+      "第2回　プログラムの基本"
+    ]
+  },
+  {
+    "objectID": "teaching/programming-basics-python/slides/variables-assignment.html#右辺を評価する",
+    "href": "teaching/programming-basics-python/slides/variables-assignment.html#右辺を評価する",
+    "title": "第2回　プログラムの基本",
+    "section": "右辺を評価する",
+    "text": "右辺を評価する\nx = 2\nまず右辺を見ます。\n右辺の評価結果は 2 です。\nまだ左辺の x は更新しません。",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）",
+      "オンライン教材",
+      "スライド資料",
+      "第2回　プログラムの基本"
+    ]
+  },
+  {
+    "objectID": "teaching/programming-basics-python/slides/variables-assignment.html#左辺の変数を更新する",
+    "href": "teaching/programming-basics-python/slides/variables-assignment.html#左辺の変数を更新する",
+    "title": "第2回　プログラムの基本",
+    "section": "左辺の変数を更新する",
+    "text": "左辺の変数を更新する\n右辺の評価結果 2 を、左辺の x に代入します。\n\n\n\n\nx\ny\n\n\n\n\n更新前\n未定義\n未定義\n\n\n更新後\n2\n未定義\n\n\n\n更新前と更新後を区別しましょう。",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）",
+      "オンライン教材",
+      "スライド資料",
+      "第2回　プログラムの基本"
+    ]
+  },
+  {
+    "objectID": "teaching/programming-basics-python/slides/variables-assignment.html#次の値を予想する",
+    "href": "teaching/programming-basics-python/slides/variables-assignment.html#次の値を予想する",
+    "title": "第2回　プログラムの基本",
+    "section": "次の値を予想する",
+    "text": "次の値を予想する\n現在の状態は x = 2、y は未定義です。\ny = x + 3\n\n右辺 x + 3 の値は？\n実行後の y の値は？\nx の値は変わる？",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）",
+      "オンライン教材",
+      "スライド資料",
+      "第2回　プログラムの基本"
+    ]
+  },
+  {
+    "objectID": "teaching/programming-basics-python/slides/variables-assignment.html#答え合わせ",
+    "href": "teaching/programming-basics-python/slides/variables-assignment.html#答え合わせ",
+    "title": "第2回　プログラムの基本",
+    "section": "答え合わせ",
+    "text": "答え合わせ\n右辺は、現在の x = 2 を使って評価します。\nx + 3\n2 + 3\n5\n実行後は x = 2、y = 5 です。\nx には代入していないので、x は変わりません。",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）",
+      "オンライン教材",
+      "スライド資料",
+      "第2回　プログラムの基本"
+    ]
+  },
+  {
+    "objectID": "teaching/programming-basics-python/slides/variables-assignment.html#再代入を追う",
+    "href": "teaching/programming-basics-python/slides/variables-assignment.html#再代入を追う",
+    "title": "第2回　プログラムの基本",
+    "section": "再代入を追う",
+    "text": "再代入を追う\nx = y * 2\n現在の y = 5 を使うと、右辺は 10 です。\n左辺の x を 2 から 10 に更新します。\nx = y * 2 は、数学の等式ではなく代入文です。",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）",
+      "オンライン教材",
+      "スライド資料",
+      "第2回　プログラムの基本"
+    ]
+  },
+  {
+    "objectID": "teaching/programming-basics-python/slides/variables-assignment.html#出力まで確認する",
+    "href": "teaching/programming-basics-python/slides/variables-assignment.html#出力まで確認する",
+    "title": "第2回　プログラムの基本",
+    "section": "出力まで確認する",
+    "text": "出力まで確認する\nprint(x)\n現在の x は 10 です。\n変数の値は変わらず、出力に 10 が追加されます。",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）",
+      "オンライン教材",
+      "スライド資料",
+      "第2回　プログラムの基本"
+    ]
+  },
+  {
+    "objectID": "teaching/programming-basics-python/slides/variables-assignment.html#自分で1行ずつ進めよう",
+    "href": "teaching/programming-basics-python/slides/variables-assignment.html#自分で1行ずつ進めよう",
+    "title": "第2回　プログラムの基本",
+    "section": "自分で1行ずつ進めよう",
+    "text": "自分で1行ずつ進めよう\n現在行を実行した後の状態を入力し、「確認」で答え合わせをします。",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）",
+      "オンライン教材",
+      "スライド資料",
+      "第2回　プログラムの基本"
+    ]
+  },
+  {
+    "objectID": "teaching/programming-basics-python/slides/variables-assignment.html#振り返り",
+    "href": "teaching/programming-basics-python/slides/variables-assignment.html#振り返り",
+    "title": "第2回　プログラムの基本",
+    "section": "振り返り",
+    "text": "振り返り\n\n現在実行する行を確認する。\n右辺を現在の値で評価する。\n評価結果を左辺の変数に代入する。\n更新前と更新後を比較する。\n\nコードを変更したら、同じ手順でもう一度追ってみましょう。\nプログラミング基礎（Python）の教材入口に戻る",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）",
+      "オンライン教材",
+      "スライド資料",
+      "第2回　プログラムの基本"
+    ]
+  },
+  {
+    "objectID": "teaching/programming-basics-python/course-guidance.html",
+    "href": "teaching/programming-basics-python/course-guidance.html",
+    "title": "履修上の注意",
+    "section": "",
+    "text": "課題は Course Power から提出してください。\n提出期限と提出方法を各自で確認し、余裕をもって提出してください。\n試験その他の重要な連絡を Teams で行うことがあるため、定期的に確認してください。\n授業に関する正式な連絡は Course Power および Teams を確認してください。",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）",
+      "授業案内",
+      "履修上の注意"
+    ]
+  },
+  {
+    "objectID": "teaching/fourier-analysis.html",
+    "href": "teaching/fourier-analysis.html",
+    "title": "フーリエ解析",
+    "section": "",
+    "text": "準備中"
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html",
+    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html",
+    "title": "多項式を非斉次項にもつ場合",
+    "section": "",
+    "text": "次の各小問において, 微分方程式 \\[\nP(D)y=f(x)\n\\] の非斉次項 \\(f(x)\\) の形に応じて, 特殊解を一つ求めよ. ただし, \\(D=\\tfrac{d}{dx}\\) とし, \\(P(\\lambda)\\) を多項式とする.",
+    "crumbs": [
+      "授業・教材",
+      "微分方程式",
+      "多項式を非斉次項にもつ場合"
+    ]
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv1-0-が非特性根",
+    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv1-0-が非特性根",
+    "title": "多項式を非斉次項にもつ場合",
+    "section": "(1) \\(f(x)\\equiv1\\), \\(0\\) が非特性根",
+    "text": "(1) \\(f(x)\\equiv1\\), \\(0\\) が非特性根\n\n\n\n\n\n\nノート問題\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nノート解答と解説\n\n\n\n\n\n\n\n\n\n\n\n重要解答\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nヒント公式\n\n\n\n\\[\ny = \\frac{1}{P(0)}\n\\]\n\n\n\n\n\n\n\n\nヒント公式の導出\n\n\n\nまず, 定数解 \\(y=y_0\\) の形で探せば良いことは認める (理由は補足参照).\n定数であるため, \\[\nDy_0=0\n\\] であり, このことから微分作用素 \\(P(D)\\) を \\(y=y_0\\) に作用させたときに, \\(P(D)\\) の定数項以外の部分はすべて消えることがわかる. \\(P(D)\\) の定数項は \\(P(0)\\) であるため, \\[\nP(D)y_0=P(0)y_0.\n\\] よって, 与式 \\[\nP(D)y=1\n\\] に代入して, \\[\nP(0)y_0=1,\n\\quad \\text{\\emph{i.e.}}, \\quad\ny_0=\\frac{1}{P(0)}\n\\] を得る.\n\n\n\n\n\n\n\n\nヒント補足\n\n\n\n定数解だけ考えれば良い理由は次の通り：\nまず, 混乱を避けるため, 求める特殊解を \\(y_p\\) としておく. 与式の両辺を微分して, \\[\nDP(D)y_p=0\n\\] を得る. \\(\\lambda P(\\lambda)=0\\) の特性根 \\(0\\) が多重度 \\(1\\) であることから, \\(y_p\\) は \\[\nDy_1=0, \\quad P(D)y_2=0\n\\] それぞれの一般解の和 \\[\ny_p=y_1+y_2\n\\] で表せる. ここで, \\(y_2\\) は与式の斉次解でもあることから, 特殊解 \\(y_p\\) を探すときに無視してよいことがわかり, \\(y_p\\) として \\[\nDy_1=0\n\\] の一般解の形, すなわち, 定数の形で探せば良いことがわかる.",
+    "crumbs": [
+      "授業・教材",
+      "微分方程式",
+      "多項式を非斉次項にもつ場合"
+    ]
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv1-0-が特性根",
+    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv1-0-が特性根",
+    "title": "多項式を非斉次項にもつ場合",
+    "section": "(2) \\(f(x)\\equiv1\\), \\(0\\) が特性根",
+    "text": "(2) \\(f(x)\\equiv1\\), \\(0\\) が特性根\n\n\n\n\n\n\nノート問題\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nノート解答と解説\n\n\n\n\n\n\n\n\n\n\n\n重要解答\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nヒント公式\n\n\n\n\\[\ny = \\frac{x^m}{m!\\,Q(0)}\n\\] ただし, \\(m\\) を \\(P(\\lambda)=0\\) の特性根 \\(0\\) の多重度とし, 多項式 \\(Q(\\lambda)\\) を \\(P(\\lambda)/\\lambda^m\\) で定める. すなわち, 整数 \\(m\\geq1\\) と多項式 \\(Q(\\lambda)\\) を次が成り立つように定める： \\[\nP(\\lambda) = \\lambda^m Q(\\lambda), \\quad Q(0) \\neq 0.\n\\]\n\n\n\n\n\n\n\n\nヒント公式の導出\n\n\n\n(1) に帰着させるため, まず \\[\nu=D^my\n\\] とおく. このとき, \\[\nQ(D)u=1\n\\] であるから, (1) より, 特殊解 \\[\nu = \\frac{1}{Q(0)}\n\\] を得る. これに \\(u=D^my\\) を代入して, \\[\nD^my = \\frac{1}{Q(0)}\n\\] を得るので, 求める特殊解 \\(y\\) はこの右辺を \\(m\\) 回積分すれば得られる. ここで, 不定積分では積分定数に由来する斉次解が加わるだけなので, 毎回の積分定数を \\(0\\) として計算すれば良い. よって, \\[\n\\begin{aligned}\ny &= \\int_0^x \\cdots \\int_0^{x_2} \\frac{1}{Q(0)} \\, dx_1\\, \\cdots \\,dx_m \\\\\n&= \\frac{1}{m!} \\frac{x^m}{Q(0)}\n\\end{aligned}\n\\]\n\n\n\n\n\n\n\n\nヒント補足\n\n\n\n(1) との本質的な違いは \\(y\\) が \\(D^my\\) に変化した点のみ.\n実はこれを意識して, 問題の式もあえて \\(D^my\\) という塊ができるように出題した.\n果たしてこれに気づいてくれただろうか\\(\\ldots\\)",
+    "crumbs": [
+      "授業・教材",
+      "微分方程式",
+      "多項式を非斉次項にもつ場合"
+    ]
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxell-0-が非特性根",
+    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxell-0-が非特性根",
+    "title": "多項式を非斉次項にもつ場合",
+    "section": "(3) \\(f(x)=x^\\ell\\), \\(0\\) が非特性根",
+    "text": "(3) \\(f(x)=x^\\ell\\), \\(0\\) が非特性根\n\n\n\n\n\n\nノート問題\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nノート解答と解説\n\n\n\n\n\n\n\n\n\n\n\n重要解答\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nヒント公式\n\n\n\n\\[\ny = \\sum_{k=0}^{\\ell} c_k \\frac{\\ell!}{(\\ell-k)!} x^{\\ell-k}\n\\] ただし, \\(c_k\\) は \\(\\frac{1}{P(z)}\\) をマクローリン展開した時の係数として次のように定める： \\[\n\\frac{1}{P(z)}=c_0+c_1z+c_2z^2+\\cdots.\n\\]\n\n\n\n\n\n\n\n\nヒント公式の導出\n\n\n\n特殊解を見つければ良いだけなので, 数学的な厳密性は脇に置いておいて, \\[\ny=\\frac{1}{P(D)}x^\\ell\n\\] として計算することを考える. まず, \\(P(0)\\neq0\\) なので, \\(\\frac{1}{P(z)}\\) は \\(z=0\\) のまわりでテイラー展開できる. このテイラー展開の式において, \\(z\\) を \\(D\\) に置き換えることで, \\[\n\\frac{1}{P(D)}=c_0+c_1D+c_2D^2+\\cdots\n\\] を得る. ここで, \\[\nD^{\\ell+1}x^\\ell=0\n\\] であることに注意すると, \\(k=\\ell\\) まで計算すれば良いことがわり, よって, \\[\n\\begin{aligned}\n\\frac{1}{P(D)} x^\\ell\n&= \\left( c_0 + c_1 D + \\cdots + c_\\ell D^\\ell \\right) \\, x^\\ell \\\\\n&= \\sum_{k=0}^{\\ell} c_k \\frac{\\ell!}{(\\ell-k)!} x^{\\ell-k}\n\\end{aligned}\n\\] を得る.\n\n\n\n\n\n\n\n\nヒント補足\n\n\n\n(1) を参考に \\[\nD^\\ell P(D)y=\\ell!\n\\] から考えてくれた学生もいると思う. こうすると一見 (2) に帰着するわけだが, ここではまだ見つけるべき \\(y\\) の形がわかっていないので, (2) の 特殊解 を採用するわけにはいかない.\nでは更にもう一回微分した \\[\nD^{\\ell+1}P(D)y=0\n\\] を考えた場合はどうであろうか？ こちらを考えてくれた学生もいると思うが, 実はこちらの方が (1) の考え方に忠実で素直なため, 先ほどより少し見通しが良い. 実際, 見つけるべき特殊解 \\(y_p\\) は \\[\nD^{\\ell+1}y_1=0, \\quad P(D)y_2=0\n\\] それぞれの一般解の和 \\[\ny_p=y_1+y_2\n\\] と表せる. よって, (1) のときと同様, \\(y_2\\) が与式の斉次解より, \\(y_p\\) を探すときに無視してよく, \\(y_1\\) の形で探せば良いことがわかる. こうして次の別手法を得るわけである.\n特殊解として \\[\ny=a_0 + a_1 x + \\cdots + a_\\ell x^\\ell\n\\] の形を考えて与式に代入し, 恒等式の係数比較をする. それにより \\(\\ell+1\\) 本の式からなる連立方程式を得るので, それを解いて \\(a_0,\\dots,a_\\ell\\) の値を決定する. ただし, この方法は意外と計算が面倒なため, 上の計算手法が実は楽なのである.",
+    "crumbs": [
+      "授業・教材",
+      "微分方程式",
+      "多項式を非斉次項にもつ場合"
+    ]
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxell-0-が特性根",
+    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxell-0-が特性根",
+    "title": "多項式を非斉次項にもつ場合",
+    "section": "(4) \\(f(x)=x^\\ell\\), \\(0\\) が特性根",
+    "text": "(4) \\(f(x)=x^\\ell\\), \\(0\\) が特性根\n\n\n\n\n\n\nノート問題\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nノート解答と解説\n\n\n\n\n\n\n\n\n\n\n\n重要解答\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nヒント公式\n\n\n\n\\[\ny\n=\n\\sum_{j=0}^{\\ell}\nc_j\n\\frac{\\ell!}{(\\ell-j+m)!} x^{\\ell-j+m}\n\\] ただし, \\[\nP(D)=Q(D)D^m, \\quad Q(0)\\neq0\n\\] とし, \\(c_k\\) は \\(\\frac{1}{Q(z)}\\) をマクローリン展開した時の係数として次のように定める： \\[\n\\frac{1}{Q(z)}=c_0+c_1z+c_2z^2+\\cdots.\n\\]\n\n\n\n\n\n\n\n\nヒント公式の導出\n\n\n\n\\(u=D^my\\) とおいて, \\[\nQ(D)u=x^\\ell\n\\] を得る. この微分方程式の特殊解は, (3) より, \\[\nu = \\sum_{j=0}^{\\ell} c_j \\frac{\\ell!}{(\\ell-j)!} x^{\\ell-j}\n\\] であるから, あとは \\(D^my=u\\) を積分定数 \\(0\\) として \\(m\\) 回積分すれば, 特殊解を得る.\n\n\n\n\n\n\n\n\nヒント補足\n\n\n\nこれまでの問題から, 今回の解法に自力で気づいた方も多かったのではないだろうか.\n(3) との本質的な違いは, (1) と (2) のときの関係と同様で, \\(y\\) が \\(D^my\\) に置き換わっていることだけである.",
+    "crumbs": [
+      "授業・教材",
+      "微分方程式",
+      "多項式を非斉次項にもつ場合"
+    ]
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#多項式-0-が非特性根",
+    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#多項式-0-が非特性根",
+    "title": "多項式を非斉次項にもつ場合",
+    "section": "(5) 多項式, \\(0\\) が非特性根",
+    "text": "(5) 多項式, \\(0\\) が非特性根\n\n\n\n\n\n\nノート問題\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nノート解答と解説\n\n\n\n\n\n\n\n\n\n\n\n重要解答\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nヒント公式\n\n\n\n\\[\ny\n=\n\\sum_{i=0}^{\\ell}\n\\left(\n\\sum_{j=i}^{\\ell}\nb_j c_{j-i}\\frac{j!}{i!}\n\\right)\nx^i\n\\] ただし, \\[\nf(x)=b_0 + b_1 x + \\cdots + b_\\ell x^\\ell\n\\] とし, \\(c_k\\) は \\(\\frac{1}{P(z)}\\) をマクローリン展開した時の係数として次のように定める： \\[\n\\frac{1}{P(z)}=c_0+c_1z+c_2z^2+\\cdots.\n\\]\n\n\n\n\n\n\n\n\nヒント公式の導出\n\n\n\n(3) より, 各単項式 \\(x^j\\) に対して, \\[\n\\frac{1}{P(D)}x^j\n=\n\\sum_{k=0}^{j}\nc_k\n\\frac{j!}{(j-k)!}\nx^{j-k}\n\\] を得る. 作用素 \\(\\tfrac{1}{P(D)}\\) が線形より, これを \\(b_j\\) 倍して, 足し合わせることにより, \\[\n\\frac{1}{P(D)}f(x)\n=\n\\sum_{j=0}^{\\ell}\nb_j\n\\sum_{k=0}^{j}\nc_k\n\\frac{j!}{(j-k)!}\nx^{j-k}\n\\] を得る. \\(i=j-k\\) とおいて, 和の順序を交換すれば, \\[\n\\begin{aligned}\n  \\frac{1}{P(D)}f(x)\n  &=\n  \\sum_{j=0}^{\\ell}\n  b_j\n  \\sum_{i=0}^{j}\n  c_{j-i}\n  \\frac{j!}{i!}\n  x^i \\\\\n  &=\n  \\sum_{i=0}^{\\ell}\n  \\left(\n  \\sum_{j=i}^{\\ell}\n  b_j c_{j-i}\\frac{j!}{i!}\n  \\right)\n  x^i\n\\end{aligned}\n\\] を得る.\n\n\n\n\n\n\n\n\nヒント補足\n\n\n\n(5) は (3) を足し合わせただけで, 計算自体に新しいことはない. 公式だけを見ると少し重たく見えるが, やっていることは各単項式に対する計算の足し算で, 公式を使って計算する人はまずいないだろう.\n公式の導出自体はそれなりに面白く, 最後に \\(x^i\\) の係数として整理するため, \\(i=j-k\\) と置き換えている. 和の交換をする際, \\(i,j\\) の動かし方が変わることに気をつけよう. 足し算は \\(0\\leq i\\leq j\\leq\\ell\\) の範囲で行われるので, \\(j\\) を止めて \\(i\\) で先に足し上げるときは \\(0\\leq i\\leq j\\) となっている. 一方, \\(i\\) を止めて \\(j\\) で先に足し上げるときは \\(i\\leq j\\leq\\ell\\) となっている. 足し算の順序交換で, この違いが出ているので, 気をつけてほしい.",
+    "crumbs": [
+      "授業・教材",
+      "微分方程式",
+      "多項式を非斉次項にもつ場合"
+    ]
+  },
+  {
+    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#多項式-0-が特性根",
+    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#多項式-0-が特性根",
+    "title": "多項式を非斉次項にもつ場合",
+    "section": "(6) 多項式, \\(0\\) が特性根",
+    "text": "(6) 多項式, \\(0\\) が特性根\n\n\n\n\n\n\nノート問題\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nノート解答と解説\n\n\n\n\n\n\n\n\n\n\n\n重要解答\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nヒント公式\n\n\n\n\\[\ny\n=\n\\sum_{i=0}^{\\ell}\n\\left(\n\\sum_{j=i}^{\\ell}\nb_j c_{j-i}\\frac{j!}{(i+m)!}\n\\right)\nx^{i+m}\n\\] ただし, \\[\nf(x)=b_0 + b_1 x + \\cdots + b_\\ell x^\\ell\n\\] とし, \\[\nP(D)=Q(D)D^m, \\quad Q(0)\\neq0\n\\] とする. また, \\(c_k\\) は \\(\\frac{1}{Q(z)}\\) をマクローリン展開した時の係数として次のように定める： \\[\n\\frac{1}{Q(z)}=c_0+c_1z+c_2z^2+\\cdots.\n\\]\n\n\n\n\n\n\n\n\nヒント公式の導出\n\n\n\n\\(u=D^my\\) とおくと, \\[\nQ(D)u=f(x)\n\\] であるから, (5) より, 特殊解 \\[\nu = \\sum_{i=0}^{\\ell}\n\\left(\n  \\sum_{j=i}^{\\ell} b_j c_{j-i}\\frac{j!}{i!}\n\\right)\nx^i\n\\] を得る. あとは \\(D^my=u\\) を積分定数 \\(0\\) として \\(m\\) 回積分すれば, 求める特殊解 \\(y\\) が得られる. 実際, \\(x^i\\) を \\(m\\) 回積分すると, \\[\n\\frac{i!}{(i+m)!}x^{i+m}\n\\] であるから, \\[\n\\begin{aligned}\n  y &= \\sum_{i=0}^{\\ell}\n  \\left(\n    \\sum_{j=i}^{\\ell} b_j c_{j-i} \\frac{j!}{i!}\n  \\right)\n  \\frac{i!}{(i+m)!}x^{i+m} \\\\\n  &= \\sum_{i=0}^{\\ell}\n  \\left(\n    \\sum_{j=i}^{\\ell} b_j c_{j-i} \\frac{j!}{(i+m)!}\n  \\right)\n  x^{i+m}\n\\end{aligned}\n\\] を得る.\n\n\n\n\n\n\n\n\nヒント補足\n\n\n\nここまで丁寧に見た方はすでに気づいていると思うが, このページの問題において, 公式を覚える必要は全くない. いずれも \\[\ny=\\frac{1}{D^m}\\frac{1}{Q(D)}f(x)\n\\] として, あとは \\(\\tfrac{1}{Q(D)}\\) のテイラー展開を利用するだけである. もちろん \\[\ny=\\frac{1}{Q(D)}\\frac{1}{D^m}f(x)\n\\] なとして考えても良いが, 最後に積分をした方が計算量は少なく済む. 細かい点だが, 手計算するときは気をつけたいところだ.\nさて, なぜここまで計算が簡単になるのか, 最後に軽く触れておこう. \\(\\tfrac{1}{Q(D)}\\) は本来, 積分核を用いて表される積分作用素でり, \\(\\tfrac{1}{Q(D)}\\) をテイラー展開しても, 無限に微分作用素が現れてしまう. しかし, 多項式 \\(f(x)\\) に作用させる場合においては, \\(\\tfrac{1}{Q(D)}\\) を有限回の微分操作に置き換えられる. この性質が非常に強く, このページの問題を簡単にしていたのだ.",
+    "crumbs": [
+      "授業・教材",
+      "微分方程式",
+      "多項式を非斉次項にもつ場合"
+    ]
+  },
+  {
+    "objectID": "teaching/cpp-programming-2.html",
+    "href": "teaching/cpp-programming-2.html",
+    "title": "C++プログラミングⅡ",
+    "section": "",
+    "text": "準備中"
+  },
+  {
     "objectID": "research.html",
     "href": "research.html",
     "title": "研究活動",
@@ -21,18 +300,25 @@
     "text": "研究業績\n\n業績一覧（準備中）"
   },
   {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "業績",
+    "objectID": "links.html",
+    "href": "links.html",
+    "title": "外部リンク",
     "section": "",
-    "text": "準備中"
+    "text": "researchmap\nORCID"
   },
   {
-    "objectID": "videos.html",
-    "href": "videos.html",
-    "title": "動画",
+    "objectID": "links.html#研究者情報",
+    "href": "links.html#研究者情報",
+    "title": "外部リンク",
     "section": "",
-    "text": "準備中です。"
+    "text": "researchmap\nORCID"
+  },
+  {
+    "objectID": "links.html#公開コード公開動画",
+    "href": "links.html#公開コード公開動画",
+    "title": "外部リンク",
+    "section": "公開コード・公開動画",
+    "text": "公開コード・公開動画\n\nGitHub\nYouTube"
   },
   {
     "objectID": "contact.html",
@@ -75,6 +361,34 @@
     "title": "連絡先・アクセス",
     "section": "アクセス関連リンク",
     "text": "アクセス関連リンク\n\n成蹊大学の交通アクセス\nキャンパスマップ"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "小林光木",
+    "section": "",
+    "text": "小林光木\n\n成蹊大学 理工学部\nデータサイエンス研究室 助教\n\n早稲田大学 理工学術院・国際教養学部\n非常勤講師\n\n解析学、確率論、漸近統計論、確率過程を背景に、確率モデルや統計的推測に関する研究を行っています。"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "業績",
+    "section": "",
+    "text": "準備中"
+  },
+  {
+    "objectID": "teaching/cpp-programming-1.html",
+    "href": "teaching/cpp-programming-1.html",
+    "title": "C++プログラミングⅠ",
+    "section": "",
+    "text": "準備中"
   },
   {
     "objectID": "teaching/differential-equations/self-study/higher-order-constant-coefficient-homogeneous.html",
@@ -149,34 +463,6 @@
     ]
   },
   {
-    "objectID": "teaching/cpp-programming-1.html",
-    "href": "teaching/cpp-programming-1.html",
-    "title": "C++プログラミングⅠ",
-    "section": "",
-    "text": "準備中"
-  },
-  {
-    "objectID": "teaching/statistics-intro.html",
-    "href": "teaching/statistics-intro.html",
-    "title": "確率統計（入門）",
-    "section": "",
-    "text": "準備中"
-  },
-  {
-    "objectID": "teaching/programming-basics-python.html",
-    "href": "teaching/programming-basics-python.html",
-    "title": "プログラミング基礎（Python）",
-    "section": "",
-    "text": "準備中"
-  },
-  {
-    "objectID": "teaching/intermediate-statistics.html",
-    "href": "teaching/intermediate-statistics.html",
-    "title": "Intermediate Statistics",
-    "section": "",
-    "text": "準備中"
-  },
-  {
     "objectID": "teaching/differential-equations.html",
     "href": "teaching/differential-equations.html",
     "title": "微分方程式",
@@ -232,100 +518,195 @@
     ]
   },
   {
-    "objectID": "teaching/fourier-analysis.html",
-    "href": "teaching/fourier-analysis.html",
-    "title": "フーリエ解析",
+    "objectID": "teaching/intermediate-statistics.html",
+    "href": "teaching/intermediate-statistics.html",
+    "title": "Intermediate Statistics",
     "section": "",
     "text": "準備中"
   },
   {
-    "objectID": "teaching/cpp-programming-2.html",
-    "href": "teaching/cpp-programming-2.html",
-    "title": "C++プログラミングⅡ",
+    "objectID": "teaching/programming-basics-python/fundamentals/variables-assignment.html",
+    "href": "teaching/programming-basics-python/fundamentals/variables-assignment.html",
+    "title": "第2章　変数と代入",
     "section": "",
-    "text": "準備中"
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "",
-    "text": "次の各小問において, 微分方程式 \\[\nP(D)y=f(x)\n\\] の非斉次項 \\(f(x)\\) の形に応じて, 特殊解を一つ求めよ. ただし, \\(D=\\tfrac{d}{dx}\\) とし, \\(P(\\lambda)\\) を多項式とする.",
+    "text": "変数は、プログラムで扱う値に名前を付けるためのものです。\n例えば、次の1行を実行すると、整数 2 を変数 x という名前で利用できるようになります。\nx = 2\nこの時点で x の値は 2 です。\nx という文字そのものと、x が表す値 2 を区別しましょう。",
     "crumbs": [
       "授業・教材",
-      "微分方程式",
-      "多項式を非斉次項にもつ場合"
+      "プログラミング基礎（Python）",
+      "オンライン教材",
+      "第1部　Pythonの基礎",
+      "第2章　変数と代入"
     ]
   },
   {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#定数項0-を特性根に持たない場合",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#定数項0-を特性根に持たない場合",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(1) 定数項：\\(0\\) を特性根に持たない場合",
-    "text": "(1) 定数項：\\(0\\) を特性根に持たない場合\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n\n解答：\n\n\n\n\n公式： \\[\ny = \\frac{1}{P(0)}\n\\] 公式の導出：\n\n定数解 \\(y=y_0\\) で探せば良い.\n\\(Dy_0=0\\) より \\(P(D)y_0=P(0)y_0\\).\n\\(P(0)y_0=1\\) を解いて \\(y_0=1/P(0)\\) を得る.\n\n定数解で探せば良い理由：\n\n求める特殊解を \\(y_p\\) とする.\n\\(DP(D)y_p=0\\) より, \\(y_p\\) は式 \\(Dy=0\\) と式 \\(P(D)y=0\\) それぞれの一般解の和で表せる.\n\\(P(D)y=0\\) は与式の斉次式にあたるため, 式 \\(Dy=0\\)　の一般解の形で探せば良い."
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#定数項0-を特性根に持つ場合",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#定数項0-を特性根に持つ場合",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(2) 定数項：\\(0\\) を特性根に持つ場合",
-    "text": "(2) 定数項：\\(0\\) を特性根に持つ場合\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n\n解答：\n\n\n\n\n\n解説：\n\n\n\\(P(D)=Q(D)D^r\\) と見て，\\(u=D^r y\\) とおく。\n先に \\(Q(D)u=1\\) を考えると，\\(u\\) は定数として求まる。\n最後に \\(D^r y=u\\) から \\(r\\) 回積分して \\(y\\) を求める。積分定数は \\(0\\) としてよい。"
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#xm0-を特性根に持たない場合",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#xm0-を特性根に持たない場合",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(3) \\(x^m\\)：\\(0\\) を特性根に持たない場合",
-    "text": "(3) \\(x^m\\)：\\(0\\) を特性根に持たない場合\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n\n解答：\n\n\n\n\n\n解説：\n\n\n\\(0\\) が特性根でないので，\\(P(0)\\ne0\\) である。\n右辺が \\(x^m\\) なので，特殊解は \\(m\\) 次以下の多項式として求まる。\n\\(D\\) を作用させると次数が下がるため，多項式の範囲で係数が決まる。"
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#xm0-を特性根に持つ場合",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#xm0-を特性根に持つ場合",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(4) \\(x^m\\)：\\(0\\) を特性根に持つ場合",
-    "text": "(4) \\(x^m\\)：\\(0\\) を特性根に持つ場合\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n\n解答：\n\n\n\n\n\n解説：\n\n\n\\(P(D)=Q(D)D^r\\) と見て，\\(u=D^r y\\) とおく。\n先に \\(Q(D)u=x^m\\) を考えると，\\(u\\) は多項式として求まる。\n最後に \\(D^r y=u\\) から \\(r\\) 回積分して \\(y\\) を求める。積分定数は \\(0\\) としてよい。"
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#一般の多項式0-を特性根に持たない場合",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#一般の多項式0-を特性根に持たない場合",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(5) 一般の多項式：\\(0\\) を特性根に持たない場合",
-    "text": "(5) 一般の多項式：\\(0\\) を特性根に持たない場合\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n\n解答：\n\n\n\n\n\n解説：\n\n\n\\(0\\) が特性根でないので，\\(P(0)\\ne0\\) である。\n右辺が多項式なので，特殊解も多項式として求まる。\n各次数の係数を比較すれば，一つの特殊解が決まる。"
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#一般の多項式0-を特性根に持つ場合",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#一般の多項式0-を特性根に持つ場合",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(6) 一般の多項式：\\(0\\) を特性根に持つ場合",
-    "text": "(6) 一般の多項式：\\(0\\) を特性根に持つ場合\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n\n解答：\n\n\n\n\n\n解説：\n\n\n\\(P(D)=Q(D)D^r\\) と見て，\\(u=D^r y\\) とおく。\n先に \\(Q(D)u=f(x)\\) を考えると，\\(u\\) は多項式として求まる。\n最後に \\(D^r y=u\\) から \\(r\\) 回積分して \\(y\\) を求める。積分定数は \\(0\\) としてよい。"
-  },
-  {
-    "objectID": "links.html",
-    "href": "links.html",
-    "title": "外部リンク",
+    "objectID": "teaching/programming-basics-python/fundamentals/variables-assignment.html#変数",
+    "href": "teaching/programming-basics-python/fundamentals/variables-assignment.html#変数",
+    "title": "第2章　変数と代入",
     "section": "",
-    "text": "researchmap\nORCID"
+    "text": "変数は、プログラムで扱う値に名前を付けるためのものです。\n例えば、次の1行を実行すると、整数 2 を変数 x という名前で利用できるようになります。\nx = 2\nこの時点で x の値は 2 です。\nx という文字そのものと、x が表す値 2 を区別しましょう。",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）",
+      "オンライン教材",
+      "第1部　Pythonの基礎",
+      "第2章　変数と代入"
+    ]
   },
   {
-    "objectID": "links.html#研究者情報",
-    "href": "links.html#研究者情報",
-    "title": "外部リンク",
+    "objectID": "teaching/programming-basics-python/fundamentals/variables-assignment.html#代入文",
+    "href": "teaching/programming-basics-python/fundamentals/variables-assignment.html#代入文",
+    "title": "第2章　変数と代入",
+    "section": "2.2 代入文",
+    "text": "2.2 代入文\nx = 2\nこのコードは、右辺の値 2 を左辺の変数 x に代入する文です。\nPython の = は「左右が等しい」と主張する数学の等号ではなく、代入を指示する記号です。\n次のコードを実行する前に、表示される値を予想してください。\nx = 2\nprint(x)\n\n\n\n\n\n解説を見る\n\n2 と表示されます。1行目の代入によって、2行目の x は値 2 を表します。",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）",
+      "オンライン教材",
+      "第1部　Pythonの基礎",
+      "第2章　変数と代入"
+    ]
+  },
+  {
+    "objectID": "teaching/programming-basics-python/fundamentals/variables-assignment.html#右辺の評価と左辺への代入",
+    "href": "teaching/programming-basics-python/fundamentals/variables-assignment.html#右辺の評価と左辺への代入",
+    "title": "第2章　変数と代入",
+    "section": "2.3 右辺の評価と左辺への代入",
+    "text": "2.3 右辺の評価と左辺への代入\n代入文は、次の順序で処理されます。\n\nまず、= の右辺の式を評価して値を求める。\n次に、その値を左辺の変数に代入する。\n\nたとえば、次のコードを考えます。\nx = 2\ny = x + 3\n2行目では、現在の x の値 2 を使って右辺の x + 3 を評価します。その結果は 5 です。最後に、その 5 を左辺の変数 y に代入します。したがって、実行後は x = 2、y = 5 です。",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）",
+      "オンライン教材",
+      "第1部　Pythonの基礎",
+      "第2章　変数と代入"
+    ]
+  },
+  {
+    "objectID": "teaching/programming-basics-python/fundamentals/variables-assignment.html#再代入",
+    "href": "teaching/programming-basics-python/fundamentals/variables-assignment.html#再代入",
+    "title": "第2章　変数と代入",
+    "section": "2.4 再代入",
+    "text": "2.4 再代入\n変数には、後から別の値を代入できます。これを再代入といいます。\nx = 2\nx = x + 1\nprint(x)\n実行前に、最後に表示される値を予想してください。\n\n\n\n\n\n詳しい解説\n\n2行目の x = x + 1 は、数学の等式として読むと不自然です。プログラムでは、まず右辺の x + 1 を現在の x の値で評価します。現在の値は 2 なので、右辺の評価結果は 3 です。その後、その結果を左辺の x に代入し、x の値を 2 から 3 に更新します。したがって、表示される値は 3 です。\n\n\n\n実行した行\n実行後の x\n\n\n\n\n実行前\n未定義\n\n\nx = 2\n2\n\n\nx = x + 1\n3\n\n\n\n\nコードの 1 を 4 に変更すると、最後の x はいくつになるでしょうか。予想してから実行し、確かめてください。",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）",
+      "オンライン教材",
+      "第1部　Pythonの基礎",
+      "第2章　変数と代入"
+    ]
+  },
+  {
+    "objectID": "teaching/programming-basics-python/fundamentals/variables-assignment.html#複数の変数",
+    "href": "teaching/programming-basics-python/fundamentals/variables-assignment.html#複数の変数",
+    "title": "第2章　変数と代入",
+    "section": "2.5 複数の変数",
+    "text": "2.5 複数の変数\n複数の変数を使うと、一つの計算結果を別の計算で利用できます。\nwidth = 4\nheight = 3\narea = width * height\nprint(area)\n各行を実行した後の width、height、area の値を順に書き出し、最後の出力を入力してください。\n\n\n\n次に width = 4 を width = 6 に変更します。どの行の結果が変わるかを考え、変更後の出力を入力してください。\n\n\n\n\n\n詳しい解説\n\n最初は width = 4、height = 3 なので、area = 12 です。width を 6 に変更すると、height は 3 のままですが、area は 18 に変わります。",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）",
+      "オンライン教材",
+      "第1部　Pythonの基礎",
+      "第2章　変数と代入"
+    ]
+  },
+  {
+    "objectID": "teaching/programming-basics-python/fundamentals/variables-assignment.html#変数名",
+    "href": "teaching/programming-basics-python/fundamentals/variables-assignment.html#変数名",
+    "title": "第2章　変数と代入",
+    "section": "2.6 変数名",
+    "text": "2.6 変数名\n変数名には、その値の役割が分かる名前を付けます。width や student_count のような名前は、a や n よりも用途を読み取りやすくします。\nPython の変数名には、主に次の規則があります。\n\n英字、数字、アンダースコア _ を使える。\n数字から始めることはできない。\n大文字と小文字は区別される。たとえば score と Score は別の名前である。\nfor や if など、Python が特別な意味で使う予約語は変数名にできない。\n\n短い計算でも、値の意味が伝わる名前を選ぶ習慣を付けましょう。",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）",
+      "オンライン教材",
+      "第1部　Pythonの基礎",
+      "第2章　変数と代入"
+    ]
+  },
+  {
+    "objectID": "teaching/programming-basics-python/fundamentals/variables-assignment.html#変数の値を追跡する",
+    "href": "teaching/programming-basics-python/fundamentals/variables-assignment.html#変数の値を追跡する",
+    "title": "第2章　変数と代入",
+    "section": "2.7 変数の値を追跡する",
+    "text": "2.7 変数の値を追跡する\nコードは原則として上から順に、1行ずつ実行されます。次のコードについて、現在の行を実行した後の x、y、出力を予想してください。「確認」で答え合わせをし、正解すると次の行へ進みます。\n\n\n\n\n\n\nヒント入力方法\n\n\n\n値は半角数字で入力します。まだ値を持たない変数には「未定義」、何も表示されていないときの出力には「なし」と入力してください。入力欄で Enter キーを押しても確認できます。\n\n\n\n\n\n最後まで進めたら、3行目を x = y * 3 に変更した場合の出力を予想してください。どの状態が変わり、どの状態は変わらないでしょうか。",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）",
+      "オンライン教材",
+      "第1部　Pythonの基礎",
+      "第2章　変数と代入"
+    ]
+  },
+  {
+    "objectID": "teaching/programming-basics-python/fundamentals/variables-assignment.html#練習問題",
+    "href": "teaching/programming-basics-python/fundamentals/variables-assignment.html#練習問題",
+    "title": "第2章　変数と代入",
+    "section": "練習問題",
+    "text": "練習問題\n\n問題1\n次のコードを1行ずつ追跡し、最後に表示される値を予想してください。\na = 3\nb = a + 4\na = b - 1\nprint(a)\n\n\n\n\n\n詳しい解説\n\n1行目の後は a = 3、2行目の後は a = 3、b = 7、3行目の後は a = 6、b = 7 です。最後に 6 が表示されます。\n\n\n\n問題2\n次のコードの出力を予想した後、price = 120 を price = 150 に変更して、もう一度考えてください。\nprice = 120\ncount = 3\ntotal = price * count\nprint(total)\nまず、変更前の出力を入力してください。\n\n\n\n次に price = 120 を price = 150 に変更した場合の出力を入力してください。\n\n\n\n\n\n詳しい解説\n\n最初の出力は 360 です。price を 150 に変更すると、total は 450 になり、出力も 450 に変わります。count の値は変わりません。",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）",
+      "オンライン教材",
+      "第1部　Pythonの基礎",
+      "第2章　変数と代入"
+    ]
+  },
+  {
+    "objectID": "teaching/programming-basics-python/fundamentals/variables-assignment.html#まとめ",
+    "href": "teaching/programming-basics-python/fundamentals/variables-assignment.html#まとめ",
+    "title": "第2章　変数と代入",
+    "section": "まとめ",
+    "text": "まとめ\n\n変数は、プログラムで扱う値に名前を付けるために使う。\n= は数学の等号ではなく、右辺の評価結果を左辺の変数に代入する記号である。\n同じ変数に再代入すると、その変数の値が更新される。\nコードを理解するときは、各行の実行後に変数の値がどう変わったかを記録するとよい。\n結果を予想し、実行して確かめ、コードの一部を変更してもう一度考えることで理解を深められる。",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）",
+      "オンライン教材",
+      "第1部　Pythonの基礎",
+      "第2章　変数と代入"
+    ]
+  },
+  {
+    "objectID": "teaching/programming-basics-python.html",
+    "href": "teaching/programming-basics-python.html",
+    "title": "プログラミング基礎（Python）",
     "section": "",
-    "text": "researchmap\nORCID"
+    "text": "シラバス\n履修上の注意",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）"
+    ]
   },
   {
-    "objectID": "links.html#公開コード公開動画",
-    "href": "links.html#公開コード公開動画",
-    "title": "外部リンク",
-    "section": "公開コード・公開動画",
-    "text": "公開コード・公開動画\n\nGitHub\nYouTube"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "teaching/programming-basics-python.html#授業案内",
+    "href": "teaching/programming-basics-python.html#授業案内",
+    "title": "プログラミング基礎（Python）",
     "section": "",
-    "text": "About this site"
+    "text": "シラバス\n履修上の注意",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）"
+    ]
+  },
+  {
+    "objectID": "teaching/programming-basics-python.html#オンライン教材",
+    "href": "teaching/programming-basics-python.html#オンライン教材",
+    "title": "プログラミング基礎（Python）",
+    "section": "オンライン教材",
+    "text": "オンライン教材\n\n\n第1部　Pythonの基礎\n\n\n値・データ型・式（準備中）\n変数と代入\n入出力（準備中）\n制御構造（準備中）\nデータ構造（準備中）\n関数（準備中）\nモジュール（準備中）\nファイル入出力（準備中）\n\n\n\n\n第2部　数学・データへの応用\n\n\nNumPyによる数値計算（準備中）\nグラフによる可視化（準備中）\n基本統計量（準備中）\nCSVデータの処理（準備中）\n集合（準備中）\n確率シミュレーション（準備中）\n\n\n\n\n付録　Jupyter Notebookの使い方\n\n\nJupyter Notebookの基本（準備中）\nコードセルの実行（準備中）\nMarkdownセル（準備中）\n数式の入力（準備中）\nノートの整理と保存（準備中）\n\n\n\n\nスライド資料\n\n\n第1回　環境構築（準備中）\n第2回　プログラムの基本\n第3回　基本データ型と変数，数学関数（準備中）\n第4回　条件分岐（準備中）\n第5回　リストとタプル（準備中）\n第6回　繰り返し（準備中）\n第7回　関数の定義（準備中）\n第8回　行列の扱い（NumPy）（準備中）\n第9回　グラフによる可視化1（準備中）\n第10回　グラフによる可視化2（準備中）\n第11回　統計量の計算1（準備中）\n第12回　統計量の計算2（準備中）\n第13回　ファイルからのデータ読み込み（準備中）\n第14回　集合と確率（準備中）",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）"
+    ]
+  },
+  {
+    "objectID": "teaching/programming-basics-python.html#練習問題",
+    "href": "teaching/programming-basics-python.html#練習問題",
+    "title": "プログラミング基礎（Python）",
+    "section": "練習問題",
+    "text": "練習問題\n\n\n第1部　Pythonの基礎\n\n準備中\n\n\n\n第2部　数学・データへの応用\n\n準備中",
+    "crumbs": [
+      "授業・教材",
+      "プログラミング基礎（Python）"
+    ]
   },
   {
     "objectID": "teaching.html",
@@ -352,256 +733,9 @@
     "href": "teaching.html#プログラミングデータサイエンス",
     "title": "授業・教材",
     "section": "プログラミング・データサイエンス",
-    "text": "プログラミング・データサイエンス\n\nプログラミング基礎（Python）（準備中）\nC++プログラミングⅠ（準備中）\nC++プログラミングⅡ（準備中）",
+    "text": "プログラミング・データサイエンス\n\nプログラミング基礎（Python）\nC++プログラミングⅠ（準備中）\nC++プログラミングⅡ（準備中）",
     "crumbs": [
       "授業・教材"
     ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "小林光木",
-    "section": "",
-    "text": "小林光木\n\n成蹊大学 理工学部\nデータサイエンス研究室 助教\n\n早稲田大学 理工学術院・国際教養学部\n非常勤講師\n\n解析学、確率論、漸近統計論、確率過程を背景に、確率モデルや統計的推測に関する研究を行っています。"
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv1-かつ-0-が特性根でない",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv1-かつ-0-が特性根でない",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(1) \\(f(x)\\equiv1\\) かつ \\(0\\) が特性根でない",
-    "text": "(1) \\(f(x)\\equiv1\\) かつ \\(0\\) が特性根でない\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n\n解答：\n\n\n\n\n公式： \\[\ny = \\frac{1}{P(0)}\n\\] 公式の導出：\n\n定数解 \\(y=y_0\\) で探せば良い.\n\\(Dy_0=0\\) より \\(P(D)y_0=P(0)y_0\\).\n\\(P(0)y_0=1\\) を解いて \\(y_0=1/P(0)\\) を得る.\n\n定数解で探せば良い理由：\n\n求める特殊解を \\(y_p\\) とする.\n\\(DP(D)y_p=0\\) より, \\(y_p\\) は式 \\(Dy=0\\) と式 \\(P(D)y=0\\) それぞれの一般解の和で表せる.\n\\(P(D)y=0\\) は与式の斉次式にあたるため, 式 \\(Dy=0\\)　の一般解の形で探せば良い."
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv1-0-が特性根でない",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv1-0-が特性根でない",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(1) \\(f(x)\\equiv1\\), \\(0\\) が特性根でない",
-    "text": "(1) \\(f(x)\\equiv1\\), \\(0\\) が特性根でない\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n解答：\n\n\n\n公式： \\[\ny = \\frac{1}{P(0)}\n\\] 公式の導出：\n\n定数解 \\(y=y_0\\) で探せば良い.\n\\(Dy_0=0\\) より \\(P(D)y_0=P(0)y_0\\).\n\\(P(0)y_0=1\\) を解いて \\(y_0=1/P(0)\\) を得る.\n\n定数解で探せば良い理由：\n\n求める特殊解を \\(y_p\\) とする.\n\\(DP(D)y_p=0\\) より, \\(y_p\\) は式 \\(Dy=0\\) と式 \\(P(D)y=0\\) それぞれの一般解の和で表せる.\n\\(P(D)y=0\\) は与式の斉次式にあたるため, 式 \\(Dy=0\\) の一般解の形で探せば良い."
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv1-0-が特性根でないaaa",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv1-0-が特性根でないaaa",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(1) \\(f(x)\\equiv1\\), \\(0\\) が特性根でないaaa",
-    "text": "(1) \\(f(x)\\equiv1\\), \\(0\\) が特性根でないaaa\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n\n解答：\n\n\n\n\n公式： \\[\ny = \\frac{1}{P(0)}\n\\] 公式の導出：\n\n定数解 \\(y=y_0\\) で探せば良い.\n\\(Dy_0=0\\) より \\(P(D)y_0=P(0)y_0\\).\n\\(P(0)y_0=1\\) を解いて \\(y_0=1/P(0)\\) を得る.\n\n定数解で探せば良い理由：\n\n求める特殊解を \\(y_p\\) とする.\n\\(DP(D)y_p=0\\) より, \\(y_p\\) は式 \\(Dy=0\\) と式 \\(P(D)y=0\\) それぞれの一般解の和で表せる.\n\\(P(D)y=0\\) は与式の斉次式にあたるため, 式 \\(Dy=0\\) の一般解の形で探せば良い."
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv1-p0neq0",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv1-p0neq0",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(1) \\(f(x)\\equiv1\\), \\(P(0)\\neq0\\)",
-    "text": "(1) \\(f(x)\\equiv1\\), \\(P(0)\\neq0\\)\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n解答：\n\n\n\n公式： \\[\ny = \\frac{1}{P(0)}\n\\] 公式の導出：\n\n定数解 \\(y=y_0\\) で探せば良い.\n\\(Dy_0=0\\) より \\(P(D)y_0=P(0)y_0\\).\n\\(P(0)y_0=1\\) を解いて \\(y_0=1/P(0)\\) を得る.\n\n定数解で探せば良い理由：\n\n求める特殊解を \\(y_p\\) とする.\n\\(DP(D)y_p=0\\) より, \\(y_p\\) は式 \\(Dy=0\\) と式 \\(P(D)y=0\\) それぞれの一般解の和で表せる.\n\\(P(D)y=0\\) は与式の斉次式にあたるため, 式 \\(Dy=0\\) の一般解の形で探せば良い."
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv1-0-が特性根でないaa",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv1-0-が特性根でないaa",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(1) \\(f(x)\\equiv1\\), \\(0\\) が特性根でないaa",
-    "text": "(1) \\(f(x)\\equiv1\\), \\(0\\) が特性根でないaa\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n解答：\n\n\n\n公式： \\[\ny = \\frac{1}{P(0)}\n\\] 公式の導出：\n\n定数解 \\(y=y_0\\) で探せば良い.\n\\(Dy_0=0\\) より \\(P(D)y_0=P(0)y_0\\).\n\\(P(0)y_0=1\\) を解いて \\(y_0=1/P(0)\\) を得る.\n\n定数解で探せば良い理由：\n\n求める特殊解を \\(y_p\\) とする.\n\\(DP(D)y_p=0\\) より, \\(y_p\\) は式 \\(Dy=0\\) と式 \\(P(D)y=0\\) それぞれの一般解の和で表せる.\n\\(P(D)y=0\\) は与式の斉次式にあたるため, 式 \\(Dy=0\\) の一般解の形で探せば良い."
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv1-0-が特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv1-0-が特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(2) \\(f(x)\\equiv1\\), \\(0\\) が特性根",
-    "text": "(2) \\(f(x)\\equiv1\\), \\(0\\) が特性根\n\n\n\n\n\n\nノート問題\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nノート解答と解説\n\n\n\n\n\n\n\n\n\n\n\n重要解答\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nヒント公式\n\n\n\n\\[\ny = \\frac{x^m}{m!\\,Q(0)}\n\\] ただし, \\(m\\) を \\(P(\\lambda)=0\\) の特性根 \\(0\\) の多重度とし, 多項式 \\(Q(\\lambda)\\) を \\(P(\\lambda)/\\lambda^m\\) で定める. すなわち, 整数 \\(m\\geq1\\) と多項式 \\(Q(\\lambda)\\) を次が成り立つように定める： \\[\nP(\\lambda) = \\lambda^m Q(\\lambda), \\quad Q(0) \\neq 0.\n\\]\n\n\n\n\n\n\n\n\nヒント公式の導出\n\n\n\n(1) に帰着させるため, まず \\[\nu=D^my\n\\] とおく. このとき, \\[\nQ(D)u=1\n\\] であるから, (1) より, 特殊解 \\[\nu = \\frac{1}{Q(0)}\n\\] を得る. これに \\(u=D^my\\) を代入して, \\[\nD^my = \\frac{1}{Q(0)}\n\\] を得るので, 求める特殊解 \\(y\\) はこの右辺を \\(m\\) 回積分すれば得られる. ここで, 不定積分では積分定数に由来する斉次解が加わるだけなので, 毎回の積分定数を \\(0\\) として計算すれば良い. よって, \\[\n\\begin{aligned}\ny &= \\int_0^x \\cdots \\int_0^{x_2} \\frac{1}{Q(0)} \\, dx_1\\, \\cdots \\,dx_m \\\\\n&= \\frac{1}{m!} \\frac{x^m}{Q(0)}\n\\end{aligned}\n\\]\n\n\n\n\n\n\n\n\nヒント補足\n\n\n\n(1) との本質的な違いは \\(y\\) が \\(D^my\\) に変化した点のみ.\n実はこれを意識して, 問題の式もあえて \\(D^my\\) という塊ができるように出題した.\n果たしてこれに気づいてくれただろうか\\(\\ldots\\)",
-    "crumbs": [
-      "授業・教材",
-      "微分方程式",
-      "多項式を非斉次項にもつ場合"
-    ]
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fequiv1-0-が特性根でない",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fequiv1-0-が特性根でない",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(1) \\(f\\equiv1\\), \\(0\\) が特性根でない",
-    "text": "(1) \\(f\\equiv1\\), \\(0\\) が特性根でない\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n解答：\n\n\n\n公式： \\[\ny = \\frac{1}{P(0)}\n\\] 公式の導出：\n\n定数解 \\(y=y_0\\) で探せば良い.\n\\(Dy_0=0\\) より \\(P(D)y_0=P(0)y_0\\).\n\\(P(0)y_0=1\\) を解いて \\(y_0=1/P(0)\\) を得る.\n\n定数解で探せば良い理由：\n\n求める特殊解を \\(y_p\\) とする.\n\\(DP(D)y_p=0\\) より, \\(y_p\\) は式 \\(Dy=0\\) と式 \\(P(D)y=0\\) それぞれの一般解の和で表せる.\n\\(P(D)y=0\\) は与式の斉次式にあたるため, 式 \\(Dy=0\\) の一般解の形で探せば良い."
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fequiv1-0-が特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fequiv1-0-が特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(2) \\(f\\equiv1\\), \\(0\\) が特性根",
-    "text": "(2) \\(f\\equiv1\\), \\(0\\) が特性根\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n\n解答：\n\n\n\n\n\n解説：\n\n\n\\(P(D)=Q(D)D^r\\) と見て，\\(u=D^r y\\) とおく。\n先に \\(Q(D)u=1\\) を考えると，\\(u\\) は定数として求まる。\n最後に \\(D^r y=u\\) から \\(r\\) 回積分して \\(y\\) を求める。積分定数は \\(0\\) としてよい。"
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv1-0-が非特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv1-0-が非特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(1) \\(f(x)\\equiv1\\), \\(0\\) が非特性根",
-    "text": "(1) \\(f(x)\\equiv1\\), \\(0\\) が非特性根\n\n\n\n\n\n\nノート問題\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nノート解答と解説\n\n\n\n\n\n\n\n\n\n\n\n重要解答\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nヒント公式\n\n\n\n\\[\ny = \\frac{1}{P(0)}\n\\]\n\n\n\n\n\n\n\n\nヒント公式の導出\n\n\n\nまず, 定数解 \\(y=y_0\\) の形で探せば良いことは認める (理由は補足参照).\n定数であるため, \\[\nDy_0=0\n\\] であり, このことから微分作用素 \\(P(D)\\) を \\(y=y_0\\) に作用させたときに, \\(P(D)\\) の定数項以外の部分はすべて消えることがわかる. \\(P(D)\\) の定数項は \\(P(0)\\) であるため, \\[\nP(D)y_0=P(0)y_0.\n\\] よって, 与式 \\[\nP(D)y=1\n\\] に代入して, \\[\nP(0)y_0=1,\n\\quad \\text{\\emph{i.e.}}, \\quad\ny_0=\\frac{1}{P(0)}\n\\] を得る.\n\n\n\n\n\n\n\n\nヒント補足\n\n\n\n定数解だけ考えれば良い理由は次の通り：\nまず, 混乱を避けるため, 求める特殊解を \\(y_p\\) としておく. 与式の両辺を微分して, \\[\nDP(D)y_p=0\n\\] を得る. \\(\\lambda P(\\lambda)=0\\) の特性根 \\(0\\) が多重度 \\(1\\) であることから, \\(y_p\\) は \\[\nDy_1=0, \\quad P(D)y_2=0\n\\] それぞれの一般解の和 \\[\ny_p=y_1+y_2\n\\] で表せる. ここで, \\(y_2\\) は与式の斉次解でもあることから, 特殊解 \\(y_p\\) を探すときに無視してよいことがわかり, \\(y_p\\) として \\[\nDy_1=0\n\\] の一般解の形, すなわち, 定数の形で探せば良いことがわかる.",
-    "crumbs": [
-      "授業・教材",
-      "微分方程式",
-      "多項式を非斉次項にもつ場合"
-    ]
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxm-0-が非特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxm-0-が非特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(3) \\(f(x)=x^m\\); \\(0\\) が非特性根",
-    "text": "(3) \\(f(x)=x^m\\); \\(0\\) が非特性根\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n\n解答：\n\n\n\n\n\n解説：\n\n\n\\(0\\) が特性根でないので，\\(P(0)\\ne0\\) である。\n右辺が \\(x^m\\) なので，特殊解は \\(m\\) 次以下の多項式として求まる。\n\\(D\\) を作用させると次数が下がるため，多項式の範囲で係数が決まる。"
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#xm-0-が特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#xm-0-が特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(4) \\(x^m\\); \\(0\\) が特性根",
-    "text": "(4) \\(x^m\\); \\(0\\) が特性根\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n\n解答：\n\n\n\n\n\n解説：\n\n\n\\(P(D)=Q(D)D^r\\) と見て，\\(u=D^r y\\) とおく。\n先に \\(Q(D)u=x^m\\) を考えると，\\(u\\) は多項式として求まる。\n最後に \\(D^r y=u\\) から \\(r\\) 回積分して \\(y\\) を求める。積分定数は \\(0\\) としてよい。"
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#一般の多項式-0-が非特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#一般の多項式-0-が非特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(5) 一般の多項式; \\(0\\) が非特性根",
-    "text": "(5) 一般の多項式; \\(0\\) が非特性根\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n\n解答：\n\n\n\n\n\n解説：\n\n\n\\(0\\) が特性根でないので，\\(P(0)\\ne0\\) である。\n右辺が多項式なので，特殊解も多項式として求まる。\n各次数の係数を比較すれば，一つの特殊解が決まる。"
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxm-0-が特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxm-0-が特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(4) \\(f(x)=x^m\\); \\(0\\) が特性根",
-    "text": "(4) \\(f(x)=x^m\\); \\(0\\) が特性根\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n\n解答：\n\n\n\n\n\n解説：\n\n\n\\(P(D)=Q(D)D^r\\) と見て，\\(u=D^r y\\) とおく。\n先に \\(Q(D)u=x^m\\) を考えると，\\(u\\) は多項式として求まる。\n最後に \\(D^r y=u\\) から \\(r\\) 回積分して \\(y\\) を求める。積分定数は \\(0\\) としてよい。"
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#多項式-0-が非特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#多項式-0-が非特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(5) 多項式, \\(0\\) が非特性根",
-    "text": "(5) 多項式, \\(0\\) が非特性根\n\n\n\n\n\n\nノート問題\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nノート解答と解説\n\n\n\n\n\n\n\n\n\n\n\n重要解答\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nヒント公式\n\n\n\n\\[\ny\n=\n\\sum_{i=0}^{\\ell}\n\\left(\n\\sum_{j=i}^{\\ell}\nb_j c_{j-i}\\frac{j!}{i!}\n\\right)\nx^i\n\\] ただし, \\[\nf(x)=b_0 + b_1 x + \\cdots + b_\\ell x^\\ell\n\\] とし, \\(c_k\\) は \\(\\frac{1}{P(z)}\\) をマクローリン展開した時の係数として次のように定める： \\[\n\\frac{1}{P(z)}=c_0+c_1z+c_2z^2+\\cdots.\n\\]\n\n\n\n\n\n\n\n\nヒント公式の導出\n\n\n\n(3) より, 各単項式 \\(x^j\\) に対して, \\[\n\\frac{1}{P(D)}x^j\n=\n\\sum_{k=0}^{j}\nc_k\n\\frac{j!}{(j-k)!}\nx^{j-k}\n\\] を得る. 作用素 \\(\\tfrac{1}{P(D)}\\) が線形より, これを \\(b_j\\) 倍して, 足し合わせることにより, \\[\n\\frac{1}{P(D)}f(x)\n=\n\\sum_{j=0}^{\\ell}\nb_j\n\\sum_{k=0}^{j}\nc_k\n\\frac{j!}{(j-k)!}\nx^{j-k}\n\\] を得る. \\(i=j-k\\) とおいて, 和の順序を交換すれば, \\[\n\\begin{aligned}\n  \\frac{1}{P(D)}f(x)\n  &=\n  \\sum_{j=0}^{\\ell}\n  b_j\n  \\sum_{i=0}^{j}\n  c_{j-i}\n  \\frac{j!}{i!}\n  x^i \\\\\n  &=\n  \\sum_{i=0}^{\\ell}\n  \\left(\n  \\sum_{j=i}^{\\ell}\n  b_j c_{j-i}\\frac{j!}{i!}\n  \\right)\n  x^i\n\\end{aligned}\n\\] を得る.\n\n\n\n\n\n\n\n\nヒント補足\n\n\n\n(5) は (3) を足し合わせただけで, 計算自体に新しいことはない. 公式だけを見ると少し重たく見えるが, やっていることは各単項式に対する計算の足し算で, 公式を使って計算する人はまずいないだろう.\n公式の導出自体はそれなりに面白く, 最後に \\(x^i\\) の係数として整理するため, \\(i=j-k\\) と置き換えている. 和の交換をする際, \\(i,j\\) の動かし方が変わることに気をつけよう. 足し算は \\(0\\leq i\\leq j\\leq\\ell\\) の範囲で行われるので, \\(j\\) を止めて \\(i\\) で先に足し上げるときは \\(0\\leq i\\leq j\\) となっている. 一方, \\(i\\) を止めて \\(j\\) で先に足し上げるときは \\(i\\leq j\\leq\\ell\\) となっている. 足し算の順序交換で, この違いが出ているので, 気をつけてほしい.",
-    "crumbs": [
-      "授業・教材",
-      "微分方程式",
-      "多項式を非斉次項にもつ場合"
-    ]
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#多項式-0-が特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#多項式-0-が特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(6) 多項式, \\(0\\) が特性根",
-    "text": "(6) 多項式, \\(0\\) が特性根\n\n\n\n\n\n\nノート問題\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nノート解答と解説\n\n\n\n\n\n\n\n\n\n\n\n重要解答\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nヒント公式\n\n\n\n\\[\ny\n=\n\\sum_{i=0}^{\\ell}\n\\left(\n\\sum_{j=i}^{\\ell}\nb_j c_{j-i}\\frac{j!}{(i+m)!}\n\\right)\nx^{i+m}\n\\] ただし, \\[\nf(x)=b_0 + b_1 x + \\cdots + b_\\ell x^\\ell\n\\] とし, \\[\nP(D)=Q(D)D^m, \\quad Q(0)\\neq0\n\\] とする. また, \\(c_k\\) は \\(\\frac{1}{Q(z)}\\) をマクローリン展開した時の係数として次のように定める： \\[\n\\frac{1}{Q(z)}=c_0+c_1z+c_2z^2+\\cdots.\n\\]\n\n\n\n\n\n\n\n\nヒント公式の導出\n\n\n\n\\(u=D^my\\) とおくと, \\[\nQ(D)u=f(x)\n\\] であるから, (5) より, 特殊解 \\[\nu = \\sum_{i=0}^{\\ell}\n\\left(\n  \\sum_{j=i}^{\\ell} b_j c_{j-i}\\frac{j!}{i!}\n\\right)\nx^i\n\\] を得る. あとは \\(D^my=u\\) を積分定数 \\(0\\) として \\(m\\) 回積分すれば, 求める特殊解 \\(y\\) が得られる. 実際, \\(x^i\\) を \\(m\\) 回積分すると, \\[\n\\frac{i!}{(i+m)!}x^{i+m}\n\\] であるから, \\[\n\\begin{aligned}\n  y &= \\sum_{i=0}^{\\ell}\n  \\left(\n    \\sum_{j=i}^{\\ell} b_j c_{j-i} \\frac{j!}{i!}\n  \\right)\n  \\frac{i!}{(i+m)!}x^{i+m} \\\\\n  &= \\sum_{i=0}^{\\ell}\n  \\left(\n    \\sum_{j=i}^{\\ell} b_j c_{j-i} \\frac{j!}{(i+m)!}\n  \\right)\n  x^{i+m}\n\\end{aligned}\n\\] を得る.\n\n\n\n\n\n\n\n\nヒント補足\n\n\n\nここまで丁寧に見た方はすでに気づいていると思うが, このページの問題において, 公式を覚える必要は全くない. いずれも \\[\ny=\\frac{1}{D^m}\\frac{1}{Q(D)}f(x)\n\\] として, あとは \\(\\tfrac{1}{Q(D)}\\) のテイラー展開を利用するだけである. もちろん \\[\ny=\\frac{1}{Q(D)}\\frac{1}{D^m}f(x)\n\\] なとして考えても良いが, 最後に積分をした方が計算量は少なく済む. 細かい点だが, 手計算するときは気をつけたいところだ.\nさて, なぜここまで計算が簡単になるのか, 最後に軽く触れておこう. \\(\\tfrac{1}{Q(D)}\\) は本来, 積分核を用いて表される積分作用素でり, \\(\\tfrac{1}{Q(D)}\\) をテイラー展開しても, 無限に微分作用素が現れてしまう. しかし, 多項式 \\(f(x)\\) に作用させる場合においては, \\(\\tfrac{1}{Q(D)}\\) を有限回の微分操作に置き換えられる. この性質が非常に強く, このページの問題を簡単にしていたのだ.",
-    "crumbs": [
-      "授業・教材",
-      "微分方程式",
-      "多項式を非斉次項にもつ場合"
-    ]
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv10-が非特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv10-が非特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(1) \\(f(x)\\equiv1\\)；\\(0\\) が非特性根",
-    "text": "(1) \\(f(x)\\equiv1\\)；\\(0\\) が非特性根\n\n\n\n\n\n\nノート問題\n\n\n\n\n\n\n\n問題を変更\n\n\n\n\n\n\n\nノート解答と解説\n\n\n\n\n\n\n\n\n\n\n\n重要解答\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nヒント公式\n\n\n\n\\[\ny = \\frac{1}{P(0)}\n\\]\n\n\n\n\n\n\n\n\nヒント公式の導出\n\n\n\n\n定数解 \\(y=y_0\\) で探せば良い.\n\\(Dy_0=0\\) より \\(P(D)y_0=P(0)y_0\\).\n\\(P(0)y_0=1\\) を解いて \\(y_0=1/P(0)\\) を得る.\n\n\n\n\n\n\n\n\n\nヒント補足\n\n\n\n\n求める特殊解を \\(y_p\\) とする.\n\\(DP(D)y_p=0\\) より, \\(y_p\\) は式 \\(Dy=0\\) と式 \\(P(D)y=0\\) それぞれの一般解の和で表せる.\n\\(P(D)y=0\\) は与式の斉次式にあたるため, 式 \\(Dy=0\\) の一般解の形で探せば良い."
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv10-が特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv10-が特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(2) \\(f(x)\\equiv1\\)；\\(0\\) が特性根",
-    "text": "(2) \\(f(x)\\equiv1\\)；\\(0\\) が特性根\n\n\n\n\n\n\nノート問題\n\n\n\n\n\n\n\n問題を変更\n\n\n\n\n\n\n\nノート解答と解説\n\n\n\n\n\n\n\n\n\n\n\n重要解答\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nヒント公式\n\n\n\n\\[\ny = \\frac{x^m}{m!\\,Q(0)}\n\\] ただし, \\(P(D)=Q(D)D^m\\), \\(Q(0)\\neq0\\).\n\n\n\n\n\n\n\n\nヒント公式の導出\n\n\n\n\n\\(u=D^my\\) とおいて, \\(Q(D)u=1\\) を得る.\n\\(Q(D)u=1\\) の特殊解は \\(u = \\frac{1}{Q(0)}\\).\n\\(D^my = \\frac{1}{Q(0)}\\) の特殊解は右辺を \\(m\\) 回積分すれば得られる.\n不定積分では非斉次解の一般解が現れるだけなので, 毎回の積分定数を \\(0\\) として計算すれば良い.\n\n\n\n\n\n\n\n\n\nヒント補足\n\n\n\n\n(1) との本質的な違いは \\(y\\) が \\(D^my\\) に変化した点のみ.\n実はこれを意識して, 問題の式もあえて \\(D^my\\) という塊ができるように出題している. 果たしてこれに気づいてくれただろうか\\(\\ldots\\)"
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxm0-が非特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxm0-が非特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(3) \\(f(x)=x^m\\)；\\(0\\) が非特性根",
-    "text": "(3) \\(f(x)=x^m\\)；\\(0\\) が非特性根\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n\n解答：\n\n\n\n\n\n解説：\n\n\n\\(0\\) が特性根でないので，\\(P(0)\\ne0\\) である。\n右辺が \\(x^m\\) なので，特殊解は \\(m\\) 次以下の多項式として求まる。\n\\(D\\) を作用させると次数が下がるため，多項式の範囲で係数が決まる。"
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxm0-が特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxm0-が特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(4) \\(f(x)=x^m\\)；\\(0\\) が特性根",
-    "text": "(4) \\(f(x)=x^m\\)；\\(0\\) が特性根\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n\n解答：\n\n\n\n\n\n解説：\n\n\n\\(P(D)=Q(D)D^r\\) と見て，\\(u=D^r y\\) とおく。\n先に \\(Q(D)u=x^m\\) を考えると，\\(u\\) は多項式として求まる。\n最後に \\(D^r y=u\\) から \\(r\\) 回積分して \\(y\\) を求める。積分定数は \\(0\\) としてよい。"
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#多項式0-が非特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#多項式0-が非特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(5) 多項式；\\(0\\) が非特性根",
-    "text": "(5) 多項式；\\(0\\) が非特性根\n\n\n\n\n\n\nノート問題\n\n\n\n\n\n\n\n問題を変更\n\n\n\n\n\n\n\nノート解答と解説\n\n\n\n\n\n\n\n\n\n\n\n重要解答\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nヒント公式\n\n\n\n\\[\ny\n=\n\\sum_{i=0}^{\\ell}\n\\left(\n\\sum_{j=i}^{\\ell}\nb_j c_{j-i}\\frac{j!}{i!}\n\\right)\nx^i\n\\] ただし, \\[\nf(x)=b_0 + b_1 x + \\cdots + b_\\ell x^\\ell\n\\] とし, \\(c_k\\) は \\(\\frac{1}{P(z)}\\) をマクローリン展開した時の係数として次のように定める： \\[\n\\frac{1}{P(z)}=c_0+c_1z+c_2z^2+\\cdots.\n\\]\n\n\n\n\n\n\n\n\nヒント公式の導出\n\n\n\n\n(3) より, 各単項式 \\(x^j\\) に対して, \\[\n\\frac{1}{P(D)}x^j\n=\n\\sum_{k=0}^{j}\nc_k\n\\frac{j!}{(j-k)!}\nx^{j-k}.\n\\]\n作用素 \\(\\tfrac{1}{P(D)}\\) は線形なので, これを \\(b_j\\) 倍して, 足し合わせれば, \\[\n\\frac{1}{P(D)}f(x)\n=\n\\sum_{j=0}^{\\ell}\nb_j\n\\sum_{k=0}^{j}\nc_k\n\\frac{j!}{(j-k)!}\nx^{j-k}.\n\\]\n\\(i=j-k\\) とおいて, 和の順序を交換すれば, \\[\n\\begin{aligned}\n  \\frac{1}{P(D)}f(x)\n  &=\n  \\sum_{j=0}^{\\ell}\n  b_j\n  \\sum_{i=0}^{j}\n  c_{j-i}\n  \\frac{j!}{i!}\n  x^i \\\\\n  &=\n  \\sum_{i=0}^{\\ell}\n  \\left(\n  \\sum_{j=i}^{\\ell}\n  b_j c_{j-i}\\frac{j!}{i!}\n  \\right)\n  x^i.\n\\end{aligned}\n\\]\n\n\n\n\n\n\n\n\n\nヒント補足\n\n\n\n\n(5) は (3) を足し合わせただけで, 計算自体に新しいことはない.\n公式だけを見ると少し重たく見えるが, やっていることは各単項式に対する計算の足し算で, 公式を使って計算する人はまずいないだろう.\n公式の導出自体はそれなりに面白く, 最後に \\(x^i\\) の係数として整理するため, \\(i=j-k\\) と置き換えている.\n和の交換をする際, \\(i,j\\) の動かし方が変わることに気をつけよう. 足し算は \\(0\\leq i\\leq j\\leq\\ell\\) の範囲で行われるので, \\(j\\) を止めて \\(i\\) で先に足し上げるときは \\(0\\leq i\\leq j\\), \\(i\\) を止めて \\(j\\) で先に足し上げるときは \\(i\\leq j\\leq\\ell\\) であることに注意する."
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#多項式0-が特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#多項式0-が特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(6) 多項式；\\(0\\) が特性根",
-    "text": "(6) 多項式；\\(0\\) が特性根\n\n\n\n\n\n\nノート問題\n\n\n\n\n\n\n\n問題を変更\n\n\n\n\n\n\n\nノート解答と解説\n\n\n\n\n\n\n\n\n\n\n\n重要解答\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nヒント公式\n\n\n\n\\[\ny\n=\n\\sum_{i=0}^{\\ell}\n\\left(\n\\sum_{j=i}^{\\ell}\nb_j c_{j-i}\\frac{j!}{(i+m)!}\n\\right)\nx^{i+m}\n\\] ただし, \\[\nf(x)=b_0 + b_1 x + \\cdots + b_\\ell x^\\ell\n\\] とし, \\(P(D)=Q(D)D^m\\), \\(Q(0)\\neq0\\) とする. また, \\(c_k\\) は \\(\\frac{1}{Q(z)}\\) をマクローリン展開した時の係数として次のように定める： \\[\n\\frac{1}{Q(z)}=c_0+c_1z+c_2z^2+\\cdots.\n\\]\n\n\n\n\n\n\n\n\nヒント公式の導出\n\n\n\n\n\\(u=D^my\\) とおいて, \\(Q(D)u=f(x)\\) を得る.\n(5) より, \\(Q(D)u=f(x)\\) の特殊解は \\[\nu\n=\n\\sum_{i=0}^{\\ell}\n\\left(\n\\sum_{j=i}^{\\ell}\nb_j c_{j-i}\\frac{j!}{i!}\n\\right)\nx^i.\n\\]\n\\(D^my=u\\) を積分定数 \\(0\\) として \\(m\\) 回積分すれば, 特殊解 \\(y\\) が得られる.\n実際, \\[\nx^i\n\\] を \\(m\\) 回積分すると \\[\n\\frac{i!}{(i+m)!}x^{i+m}\n\\] となるので, \\[\n\\begin{aligned}\ny\n&=\n\\sum_{i=0}^{\\ell}\n\\left(\n\\sum_{j=i}^{\\ell}\nb_j c_{j-i}\\frac{j!}{i!}\n\\right)\n\\frac{i!}{(i+m)!}x^{i+m} \\\\\n&=\n\\sum_{i=0}^{\\ell}\n\\left(\n\\sum_{j=i}^{\\ell}\nb_j c_{j-i}\\frac{j!}{(i+m)!}\n\\right)\nx^{i+m}.\n\\end{aligned}\n\\]\n\n\n\n\n\n\n\n\n\nヒント補足\n\n\n\n\nここまで丁寧に見ていただいた学生はすでに気づいていると思うが, このページの問題において, 公式を覚える必要は全くない.\nいずれも \\(y=\\tfrac{1}{D^m}\\tfrac{1}{Q(D)}f(x)\\) を計算するだけである. あとは, \\(\\tfrac{1}{Q(D)}\\) のテイラー展開を利用するだけである.\nもちろん \\(y=\\tfrac{1}{Q(D)}\\tfrac{1}{D^m}f(x)\\) などでも良いが, 最後に積分をした方が計算量は少なく済むのも, 細かい注意点だろう.\n\\(\\tfrac{1}{Q(D)}\\) は本来, 積分核を用いて表される積分作用素である. しかし, 多項式 \\(f(x)\\) に作用させる場合, \\(\\tfrac{1}{Q(D)}\\) を有限回の微分操作に置き換えられる.\nこの性質が非常に強く, このページの問題を簡単にしている一番の要因となっている."
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxk0-が非特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxk0-が非特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(3) \\(f(x)=x^k\\)；\\(0\\) が非特性根",
-    "text": "(3) \\(f(x)=x^k\\)；\\(0\\) が非特性根\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n解答：\n\n\n\n公式：\n\\(\\dfrac{1}{P(z)}\\) を \\(z=0\\) のまわりで展開して \\[\n\\frac{1}{P(z)}=c_0+c_1z+c_2z^2+\\cdots\n\\] とおくと, \\[\ny=\\sum_{j=0}^{k}c_jD^jx^k\n=\n\\sum_{j=0}^{k}\nc_j\\frac{k!}{(k-j)!}x^{k-j}.\n\\]\n公式の導出：\n\n\\(P(0)\\neq0\\) なので, \\(\\frac{1}{P(z)}\\) は \\(z=0\\) のまわりで展開できる.\n\\(z\\) を \\(D\\) に置き換えて, \\(\\frac{1}{P(D)}=c_0+c_1D+c_2D^2+\\cdots\\) と考える.\n\\(D^{k+1}x^k=0\\) なので, \\(j=k\\) まで計算すればよい.\nよって上の公式を得る.\n\n\n解説：\n\n\n\\(0\\) が特性根でないので，\\(P(0)\\ne0\\) である。\n右辺が \\(x^m\\) なので，特殊解は \\(m\\) 次以下の多項式として求まる。\n\\(D\\) を作用させると次数が下がるため，多項式の範囲で係数が決まる。"
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxk0-が特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxk0-が特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(4) \\(f(x)=x^k\\)；\\(0\\) が特性根",
-    "text": "(4) \\(f(x)=x^k\\)；\\(0\\) が特性根\n\n\n\n\n\n問題を変更\n\n\n\n解答と解説\n\n\n解答："
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxell0-が非特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxell0-が非特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(3) \\(f(x)=x^\\ell\\)；\\(0\\) が非特性根",
-    "text": "(3) \\(f(x)=x^\\ell\\)；\\(0\\) が非特性根\n\n\n\n\n\n\nノート問題\n\n\n\n\n\n\n\n問題を変更\n\n\n\n\n\n\n\nノート解答と解説\n\n\n\n\n\n\n\n\n\n\n\n重要解答\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nヒント公式\n\n\n\n\\[\ny = \\sum_{k=0}^{\\ell} c_k \\frac{\\ell!}{(\\ell-k)!} x^{\\ell-k}\n\\] ただし, \\(c_k\\) は \\(\\frac{1}{P(z)}\\) をマクローリン展開した時の係数として次のように定める： \\[\n\\frac{1}{P(z)}=c_0+c_1z+c_2z^2+\\cdots.\n\\]\n\n\n\n\n\n\n\n\nヒント公式の導出\n\n\n\n\n\\(y=\\frac{1}{P(D)}x^\\ell\\) として計算することを考える.\n\\(P(0)\\neq0\\) なので, \\(\\frac{1}{P(z)}\\) は \\(z=0\\) のまわりでテイラー展開できる.\n\\(z\\) を \\(D\\) に置き換えて, \\(\\frac{1}{P(D)}=c_0+c_1D+c_2D^2+\\cdots\\) と考える.\n\\(D^{\\ell+1}x^\\ell=0\\) なので, \\(k=\\ell\\) まで計算すればよく, 次を得る: \\[\n\\begin{aligned}\n\\frac{1}{P(D)} x^\\ell\n&= \\left( c_0 + c_1 D + c_2 D^2 + \\cdots + c_\\ell D^\\ell \\right) \\, x^\\ell \\\\\n&= \\sum_{k=0}^{\\ell} c_k \\frac{\\ell!}{(\\ell-k)!} x^{\\ell-k}.\n\\end{aligned}\n\\]\n\n\n\n\n\n\n\n\n\nヒント補足\n\n\n\n\n(1) を参考に \\(D^\\ell P(D)y=\\ell!\\) から考えてくれた学生もいると思う. こうすると一見 (2) に帰着するわけだが, ここではまだ見つけるべき \\(y\\) の形がわかっていないので, (2) の 特殊解 を採用するわけにはいかない.\n\\(D^{\\ell+1}P(D)y=0\\) を考えた場合はどうであろうか？こちらを考えてくれた学生もいると思うが, 実はこちらの方が (1) の考え方に忠実で素直なため, 先ほどより少し見通しが良い. 実際, 見つけるべき特殊解 \\(y_p\\) は式 \\(D^{\\ell+1}y=0\\) と式 \\(P(D)y=0\\) それぞれの一般解の和で表せて, \\(P(D)y=0\\) が与式の斉次式であることを考えると, \\(y_p\\) は式 \\(D^{\\ell+1}y=0\\) の一般解の形で探せば良いことがわかる. こうして次の別手法を得るわけである.\n\\(y=a_0 + a_1 x + \\cdots + a_\\ell x^\\ell\\) と置いて与式に代入し, 恒等式の係数比較をすることで, \\(a_0,\\dots,a_\\ell\\) の値を決定する. ただし, この方法は意外と計算が面倒なため, 上の計算手法が実は楽なのである."
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxell0-が特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxell0-が特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(4) \\(f(x)=x^\\ell\\)；\\(0\\) が特性根",
-    "text": "(4) \\(f(x)=x^\\ell\\)；\\(0\\) が特性根\n\n\n\n\n\n\nノート問題\n\n\n\n\n\n\n\n問題を変更\n\n\n\n\n\n\n\nノート解答と解説\n\n\n\n\n\n\n\n\n\n\n\n重要解答\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nヒント公式\n\n\n\n\\[\ny\n=\n\\sum_{j=0}^{\\ell}\nc_j\n\\frac{\\ell!}{(\\ell-j+m)!} x^{\\ell-j+m}\n\\] ただし, \\(P(D)=Q(D)D^m\\), \\(Q(0)\\neq0\\) とし, \\(c_k\\) は \\(\\frac{1}{Q(z)}\\) をマクローリン展開した時の係数として次のように定める： \\[\n\\frac{1}{Q(z)}=c_0+c_1z+c_2z^2+\\cdots.\n\\]\n\n\n\n\n\n\n\n\nヒント公式の導出\n\n\n\n\n\\(u=D^my\\) とおいて, \\(Q(D)u=x^\\ell\\) を得る.\n\\(Q(D)u=x^\\ell\\) の特殊解は \\[\nu\n=\n\\sum_{j=0}^{\\ell}\nc_j\n\\frac{\\ell!}{(\\ell-j)!}\nx^{\\ell-j}.\n\\]\n\\(D^my=u\\) を積分定数 \\(0\\) として \\(m\\) 回積分し, 特殊解を得る.\n\n\n\n\n\n\n\n\n\nヒント補足\n\n\n\n\nこれまでの問題から, 今回の解法に自力で気づいた方が多かったと思われる.\n(3) との本質的な違いは, (1) と (2) のときの関係と同様で, \\(y\\) が \\(D^my\\) に置き換わっていることだけである."
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv1-特性根に-0-を持たない",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxequiv1-特性根に-0-を持たない",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(1) \\(f(x)\\equiv1\\), 特性根に \\(0\\) を持たない",
-    "text": "(1) \\(f(x)\\equiv1\\), 特性根に \\(0\\) を持たない\n\n\n\n\n\n\nノート問題\n\n\n\n\n\n\n\n問題を変更\n\n\n\n\n\n\n\nノート解答と解説\n\n\n\n\n\n\n\n\n\n\n\n重要解答\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nヒント公式\n\n\n\n\\[\ny = \\frac{1}{P(0)}\n\\]\n\n\n\n\n\n\n\n\nヒント公式の導出\n\n\n\n\n定数解 \\(y=y_0\\) で探せば良い.\n\\(Dy_0=0\\) より \\(P(D)y_0=P(0)y_0\\).\n\\(P(0)y_0=1\\) を解いて \\(y_0=1/P(0)\\) を得る.\n\n\n\n\n\n\n\n\n\nヒント補足\n\n\n\n\n求める特殊解を \\(y_p\\) とする.\n\\(DP(D)y_p=0\\) より, \\(y_p\\) は式 \\(Dy=0\\) と式 \\(P(D)y=0\\) それぞれの一般解の和で表せる.\n\\(P(D)y=0\\) は与式の斉次式にあたるため, 式 \\(Dy=0\\) の一般解の形で探せば良い."
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxell-0-が非特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxell-0-が非特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(3) \\(f(x)=x^\\ell\\), \\(0\\) が非特性根",
-    "text": "(3) \\(f(x)=x^\\ell\\), \\(0\\) が非特性根\n\n\n\n\n\n\nノート問題\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nノート解答と解説\n\n\n\n\n\n\n\n\n\n\n\n重要解答\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nヒント公式\n\n\n\n\\[\ny = \\sum_{k=0}^{\\ell} c_k \\frac{\\ell!}{(\\ell-k)!} x^{\\ell-k}\n\\] ただし, \\(c_k\\) は \\(\\frac{1}{P(z)}\\) をマクローリン展開した時の係数として次のように定める： \\[\n\\frac{1}{P(z)}=c_0+c_1z+c_2z^2+\\cdots.\n\\]\n\n\n\n\n\n\n\n\nヒント公式の導出\n\n\n\n特殊解を見つければ良いだけなので, 数学的な厳密性は脇に置いておいて, \\[\ny=\\frac{1}{P(D)}x^\\ell\n\\] として計算することを考える. まず, \\(P(0)\\neq0\\) なので, \\(\\frac{1}{P(z)}\\) は \\(z=0\\) のまわりでテイラー展開できる. このテイラー展開の式において, \\(z\\) を \\(D\\) に置き換えることで, \\[\n\\frac{1}{P(D)}=c_0+c_1D+c_2D^2+\\cdots\n\\] を得る. ここで, \\[\nD^{\\ell+1}x^\\ell=0\n\\] であることに注意すると, \\(k=\\ell\\) まで計算すれば良いことがわり, よって, \\[\n\\begin{aligned}\n\\frac{1}{P(D)} x^\\ell\n&= \\left( c_0 + c_1 D + \\cdots + c_\\ell D^\\ell \\right) \\, x^\\ell \\\\\n&= \\sum_{k=0}^{\\ell} c_k \\frac{\\ell!}{(\\ell-k)!} x^{\\ell-k}\n\\end{aligned}\n\\] を得る.\n\n\n\n\n\n\n\n\nヒント補足\n\n\n\n(1) を参考に \\[\nD^\\ell P(D)y=\\ell!\n\\] から考えてくれた学生もいると思う. こうすると一見 (2) に帰着するわけだが, ここではまだ見つけるべき \\(y\\) の形がわかっていないので, (2) の 特殊解 を採用するわけにはいかない.\nでは更にもう一回微分した \\[\nD^{\\ell+1}P(D)y=0\n\\] を考えた場合はどうであろうか？ こちらを考えてくれた学生もいると思うが, 実はこちらの方が (1) の考え方に忠実で素直なため, 先ほどより少し見通しが良い. 実際, 見つけるべき特殊解 \\(y_p\\) は \\[\nD^{\\ell+1}y_1=0, \\quad P(D)y_2=0\n\\] それぞれの一般解の和 \\[\ny_p=y_1+y_2\n\\] と表せる. よって, (1) のときと同様, \\(y_2\\) が与式の斉次解より, \\(y_p\\) を探すときに無視してよく, \\(y_1\\) の形で探せば良いことがわかる. こうして次の別手法を得るわけである.\n特殊解として \\[\ny=a_0 + a_1 x + \\cdots + a_\\ell x^\\ell\n\\] の形を考えて与式に代入し, 恒等式の係数比較をする. それにより \\(\\ell+1\\) 本の式からなる連立方程式を得るので, それを解いて \\(a_0,\\dots,a_\\ell\\) の値を決定する. ただし, この方法は意外と計算が面倒なため, 上の計算手法が実は楽なのである.",
-    "crumbs": [
-      "授業・教材",
-      "微分方程式",
-      "多項式を非斉次項にもつ場合"
-    ]
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxell-0-が特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#fxxell-0-が特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(4) \\(f(x)=x^\\ell\\), \\(0\\) が特性根",
-    "text": "(4) \\(f(x)=x^\\ell\\), \\(0\\) が特性根\n\n\n\n\n\n\nノート問題\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nノート解答と解説\n\n\n\n\n\n\n\n\n\n\n\n重要解答\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nヒント公式\n\n\n\n\\[\ny\n=\n\\sum_{j=0}^{\\ell}\nc_j\n\\frac{\\ell!}{(\\ell-j+m)!} x^{\\ell-j+m}\n\\] ただし, \\[\nP(D)=Q(D)D^m, \\quad Q(0)\\neq0\n\\] とし, \\(c_k\\) は \\(\\frac{1}{Q(z)}\\) をマクローリン展開した時の係数として次のように定める： \\[\n\\frac{1}{Q(z)}=c_0+c_1z+c_2z^2+\\cdots.\n\\]\n\n\n\n\n\n\n\n\nヒント公式の導出\n\n\n\n\\(u=D^my\\) とおいて, \\[\nQ(D)u=x^\\ell\n\\] を得る. この微分方程式の特殊解は, (3) より, \\[\nu = \\sum_{j=0}^{\\ell} c_j \\frac{\\ell!}{(\\ell-j)!} x^{\\ell-j}\n\\] であるから, あとは \\(D^my=u\\) を積分定数 \\(0\\) として \\(m\\) 回積分すれば, 特殊解を得る.\n\n\n\n\n\n\n\n\nヒント補足\n\n\n\nこれまでの問題から, 今回の解法に自力で気づいた方も多かったのではないだろうか.\n(3) との本質的な違いは, (1) と (2) のときの関係と同様で, \\(y\\) が \\(D^my\\) に置き換わっていることだけである.",
-    "crumbs": [
-      "授業・教材",
-      "微分方程式",
-      "多項式を非斉次項にもつ場合"
-    ]
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#多項式-fx-0-が非特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#多項式-fx-0-が非特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(5) 多項式 \\(f(x)\\), \\(0\\) が非特性根",
-    "text": "(5) 多項式 \\(f(x)\\), \\(0\\) が非特性根\n\n\n\n\n\n\nノート問題\n\n\n\n\n\n\n\n問題を変更\n\n\n\n\n\n\n\nノート解答と解説\n\n\n\n\n\n\n\n\n\n\n\n重要解答\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nヒント公式\n\n\n\n\\[\ny\n=\n\\sum_{i=0}^{\\ell}\n\\left(\n\\sum_{j=i}^{\\ell}\nb_j c_{j-i}\\frac{j!}{i!}\n\\right)\nx^i\n\\] ただし, \\[\nf(x)=b_0 + b_1 x + \\cdots + b_\\ell x^\\ell\n\\] とし, \\(c_k\\) は \\(\\frac{1}{P(z)}\\) をマクローリン展開した時の係数として次のように定める： \\[\n\\frac{1}{P(z)}=c_0+c_1z+c_2z^2+\\cdots.\n\\]\n\n\n\n\n\n\n\n\nヒント公式の導出\n\n\n\n\n(3) より, 各単項式 \\(x^j\\) に対して, \\[\n\\frac{1}{P(D)}x^j\n=\n\\sum_{k=0}^{j}\nc_k\n\\frac{j!}{(j-k)!}\nx^{j-k}.\n\\]\n作用素 \\(\\tfrac{1}{P(D)}\\) は線形なので, これを \\(b_j\\) 倍して, 足し合わせれば, \\[\n\\frac{1}{P(D)}f(x)\n=\n\\sum_{j=0}^{\\ell}\nb_j\n\\sum_{k=0}^{j}\nc_k\n\\frac{j!}{(j-k)!}\nx^{j-k}.\n\\]\n\\(i=j-k\\) とおいて, 和の順序を交換すれば, \\[\n\\begin{aligned}\n  \\frac{1}{P(D)}f(x)\n  &=\n  \\sum_{j=0}^{\\ell}\n  b_j\n  \\sum_{i=0}^{j}\n  c_{j-i}\n  \\frac{j!}{i!}\n  x^i \\\\\n  &=\n  \\sum_{i=0}^{\\ell}\n  \\left(\n  \\sum_{j=i}^{\\ell}\n  b_j c_{j-i}\\frac{j!}{i!}\n  \\right)\n  x^i.\n\\end{aligned}\n\\]\n\n\n\n\n\n\n\n\n\nヒント補足\n\n\n\n\n(5) は (3) を足し合わせただけで, 計算自体に新しいことはない.\n公式だけを見ると少し重たく見えるが, やっていることは各単項式に対する計算の足し算で, 公式を使って計算する人はまずいないだろう.\n公式の導出自体はそれなりに面白く, 最後に \\(x^i\\) の係数として整理するため, \\(i=j-k\\) と置き換えている.\n和の交換をする際, \\(i,j\\) の動かし方が変わることに気をつけよう. 足し算は \\(0\\leq i\\leq j\\leq\\ell\\) の範囲で行われるので, \\(j\\) を止めて \\(i\\) で先に足し上げるときは \\(0\\leq i\\leq j\\), \\(i\\) を止めて \\(j\\) で先に足し上げるときは \\(i\\leq j\\leq\\ell\\) であることに注意する."
-  },
-  {
-    "objectID": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#多項式-fx-0-が特性根",
-    "href": "teaching/differential-equations/self-study/higher-order-polynomial-nonhomogeneous.html#多項式-fx-0-が特性根",
-    "title": "多項式を非斉次項にもつ場合",
-    "section": "(6) 多項式 \\(f(x)\\), \\(0\\) が特性根",
-    "text": "(6) 多項式 \\(f(x)\\), \\(0\\) が特性根\n\n\n\n\n\n\nノート問題\n\n\n\n\n\n\n\n問題を変更\n\n\n\n\n\n\n\nノート解答と解説\n\n\n\n\n\n\n\n\n\n\n\n重要解答\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nヒント公式\n\n\n\n\\[\ny\n=\n\\sum_{i=0}^{\\ell}\n\\left(\n\\sum_{j=i}^{\\ell}\nb_j c_{j-i}\\frac{j!}{(i+m)!}\n\\right)\nx^{i+m}\n\\] ただし, \\[\nf(x)=b_0 + b_1 x + \\cdots + b_\\ell x^\\ell\n\\] とし, \\(P(D)=Q(D)D^m\\), \\(Q(0)\\neq0\\) とする. また, \\(c_k\\) は \\(\\frac{1}{Q(z)}\\) をマクローリン展開した時の係数として次のように定める： \\[\n\\frac{1}{Q(z)}=c_0+c_1z+c_2z^2+\\cdots.\n\\]\n\n\n\n\n\n\n\n\nヒント公式の導出\n\n\n\n\n\\(u=D^my\\) とおいて, \\(Q(D)u=f(x)\\) を得る.\n(5) より, \\(Q(D)u=f(x)\\) の特殊解は \\[\nu\n=\n\\sum_{i=0}^{\\ell}\n\\left(\n\\sum_{j=i}^{\\ell}\nb_j c_{j-i}\\frac{j!}{i!}\n\\right)\nx^i.\n\\]\n\\(D^my=u\\) を積分定数 \\(0\\) として \\(m\\) 回積分すれば, 特殊解 \\(y\\) が得られる.\n実際, \\[\nx^i\n\\] を \\(m\\) 回積分すると \\[\n\\frac{i!}{(i+m)!}x^{i+m}\n\\] となるので, \\[\n\\begin{aligned}\ny\n&=\n\\sum_{i=0}^{\\ell}\n\\left(\n\\sum_{j=i}^{\\ell}\nb_j c_{j-i}\\frac{j!}{i!}\n\\right)\n\\frac{i!}{(i+m)!}x^{i+m} \\\\\n&=\n\\sum_{i=0}^{\\ell}\n\\left(\n\\sum_{j=i}^{\\ell}\nb_j c_{j-i}\\frac{j!}{(i+m)!}\n\\right)\nx^{i+m}.\n\\end{aligned}\n\\]\n\n\n\n\n\n\n\n\n\nヒント補足\n\n\n\n\nここまで丁寧に見ていただいた学生はすでに気づいていると思うが, このページの問題において, 公式を覚える必要は全くない.\nいずれも \\(y=\\tfrac{1}{D^m}\\tfrac{1}{Q(D)}f(x)\\) を計算するだけである. あとは, \\(\\tfrac{1}{Q(D)}\\) のテイラー展開を利用するだけである.\nもちろん \\(y=\\tfrac{1}{Q(D)}\\tfrac{1}{D^m}f(x)\\) などでも良いが, 最後に積分をした方が計算量は少なく済むのも, 細かい注意点だろう.\n\\(\\tfrac{1}{Q(D)}\\) は本来, 積分核を用いて表される積分作用素である. しかし, 多項式 \\(f(x)\\) に作用させる場合, \\(\\tfrac{1}{Q(D)}\\) を有限回の微分操作に置き換えられる.\nこの性質が非常に強く, このページの問題を簡単にしている一番の要因となっている."
   }
 ]
