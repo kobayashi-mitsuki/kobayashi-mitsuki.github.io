@@ -810,7 +810,7 @@
     "href": "teaching/cpp-programming-1/setup/videos/show-file-extensions/index.html#操作動画",
     "title": "ファイル名拡張子を表示する",
     "section": "操作動画",
-    "text": "操作動画\n動画は準備中です。\n動画ファイルを配置する場合は、このページと同じフォルダに video.mp4 を置き、次のように埋め込めます。\n&lt;video controls preload=\"metadata\" style=\"width: 100%; max-width: 960px;\"&gt;\n  &lt;source src=\"video.mp4\" type=\"video/mp4\"&gt;\n  お使いのブラウザでは動画を再生できません。\n&lt;/video&gt;",
+    "text": "操作動画",
     "crumbs": [
       "授業・教材",
       "C++プログラミングⅠ",
