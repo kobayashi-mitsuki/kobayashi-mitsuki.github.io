@@ -6,16 +6,7 @@ Windows のエクスプローラーで、ファイル名拡張子を表示する
 
 ## 操作動画
 
-動画は準備中です。
-
-動画ファイルを配置する場合は、このページと同じフォルダに `video.mp4` を置き、次のように埋め込めます。
-
-```html
-<video controls preload="metadata" style="width: 100%; max-width: 960px;">
-  <source src="video.mp4" type="video/mp4">
-  お使いのブラウザでは動画を再生できません。
-</video>
-```
+{{< video 08-show-file-extensions.mp4 >}}
 
 ## 操作手順
 
