@@ -53,9 +53,9 @@ website:
                 - section: "環境構築"
                   contents:
                     - text: "WSL + Ubuntu 導入"
-                      href: teaching/cpp-programming-1/setup/wsl-ubuntu/index.qmd
+                      href: teaching/cpp-programming-1/setup/index.qmd
                     - text: "ファイル名拡張子を表示する"
-                      href: teaching/cpp-programming-1/setup/wsl-ubuntu/videos/show-file-extensions/index.qmd
+                      href: teaching/cpp-programming-1/setup/videos/show-file-extensions/index.qmd
 
 format:
   html:
