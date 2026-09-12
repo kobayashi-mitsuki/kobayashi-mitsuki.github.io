@@ -58,5 +58,11 @@
   },
   "teaching/statistics-intro.qmd": {
     "statistics-intro.html": "27216516"
+  },
+  "teaching/cpp-programming-1/setup/index.qmd": {
+    "index.html": "598254bb"
+  },
+  "teaching/cpp-programming-1/setup/videos/show-file-extensions/index.qmd": {
+    "index.html": "f84b0337"
   }
 }
