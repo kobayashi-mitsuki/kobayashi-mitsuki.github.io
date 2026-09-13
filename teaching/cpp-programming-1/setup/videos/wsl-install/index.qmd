@@ -38,9 +38,9 @@ Windows 上に WSL の実行環境をインストールし、その後 Ubuntu �
 `ubuntu.wsl` をダウンロードフォルダに保存した状態で、管理者として PowerShell を開き、次のコマンドを実行します。
 
 ```powershell
-wsl --install --from-file "$env:USERPROFILE\Downloads\ubuntu.wsl"
+wsl --install --from-file "$env:USERPROFILE\Downloads\ubuntu.wsl" --name Ubuntu
 ```
 
-インストール後は、通常の手順と同じように Ubuntu の初回設定を行います。
+`--name Ubuntu` を指定することで、通常の `wsl --install -d Ubuntu` と同じく、WSL 上の登録名を `Ubuntu` に統一します。インストール後は、通常の手順と同じように Ubuntu の初回設定を行います。
 
 [WSL + Ubuntu 導入ページに戻る](../../index.qmd)
