@@ -8,4 +8,17 @@ Windows 上で WSL と Ubuntu をインストールする操作例です。
 
 {{< video clip.mp4 >}}
 
+## 操作手順
+
+1. Windows のスタートメニューで PowerShell を検索します。
+2. PowerShell を右クリックし、「管理者として実行」を選びます。
+3. ユーザー アカウント制御の画面が表示されたら、「はい」を選びます。
+4. PowerShell で次のコマンドを実行します。
+
+   ```powershell
+   wsl --install
+   ```
+
+5. WSL と Ubuntu のインストールが完了したら、Windows を再起動します。
+
 [WSL + Ubuntu 導入ページに戻る](../../index.qmd)
