@@ -1,8 +1,8 @@
 ---
-title: "WSLをインストールする"
+title: "WSLとUbuntuをインストール"
 ---
 
-Windows 上で WSL をインストールする操作例です。
+Windows 上で WSL と Ubuntu をインストールする操作例です。
 
 ## 操作動画
 
