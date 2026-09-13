@@ -6,7 +6,7 @@ Windows のエクスプローラーで、ファイル名拡張子を表示する
 
 ## 操作動画
 
-{{< video 08-show-file-extensions.mp4 >}}
+{{< video clip.mp4 >}}
 
 ## 操作手順
 
