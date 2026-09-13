@@ -1,8 +1,8 @@
 ---
-title: "WSLをインストール"
+title: "WSLとUbuntuをインストール"
 ---
 
-Windows 上に WSL の実行環境をインストールする操作例です。Ubuntu は Windows の再起動後に別途インストールします。
+Windows 上に WSL の実行環境をインストールし、その後 Ubuntu をインストールする操作例です。
 
 ## 操作動画
 
