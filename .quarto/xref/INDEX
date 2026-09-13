@@ -67,5 +67,8 @@
   },
   "teaching/cpp-programming-1/setup/videos/wsl-install/index.qmd": {
     "index.html": "98c51ee0"
+  },
+  "teaching/cpp-programming-1/setup/videos/ubuntu-install/index.qmd": {
+    "index.html": "7f987106"
   }
 }

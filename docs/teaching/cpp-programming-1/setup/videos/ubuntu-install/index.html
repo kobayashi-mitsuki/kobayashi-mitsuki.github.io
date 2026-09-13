@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>WSLをインストール – 小林光木 | 成蹊大学 理工学部 データサイエンス研究室 助教</title>
+<title>Ubuntuをインストール – 小林光木 | 成蹊大学 理工学部 データサイエンス研究室 助教</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -76,8 +76,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../../../../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../../../../site_libs/bootstrap/bootstrap-dark-e8964db687007ca8dd88d9d9ce58e3ef.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="../../../../../site_libs/quarto-contrib/videojs/video.min.js"></script>
-<link href="../../../../../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "一致なし",
@@ -302,7 +300,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../../teaching.html">授業・教材</a></li><li class="breadcrumb-item"><a href="../../../../../teaching/cpp-programming-1.html">C++プログラミングⅠ</a></li><li class="breadcrumb-item"><a href="../../../../../teaching/cpp-programming-1/setup/index.html">環境構築</a></li><li class="breadcrumb-item"><a href="../../../../../teaching/cpp-programming-1/setup/videos/wsl-install/index.html">WSLをインストール</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../../teaching.html">授業・教材</a></li><li class="breadcrumb-item"><a href="../../../../../teaching/cpp-programming-1.html">C++プログラミングⅠ</a></li><li class="breadcrumb-item"><a href="../../../../../teaching/cpp-programming-1/setup/index.html">環境構築</a></li><li class="breadcrumb-item"><a href="../../../../../teaching/cpp-programming-1/setup/videos/ubuntu-install/index.html">Ubuntuをインストール</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -451,13 +449,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../../teaching/cpp-programming-1/setup/videos/wsl-install/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../../../teaching/cpp-programming-1/setup/videos/wsl-install/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">WSLをインストール</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../../teaching/cpp-programming-1/setup/videos/ubuntu-install/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../../teaching/cpp-programming-1/setup/videos/ubuntu-install/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Ubuntuをインストール</span></a>
   </div>
 </li>
@@ -483,9 +481,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">目次</h2>
    
   <ul>
-  <li><a href="#操作動画" id="toc-操作動画" class="nav-link active" data-scroll-target="#操作動画">操作動画</a></li>
-  <li><a href="#操作手順" id="toc-操作手順" class="nav-link" data-scroll-target="#操作手順">操作手順</a></li>
-  <li><a href="#wsl-の取得インストールが正常に進まない場合" id="toc-wsl-の取得インストールが正常に進まない場合" class="nav-link" data-scroll-target="#wsl-の取得インストールが正常に進まない場合">WSL の取得・インストールが正常に進まない場合</a></li>
+  <li><a href="#操作手順" id="toc-操作手順" class="nav-link active" data-scroll-target="#操作手順">操作手順</a></li>
+  <li><a href="#ubuntu-のダウンロードが正常に進まない場合" id="toc-ubuntu-のダウンロードが正常に進まない場合" class="nav-link" data-scroll-target="#ubuntu-のダウンロードが正常に進まない場合">Ubuntu のダウンロードが正常に進まない場合</a></li>
   </ul>
 </nav>
     </div>
@@ -493,9 +490,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../../teaching.html">授業・教材</a></li><li class="breadcrumb-item"><a href="../../../../../teaching/cpp-programming-1.html">C++プログラミングⅠ</a></li><li class="breadcrumb-item"><a href="../../../../../teaching/cpp-programming-1/setup/index.html">環境構築</a></li><li class="breadcrumb-item"><a href="../../../../../teaching/cpp-programming-1/setup/videos/wsl-install/index.html">WSLをインストール</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../../teaching.html">授業・教材</a></li><li class="breadcrumb-item"><a href="../../../../../teaching/cpp-programming-1.html">C++プログラミングⅠ</a></li><li class="breadcrumb-item"><a href="../../../../../teaching/cpp-programming-1/setup/index.html">環境構築</a></li><li class="breadcrumb-item"><a href="../../../../../teaching/cpp-programming-1/setup/videos/ubuntu-install/index.html">Ubuntuをインストール</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">WSLをインストール</h1>
+<h1 class="title">Ubuntuをインストール</h1>
 </div>
 
 
@@ -512,11 +509,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Windows 上に WSL の実行環境をインストールし、Windows を再起動するまでの操作例です。</p>
-<section id="操作動画" class="level2">
-<h2 class="anchored" data-anchor-id="操作動画">操作動画</h2>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="clip.mp4"></video></div>
-</section>
+<p>WSL のインストールと Windows の再起動が完了した後に、Ubuntu をインストールする操作例です。</p>
 <section id="操作手順" class="level2">
 <h2 class="anchored" data-anchor-id="操作手順">操作手順</h2>
 <ol type="1">
@@ -524,23 +517,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>PowerShell を右クリックし、「管理者として実行」を選びます。</p></li>
 <li><p>ユーザー アカウント制御の画面が表示されたら、「はい」を選びます。</p></li>
 <li><p>PowerShell で次のコマンドを実行します。</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>wsl <span class="op">--</span>install <span class="op">--</span>no-distribution</span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p>WSL のインストールが完了したら、PowerShell で <code>exit</code> を実行して終了します。</p></li>
-<li><p>Windows を再起動します。</p></li>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>wsl <span class="op">--</span>install <span class="op">-</span>d Ubuntu</span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Ubuntu のインストール後、初回設定で Linux 側のユーザー名とパスワードを設定します。</p></li>
 </ol>
 </section>
-<section id="wsl-の取得インストールが正常に進まない場合" class="level2">
-<h2 class="anchored" data-anchor-id="wsl-の取得インストールが正常に進まない場合">WSL の取得・インストールが正常に進まない場合</h2>
-<p>通常の手順で WSL 本体の取得またはインストールが正常に進まない場合は、自己判断で別の方法を試さず、授業中に教員へ知らせてください。</p>
-<p>教員から指示された場合は、Teams の「WSL代替インストール」フォルダから <code>wsl.2.7.13.0.x64.msi</code> と <code>ubuntu.wsl</code> をダウンロードします。WSL の MSI のバージョン番号は授業時に配布するバージョンによって変わる場合があります。また、ここで配布するファイルは x64 PC 用です。ARM64 PC を使用している場合は教員に知らせてください。</p>
-<ol type="1">
-<li><p><code>wsl.2.7.13.0.x64.msi</code> をダブルクリックして WSL をインストールします。</p></li>
-<li><p>管理者として PowerShell を開き、次のコマンドを実行します。</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dism<span class="op">.</span><span class="fu">exe</span> <span class="op">/</span>online <span class="op">/</span>enable-feature <span class="op">/</span>featurename<span class="op">:</span>VirtualMachinePlatform <span class="op">/</span>all <span class="op">/</span>norestart</span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p>処理が正常に完了したら、<code>exit</code> で PowerShell を終了します。</p></li>
-<li><p>Windows を再起動します。</p></li>
-</ol>
-<p>再起動後は、<a href="../../../../../teaching/cpp-programming-1/setup/videos/ubuntu-install/index.html">Ubuntuをインストール</a> の手順に進んでください。</p>
+<section id="ubuntu-のダウンロードが正常に進まない場合" class="level2">
+<h2 class="anchored" data-anchor-id="ubuntu-のダウンロードが正常に進まない場合">Ubuntu のダウンロードが正常に進まない場合</h2>
+<p><code>wsl --install -d Ubuntu</code> の実行時に <code>404 Not Found</code> などのエラーが表示され、Ubuntu の取得が正常に進まない場合は、自己判断で別の方法を試さず、授業中に教員へ知らせてください。</p>
+<p>教員から指示された場合は、Teams の「WSL代替インストール」フォルダから <code>ubuntu.wsl</code> をダウンロードします。<code>.wsl</code> ファイルは展開しません。</p>
+<p><code>ubuntu.wsl</code> がダウンロードフォルダに保存されていることを確認し、管理者として PowerShell を開いて次を実行します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>wsl <span class="op">--</span>install <span class="op">--</span>from-file <span class="st">"</span><span class="va">$env</span><span class="op">:</span><span class="va">USERPROFILE</span><span class="st">\Downloads\ubuntu.wsl"</span> <span class="op">--</span>name Ubuntu</span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>--name Ubuntu</code> を指定することで、通常の <code>wsl --install -d Ubuntu</code> と同じく、WSL 上の登録名を <code>Ubuntu</code> に統一します。</p>
+<p>インストール後は、通常の手順と同じように Ubuntu の初回設定を行います。</p>
 <p><a href="../../../../../teaching/cpp-programming-1/setup/index.html">WSL + Ubuntu 導入ページに戻る</a></p>
 
 
@@ -961,7 +949,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   });
   </script>
 </div> <!-- /content -->
-<script>videojs(video_shortcode_videojs_video1);</script>
 
 
 
