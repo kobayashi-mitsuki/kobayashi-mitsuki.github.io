@@ -10,4 +10,5 @@ PDF 版の導入ガイドは準備中です。
 
 ## 操作動画
 
+- [WSLをインストールする](videos/wsl-install/index.qmd)
 - [ファイル名拡張子を表示する](videos/show-file-extensions/index.qmd)
