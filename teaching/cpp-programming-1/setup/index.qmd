@@ -10,5 +10,6 @@ PDF 版の導入ガイドは準備中です。
 
 ## 操作動画
 
-- [WSLとUbuntuをインストール](videos/wsl-install/index.qmd)
+- [WSLをインストール](videos/wsl-install/index.qmd)
+- [Ubuntuをインストール](videos/ubuntu-install/index.qmd)
 - [ファイル名拡張子を表示する](videos/show-file-extensions/index.qmd)
