@@ -1,0 +1,11 @@
+---
+title: "WSLをインストールする"
+---
+
+Windows 上で WSL をインストールする操作例です。
+
+## 操作動画
+
+{{< video clip.mp4 >}}
+
+[WSL + Ubuntu 導入ページに戻る](../../index.qmd)
