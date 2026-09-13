@@ -1,8 +1,8 @@
 ---
-title: "WSLとUbuntuをインストール"
+title: "WSLをインストール"
 ---
 
-Windows 上で WSL と Ubuntu をインストールする操作例です。
+Windows 上に WSL の実行環境をインストールする操作例です。Ubuntu は Windows の再起動後に別途インストールします。
 
 ## 操作動画
 
@@ -16,9 +16,17 @@ Windows 上で WSL と Ubuntu をインストールする操作例です。
 4. PowerShell で次のコマンドを実行します。
 
    ```powershell
-   wsl --install
+   wsl --install --no-distribution
    ```
 
-5. WSL と Ubuntu のインストールが完了したら、Windows を再起動します。
+5. WSL のインストールが完了したら、PowerShell で `exit` を実行して終了します。
+6. Windows を再起動します。
+7. 再起動後、管理者として PowerShell を開き、次のコマンドで Ubuntu をインストールします。
+
+   ```powershell
+   wsl --install -d Ubuntu
+   ```
+
+8. Ubuntu のインストール後、初回設定で Linux 側のユーザー名とパスワードを設定します。
 
 [WSL + Ubuntu 導入ページに戻る](../../index.qmd)
