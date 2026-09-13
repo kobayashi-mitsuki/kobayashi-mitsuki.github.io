@@ -64,5 +64,8 @@
   },
   "teaching/cpp-programming-1/setup/videos/show-file-extensions/index.qmd": {
     "index.html": "f84b0337"
+  },
+  "teaching/cpp-programming-1/setup/videos/wsl-install/index.qmd": {
+    "index.html": "98c51ee0"
   }
 }

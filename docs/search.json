@@ -773,7 +773,7 @@
     "href": "teaching/cpp-programming-1/setup/index.html#操作動画",
     "title": "WSL + Ubuntu 導入",
     "section": "操作動画",
-    "text": "操作動画\n\nファイル名拡張子を表示する",
+    "text": "操作動画\n\nWSLをインストールする\nファイル名拡張子を表示する",
     "crumbs": [
       "授業・教材",
       "C++プログラミングⅠ",
@@ -829,6 +829,32 @@
       "C++プログラミングⅠ",
       "環境構築",
       "ファイル名拡張子を表示する"
+    ]
+  },
+  {
+    "objectID": "teaching/cpp-programming-1/setup/videos/wsl-install/index.html",
+    "href": "teaching/cpp-programming-1/setup/videos/wsl-install/index.html",
+    "title": "WSLをインストールする",
+    "section": "",
+    "text": "Windows 上で WSL をインストールする操作例です。",
+    "crumbs": [
+      "授業・教材",
+      "C++プログラミングⅠ",
+      "環境構築",
+      "WSLをインストールする"
+    ]
+  },
+  {
+    "objectID": "teaching/cpp-programming-1/setup/videos/wsl-install/index.html#操作動画",
+    "href": "teaching/cpp-programming-1/setup/videos/wsl-install/index.html#操作動画",
+    "title": "WSLをインストールする",
+    "section": "操作動画",
+    "text": "操作動画\n\nWSL + Ubuntu 導入ページに戻る",
+    "crumbs": [
+      "授業・教材",
+      "C++プログラミングⅠ",
+      "環境構築",
+      "WSLをインストールする"
     ]
   }
 ]
