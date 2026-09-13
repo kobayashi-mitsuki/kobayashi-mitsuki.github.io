@@ -54,6 +54,8 @@ website:
                   contents:
                     - text: "WSL + Ubuntu 導入"
                       href: teaching/cpp-programming-1/setup/index.qmd
+                    - text: "WSLをインストールする"
+                      href: teaching/cpp-programming-1/setup/videos/wsl-install/index.qmd
                     - text: "ファイル名拡張子を表示する"
                       href: teaching/cpp-programming-1/setup/videos/show-file-extensions/index.qmd
 
