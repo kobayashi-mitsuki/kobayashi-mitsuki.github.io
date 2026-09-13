@@ -1,8 +1,8 @@
 ---
-title: "WSLとUbuntuをインストール"
+title: "WSLをインストール"
 ---
 
-Windows 上に WSL の実行環境をインストールし、その後 Ubuntu をインストールする操作例です。
+Windows 上に WSL の実行環境をインストールし、Windows を再起動するまでの操作例です。
 
 ## 操作動画
 
@@ -21,40 +21,12 @@ Windows 上に WSL の実行環境をインストールし、その後 Ubuntu �
 
 5. WSL のインストールが完了したら、PowerShell で `exit` を実行して終了します。
 6. Windows を再起動します。
-7. 再起動後、管理者として PowerShell を開き、次のコマンドで Ubuntu をインストールします。
 
-   ```powershell
-   wsl --install -d Ubuntu
-   ```
+## WSL の取得・インストールが正常に進まない場合
 
-8. Ubuntu のインストール後、初回設定で Linux 側のユーザー名とパスワードを設定します。
+通常の手順で WSL 本体の取得またはインストールが正常に進まない場合は、自己判断で別の方法を試さず、授業中に教員へ知らせてください。
 
-## 代替インストール
-
-通常の手順で WSL または Ubuntu の取得・インストールが正常に進まない場合は、自己判断で別の方法を試さず、授業中に教員へ知らせてください。
-
-授業では、必要に応じて Teams の「WSL代替インストール」フォルダから次のファイルを配布します。
-
-- `wsl.2.7.13.0.x64.msi`：WSL 本体のインストーラー
-- `ubuntu.wsl`：Ubuntu の WSL イメージ
-
-WSL の MSI のバージョン番号は、授業時に配布するバージョンによって変わる場合があります。ここでは Teams に置かれている教員指定のファイルを使用してください。また、これらは x64 PC 用です。ARM64 PC を使用している場合は教員に知らせてください。
-
-### Ubuntu の取得だけが正常に進まない場合
-
-`wsl --install --no-distribution` と Windows の再起動までは完了しているものの、`wsl --install -d Ubuntu` の実行時に `404 Not Found` などのエラーが表示される場合は、Teams から `ubuntu.wsl` をダウンロードします。`.wsl` ファイルは展開しません。
-
-`ubuntu.wsl` がダウンロードフォルダに保存されていることを確認し、管理者として PowerShell を開いて次を実行します。
-
-```powershell
-wsl --install --from-file "$env:USERPROFILE\Downloads\ubuntu.wsl" --name Ubuntu
-```
-
-`--name Ubuntu` を指定することで、通常の `wsl --install -d Ubuntu` と同じく、WSL 上の登録名を `Ubuntu` に統一します。
-
-### WSL 本体の取得・インストールが正常に進まない場合
-
-`wsl --install --no-distribution` の段階で WSL 本体の取得またはインストールが正常に進まない場合は、Teams から `wsl.2.7.13.0.x64.msi` と `ubuntu.wsl` をダウンロードします。
+教員から指示された場合は、Teams の「WSL代替インストール」フォルダから `wsl.2.7.13.0.x64.msi` と `ubuntu.wsl` をダウンロードします。WSL の MSI のバージョン番号は授業時に配布するバージョンによって変わる場合があります。また、ここで配布するファイルは x64 PC 用です。ARM64 PC を使用している場合は教員に知らせてください。
 
 1. `wsl.2.7.13.0.x64.msi` をダブルクリックして WSL をインストールします。
 2. 管理者として PowerShell を開き、次のコマンドを実行します。
@@ -65,12 +37,7 @@ wsl --install --from-file "$env:USERPROFILE\Downloads\ubuntu.wsl" --name Ubuntu
 
 3. 処理が正常に完了したら、`exit` で PowerShell を終了します。
 4. Windows を再起動します。
-5. 再起動後、管理者として PowerShell を開き、次のコマンドで Ubuntu をインストールします。
 
-   ```powershell
-   wsl --install --from-file "$env:USERPROFILE\Downloads\ubuntu.wsl" --name Ubuntu
-   ```
-
-インストール後は、通常の手順と同じように Ubuntu の初回設定を行います。
+再起動後は、[Ubuntuをインストール](../ubuntu-install/index.qmd) の手順に進んでください。
 
 [WSL + Ubuntu 導入ページに戻る](../../index.qmd)
