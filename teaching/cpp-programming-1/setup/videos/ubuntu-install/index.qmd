@@ -4,6 +4,10 @@ title: "Ubuntuをインストール"
 
 WSL のインストールと Windows の再起動が完了した後に、Ubuntu をインストールする操作例です。
 
+## 操作動画
+
+{{< video clip.mp4 >}}
+
 ## 操作手順
 
 1. Windows のスタートメニューで PowerShell を検索します。
