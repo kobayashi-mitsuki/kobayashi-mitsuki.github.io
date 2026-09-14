@@ -10,16 +10,19 @@ WSL のインストールと Windows の再起動が完了した後に、Ubuntu 
 
 ## 操作手順
 
-1. Windows のスタートメニューで PowerShell を検索します。
-2. PowerShell を右クリックし、「管理者として実行」を選びます。
-3. ユーザー アカウント制御の画面が表示されたら、「はい」を選びます。
-4. PowerShell で次のコマンドを実行します。
+1.  Windows のスタートメニューで PowerShell を検索します。
 
-   ```powershell
-   wsl --install -d Ubuntu
-   ```
+2.  PowerShell を右クリックし、「管理者として実行」を選びます。
 
-5. Ubuntu のインストール後、初回設定で Linux 側のユーザー名とパスワードを設定します。
+3.  ユーザー アカウント制御の画面が表示されたら、「はい」を選びます。
+
+4.  PowerShell で次のコマンドを実行します。
+
+    ``` powershell
+    wsl --install -d Ubuntu
+    ```
+
+5.  Ubuntu のインストール後、初回設定で Linux 側のユーザー名とパスワードを設定します。
 
 ## Ubuntu のダウンロードが正常に進まない場合
 
@@ -29,7 +32,7 @@ WSL のインストールと Windows の再起動が完了した後に、Ubuntu 
 
 `ubuntu.wsl` がダウンロードフォルダに保存されていることを確認し、管理者として PowerShell を開いて次を実行します。
 
-```powershell
+``` powershell
 wsl --install --from-file "$env:USERPROFILE\Downloads\ubuntu.wsl" --name Ubuntu
 ```
 
