@@ -26,18 +26,4 @@ Windows 上に WSL の実行環境をインストールし、Windows を再起�
 
 通常の手順で WSL 本体の取得またはインストールが正常に進まない場合は、自己判断で別の方法を試さず、授業中に教員へ知らせてください。
 
-教員から指示された場合は、Teams の「WSL代替インストール」フォルダから `wsl.2.7.13.0.x64.msi` と `ubuntu.wsl` をダウンロードします。WSL の MSI のバージョン番号は授業時に配布するバージョンによって変わる場合があります。また、ここで配布するファイルは x64 PC 用です。ARM64 PC を使用している場合は教員に知らせてください。
-
-1. `wsl.2.7.13.0.x64.msi` をダブルクリックして WSL をインストールします。
-2. 管理者として PowerShell を開き、次のコマンドを実行します。
-
-   ```powershell
-   dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-   ```
-
-3. 処理が正常に完了したら、`exit` で PowerShell を終了します。
-4. Windows を再起動します。
-
-再起動後は、[Ubuntuをインストール](../ubuntu-install/index.qmd) の手順に進んでください。
-
 [WSL + Ubuntu 導入ページに戻る](../../index.qmd)
