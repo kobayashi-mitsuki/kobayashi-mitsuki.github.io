@@ -28,16 +28,4 @@ WSL のインストールと Windows の再起動が完了した後に、Ubuntu 
 
 `wsl --install -d Ubuntu` の実行時に `404 Not Found` などのエラーが表示され、Ubuntu の取得が正常に進まない場合は、自己判断で別の方法を試さず、授業中に教員へ知らせてください。
 
-教員から指示された場合は、Teams の「WSL代替インストール」フォルダから `ubuntu.wsl` をダウンロードします。`.wsl` ファイルは展開しません。
-
-`ubuntu.wsl` がダウンロードフォルダに保存されていることを確認し、管理者として PowerShell を開いて次を実行します。
-
-``` powershell
-wsl --install --from-file "$env:USERPROFILE\Downloads\ubuntu.wsl" --name Ubuntu
-```
-
-`--name Ubuntu` を指定することで、通常の `wsl --install -d Ubuntu` と同じく、WSL 上の登録名を `Ubuntu` に統一します。
-
-インストール後は、通常の手順と同じように Ubuntu の初回設定を行います。
-
 [WSL + Ubuntu 導入ページに戻る](../../index.qmd)
