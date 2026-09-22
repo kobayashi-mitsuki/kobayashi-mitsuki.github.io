@@ -388,7 +388,7 @@
     "href": "teaching/cpp-programming-1.html",
     "title": "C++プログラミングⅠ",
     "section": "",
-    "text": "WSL + Ubuntu 導入",
+    "text": "準備中",
     "crumbs": [
       "授業・教材",
       "C++プログラミングⅠ"
@@ -745,40 +745,34 @@
   {
     "objectID": "teaching/cpp-programming-1/setup/index.html",
     "href": "teaching/cpp-programming-1/setup/index.html",
-    "title": "WSL + Ubuntu 導入",
+    "title": "WSL + Ubuntu 環境構築",
     "section": "",
-    "text": "Windows 上に C++ の学習環境を構築するための案内です。",
+    "text": "Windows 上に WSL と Ubuntu を用いた C++ 開発環境を構築するための参考資料です。",
     "crumbs": [
       "授業・教材",
-      "C++プログラミングⅠ",
-      "環境構築",
-      "WSL + Ubuntu 導入"
+      "WSL + Ubuntu 環境構築"
     ]
   },
   {
     "objectID": "teaching/cpp-programming-1/setup/index.html#導入ガイド",
     "href": "teaching/cpp-programming-1/setup/index.html#導入ガイド",
-    "title": "WSL + Ubuntu 導入",
+    "title": "WSL + Ubuntu 環境構築",
     "section": "導入ガイド",
     "text": "導入ガイド\nPDF 版の導入ガイドは準備中です。",
     "crumbs": [
       "授業・教材",
-      "C++プログラミングⅠ",
-      "環境構築",
-      "WSL + Ubuntu 導入"
+      "WSL + Ubuntu 環境構築"
     ]
   },
   {
     "objectID": "teaching/cpp-programming-1/setup/index.html#操作動画",
     "href": "teaching/cpp-programming-1/setup/index.html#操作動画",
-    "title": "WSL + Ubuntu 導入",
+    "title": "WSL + Ubuntu 環境構築",
     "section": "操作動画",
     "text": "操作動画\n\nWSLをインストール\nUbuntuをインストール\nファイル名拡張子を表示する",
     "crumbs": [
       "授業・教材",
-      "C++プログラミングⅠ",
-      "環境構築",
-      "WSL + Ubuntu 導入"
+      "WSL + Ubuntu 環境構築"
     ]
   },
   {
@@ -875,7 +869,7 @@
     "href": "teaching/cpp-programming-1/setup/videos/wsl-install/index.html#wsl-の取得インストールが正常に進まない場合",
     "title": "WSLをインストール",
     "section": "WSL の取得・インストールが正常に進まない場合",
-    "text": "WSL の取得・インストールが正常に進まない場合\n通常の手順で WSL 本体の取得またはインストールが正常に進まない場合は、自己判断で別の方法を試さず、授業中に教員へ知らせてください。\n教員から指示された場合は、Teams の「WSL代替インストール」フォルダから wsl.2.7.13.0.x64.msi と ubuntu.wsl をダウンロードします。WSL の MSI のバージョン番号は授業時に配布するバージョンによって変わる場合があります。また、ここで配布するファイルは x64 PC 用です。ARM64 PC を使用している場合は教員に知らせてください。\n\nwsl.2.7.13.0.x64.msi をダブルクリックして WSL をインストールします。\n管理者として PowerShell を開き、次のコマンドを実行します。\ndism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart\n処理が正常に完了したら、exit で PowerShell を終了します。\nWindows を再起動します。\n\n再起動後は、Ubuntuをインストール の手順に進んでください。\nWSL + Ubuntu 導入ページに戻る",
+    "text": "WSL の取得・インストールが正常に進まない場合\n通常の手順で WSL 本体の取得またはインストールが正常に進まない場合は、自己判断で別の方法を試さず、授業中に教員へ知らせてください。\nWSL + Ubuntu 導入ページに戻る",
     "crumbs": [
       "授業・教材",
       "C++プログラミングⅠ",
@@ -914,7 +908,7 @@
     "href": "teaching/cpp-programming-1/setup/videos/ubuntu-install/index.html#ubuntu-のダウンロードが正常に進まない場合",
     "title": "Ubuntuをインストール",
     "section": "Ubuntu のダウンロードが正常に進まない場合",
-    "text": "Ubuntu のダウンロードが正常に進まない場合\nwsl --install -d Ubuntu の実行時に 404 Not Found などのエラーが表示され、Ubuntu の取得が正常に進まない場合は、自己判断で別の方法を試さず、授業中に教員へ知らせてください。\n教員から指示された場合は、Teams の「WSL代替インストール」フォルダから ubuntu.wsl をダウンロードします。.wsl ファイルは展開しません。\nubuntu.wsl がダウンロードフォルダに保存されていることを確認し、管理者として PowerShell を開いて次を実行します。\nwsl --install --from-file \"$env:USERPROFILE\\Downloads\\ubuntu.wsl\" --name Ubuntu\n--name Ubuntu を指定することで、通常の wsl --install -d Ubuntu と同じく、WSL 上の登録名を Ubuntu に統一します。\nインストール後は、通常の手順と同じように Ubuntu の初回設定を行います。\nWSL + Ubuntu 導入ページに戻る",
+    "text": "Ubuntu のダウンロードが正常に進まない場合\nwsl --install -d Ubuntu の実行時に 404 Not Found などのエラーが表示され、Ubuntu の取得が正常に進まない場合は、自己判断で別の方法を試さず、授業中に教員へ知らせてください。\nWSL + Ubuntu 導入ページに戻る",
     "crumbs": [
       "授業・教材",
       "C++プログラミングⅠ",
@@ -941,5 +935,15 @@
     "title": "確率統計",
     "section": "",
     "text": "第1回 確率"
+  },
+  {
+    "objectID": "teaching.html#参考資料",
+    "href": "teaching.html#参考資料",
+    "title": "授業・教材",
+    "section": "参考資料",
+    "text": "参考資料\n\nWSL + Ubuntu 環境構築",
+    "crumbs": [
+      "授業・教材"
+    ]
   }
 ]

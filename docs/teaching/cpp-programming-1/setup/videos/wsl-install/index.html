@@ -532,15 +532,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="wsl-の取得インストールが正常に進まない場合" class="level2">
 <h2 class="anchored" data-anchor-id="wsl-の取得インストールが正常に進まない場合">WSL の取得・インストールが正常に進まない場合</h2>
 <p>通常の手順で WSL 本体の取得またはインストールが正常に進まない場合は、自己判断で別の方法を試さず、授業中に教員へ知らせてください。</p>
-<p>教員から指示された場合は、Teams の「WSL代替インストール」フォルダから <code>wsl.2.7.13.0.x64.msi</code> と <code>ubuntu.wsl</code> をダウンロードします。WSL の MSI のバージョン番号は授業時に配布するバージョンによって変わる場合があります。また、ここで配布するファイルは x64 PC 用です。ARM64 PC を使用している場合は教員に知らせてください。</p>
-<ol type="1">
-<li><p><code>wsl.2.7.13.0.x64.msi</code> をダブルクリックして WSL をインストールします。</p></li>
-<li><p>管理者として PowerShell を開き、次のコマンドを実行します。</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dism<span class="op">.</span><span class="fu">exe</span> <span class="op">/</span>online <span class="op">/</span>enable-feature <span class="op">/</span>featurename<span class="op">:</span>VirtualMachinePlatform <span class="op">/</span>all <span class="op">/</span>norestart</span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p>処理が正常に完了したら、<code>exit</code> で PowerShell を終了します。</p></li>
-<li><p>Windows を再起動します。</p></li>
-</ol>
-<p>再起動後は、<a href="../../../../../teaching/cpp-programming-1/setup/videos/ubuntu-install/index.html">Ubuntuをインストール</a> の手順に進んでください。</p>
 <p><a href="../../../../../teaching/cpp-programming-1/setup/index.html">WSL + Ubuntu 導入ページに戻る</a></p>
 
 

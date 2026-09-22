@@ -531,11 +531,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="ubuntu-のダウンロードが正常に進まない場合" class="level2">
 <h2 class="anchored" data-anchor-id="ubuntu-のダウンロードが正常に進まない場合">Ubuntu のダウンロードが正常に進まない場合</h2>
 <p><code>wsl --install -d Ubuntu</code> の実行時に <code>404 Not Found</code> などのエラーが表示され、Ubuntu の取得が正常に進まない場合は、自己判断で別の方法を試さず、授業中に教員へ知らせてください。</p>
-<p>教員から指示された場合は、Teams の「WSL代替インストール」フォルダから <code>ubuntu.wsl</code> をダウンロードします。<code>.wsl</code> ファイルは展開しません。</p>
-<p><code>ubuntu.wsl</code> がダウンロードフォルダに保存されていることを確認し、管理者として PowerShell を開いて次を実行します。</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>wsl <span class="op">--</span>install <span class="op">--</span>from-file <span class="st">"</span><span class="va">$env</span><span class="op">:</span><span class="va">USERPROFILE</span><span class="st">\Downloads\ubuntu.wsl"</span> <span class="op">--</span>name Ubuntu</span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div>
-<p><code>--name Ubuntu</code> を指定することで、通常の <code>wsl --install -d Ubuntu</code> と同じく、WSL 上の登録名を <code>Ubuntu</code> に統一します。</p>
-<p>インストール後は、通常の手順と同じように Ubuntu の初回設定を行います。</p>
 <p><a href="../../../../../teaching/cpp-programming-1/setup/index.html">WSL + Ubuntu 導入ページに戻る</a></p>
 
 
