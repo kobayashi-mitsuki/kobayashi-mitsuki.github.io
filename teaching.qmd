@@ -14,3 +14,7 @@ title: "授業・教材"
 - [プログラミング基礎（Python）](teaching/programming-basics-python.qmd)
 - [C++プログラミングⅠ（準備中）](teaching/cpp-programming-1.qmd)
 - [C++プログラミングⅡ（準備中）](teaching/cpp-programming-2.qmd)
+
+## 参考資料
+
+- [WSL + Ubuntu 環境構築](teaching/cpp-programming-1/setup/index.qmd)
