@@ -1057,7 +1057,7 @@
     "href": "teaching/wsl-ubuntu-setup/index.html#操作動画",
     "title": "WSL + Ubuntu 環境構築",
     "section": "操作動画",
-    "text": "操作動画\n\nWSLをインストール\nUbuntuをインストールして初回設定\n授業用フォルダを作成して登録する\nファイル名拡張子を表示する",
+    "text": "操作動画\n\nWSLをインストール\nUbuntuをインストールして初回設定\nC++ の開発ツールを導入する\n授業用フォルダを作成して登録する\nファイル名拡張子を表示する",
     "crumbs": [
       "授業・教材",
       "WSL + Ubuntu 環境構築"
@@ -1212,7 +1212,7 @@
     "href": "teaching/wsl-ubuntu-setup/index.html#確認トラブルシューティング",
     "title": "WSL + Ubuntu 環境構築",
     "section": "確認・トラブルシューティング",
-    "text": "確認・トラブルシューティング\n\nWSL の状態確認・更新、Ubuntu のユーザー名・パスワードを忘れた場合",
+    "text": "確認・トラブルシューティング\n&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD - WSL の状態確認・更新、Ubuntu のユーザー名・パスワードを忘れた場合 ======= - WSL のバージョン確認と更新 - Ubuntu のユーザー名・パスワードを忘れた場合 &gt;&gt;&gt;&gt;&gt;&gt;&gt; deec9e24b229aa1304638b3f5a27b4db76cd7519",
     "crumbs": [
       "授業・教材",
       "WSL + Ubuntu 環境構築"
