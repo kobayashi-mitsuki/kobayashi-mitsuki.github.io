@@ -11,7 +11,7 @@
     "href": "teaching/probability-statistics-seikei.html",
     "title": "確率統計（入門）",
     "section": "",
-    "text": "スライド資料\n第1回　確率"
+    "text": "第1回　確率"
   },
   {
     "objectID": "teaching/programming-basics-python/slides/variables-assignment.html#今日の問い",
@@ -717,7 +717,7 @@
     "href": "teaching.html",
     "title": "授業・教材",
     "section": "",
-    "text": "微分方程式\nフーリエ解析（準備中）\n確率統計（入門）（準備中）\nIntermediate Statistics（準備中）",
+    "text": "微分方程式\nフーリエ解析（準備中）\n確率統計（入門）\nIntermediate Statistics（準備中）",
     "crumbs": [
       "授業・教材"
     ]
@@ -727,7 +727,7 @@
     "href": "teaching.html#数学統計",
     "title": "授業・教材",
     "section": "",
-    "text": "微分方程式\nフーリエ解析（準備中）\n確率統計（入門）（準備中）\nIntermediate Statistics（準備中）",
+    "text": "微分方程式\nフーリエ解析（準備中）\n確率統計（入門）\nIntermediate Statistics（準備中）",
     "crumbs": [
       "授業・教材"
     ]
@@ -934,5 +934,12 @@
       "環境構築",
       "Ubuntuをインストール"
     ]
+  },
+  {
+    "objectID": "teaching/probability-statistics-seikei.html#スライド資料",
+    "href": "teaching/probability-statistics-seikei.html#スライド資料",
+    "title": "確率統計（入門）",
+    "section": "",
+    "text": "第1回　確率"
   }
 ]
