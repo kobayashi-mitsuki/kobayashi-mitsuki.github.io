@@ -56,6 +56,8 @@ website:
                   href: teaching/wsl-ubuntu-setup/videos/wsl-install/index.qmd
                 - text: "Ubuntuをインストールして初回設定"
                   href: teaching/wsl-ubuntu-setup/videos/ubuntu-install/index.qmd
+                - text: "授業用フォルダを作成して登録する"
+                  href: teaching/wsl-ubuntu-setup/videos/work-folder-setup/index.qmd
                 - text: "ファイル名拡張子を表示する"
                   href: teaching/wsl-ubuntu-setup/videos/show-file-extensions/index.qmd
                 - text: "確認・トラブルシューティング"
