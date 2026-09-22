@@ -13,3 +13,7 @@ PDF 版の導入ガイドは準備中です。
 - [WSLをインストール](videos/wsl-install/index.qmd)
 - [Ubuntuをインストールして初回設定](videos/ubuntu-install/index.qmd)
 - [ファイル名拡張子を表示する](videos/show-file-extensions/index.qmd)
+
+## 確認・トラブルシューティング
+
+- [WSL の状態確認・更新、Ubuntu のユーザー名・パスワードを忘れた場合](troubleshooting.qmd)

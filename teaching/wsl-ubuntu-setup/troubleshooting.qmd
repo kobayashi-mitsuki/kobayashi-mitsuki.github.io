@@ -1,0 +1,69 @@
+---
+title: "確認・トラブルシューティング"
+---
+
+初回の環境構築が終わった後に、WSL の状態を確認したい場合や、Ubuntu のユーザー名・パスワードを忘れた場合は、このページを参照してください。
+
+## Ubuntu が WSL 2 で動作していることを確認する
+
+PowerShell で次のコマンドを実行します。
+
+``` powershell
+wsl -l -v
+```
+
+Ubuntu の行の `VERSION` が `2` になっていれば、この資料で想定している WSL 2 環境です。
+
+## WSL を更新する
+
+WSL 自体を更新する場合は、PowerShell で次のコマンドを実行します。
+
+``` powershell
+wsl --update
+```
+
+これは Ubuntu 内のパッケージを更新する操作とは別です。
+
+## Ubuntu のユーザー名を忘れた場合
+
+Ubuntu を起動し、次のコマンドを実行します。
+
+``` bash
+whoami
+```
+
+表示された名前が、現在 Ubuntu で使用しているユーザー名です。確認できたら、次のコマンドで Ubuntu の端末を終了します。
+
+``` bash
+exit
+```
+
+## Ubuntu のパスワードを忘れた場合
+
+ユーザー名も分からない場合は、先に上の手順で確認します。
+
+PowerShell から root ユーザーで Ubuntu を起動します。
+
+``` powershell
+wsl -d Ubuntu -u root
+```
+
+Ubuntu が起動したら、次のコマンドを実行します。`<ユーザー名>` は実際のユーザー名に置き換えてください。
+
+``` bash
+passwd <ユーザー名>
+```
+
+新しいパスワードを入力し、確認のためもう一度入力します。完了したら、次のコマンドで Ubuntu の端末を終了します。
+
+``` bash
+exit
+```
+
+::: {.callout-warning}
+`wsl --unregister Ubuntu` を実行すると、Ubuntu 環境に保存されているユーザー、設定、ファイルが削除されます。ユーザー名やパスワードを忘れた場合の対処としては使用しないでください。
+:::
+
+参考：
+[Microsoft Learn: WSL の基本的なコマンド](https://learn.microsoft.com/ja-jp/windows/wsl/basic-commands)、
+[Microsoft Learn: WSL 開発環境を設定する](https://learn.microsoft.com/ja-jp/windows/wsl/setup/environment)

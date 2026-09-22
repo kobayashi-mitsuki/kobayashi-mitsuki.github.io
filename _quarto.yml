@@ -58,6 +58,8 @@ website:
                   href: teaching/wsl-ubuntu-setup/videos/ubuntu-install/index.qmd
                 - text: "ファイル名拡張子を表示する"
                   href: teaching/wsl-ubuntu-setup/videos/show-file-extensions/index.qmd
+                - text: "確認・トラブルシューティング"
+                  href: teaching/wsl-ubuntu-setup/troubleshooting.qmd
 
 format:
   html:
