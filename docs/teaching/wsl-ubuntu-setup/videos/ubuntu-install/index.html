@@ -454,8 +454,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../../../teaching/wsl-ubuntu-setup/videos/work-folder-setup/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">授業用フォルダを作成して登録する</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../../../teaching/wsl-ubuntu-setup/videos/show-file-extensions/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ファイル名拡張子を表示する</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../teaching/wsl-ubuntu-setup/troubleshooting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">確認・トラブルシューティング</span></a>
   </div>
 </li>
       </ul>
@@ -501,7 +513,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>WSL のインストールと Windows の再起動が完了した後に、Ubuntu をインストールし、Linux 側のユーザー名とパスワードを設定するまでの操作例です。</p>
+<p>WSL のインストールと Windows の再起動が完了した後に、Ubuntu をインストールし、Linux 側のユーザー名とパスワードを設定して、<code>exit</code> で Ubuntu の端末を終了するまでの操作例です。</p>
 <section id="操作動画" class="level2">
 <h2 class="anchored" data-anchor-id="操作動画">操作動画</h2>
 <div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="clip.mp4"></video></div>
@@ -516,9 +528,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>wsl <span class="op">--</span>install <span class="op">-</span>d Ubuntu</span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p>Ubuntu のインストールが完了すると、初回設定が始まります。自動的に Ubuntu が起動しない場合は、スタートメニューから Ubuntu を起動します。</p></li>
 <li><p>Linux 側のユーザー名を入力します。入力トラブルを避けるため、半角英数字を用い、空白を含めないことを推奨します。</p></li>
-<li><p>パスワードを入力し、確認のためもう一度入力します。</p></li>
+<li><p>パスワードを入力し、確認のためもう一度入力します。</p>
+<p>Linux の端末では、パスワードを入力している間、画面には文字も <code>*</code> も表示されません。表示されなくても入力は受け付けられているので、そのまま入力して Enter キーを押します。</p></li>
+<li><p>初回設定が完了し Ubuntu のプロンプトが表示されたら、次のコマンドを実行して Ubuntu の端末を終了します。</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">exit</span></span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div></li>
 </ol>
-<p>Linux の端末では、パスワードを入力している間、画面には文字も <code>*</code> も表示されません。表示されなくても入力は受け付けられているので、そのまま入力して Enter キーを押します。</p>
 </section>
 <section id="ubuntu-のダウンロードが正常に進まない場合" class="level2">
 <h2 class="anchored" data-anchor-id="ubuntu-のダウンロードが正常に進まない場合">Ubuntu のダウンロードが正常に進まない場合</h2>
