@@ -56,8 +56,8 @@
   "teaching/programming-basics-python/course-guidance.qmd": {
     "course-guidance.html": "3e777d2c"
   },
-  "teaching/statistics-intro.qmd": {
-    "statistics-intro.html": "27216516"
+  "teaching/probability-statistics.qmd": {
+    "probability-statistics.html": "27216516"
   },
   "teaching/cpp-programming-1/setup/index.qmd": {
     "index.html": "598254bb"
