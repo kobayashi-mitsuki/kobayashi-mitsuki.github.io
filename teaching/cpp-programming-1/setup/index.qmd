@@ -1,8 +1,8 @@
 ---
-title: "WSL + Ubuntu 導入"
+title: "WSL + Ubuntu 環境構築"
 ---
 
-Windows 上に C++ の学習環境を構築するための案内です。
+Windows 上に WSL と Ubuntu を用いた C++ 開発環境を構築するための参考資料です。
 
 ## 導入ガイド
 
