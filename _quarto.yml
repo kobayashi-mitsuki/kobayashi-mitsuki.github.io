@@ -47,19 +47,17 @@ website:
                       contents:
                         - text: "第2回　プログラムの基本"
                           href: teaching/programming-basics-python/slides/variables-assignment.qmd
-            - section: "C++プログラミングⅠ"
+            - text: "C++プログラミングⅠ"
               href: teaching/cpp-programming-1.qmd
+            - section: "WSL + Ubuntu 環境構築"
+              href: teaching/cpp-programming-1/setup/index.qmd
               contents:
-                - section: "環境構築"
-                  contents:
-                    - text: "WSL + Ubuntu 導入"
-                      href: teaching/cpp-programming-1/setup/index.qmd
-                    - text: "WSLをインストール"
-                      href: teaching/cpp-programming-1/setup/videos/wsl-install/index.qmd
-                    - text: "Ubuntuをインストール"
-                      href: teaching/cpp-programming-1/setup/videos/ubuntu-install/index.qmd
-                    - text: "ファイル名拡張子を表示する"
-                      href: teaching/cpp-programming-1/setup/videos/show-file-extensions/index.qmd
+                - text: "WSLをインストール"
+                  href: teaching/cpp-programming-1/setup/videos/wsl-install/index.qmd
+                - text: "Ubuntuをインストール"
+                  href: teaching/cpp-programming-1/setup/videos/ubuntu-install/index.qmd
+                - text: "ファイル名拡張子を表示する"
+                  href: teaching/cpp-programming-1/setup/videos/show-file-extensions/index.qmd
 
 format:
   html:
