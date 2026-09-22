@@ -1152,7 +1152,7 @@
     "href": "teaching/wsl-ubuntu-setup/troubleshooting.html",
     "title": "確認・トラブルシューティング",
     "section": "",
-    "text": "初回の環境構築が終わった後に、WSL の状態を確認したい場合や、Ubuntu のユーザー名・パスワードを忘れた場合は、このページを参照してください。",
+    "text": "Ubuntu のユーザー名やパスワードを忘れた場合は、このページを参照してください。WSL のバージョン確認と更新は、別ページにまとめています。",
     "crumbs": [
       "授業・教材",
       "WSL + Ubuntu 環境構築",
@@ -1212,10 +1212,85 @@
     "href": "teaching/wsl-ubuntu-setup/index.html#確認トラブルシューティング",
     "title": "WSL + Ubuntu 環境構築",
     "section": "確認・トラブルシューティング",
-    "text": "確認・トラブルシューティング\n&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD - WSL の状態確認・更新、Ubuntu のユーザー名・パスワードを忘れた場合 ======= - WSL のバージョン確認と更新 - Ubuntu のユーザー名・パスワードを忘れた場合 &gt;&gt;&gt;&gt;&gt;&gt;&gt; deec9e24b229aa1304638b3f5a27b4db76cd7519",
+    "text": "確認・トラブルシューティング\n\nWSL のバージョン確認と更新\nUbuntu のユーザー名・パスワードを忘れた場合",
     "crumbs": [
       "授業・教材",
       "WSL + Ubuntu 環境構築"
+    ]
+  },
+  {
+    "objectID": "teaching/wsl-ubuntu-setup/videos/wsl-version-update/index.html",
+    "href": "teaching/wsl-ubuntu-setup/videos/wsl-version-update/index.html",
+    "title": "WSL のバージョン確認と更新",
+    "section": "",
+    "text": "PowerShell で WSL のバージョンを確認し、続けて WSL 自体を更新する一連の操作です。",
+    "crumbs": [
+      "授業・教材",
+      "WSL + Ubuntu 環境構築",
+      "確認・トラブルシューティング",
+      "WSL のバージョン確認と更新"
+    ]
+  },
+  {
+    "objectID": "teaching/wsl-ubuntu-setup/videos/wsl-version-update/index.html#操作動画",
+    "href": "teaching/wsl-ubuntu-setup/videos/wsl-version-update/index.html#操作動画",
+    "title": "WSL のバージョン確認と更新",
+    "section": "操作動画",
+    "text": "操作動画",
+    "crumbs": [
+      "授業・教材",
+      "WSL + Ubuntu 環境構築",
+      "確認・トラブルシューティング",
+      "WSL のバージョン確認と更新"
+    ]
+  },
+  {
+    "objectID": "teaching/wsl-ubuntu-setup/videos/wsl-version-update/index.html#操作手順",
+    "href": "teaching/wsl-ubuntu-setup/videos/wsl-version-update/index.html#操作手順",
+    "title": "WSL のバージョン確認と更新",
+    "section": "操作手順",
+    "text": "操作手順\n\nPowerShell を開き、次のコマンドを実行します。\nwsl -l -v\nUbuntu の行の VERSION が 2 になっていることを確認します。\n続けて、WSL 自体を更新します。\nwsl --update\n\nこれは Ubuntu 内のパッケージを更新する操作とは別です。\n確認・トラブルシューティングに戻る",
+    "crumbs": [
+      "授業・教材",
+      "WSL + Ubuntu 環境構築",
+      "確認・トラブルシューティング",
+      "WSL のバージョン確認と更新"
+    ]
+  },
+  {
+    "objectID": "teaching/wsl-ubuntu-setup/videos/gpp-install/index.html",
+    "href": "teaching/wsl-ubuntu-setup/videos/gpp-install/index.html",
+    "title": "C++ の開発ツールを導入する",
+    "section": "",
+    "text": "Ubuntu を起動し、パッケージ情報を更新して build-essential と nkf を導入し、C++ コンパイラ g++ を確認するところまでを一続きに行います。",
+    "crumbs": [
+      "授業・教材",
+      "WSL + Ubuntu 環境構築",
+      "C++ の開発ツールを導入する"
+    ]
+  },
+  {
+    "objectID": "teaching/wsl-ubuntu-setup/videos/gpp-install/index.html#操作動画",
+    "href": "teaching/wsl-ubuntu-setup/videos/gpp-install/index.html#操作動画",
+    "title": "C++ の開発ツールを導入する",
+    "section": "操作動画",
+    "text": "操作動画",
+    "crumbs": [
+      "授業・教材",
+      "WSL + Ubuntu 環境構築",
+      "C++ の開発ツールを導入する"
+    ]
+  },
+  {
+    "objectID": "teaching/wsl-ubuntu-setup/videos/gpp-install/index.html#操作手順",
+    "href": "teaching/wsl-ubuntu-setup/videos/gpp-install/index.html#操作手順",
+    "title": "C++ の開発ツールを導入する",
+    "section": "操作手順",
+    "text": "操作手順\n\nUbuntu を起動します。\n次を実行して、利用可能なパッケージの情報を更新します。\nsudo apt update\n既存のパッケージも更新する場合は、続けて次を実行します。\nsudo apt upgrade\nC++ の基本的な開発ツールを導入します。\nsudo apt install build-essential\n文字コードや改行コードの確認に使用する nkf を導入します。\nsudo apt install nkf\nC++ コンパイラを使用できることを確認します。\ng++ --version\n\nバージョン情報が表示されれば、g++ を使用できる状態です。\nWSL + Ubuntu 環境構築ページに戻る",
+    "crumbs": [
+      "授業・教材",
+      "WSL + Ubuntu 環境構築",
+      "C++ の開発ツールを導入する"
     ]
   }
 ]

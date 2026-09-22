@@ -452,6 +452,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../teaching/wsl-ubuntu-setup/videos/gpp-install/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">C++ の開発ツールを導入する</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../teaching/wsl-ubuntu-setup/videos/work-folder-setup/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">授業用フォルダを作成して登録する</span></a>
   </div>
@@ -462,12 +468,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">ファイル名拡張子を表示する</span></a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../teaching/wsl-ubuntu-setup/troubleshooting.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">確認・トラブルシューティング</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="セクションを切り替え">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth3 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../teaching/wsl-ubuntu-setup/troubleshooting.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">確認・トラブルシューティング</span></a>
+  <a href="../../teaching/wsl-ubuntu-setup/videos/wsl-version-update/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">WSL のバージョン確認と更新</span></a>
   </div>
 </li>
+      </ul>
+  </li>
       </ul>
   </li>
       </ul>
@@ -482,9 +499,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">目次</h2>
    
   <ul>
-  <li><a href="#ubuntu-が-wsl-2-で動作していることを確認する" id="toc-ubuntu-が-wsl-2-で動作していることを確認する" class="nav-link active" data-scroll-target="#ubuntu-が-wsl-2-で動作していることを確認する">Ubuntu が WSL 2 で動作していることを確認する</a></li>
-  <li><a href="#wsl-を更新する" id="toc-wsl-を更新する" class="nav-link" data-scroll-target="#wsl-を更新する">WSL を更新する</a></li>
-  <li><a href="#ubuntu-のユーザー名を忘れた場合" id="toc-ubuntu-のユーザー名を忘れた場合" class="nav-link" data-scroll-target="#ubuntu-のユーザー名を忘れた場合">Ubuntu のユーザー名を忘れた場合</a></li>
+  <li><a href="#ubuntu-のユーザー名を忘れた場合" id="toc-ubuntu-のユーザー名を忘れた場合" class="nav-link active" data-scroll-target="#ubuntu-のユーザー名を忘れた場合">Ubuntu のユーザー名を忘れた場合</a></li>
   <li><a href="#ubuntu-のパスワードを忘れた場合" id="toc-ubuntu-のパスワードを忘れた場合" class="nav-link" data-scroll-target="#ubuntu-のパスワードを忘れた場合">Ubuntu のパスワードを忘れた場合</a></li>
   </ul>
 </nav>
@@ -512,35 +527,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>初回の環境構築が終わった後に、WSL の状態を確認したい場合や、Ubuntu のユーザー名・パスワードを忘れた場合は、このページを参照してください。</p>
-<section id="ubuntu-が-wsl-2-で動作していることを確認する" class="level2">
-<h2 class="anchored" data-anchor-id="ubuntu-が-wsl-2-で動作していることを確認する">Ubuntu が WSL 2 で動作していることを確認する</h2>
-<p>PowerShell で次のコマンドを実行します。</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>wsl <span class="op">-</span>l <span class="op">-</span>v</span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Ubuntu の行の <code>VERSION</code> が <code>2</code> になっていれば、この資料で想定している WSL 2 環境です。</p>
-</section>
-<section id="wsl-を更新する" class="level2">
-<h2 class="anchored" data-anchor-id="wsl-を更新する">WSL を更新する</h2>
-<p>WSL 自体を更新する場合は、PowerShell で次のコマンドを実行します。</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>wsl <span class="op">--</span>update</span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div>
-<p>これは Ubuntu 内のパッケージを更新する操作とは別です。</p>
-</section>
+<p>Ubuntu のユーザー名やパスワードを忘れた場合は、このページを参照してください。WSL のバージョン確認と更新は、別ページにまとめています。</p>
 <section id="ubuntu-のユーザー名を忘れた場合" class="level2">
 <h2 class="anchored" data-anchor-id="ubuntu-のユーザー名を忘れた場合">Ubuntu のユーザー名を忘れた場合</h2>
 <p>Ubuntu を起動し、次のコマンドを実行します。</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">whoami</span></span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">whoami</span></span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div>
 <p>表示された名前が、現在 Ubuntu で使用しているユーザー名です。確認できたら、次のコマンドで Ubuntu の端末を終了します。</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">exit</span></span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">exit</span></span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="ubuntu-のパスワードを忘れた場合" class="level2">
 <h2 class="anchored" data-anchor-id="ubuntu-のパスワードを忘れた場合">Ubuntu のパスワードを忘れた場合</h2>
 <p>ユーザー名も分からない場合は、先に上の手順で確認します。</p>
 <p>PowerShell から root ユーザーで Ubuntu を起動します。</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>wsl <span class="op">-</span>d Ubuntu <span class="op">-</span>u root</span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>wsl <span class="op">-</span>d Ubuntu <span class="op">-</span>u root</span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Ubuntu が起動したら、次のコマンドを実行します。<code>&lt;ユーザー名&gt;</code> は実際のユーザー名に置き換えてください。</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">passwd</span> <span class="op">&lt;</span>ユーザー名<span class="op">&gt;</span></span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">passwd</span> <span class="op">&lt;</span>ユーザー名<span class="op">&gt;</span></span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div>
 <p>新しいパスワードを入力し、確認のためもう一度入力します。完了したら、次のコマンドで Ubuntu の端末を終了します。</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">exit</span></span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">exit</span></span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
