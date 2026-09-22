@@ -50,14 +50,14 @@ website:
             - text: "C++プログラミングⅠ"
               href: teaching/cpp-programming-1.qmd
             - section: "WSL + Ubuntu 環境構築"
-              href: teaching/cpp-programming-1/setup/index.qmd
+              href: teaching/wsl-ubuntu-setup/index.qmd
               contents:
                 - text: "WSLをインストール"
-                  href: teaching/cpp-programming-1/setup/videos/wsl-install/index.qmd
+                  href: teaching/wsl-ubuntu-setup/videos/wsl-install/index.qmd
                 - text: "Ubuntuをインストール"
-                  href: teaching/cpp-programming-1/setup/videos/ubuntu-install/index.qmd
+                  href: teaching/wsl-ubuntu-setup/videos/ubuntu-install/index.qmd
                 - text: "ファイル名拡張子を表示する"
-                  href: teaching/cpp-programming-1/setup/videos/show-file-extensions/index.qmd
+                  href: teaching/wsl-ubuntu-setup/videos/show-file-extensions/index.qmd
 
 format:
   html:

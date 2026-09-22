@@ -17,4 +17,4 @@ title: "授業・教材"
 
 ## 参考資料
 
-- [WSL + Ubuntu 環境構築](teaching/cpp-programming-1/setup/index.qmd)
+- [WSL + Ubuntu 環境構築](teaching/wsl-ubuntu-setup/index.qmd)

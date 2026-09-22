@@ -28,4 +28,4 @@ WSL のインストールと Windows の再起動が完了した後に、Ubuntu 
 
 `wsl --install -d Ubuntu` の実行時に `404 Not Found` などのエラーが表示され、Ubuntu の取得が正常に進まない場合は、自己判断で別の方法を試さず、授業中に教員へ知らせてください。
 
-[WSL + Ubuntu 導入ページに戻る](../../index.qmd)
+[WSL + Ubuntu 環境構築ページに戻る](../../index.qmd)
