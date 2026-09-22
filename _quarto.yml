@@ -54,7 +54,7 @@ website:
               contents:
                 - text: "WSLをインストール"
                   href: teaching/wsl-ubuntu-setup/videos/wsl-install/index.qmd
-                - text: "Ubuntuをインストール"
+                - text: "Ubuntuをインストールして初回設定"
                   href: teaching/wsl-ubuntu-setup/videos/ubuntu-install/index.qmd
                 - text: "ファイル名拡張子を表示する"
                   href: teaching/wsl-ubuntu-setup/videos/show-file-extensions/index.qmd
