@@ -2,11 +2,11 @@
 title: "WSL のバージョン確認と更新"
 ---
 
-PowerShell で WSL のバージョンを確認し、続けて WSL 自体を更新する一連の操作です。
-
 ## 操作動画
 
 {{< video wsl-version-update.mp4 >}}
+
+PowerShell で WSL のバージョンを確認し、続けて WSL 自体を更新する一連の操作です。
 
 ## 操作手順
 
@@ -17,7 +17,6 @@ PowerShell で WSL のバージョンを確認し、続けて WSL 自体を更�
    ```
 
 2. Ubuntu の行の `VERSION` が `2` になっていることを確認します。
-
 3. 続けて、WSL 自体を更新します。
 
    ``` powershell
@@ -26,4 +25,4 @@ PowerShell で WSL のバージョンを確認し、続けて WSL 自体を更�
 
 これは Ubuntu 内のパッケージを更新する操作とは別です。
 
-[確認・トラブルシューティングに戻る](../../troubleshooting.qmd)
+[WSL + Ubuntu 環境構築ページに戻る](../../index.qmd)
