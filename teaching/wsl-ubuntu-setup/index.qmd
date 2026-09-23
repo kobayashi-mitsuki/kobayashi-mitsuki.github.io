@@ -2,12 +2,6 @@
 title: "WSL + Ubuntu 環境構築"
 ---
 
-Windows 上に WSL と Ubuntu を用いた C++ 開発環境を構築するための参考資料です。
-
-## 導入ガイド
-
-PDF 版の導入ガイドは準備中です。
-
 ## 操作動画
 
 1. [WSLをインストール](videos/wsl-install/index.qmd)
@@ -15,8 +9,4 @@ PDF 版の導入ガイドは準備中です。
 1. [C++ の開発ツールを導入する](videos/gpp-install/index.qmd)
 1. [授業用フォルダを作成して登録する](videos/work-folder-setup/index.qmd)
 1. [ファイル名拡張子を表示する](videos/show-file-extensions/index.qmd)
-
-## 確認・トラブルシューティング
-
-- [WSL のバージョン確認と更新](videos/wsl-version-update/index.qmd)
-- [Ubuntu のユーザー名・パスワードを忘れた場合](troubleshooting.qmd)
+1. [WSL のバージョン確認と更新](videos/wsl-version-update/index.qmd)
