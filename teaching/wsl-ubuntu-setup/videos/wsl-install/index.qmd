@@ -2,11 +2,11 @@
 title: "WSLをインストール"
 ---
 
-Windows 上に WSL の実行環境をインストールし、Windows を再起動するまでの操作例です。
-
 ## 操作動画
 
-{{< video clip.mp4 >}}
+{{< video wsl-install.mp4 >}}
+
+Windows 上に WSL の実行環境をインストールし、Windows を再起動するまでの操作例です。
 
 ## 操作手順
 
