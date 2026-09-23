@@ -2,11 +2,11 @@
 title: "C++ の開発ツールを導入する"
 ---
 
-Ubuntu を起動し、パッケージ情報を更新して `build-essential` と `nkf` を導入し、C++ コンパイラ `g++` を確認するところまでを一続きに行います。
-
 ## 操作動画
 
 {{< video gpp-install.mp4 >}}
+
+Ubuntu を起動し、パッケージ情報を更新して `build-essential` と `nkf` を導入し、C++ コンパイラ `g++` を確認するところまでを一続きに行います。
 
 ## 操作手順
 
@@ -17,11 +17,19 @@ Ubuntu を起動し、パッケージ情報を更新して `build-essential` と
    sudo apt update
    ```
 
+::: {.callout-note title="sudo で求められるパスワード"}
+`sudo apt update` などで `[sudo] password for ユーザー名:` と表示された場合に入力するのは、**Ubuntu の初回設定で自分で設定したパスワード**です。Windows の PIN や Windows アカウントのパスワードではありません。
+
+パスワードを入力している間は、画面には文字も `*` も表示されません。表示されなくても入力は受け付けられているので、そのまま入力して Enter キーを押します。
+:::
+
 3. 既存のパッケージも更新する場合は、続けて次を実行します。
 
    ``` bash
    sudo apt upgrade
    ```
+
+   `Do you want to continue? [Y/n]` と表示された場合は、`Y` または `y` を入力して Enter キーを押します。
 
 4. C++ の基本的な開発ツールを導入します。
 
@@ -34,6 +42,8 @@ Ubuntu を起動し、パッケージ情報を更新して `build-essential` と
    ``` bash
    sudo apt install nkf
    ```
+
+   `sudo apt install` の途中でも `Do you want to continue? [Y/n]` と表示された場合は、同じように `Y` または `y` を入力して Enter キーを押します。
 
 6. C++ コンパイラを使用できることを確認します。
 
