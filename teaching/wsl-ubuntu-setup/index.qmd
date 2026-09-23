@@ -4,9 +4,9 @@ title: "WSL + Ubuntu 環境構築"
 
 ## 操作動画
 
-1. [WSLをインストール](videos/wsl-install/index.qmd)
-1. [Ubuntuをインストールして初回設定](videos/ubuntu-install/index.qmd)
-1. [C++ の開発ツールを導入する](videos/gpp-install/index.qmd)
-1. [授業用フォルダを作成して登録する](videos/work-folder-setup/index.qmd)
-1. [ファイル名拡張子を表示する](videos/show-file-extensions/index.qmd)
-1. [WSL のバージョン確認と更新](videos/wsl-version-update/index.qmd)
+1.  [WSLをインストール](videos/wsl-install/index.qmd)
+2.  [Ubuntuをインストールして初回設定](videos/ubuntu-install/index.qmd)
+3.  [C++ の開発ツールを導入する](videos/gpp-install/index.qmd)
+4.  [授業用フォルダを作成して登録する](videos/work-folder-setup/index.qmd)
+5.  [ファイル名拡張子を表示する](videos/show-file-extensions/index.qmd)
+6.  [WSL のバージョン確認と更新](videos/wsl-version-update/index.qmd)

@@ -962,8 +962,8 @@
     "objectID": "teaching/wsl-ubuntu-setup/videos/wsl-install/index.html#操作動画",
     "href": "teaching/wsl-ubuntu-setup/videos/wsl-install/index.html#操作動画",
     "title": "WSLをインストール",
-    "section": "操作動画",
-    "text": "操作動画",
+    "section": "",
+    "text": "Windows 上に WSL の実行環境をインストールし、Windows を再起動するまでの操作例です。",
     "crumbs": [
       "授業・教材",
       "WSL + Ubuntu 環境構築",
@@ -1010,8 +1010,8 @@
     "objectID": "teaching/wsl-ubuntu-setup/videos/show-file-extensions/index.html#操作動画",
     "href": "teaching/wsl-ubuntu-setup/videos/show-file-extensions/index.html#操作動画",
     "title": "ファイル名拡張子を表示する",
-    "section": "操作動画",
-    "text": "操作動画",
+    "section": "",
+    "text": "Windows のエクスプローラーで、ファイル名拡張子を表示する操作例です。",
     "crumbs": [
       "授業・教材",
       "WSL + Ubuntu 環境構築",
@@ -1035,7 +1035,7 @@
     "href": "teaching/wsl-ubuntu-setup/index.html",
     "title": "WSL + Ubuntu 環境構築",
     "section": "",
-    "text": "Windows 上に WSL と Ubuntu を用いた C++ 開発環境を構築するための参考資料です。",
+    "text": "WSLをインストール\nUbuntuをインストールして初回設定\nC++ の開発ツールを導入する\n授業用フォルダを作成して登録する\nファイル名拡張子を表示する\nWSL のバージョン確認と更新",
     "crumbs": [
       "授業・教材",
       "WSL + Ubuntu 環境構築"
@@ -1056,8 +1056,8 @@
     "objectID": "teaching/wsl-ubuntu-setup/index.html#操作動画",
     "href": "teaching/wsl-ubuntu-setup/index.html#操作動画",
     "title": "WSL + Ubuntu 環境構築",
-    "section": "操作動画",
-    "text": "操作動画\n\nWSLをインストール\nUbuntuをインストールして初回設定\nC++ の開発ツールを導入する\n授業用フォルダを作成して登録する\nファイル名拡張子を表示する",
+    "section": "",
+    "text": "WSLをインストール\nUbuntuをインストールして初回設定\nC++ の開発ツールを導入する\n授業用フォルダを作成して登録する\nファイル名拡張子を表示する\nWSL のバージョン確認と更新",
     "crumbs": [
       "授業・教材",
       "WSL + Ubuntu 環境構築"
@@ -1079,8 +1079,8 @@
     "objectID": "teaching/wsl-ubuntu-setup/videos/ubuntu-install/index.html#操作動画",
     "href": "teaching/wsl-ubuntu-setup/videos/ubuntu-install/index.html#操作動画",
     "title": "Ubuntuをインストールして初回設定",
-    "section": "操作動画",
-    "text": "操作動画",
+    "section": "",
+    "text": "WSL のインストールと Windows の再起動が完了した後に、Ubuntu をインストールし、Linux 側のユーザー名とパスワードを設定して、exit で Ubuntu の端末を終了するまでの操作例です。",
     "crumbs": [
       "授業・教材",
       "WSL + Ubuntu 環境構築",
@@ -1128,7 +1128,7 @@
     "href": "teaching/wsl-ubuntu-setup/videos/work-folder-setup/index.html#操作手順",
     "title": "授業用フォルダを作成して登録する",
     "section": "操作手順",
-    "text": "操作手順\n\nUbuntu を起動します。\n次の3つのコマンドを上から順に実行します。\nmkdir -p ~/cpp1\ncd ~/cpp1\nexplorer.exe .\nWindows のエクスプローラーで cpp1 フォルダが開いたことを確認します。\n開いた cpp1 フォルダをクイックアクセスにピン留めします。\n\nmkdir -p ~/cpp1 は授業用フォルダを用意するコマンド、cd ~/cpp1 はそのフォルダへ移動するコマンドです。explorer.exe . の末尾の . は現在のディレクトリを表すため、現在いる cpp1 フォルダが Windows のエクスプローラーで開きます。\nクイックアクセスに登録しておけば、次回以降は Windows のエクスプローラーから授業用フォルダをすぐに開くことができます。",
+    "text": "操作手順\n\nUbuntu を起動します。\n次の3つのコマンドを上から順に実行します。\nmkdir -p ~/cpp1\ncd ~/cpp1\nexplorer.exe .\nWindows のエクスプローラーで cpp1 フォルダが開いたことを確認します。\n開いた cpp1 フォルダをクイックアクセスにピン留めします。\n\nmkdir -p ~/cpp1 は授業用フォルダを用意するコマンド、cd ~/cpp1 はそのフォルダへ移動するコマンドです。explorer.exe . の末尾の . は現在のディレクトリを表すため、現在いる cpp1 フォルダが Windows のエクスプローラーで開きます。\nクイックアクセスに登録しておけば、次回以降は Windows のエクスプローラーから授業用フォルダをすぐに開くことができます。\nWSL + Ubuntu 環境構築ページに戻る",
     "crumbs": [
       "授業・教材",
       "WSL + Ubuntu 環境構築",
@@ -1139,8 +1139,8 @@
     "objectID": "teaching/wsl-ubuntu-setup/videos/work-folder-setup/index.html#操作動画",
     "href": "teaching/wsl-ubuntu-setup/videos/work-folder-setup/index.html#操作動画",
     "title": "授業用フォルダを作成して登録する",
-    "section": "操作動画",
-    "text": "操作動画\n次の動画では、mkdir -p ~/cpp1 から cpp1 フォルダをクイックアクセスにピン留めするまでの一連の操作を示します。\n\nWSL + Ubuntu 環境構築ページに戻る",
+    "section": "",
+    "text": "C++ の授業で使用する cpp1 フォルダを Ubuntu 側に作成し、Windows のエクスプローラーで開いてクイックアクセスにピン留めするまでを、一続きの必須手順として行います。",
     "crumbs": [
       "授業・教材",
       "WSL + Ubuntu 環境構築",
@@ -1227,7 +1227,6 @@
     "crumbs": [
       "授業・教材",
       "WSL + Ubuntu 環境構築",
-      "確認・トラブルシューティング",
       "WSL のバージョン確認と更新"
     ]
   },
@@ -1235,12 +1234,11 @@
     "objectID": "teaching/wsl-ubuntu-setup/videos/wsl-version-update/index.html#操作動画",
     "href": "teaching/wsl-ubuntu-setup/videos/wsl-version-update/index.html#操作動画",
     "title": "WSL のバージョン確認と更新",
-    "section": "操作動画",
-    "text": "操作動画",
+    "section": "",
+    "text": "PowerShell で WSL のバージョンを確認し、続けて WSL 自体を更新する一連の操作です。",
     "crumbs": [
       "授業・教材",
       "WSL + Ubuntu 環境構築",
-      "確認・トラブルシューティング",
       "WSL のバージョン確認と更新"
     ]
   },
@@ -1249,11 +1247,10 @@
     "href": "teaching/wsl-ubuntu-setup/videos/wsl-version-update/index.html#操作手順",
     "title": "WSL のバージョン確認と更新",
     "section": "操作手順",
-    "text": "操作手順\n\nPowerShell を開き、次のコマンドを実行します。\nwsl -l -v\nUbuntu の行の VERSION が 2 になっていることを確認します。\n続けて、WSL 自体を更新します。\nwsl --update\n\nこれは Ubuntu 内のパッケージを更新する操作とは別です。\n確認・トラブルシューティングに戻る",
+    "text": "操作手順\n\nPowerShell を開き、次のコマンドを実行します。\nwsl -l -v\nUbuntu の行の VERSION が 2 になっていることを確認します。\n続けて、WSL 自体を更新します。\nwsl --update\n\nこれは Ubuntu 内のパッケージを更新する操作とは別です。\nWSL + Ubuntu 環境構築ページに戻る",
     "crumbs": [
       "授業・教材",
       "WSL + Ubuntu 環境構築",
-      "確認・トラブルシューティング",
       "WSL のバージョン確認と更新"
     ]
   },
@@ -1273,8 +1270,8 @@
     "objectID": "teaching/wsl-ubuntu-setup/videos/gpp-install/index.html#操作動画",
     "href": "teaching/wsl-ubuntu-setup/videos/gpp-install/index.html#操作動画",
     "title": "C++ の開発ツールを導入する",
-    "section": "操作動画",
-    "text": "操作動画",
+    "section": "",
+    "text": "Ubuntu を起動し、パッケージ情報を更新して build-essential と nkf を導入し、C++ コンパイラ g++ を確認するところまでを一続きに行います。",
     "crumbs": [
       "授業・教材",
       "WSL + Ubuntu 環境構築",
@@ -1286,7 +1283,7 @@
     "href": "teaching/wsl-ubuntu-setup/videos/gpp-install/index.html#操作手順",
     "title": "C++ の開発ツールを導入する",
     "section": "操作手順",
-    "text": "操作手順\n\nUbuntu を起動します。\n次を実行して、利用可能なパッケージの情報を更新します。\nsudo apt update\n既存のパッケージも更新する場合は、続けて次を実行します。\nsudo apt upgrade\nC++ の基本的な開発ツールを導入します。\nsudo apt install build-essential\n文字コードや改行コードの確認に使用する nkf を導入します。\nsudo apt install nkf\nC++ コンパイラを使用できることを確認します。\ng++ --version\n\nバージョン情報が表示されれば、g++ を使用できる状態です。\nWSL + Ubuntu 環境構築ページに戻る",
+    "text": "操作手順\n\nUbuntu を起動します。\n次を実行して、利用可能なパッケージの情報を更新します。\nsudo apt update\n\n\n\n\n\n\n\nノートsudo で求められるパスワード\n\n\n\nsudo apt update などで [sudo] password for ユーザー名: と表示された場合に入力するのは、Ubuntu の初回設定で自分で設定したパスワードです。Windows の PIN や Windows アカウントのパスワードではありません。\nパスワードを入力している間は、画面には文字も * も表示されません。表示されなくても入力は受け付けられているので、そのまま入力して Enter キーを押します。\n\n\n\n既存のパッケージも更新する場合は、続けて次を実行します。\nsudo apt upgrade\nDo you want to continue? [Y/n] と表示された場合は、Y または y を入力して Enter キーを押します。\nC++ の基本的な開発ツールを導入します。\nsudo apt install build-essential\n文字コードや改行コードの確認に使用する nkf を導入します。\nsudo apt install nkf\nsudo apt install の途中でも Do you want to continue? [Y/n] と表示された場合は、同じように Y または y を入力して Enter キーを押します。\nC++ コンパイラを使用できることを確認します。\ng++ --version\n\nバージョン情報が表示されれば、g++ を使用できる状態です。\nWSL + Ubuntu 環境構築ページに戻る",
     "crumbs": [
       "授業・教材",
       "WSL + Ubuntu 環境構築",

@@ -470,23 +470,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">ファイル名拡張子を表示する</span></a>
   </div>
 </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../../../teaching/wsl-ubuntu-setup/troubleshooting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">確認・トラブルシューティング</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="セクションを切り替え">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../../teaching/wsl-ubuntu-setup/videos/wsl-version-update/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">WSL のバージョン確認と更新</span></a>
   </div>
 </li>
-      </ul>
-  </li>
       </ul>
   </li>
       </ul>
@@ -529,10 +518,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Ubuntu を起動し、パッケージ情報を更新して <code>build-essential</code> と <code>nkf</code> を導入し、C++ コンパイラ <code>g++</code> を確認するところまでを一続きに行います。</p>
 <section id="操作動画" class="level2">
 <h2 class="anchored" data-anchor-id="操作動画">操作動画</h2>
 <div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="gpp-install.mp4"></video></div>
+<p>Ubuntu を起動し、パッケージ情報を更新して <code>build-essential</code> と <code>nkf</code> を導入し、C++ コンパイラ <code>g++</code> を確認するところまでを一続きに行います。</p>
 </section>
 <section id="操作手順" class="level2">
 <h2 class="anchored" data-anchor-id="操作手順">操作手順</h2>
@@ -540,12 +529,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Ubuntu を起動します。</p></li>
 <li><p>次を実行して、利用可能なパッケージの情報を更新します。</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt update</span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div></li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="sudo で求められるパスワード">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">ノート</span>sudo で求められるパスワード
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>sudo apt update</code> などで <code>[sudo] password for ユーザー名:</code> と表示された場合に入力するのは、<strong>Ubuntu の初回設定で自分で設定したパスワード</strong>です。Windows の PIN や Windows アカウントのパスワードではありません。</p>
+<p>パスワードを入力している間は、画面には文字も <code>*</code> も表示されません。表示されなくても入力は受け付けられているので、そのまま入力して Enter キーを押します。</p>
+</div>
+</div>
+<ol start="3" type="1">
 <li><p>既存のパッケージも更新する場合は、続けて次を実行します。</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt upgrade</span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div></li>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt upgrade</span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>Do you want to continue? [Y/n]</code> と表示された場合は、<code>Y</code> または <code>y</code> を入力して Enter キーを押します。</p></li>
 <li><p>C++ の基本的な開発ツールを導入します。</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install build-essential</span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p>文字コードや改行コードの確認に使用する <code>nkf</code> を導入します。</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install nkf</span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div></li>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install nkf</span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>sudo apt install</code> の途中でも <code>Do you want to continue? [Y/n]</code> と表示された場合は、同じように <code>Y</code> または <code>y</code> を入力して Enter キーを押します。</p></li>
 <li><p>C++ コンパイラを使用できることを確認します。</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">g++</span> <span class="at">--version</span></span></code></pre></div><button title="コピー" class="code-copy-button"><i class="bi"></i></button></div></li>
 </ol>
