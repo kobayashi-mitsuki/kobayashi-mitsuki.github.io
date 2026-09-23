@@ -1035,7 +1035,7 @@
     "href": "teaching/wsl-ubuntu-setup/index.html",
     "title": "WSL + Ubuntu 環境構築",
     "section": "",
-    "text": "WSLをインストール\nUbuntuをインストールして初回設定\nC++ の開発ツールを導入する\n授業用フォルダを作成して登録する\nファイル名拡張子を表示する\nWSL のバージョン確認と更新",
+    "text": "WSLをインストール\nUbuntuをインストールして初回設定\nC++ の開発ツールを導入する\n授業用フォルダを作成して登録する\nファイル名拡張子を表示する\nC++ プログラムをコンパイル・実行する",
     "crumbs": [
       "授業・教材",
       "WSL + Ubuntu 環境構築"
@@ -1057,7 +1057,7 @@
     "href": "teaching/wsl-ubuntu-setup/index.html#操作動画",
     "title": "WSL + Ubuntu 環境構築",
     "section": "",
-    "text": "WSLをインストール\nUbuntuをインストールして初回設定\nC++ の開発ツールを導入する\n授業用フォルダを作成して登録する\nファイル名拡張子を表示する\nWSL のバージョン確認と更新",
+    "text": "WSLをインストール\nUbuntuをインストールして初回設定\nC++ の開発ツールを導入する\n授業用フォルダを作成して登録する\nファイル名拡張子を表示する\nC++ プログラムをコンパイル・実行する",
     "crumbs": [
       "授業・教材",
       "WSL + Ubuntu 環境構築"
@@ -1150,13 +1150,14 @@
   {
     "objectID": "teaching/wsl-ubuntu-setup/troubleshooting.html",
     "href": "teaching/wsl-ubuntu-setup/troubleshooting.html",
-    "title": "確認・トラブルシューティング",
+    "title": "Ubuntu のユーザー名・パスワードを忘れた場合",
     "section": "",
-    "text": "Ubuntu のユーザー名やパスワードを忘れた場合は、このページを参照してください。WSL のバージョン確認と更新は、別ページにまとめています。",
+    "text": "Ubuntu を起動し、次のコマンドを実行します。\nwhoami\n表示された名前が、現在 Ubuntu で使用しているユーザー名です。確認できたら、次のコマンドで Ubuntu の端末を終了します。\nexit",
     "crumbs": [
       "授業・教材",
       "WSL + Ubuntu 環境構築",
-      "確認・トラブルシューティング"
+      "確認・トラブルシューティング",
+      "Ubuntu のユーザー名・パスワードを忘れた場合"
     ]
   },
   {
@@ -1186,25 +1187,27 @@
   {
     "objectID": "teaching/wsl-ubuntu-setup/troubleshooting.html#ubuntu-のユーザー名を忘れた場合",
     "href": "teaching/wsl-ubuntu-setup/troubleshooting.html#ubuntu-のユーザー名を忘れた場合",
-    "title": "確認・トラブルシューティング",
-    "section": "Ubuntu のユーザー名を忘れた場合",
-    "text": "Ubuntu のユーザー名を忘れた場合\nUbuntu を起動し、次のコマンドを実行します。\nwhoami\n表示された名前が、現在 Ubuntu で使用しているユーザー名です。確認できたら、次のコマンドで Ubuntu の端末を終了します。\nexit",
+    "title": "Ubuntu のユーザー名・パスワードを忘れた場合",
+    "section": "",
+    "text": "Ubuntu を起動し、次のコマンドを実行します。\nwhoami\n表示された名前が、現在 Ubuntu で使用しているユーザー名です。確認できたら、次のコマンドで Ubuntu の端末を終了します。\nexit",
     "crumbs": [
       "授業・教材",
       "WSL + Ubuntu 環境構築",
-      "確認・トラブルシューティング"
+      "確認・トラブルシューティング",
+      "Ubuntu のユーザー名・パスワードを忘れた場合"
     ]
   },
   {
     "objectID": "teaching/wsl-ubuntu-setup/troubleshooting.html#ubuntu-のパスワードを忘れた場合",
     "href": "teaching/wsl-ubuntu-setup/troubleshooting.html#ubuntu-のパスワードを忘れた場合",
-    "title": "確認・トラブルシューティング",
+    "title": "Ubuntu のユーザー名・パスワードを忘れた場合",
     "section": "Ubuntu のパスワードを忘れた場合",
     "text": "Ubuntu のパスワードを忘れた場合\nユーザー名も分からない場合は、先に上の手順で確認します。\nPowerShell から root ユーザーで Ubuntu を起動します。\nwsl -d Ubuntu -u root\nUbuntu が起動したら、次のコマンドを実行します。&lt;ユーザー名&gt; は実際のユーザー名に置き換えてください。\npasswd &lt;ユーザー名&gt;\n新しいパスワードを入力し、確認のためもう一度入力します。完了したら、次のコマンドで Ubuntu の端末を終了します。\nexit\n\n\n\n\n\n\n警告\n\n\n\nwsl --unregister Ubuntu を実行すると、Ubuntu 環境に保存されているユーザー、設定、ファイルが削除されます。ユーザー名やパスワードを忘れた場合の対処としては使用しないでください。\n\n\n参考： Microsoft Learn: WSL の基本的なコマンド、 Microsoft Learn: WSL 開発環境を設定する",
     "crumbs": [
       "授業・教材",
       "WSL + Ubuntu 環境構築",
-      "確認・トラブルシューティング"
+      "確認・トラブルシューティング",
+      "Ubuntu のユーザー名・パスワードを忘れた場合"
     ]
   },
   {
@@ -1288,6 +1291,42 @@
       "授業・教材",
       "WSL + Ubuntu 環境構築",
       "C++ の開発ツールを導入する"
+    ]
+  },
+  {
+    "objectID": "teaching/wsl-ubuntu-setup/videos/first-program/index.html",
+    "href": "teaching/wsl-ubuntu-setup/videos/first-program/index.html",
+    "title": "C++ プログラムをコンパイル・実行する",
+    "section": "",
+    "text": "環境構築の最後に、簡単な C++ プログラムを作成してコンパイル・実行し、コンパイラが正しく使えることを確認します。",
+    "crumbs": [
+      "授業・教材",
+      "WSL + Ubuntu 環境構築",
+      "C++ プログラムをコンパイル・実行する"
+    ]
+  },
+  {
+    "objectID": "teaching/wsl-ubuntu-setup/videos/first-program/index.html#操作動画",
+    "href": "teaching/wsl-ubuntu-setup/videos/first-program/index.html#操作動画",
+    "title": "C++ プログラムをコンパイル・実行する",
+    "section": "",
+    "text": "環境構築の最後に、簡単な C++ プログラムを作成してコンパイル・実行し、コンパイラが正しく使えることを確認します。",
+    "crumbs": [
+      "授業・教材",
+      "WSL + Ubuntu 環境構築",
+      "C++ プログラムをコンパイル・実行する"
+    ]
+  },
+  {
+    "objectID": "teaching/wsl-ubuntu-setup/videos/first-program/index.html#操作手順",
+    "href": "teaching/wsl-ubuntu-setup/videos/first-program/index.html#操作手順",
+    "title": "C++ プログラムをコンパイル・実行する",
+    "section": "操作手順",
+    "text": "操作手順\n\n授業用フォルダ cpp1 に test.cpp を作成します。\nTeraPad で test.cpp を開き、次のプログラムを入力して保存します。\n#include &lt;iostream&gt;\n\nint main()\n{\n    std::cout &lt;&lt; \"Hello World!\\n\";\n}\nUbuntu を起動し、授業用フォルダへ移動します。\ncd ~/cpp1\n次のコマンドでコンパイルします。\ng++ -std=c++17 test.cpp -o test\nコンパイル時にエラーメッセージが表示されなければ、次のコマンドで実行します。\n./test\n\nHello World! と表示されれば、C++ プログラムをコンパイル・実行できる環境が整っています。\nWSL + Ubuntu 環境構築ページに戻る",
+    "crumbs": [
+      "授業・教材",
+      "WSL + Ubuntu 環境構築",
+      "C++ プログラムをコンパイル・実行する"
     ]
   }
 ]
