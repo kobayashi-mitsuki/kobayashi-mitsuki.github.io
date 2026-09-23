@@ -62,8 +62,14 @@ website:
                   href: teaching/wsl-ubuntu-setup/videos/work-folder-setup/index.qmd
                 - text: "ファイル名拡張子を表示する"
                   href: teaching/wsl-ubuntu-setup/videos/show-file-extensions/index.qmd
-                - text: "WSL のバージョン確認と更新"
-                  href: teaching/wsl-ubuntu-setup/videos/wsl-version-update/index.qmd
+                - text: "C++ プログラムをコンパイル・実行する"
+                  href: teaching/wsl-ubuntu-setup/videos/first-program/index.qmd
+                - section: "確認・トラブルシューティング"
+                  contents:
+                    - text: "WSL のバージョン確認と更新"
+                      href: teaching/wsl-ubuntu-setup/videos/wsl-version-update/index.qmd
+                    - text: "Ubuntu のユーザー名・パスワードを忘れた場合"
+                      href: teaching/wsl-ubuntu-setup/troubleshooting.qmd
 
 format:
   html:
