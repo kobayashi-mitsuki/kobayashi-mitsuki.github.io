@@ -5,3 +5,4 @@ title: "確率統計"
 ## スライド資料
 
 - [第1回 確率](probability-statistics-seikei/slides/r8-01.pdf){target="_blank"}
+- [第2回 確率分布と平均・分散](probability-statistics-seikei/slides/r8-02.pdf){target="_blank"}
