@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "teaching/**/*.qmd"
+    - "!teaching/probability-statistics-seikei/self-study/02.qmd"
 
 website:
   title: "小林光木 | 成蹊大学 理工学部 データサイエンス研究室 助教"

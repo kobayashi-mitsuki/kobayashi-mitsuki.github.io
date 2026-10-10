@@ -1,0 +1,1068 @@
+{
+  "schema_version": 1,
+  "lecture": 2,
+  "title": "第2回 練習問題",
+  "status": "draft",
+  "course_grade": false,
+  "points_per_item": 1,
+  "student_note": "この練習問題の得点は授業の成績評価には含まれません。理解度の確認・復習のために利用してください。",
+  "sections": [
+    {
+      "id": "basics",
+      "title": "確率変数と分布関数",
+      "items": [
+        {
+          "id": "ps02-001",
+          "type": "single_choice",
+          "prompt": "確率変数 $X$ の説明として正しいものを1つ選びなさい。",
+          "answer": "B",
+          "explanation": "確率変数は可測な実数値関数であり、この授業では任意の $a\\in\\mathbb{R}$ に対して $\\{X\\le a\\}\\in\\mathcal{F}$ を満たすものとして扱う。",
+          "points": 1,
+          "tags": [
+            "random-variable",
+            "definition"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "実数 $x$ に標本点 $\\omega$ を対応させる関数である。"
+            },
+            {
+              "id": "B",
+              "text": "$\\Omega$ 上の実数値関数であり、任意の $a\\in\\mathbb{R}$ に対して $\\{X\\le a\\}\\in\\mathcal{F}$ を満たす。"
+            },
+            {
+              "id": "C",
+              "text": "実数上の確率測度そのものである。"
+            },
+            {
+              "id": "D",
+              "text": "$\\Omega$ から $\\mathbb{R}$ への関数なら、条件なしに確率変数と呼ぶ。"
+            }
+          ]
+        },
+        {
+          "id": "ps02-002",
+          "type": "single_choice",
+          "prompt": "確率変数 $X$ の分布関数 $F_X$ について、一般には成り立つとは限らないものを1つ選びなさい。",
+          "answer": "D",
+          "explanation": "分布関数は $0$ 以上 $1$ 以下、単調非減少、右連続である。一方、一般の分布関数がすべての点で微分可能とは限らない。",
+          "points": 1,
+          "tags": [
+            "cdf",
+            "properties"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "$0\\le F_X(x)\\le 1$"
+            },
+            {
+              "id": "B",
+              "text": "$F_X$ は単調非減少である。"
+            },
+            {
+              "id": "C",
+              "text": "$F_X$ は右連続である。"
+            },
+            {
+              "id": "D",
+              "text": "$F_X$ はすべての点で微分可能である。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finite-discrete",
+      "title": "有限個の値をとる離散型",
+      "items": [
+        {
+          "id": "ps02-003",
+          "type": "single_choice",
+          "prompt": "$P(X\\ge0)$ を求めなさい。",
+          "answer": "C",
+          "explanation": "$P(X\\ge0)=P(X=0)+P(X=1)=1/2+1/4=3/4$。",
+          "points": 1,
+          "tags": [
+            "finite-discrete",
+            "probability"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/4$"
+            },
+            {
+              "id": "B",
+              "text": "$1/2$"
+            },
+            {
+              "id": "C",
+              "text": "$3/4$"
+            },
+            {
+              "id": "D",
+              "text": "$1$"
+            }
+          ]
+        },
+        {
+          "id": "ps02-004",
+          "type": "single_choice",
+          "prompt": "$F_X(0)$ を求めなさい。",
+          "answer": "C",
+          "explanation": "$F_X(0)=P(X\\le0)=P(X=-1)+P(X=0)=3/4$。",
+          "points": 1,
+          "tags": [
+            "finite-discrete",
+            "cdf"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/4$"
+            },
+            {
+              "id": "B",
+              "text": "$1/2$"
+            },
+            {
+              "id": "C",
+              "text": "$3/4$"
+            },
+            {
+              "id": "D",
+              "text": "$1$"
+            }
+          ]
+        },
+        {
+          "id": "ps02-005",
+          "type": "numeric",
+          "prompt": "$E[X]$ を求めなさい。",
+          "answer": "0",
+          "explanation": "$E[X]=(-1)(1/4)+0(1/2)+1(1/4)=0$。",
+          "points": 1,
+          "tags": [
+            "finite-discrete",
+            "expectation"
+          ],
+          "accepted_answers": [
+            "0"
+          ]
+        },
+        {
+          "id": "ps02-006",
+          "type": "single_choice",
+          "prompt": "$g(x)=x^2$ とする。$E[g(X)]$ を求めなさい。",
+          "answer": "B",
+          "explanation": "$E[X^2]=(-1)^2(1/4)+0^2(1/2)+1^2(1/4)=1/2$。",
+          "points": 1,
+          "tags": [
+            "finite-discrete",
+            "transformed-expectation"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/4$"
+            },
+            {
+              "id": "B",
+              "text": "$1/2$"
+            },
+            {
+              "id": "C",
+              "text": "$3/4$"
+            },
+            {
+              "id": "D",
+              "text": "$1$"
+            }
+          ]
+        },
+        {
+          "id": "ps02-007",
+          "type": "single_choice",
+          "prompt": "$V[X]$ を求めなさい。",
+          "answer": "B",
+          "explanation": "$E[X]=0$, $E[X^2]=1/2$ より、$V[X]=E[X^2]-(E[X])^2=1/2$。",
+          "points": 1,
+          "tags": [
+            "finite-discrete",
+            "variance"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/4$"
+            },
+            {
+              "id": "B",
+              "text": "$1/2$"
+            },
+            {
+              "id": "C",
+              "text": "$3/4$"
+            },
+            {
+              "id": "D",
+              "text": "$1$"
+            }
+          ]
+        },
+        {
+          "id": "ps02-008",
+          "type": "single_choice",
+          "prompt": "積率母関数 $M_X(t)=E[e^{tX}]$ を求めなさい。",
+          "answer": "A",
+          "explanation": "$M_X(t)=\\sum_x e^{tx}P(X=x)=\\frac14e^{-t}+\\frac12+\\frac14e^t$。",
+          "points": 1,
+          "tags": [
+            "finite-discrete",
+            "mgf"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\frac14e^{-t}+\\frac12+\\frac14e^t$"
+            },
+            {
+              "id": "B",
+              "text": "$\\frac14e^{-t}+\\frac14e^t$"
+            },
+            {
+              "id": "C",
+              "text": "$\\frac12e^{-t}+\\frac12e^t$"
+            },
+            {
+              "id": "D",
+              "text": "$\\frac14+\\frac12e^t+\\frac14e^{2t}$"
+            }
+          ]
+        }
+      ],
+      "context": "確率変数 $X$ の確率分布を\n$P(X=-1)=1/4$, $P(X=0)=1/2$, $P(X=1)=1/4$\nとする。\n"
+    },
+    {
+      "id": "countably-infinite-discrete",
+      "title": "可算無限個の値をとる離散型",
+      "items": [
+        {
+          "id": "ps02-009",
+          "type": "single_choice",
+          "prompt": "$P(X\\ge2)$ を求めなさい。",
+          "answer": "C",
+          "explanation": "$P(X\\ge2)=1-P(X=0)-P(X=1)=1-1/4-1/4=1/2$。",
+          "points": 1,
+          "tags": [
+            "countably-infinite",
+            "probability"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/4$"
+            },
+            {
+              "id": "B",
+              "text": "$3/8$"
+            },
+            {
+              "id": "C",
+              "text": "$1/2$"
+            },
+            {
+              "id": "D",
+              "text": "$5/8$"
+            }
+          ]
+        },
+        {
+          "id": "ps02-010",
+          "type": "single_choice",
+          "prompt": "$F_X(2)$ を求めなさい。",
+          "answer": "C",
+          "explanation": "$F_X(2)=P(X=0)+P(X=1)+P(X=2)=1/4+1/4+3/16=11/16$。",
+          "points": 1,
+          "tags": [
+            "countably-infinite",
+            "cdf"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/2$"
+            },
+            {
+              "id": "B",
+              "text": "$9/16$"
+            },
+            {
+              "id": "C",
+              "text": "$11/16$"
+            },
+            {
+              "id": "D",
+              "text": "$3/4$"
+            }
+          ]
+        },
+        {
+          "id": "ps02-011",
+          "type": "numeric",
+          "prompt": "$E[X]$ を求めなさい。",
+          "answer": "2",
+          "explanation": "$E[X]=\\frac14\\sum_{k=0}^{\\infty}k(k+1)(1/2)^k=2$。",
+          "points": 1,
+          "tags": [
+            "countably-infinite",
+            "expectation"
+          ],
+          "accepted_answers": [
+            "2"
+          ]
+        },
+        {
+          "id": "ps02-012",
+          "type": "single_choice",
+          "prompt": "$g(x)=2^{-x}$ とする。$E[g(X)]$ を求めなさい。",
+          "answer": "B",
+          "explanation": "$E[2^{-X}]=\\frac14\\sum_{k=0}^{\\infty}(k+1)(1/4)^k=\\frac14(1-1/4)^{-2}=4/9$。",
+          "points": 1,
+          "tags": [
+            "countably-infinite",
+            "transformed-expectation"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/3$"
+            },
+            {
+              "id": "B",
+              "text": "$4/9$"
+            },
+            {
+              "id": "C",
+              "text": "$1/2$"
+            },
+            {
+              "id": "D",
+              "text": "$2/3$"
+            }
+          ]
+        },
+        {
+          "id": "ps02-013",
+          "type": "single_choice",
+          "prompt": "積率母関数 $M_X(t)$ を求めなさい。",
+          "answer": "B",
+          "explanation": "$M_X(t)=\\frac14\\sum_{k=0}^{\\infty}(k+1)(e^t/2)^k=1/(2-e^t)^2$。収束には $e^t/2<1$、すなわち $t<\\log2$ が必要である。",
+          "points": 1,
+          "tags": [
+            "countably-infinite",
+            "mgf"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/(2-e^t)$, $t<\\log2$"
+            },
+            {
+              "id": "B",
+              "text": "$1/(2-e^t)^2$, $t<\\log2$"
+            },
+            {
+              "id": "C",
+              "text": "$e^t/(2-e^t)$, $t<\\log2$"
+            },
+            {
+              "id": "D",
+              "text": "$e^t/(2-e^t)^2$, $t<\\log2$"
+            }
+          ]
+        },
+        {
+          "id": "ps02-014",
+          "type": "numeric",
+          "prompt": "積率母関数が $M_X(t)=1/(2-e^t)^2$（$t<\\log2$）である。この積率母関数を利用して $V[X]$ を求めなさい。",
+          "answer": "4",
+          "explanation": "$M_X'(0)=2$, $M_X''(0)=8$ より、$V[X]=M_X''(0)-(M_X'(0))^2=8-4=4$。",
+          "points": 1,
+          "tags": [
+            "countably-infinite",
+            "variance",
+            "mgf"
+          ],
+          "accepted_answers": [
+            "4"
+          ]
+        }
+      ],
+      "context": "確率変数 $X$ の確率関数を\n$P(X=k)=(k+1)/2^{k+2}$, $k=0,1,2,\\\\ldots$\nとする。\n"
+    },
+    {
+      "id": "continuous",
+      "title": "連続型",
+      "items": [
+        {
+          "id": "ps02-015",
+          "type": "single_choice",
+          "prompt": "$P(1/4\\le X\\le3/4)$ を求めなさい。",
+          "answer": "C",
+          "explanation": "$\\int_{1/4}^{3/4}2(1-x)\\,dx=1/2$。",
+          "points": 1,
+          "tags": [
+            "continuous",
+            "probability"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/4$"
+            },
+            {
+              "id": "B",
+              "text": "$3/8$"
+            },
+            {
+              "id": "C",
+              "text": "$1/2$"
+            },
+            {
+              "id": "D",
+              "text": "$3/4$"
+            }
+          ]
+        },
+        {
+          "id": "ps02-016",
+          "type": "single_choice",
+          "prompt": "$F_X(1/2)$ を求めなさい。",
+          "answer": "C",
+          "explanation": "$0\\le x\\le1$ では $F_X(x)=\\int_0^x2(1-u)\\,du=2x-x^2$。したがって $F_X(1/2)=3/4$。",
+          "points": 1,
+          "tags": [
+            "continuous",
+            "cdf"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/4$"
+            },
+            {
+              "id": "B",
+              "text": "$1/2$"
+            },
+            {
+              "id": "C",
+              "text": "$3/4$"
+            },
+            {
+              "id": "D",
+              "text": "$7/8$"
+            }
+          ]
+        },
+        {
+          "id": "ps02-017",
+          "type": "numeric",
+          "prompt": "$P(X=1/2)$ を求めなさい。",
+          "answer": "0",
+          "explanation": "連続型確率変数では1点だけをとる確率は $0$ である。",
+          "points": 1,
+          "tags": [
+            "continuous",
+            "point-probability"
+          ],
+          "accepted_answers": [
+            "0"
+          ]
+        },
+        {
+          "id": "ps02-018",
+          "type": "single_choice",
+          "prompt": "$E[X]$ を求めなさい。",
+          "answer": "B",
+          "explanation": "$E[X]=\\int_0^1x\\,2(1-x)\\,dx=1/3$。",
+          "points": 1,
+          "tags": [
+            "continuous",
+            "expectation"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/4$"
+            },
+            {
+              "id": "B",
+              "text": "$1/3$"
+            },
+            {
+              "id": "C",
+              "text": "$1/2$"
+            },
+            {
+              "id": "D",
+              "text": "$2/3$"
+            }
+          ]
+        },
+        {
+          "id": "ps02-019",
+          "type": "single_choice",
+          "prompt": "$g(x)=x^2$ とする。$E[g(X)]$ を求めなさい。",
+          "answer": "B",
+          "explanation": "$E[X^2]=\\int_0^1x^2\\,2(1-x)\\,dx=1/6$。",
+          "points": 1,
+          "tags": [
+            "continuous",
+            "transformed-expectation"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/12$"
+            },
+            {
+              "id": "B",
+              "text": "$1/6$"
+            },
+            {
+              "id": "C",
+              "text": "$1/4$"
+            },
+            {
+              "id": "D",
+              "text": "$1/3$"
+            }
+          ]
+        },
+        {
+          "id": "ps02-020",
+          "type": "single_choice",
+          "prompt": "$V[X]$ を求めなさい。",
+          "answer": "B",
+          "explanation": "$V[X]=E[X^2]-(E[X])^2=1/6-1/9=1/18$。",
+          "points": 1,
+          "tags": [
+            "continuous",
+            "variance"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/36$"
+            },
+            {
+              "id": "B",
+              "text": "$1/18$"
+            },
+            {
+              "id": "C",
+              "text": "$1/12$"
+            },
+            {
+              "id": "D",
+              "text": "$1/6$"
+            }
+          ]
+        },
+        {
+          "id": "ps02-021",
+          "type": "single_choice",
+          "prompt": "積率母関数 $M_X(t)$ を求めなさい。$t=0$ では $M_X(0)=1$ とする。",
+          "answer": "A",
+          "explanation": "$M_X(t)=2\\int_0^1(1-x)e^{tx}\\,dx=2(e^t-1-t)/t^2$ ($t\\ne0$)。また極限から $M_X(0)=1$。",
+          "points": 1,
+          "tags": [
+            "continuous",
+            "mgf"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "$2(e^t-1-t)/t^2$ ($t\\ne0$)"
+            },
+            {
+              "id": "B",
+              "text": "$2(e^t-1)/t$ ($t\\ne0$)"
+            },
+            {
+              "id": "C",
+              "text": "$(e^t-1-t)/t^2$ ($t\\ne0$)"
+            },
+            {
+              "id": "D",
+              "text": "$2(1+t-e^t)/t^2$ ($t\\ne0$)"
+            }
+          ]
+        }
+      ],
+      "context": "確率変数 $X$ の確率密度関数を\n$f_X(x)=2(1-x)$ ($0\\\\le x\\\\le1$),\nそれ以外では $f_X(x)=0$ とする。\n"
+    },
+    {
+      "id": "transformations",
+      "title": "平均・分散の変換と標準化",
+      "items": [
+        {
+          "id": "ps02-022",
+          "type": "numeric",
+          "prompt": "$E[X]=8$, $V[X]=9$ とし、$Y=-2X+5$ とする。$E[Y]$ を求めなさい。",
+          "answer": "-11",
+          "explanation": "$E[Y]=-2E[X]+5=-16+5=-11$。",
+          "points": 1,
+          "tags": [
+            "expectation",
+            "linear-transform"
+          ],
+          "accepted_answers": [
+            "-11"
+          ]
+        },
+        {
+          "id": "ps02-023",
+          "type": "numeric",
+          "prompt": "$E[X]=8$, $V[X]=9$ とし、$Y=-2X+5$ とする。$V[Y]$ を求めなさい。",
+          "answer": "36",
+          "explanation": "$V[Y]=(-2)^2V[X]=4\\times9=36$。",
+          "points": 1,
+          "tags": [
+            "variance",
+            "linear-transform"
+          ],
+          "accepted_answers": [
+            "36"
+          ]
+        },
+        {
+          "id": "ps02-024",
+          "type": "numeric",
+          "prompt": "$E[X]=8$, $V[X]=9$ とする。$X=2$ に対応する標準化された値 $Z=(X-E[X])/\\sqrt{V[X]}$ を求めなさい。",
+          "answer": "-2",
+          "explanation": "$Z=(2-8)/3=-2$。",
+          "points": 1,
+          "tags": [
+            "standardization"
+          ],
+          "accepted_answers": [
+            "-2"
+          ]
+        },
+        {
+          "id": "ps02-025",
+          "type": "numeric",
+          "prompt": "データの平均が $62$、標準偏差が $8$ である。値 $74$ の偏差値を求めなさい。",
+          "answer": "65",
+          "explanation": "偏差値は $50+10(74-62)/8=65$。",
+          "points": 1,
+          "tags": [
+            "deviation-score"
+          ],
+          "accepted_answers": [
+            "65"
+          ]
+        },
+        {
+          "id": "ps02-026",
+          "type": "single_choice",
+          "prompt": "偏差値について正しい記述を1つ選びなさい。",
+          "answer": "B",
+          "explanation": "偏差値の計算そのものに正規性は不要である。正規分布を使って順位割合などを解釈する場合に、分布が正規分布に近いことが追加で必要になる。",
+          "points": 1,
+          "tags": [
+            "deviation-score",
+            "interpretation"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "偏差値を計算するには、データが正規分布に従う必要がある。"
+            },
+            {
+              "id": "B",
+              "text": "偏差値を計算するだけなら正規性は不要だが、偏差値から上位何％かを正規分布で解釈するには追加の仮定が必要である。"
+            },
+            {
+              "id": "C",
+              "text": "偏差値は必ず $0$ 以上 $100$ 以下になる。"
+            },
+            {
+              "id": "D",
+              "text": "偏差値は元のデータと同じ単位をもつ。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "moments",
+      "title": "積率と分布の形",
+      "items": [
+        {
+          "id": "ps02-027",
+          "type": "single_choice",
+          "prompt": "$X$ の平均を $m=E[X]$ とする。$n$ 次中心積率を表す式を1つ選びなさい。",
+          "answer": "B",
+          "explanation": "$n$ 次中心積率は $E[(X-m)^n]$ である。特に2次中心積率は分散である。",
+          "points": 1,
+          "tags": [
+            "moment",
+            "central-moment"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "$E[X^n]$"
+            },
+            {
+              "id": "B",
+              "text": "$E[(X-m)^n]$"
+            },
+            {
+              "id": "C",
+              "text": "$E[(X/m)^n]$"
+            },
+            {
+              "id": "D",
+              "text": "$(E[X])^n$"
+            }
+          ]
+        },
+        {
+          "id": "ps02-028",
+          "type": "single_choice",
+          "prompt": "$Z=(X-E[X])/\\sqrt{V[X]}$ とする。歪度を表すものを1つ選びなさい。",
+          "answer": "C",
+          "explanation": "歪度は標準化された確率変数の3次積率 $E[Z^3]$ で定義される。",
+          "points": 1,
+          "tags": [
+            "skewness",
+            "standardized-moment"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "$E[Z]$"
+            },
+            {
+              "id": "B",
+              "text": "$E[Z^2]$"
+            },
+            {
+              "id": "C",
+              "text": "$E[Z^3]$"
+            },
+            {
+              "id": "D",
+              "text": "$E[Z^4]$"
+            }
+          ]
+        },
+        {
+          "id": "ps02-029",
+          "type": "single_choice",
+          "prompt": "$Z=(X-E[X])/\\sqrt{V[X]}$ とする。尖度を表すものを1つ選びなさい。",
+          "answer": "D",
+          "explanation": "尖度は標準化された確率変数の4次積率 $E[Z^4]$ で定義される。",
+          "points": 1,
+          "tags": [
+            "kurtosis",
+            "standardized-moment"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "$E[Z]$"
+            },
+            {
+              "id": "B",
+              "text": "$E[Z^2]$"
+            },
+            {
+              "id": "C",
+              "text": "$E[Z^3]$"
+            },
+            {
+              "id": "D",
+              "text": "$E[Z^4]$"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "generating-functions",
+      "title": "積率母関数と特性関数",
+      "items": [
+        {
+          "id": "ps02-030",
+          "type": "multiple_choice",
+          "prompt": "次の記述のうち正しいものをすべて選びなさい。",
+          "answer": [
+            "A",
+            "B",
+            "C"
+          ],
+          "explanation": "積率母関数は存在範囲に注意が必要である。特性関数は $|e^{itX}|=1$ なので実数 $t$ 全体で定義できる。積率母関数には近傍での一致による一意性がある。一方、$V[X]=E[X^2]-(E[X])^2$ なので $E[X^2]=V[X]$ が常に成り立つわけではない。",
+          "points": 1,
+          "tags": [
+            "mgf",
+            "characteristic-function",
+            "uniqueness"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "積率母関数は、すべての確率変数についてすべての実数 $t$ で有限とは限らない。"
+            },
+            {
+              "id": "B",
+              "text": "特性関数は、すべての実数 $t$ で定義できる。"
+            },
+            {
+              "id": "C",
+              "text": "2つの積率母関数が $0$ を含む開区間でともに有限かつ一致すれば、対応する確率分布は一致する。"
+            },
+            {
+              "id": "D",
+              "text": "$E[X^2]=V[X]$ は常に成り立つ。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "data-variance",
+      "title": "データの分散・不偏分散",
+      "items": [
+        {
+          "id": "ps02-031",
+          "type": "numeric",
+          "prompt": "データの平均 $\\bar{x}$ を求めなさい。",
+          "answer": "3",
+          "explanation": "$\\bar{x}=(2+2+4+4)/4=3$。",
+          "points": 1,
+          "tags": [
+            "data",
+            "mean"
+          ],
+          "accepted_answers": [
+            "3"
+          ]
+        },
+        {
+          "id": "ps02-032",
+          "type": "numeric",
+          "prompt": "データの分散 $s^2=(1/n)\\sum_{k=1}^n(x_k-\\bar{x})^2$ を求めなさい。",
+          "answer": "1",
+          "explanation": "平均は $3$ なので、平方偏差の和は $1+1+1+1=4$。したがって $s^2=4/4=1$。",
+          "points": 1,
+          "tags": [
+            "data",
+            "variance"
+          ],
+          "accepted_answers": [
+            "1"
+          ]
+        },
+        {
+          "id": "ps02-033",
+          "type": "single_choice",
+          "prompt": "不偏分散 $u^2$ を求めなさい。",
+          "answer": "B",
+          "explanation": "$u^2=(1/(n-1))\\sum(x_k-\\bar{x})^2=4/3$。また $u^2=n s^2/(n-1)=4/3$ としても求められる。",
+          "points": 1,
+          "tags": [
+            "data",
+            "unbiased-variance"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "$1$"
+            },
+            {
+              "id": "B",
+              "text": "$4/3$"
+            },
+            {
+              "id": "C",
+              "text": "$3/2$"
+            },
+            {
+              "id": "D",
+              "text": "$2$"
+            }
+          ]
+        },
+        {
+          "id": "ps02-034",
+          "type": "numeric",
+          "prompt": "値 $4$ を、平均 $\\bar{x}=3$、標準偏差 $s=1$ を用いて標準化した値を求めなさい。",
+          "answer": "1",
+          "explanation": "$(4-3)/1=1$。",
+          "points": 1,
+          "tags": [
+            "data",
+            "standardization"
+          ],
+          "accepted_answers": [
+            "1"
+          ]
+        }
+      ],
+      "context": "観測されたデータを $2,2,4,4$ とする。"
+    },
+    {
+      "id": "descriptive-statistics",
+      "title": "データの特徴を表す量",
+      "items": [
+        {
+          "id": "ps02-035",
+          "type": "single_choice",
+          "prompt": "次の度数分布表の最頻階級を選びなさい。\n\n- $0$ 以上 $10$ 未満：度数 $2$\n- $10$ 以上 $20$ 未満：度数 $5$\n- $20$ 以上 $30$ 未満：度数 $4$\n- $30$ 以上 $40$ 未満：度数 $1$\n",
+          "answer": "B",
+          "explanation": "最も度数が大きい階級は、度数 $5$ の $10$ 以上 $20$ 未満である。",
+          "points": 1,
+          "tags": [
+            "frequency-table",
+            "modal-class"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "$0$ 以上 $10$ 未満"
+            },
+            {
+              "id": "B",
+              "text": "$10$ 以上 $20$ 未満"
+            },
+            {
+              "id": "C",
+              "text": "$20$ 以上 $30$ 未満"
+            },
+            {
+              "id": "D",
+              "text": "$30$ 以上 $40$ 未満"
+            }
+          ]
+        },
+        {
+          "id": "ps02-036",
+          "type": "numeric",
+          "prompt": "階級 $10$ 以上 $20$ 未満の階級値を求めなさい。",
+          "answer": "15",
+          "explanation": "階級値は階級の両端の中央なので、$(10+20)/2=15$。これは近似的な最頻値として用いることがある。",
+          "points": 1,
+          "tags": [
+            "frequency-table",
+            "class-mark",
+            "mode"
+          ],
+          "accepted_answers": [
+            "15"
+          ]
+        },
+        {
+          "id": "ps02-037",
+          "type": "single_choice",
+          "prompt": "データ $1,3,3,5,8$ の中央値と最頻値の組を選びなさい。",
+          "answer": "A",
+          "explanation": "中央の値は $3$、最も多く現れる値も $3$ である。",
+          "points": 1,
+          "tags": [
+            "median",
+            "mode"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "中央値 $3$、最頻値 $3$"
+            },
+            {
+              "id": "B",
+              "text": "中央値 $3$、最頻値 $5$"
+            },
+            {
+              "id": "C",
+              "text": "中央値 $5$、最頻値 $3$"
+            },
+            {
+              "id": "D",
+              "text": "中央値 $4$、最頻値 $3$"
+            }
+          ]
+        },
+        {
+          "id": "ps02-038",
+          "type": "single_choice",
+          "prompt": "データ $1,3,3,5,8$ について、両端からそれぞれ1個ずつ除いた調整平均を求めなさい。",
+          "answer": "C",
+          "explanation": "両端の $1$ と $8$ を除き、$(3+3+5)/3=11/3$。",
+          "points": 1,
+          "tags": [
+            "trimmed-mean"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "$3$"
+            },
+            {
+              "id": "B",
+              "text": "$10/3$"
+            },
+            {
+              "id": "C",
+              "text": "$11/3$"
+            },
+            {
+              "id": "D",
+              "text": "$4$"
+            }
+          ]
+        },
+        {
+          "id": "ps02-039",
+          "type": "multiple_choice",
+          "prompt": "次の記述のうち正しいものをすべて選びなさい。",
+          "answer": [
+            "A",
+            "B",
+            "C"
+          ],
+          "explanation": "平均偏差・四分位偏差・変動係数はそれぞれ記載の式で定義される。変動係数は標準偏差と平均の比なので無次元である。",
+          "points": 1,
+          "tags": [
+            "mean-deviation",
+            "quartile-deviation",
+            "coefficient-of-variation"
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "平均偏差は $(1/n)\\sum_{k=1}^n|x_k-\\bar{x}|$ で定義される。"
+            },
+            {
+              "id": "B",
+              "text": "四分位偏差は $(Q_3-Q_1)/2$ で定義される。"
+            },
+            {
+              "id": "C",
+              "text": "平均が $0$ でないとき、変動係数は $s/|\\bar{x}|$ で定義される。"
+            },
+            {
+              "id": "D",
+              "text": "変動係数は元のデータと同じ単位をもつ。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
