@@ -2,4 +2,29 @@
 title: "フーリエ解析"
 ---
 
-準備中
+## シラバス
+
+- [令和8年度 シラバス（PDF）](fourier-analysis/syllabus/r8-syllabus.pdf)
+
+## レポート課題（PDF）
+
+<details open>
+<summary>令和8年度</summary>
+
+- [第1回 レポート課題（PDF）](fourier-analysis/reports/r8-fourier-analysis-report-01.pdf){target="_blank"}
+- [第2回 レポート課題（PDF）](fourier-analysis/reports/r8-fourier-analysis-report-02.pdf){target="_blank"}
+- [第3回 レポート課題（PDF）](fourier-analysis/reports/r8-fourier-analysis-report-03.pdf){target="_blank"}
+
+</details>
+
+## 定期試験の過去問（PDF）
+
+<details open>
+<summary>期末試験</summary>
+
+- 令和7年度：[問題](fourier-analysis/exams/r7-fourier-analysis-final-exam.pdf) ／ [解答・解説](fourier-analysis/exams/r7-fourier-analysis-final-exam-solutions.pdf)
+- 令和6年度：[問題](fourier-analysis/exams/r6-fourier-analysis-final-exam.pdf) ／ [解答・解説](fourier-analysis/exams/r6-fourier-analysis-final-exam-solutions.pdf)
+
+</details>
+
+過去問は保存原稿に基づく誤植修正版です。[訂正・補充内容](fourier-analysis/exams/corrections.qmd)も参照してください。
