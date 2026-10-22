@@ -1,5 +1,8 @@
 ---
 title: "フーリエ解析 期末試験の訂正・補充内容"
+format:
+  html:
+    html-math-method: mathml
 ---
 
 [フーリエ解析の資料一覧に戻る](../../fourier-analysis.qmd)

@@ -11,9 +11,9 @@ title: "フーリエ解析"
 <details open>
 <summary>令和8年度</summary>
 
-- [第1回 レポート課題（PDF）](fourier-analysis/reports/r8-fourier-analysis-report-01.pdf){target="_blank"}
-- [第2回 レポート課題（PDF）](fourier-analysis/reports/r8-fourier-analysis-report-02.pdf){target="_blank"}
-- [第3回 レポート課題（PDF）](fourier-analysis/reports/r8-fourier-analysis-report-03.pdf){target="_blank"}
+- [第1回 レポート課題（PDF）](fourier-analysis/reports/r8-fourier-analysis-report-01.pdf)
+- [第2回 レポート課題（PDF）](fourier-analysis/reports/r8-fourier-analysis-report-02.pdf)
+- [第3回 レポート課題（PDF）](fourier-analysis/reports/r8-fourier-analysis-report-03.pdf)
 
 </details>
 
