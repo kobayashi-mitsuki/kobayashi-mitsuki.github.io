@@ -1,0 +1,138 @@
+---
+title: "フーリエ解析（基幹） レポート課題 4"
+subtitle: "令和8年度"
+toc: false
+---
+
+担当：小林 光木
+
+**提出期限：令和8年10月30日 23:59**
+
+以下では、周期 $2\pi$ の可積分関数 $f$ の複素フーリエ係数とフーリエ部分和を、それぞれ
+
+$$
+c_n\coloneqq\frac{1}{2\pi}\int_{-\pi}^{\pi}
+f(\theta)e^{-in\theta}\,d\theta,\qquad
+S_N^f(\theta)\coloneqq\sum_{n=-N}^{N}c_ne^{in\theta}
+$$
+
+とする。また、Dirichlet 核を
+
+$$
+D_N(t)\coloneqq\sum_{n=-N}^{N}e^{int}
+$$
+
+とする。
+
+講義では、$f\in PC^1$ に対して通常のフーリエ部分和 $S_N^f$ が左右極限の平均に収束することを示した。本課題では部分和の Cesàro 平均を用い、より弱い仮定 $f\in PC$ のもとで対応する収束定理を考える。講義と同様に左右極限の平均を引き、積分を正負の区間に分けて整理し、最後の評価に Fejér 核の性質を用いる。以下の問に答えよ。
+
+## 問 4.1（Fejér 核の基本性質）
+
+**(1)** フーリエ部分和の Cesàro 平均 $\sigma_N^f$ と Fejér 核 $F_N$ を
+
+$$
+\sigma_N^f(\theta)\coloneqq
+\frac{1}{N+1}\sum_{m=0}^{N}S_m^f(\theta),
+\qquad
+F_N(t)\coloneqq
+\frac{1}{N+1}\sum_{m=0}^{N}D_m(t)
+$$
+
+で定める。$\sigma_N^f$ が $f$ と $F_N$ の畳み込みで表されること、すなわち
+
+$$
+\sigma_N^f=f*F_N
+$$
+
+を示せ。
+
+**(2)** $D_m$ の定義に戻り、和の順序を入れ替えて
+
+$$
+F_N(t)=\sum_{n=-N}^{N}
+\left(1-\frac{|n|}{N+1}\right)e^{int}
+$$
+
+を示せ。
+
+**(3)** (2) の結果から、次の表示を示せ。
+
+$$
+F_N(t)=\frac{1}{N+1}
+\left|\sum_{k=0}^{N}e^{ikt}\right|^2.
+$$
+
+（ヒント：絶対値の二乗を二重和に展開し、各 $e^{int}$ が現れる回数を数えよ。）
+
+**(4)** 講義で Dirichlet 核の正弦表示を導いたときと同様に、(3) の絶対値の中の和を等比数列として計算し、$t\notin 2\pi\mathbb Z$ のとき
+
+$$
+F_N(t)=\frac{1}{N+1}
+\frac{\sin^2\left(\frac{N+1}{2}t\right)}
+{\sin^2\left(\frac{t}{2}\right)}
+$$
+
+となることを示せ。
+
+**(5)** (3) の表示を用いて、$F_N$ が偶関数かつ非負の関数であることを示せ。さらに、(2) の表示を積分し、偶性を用いて
+
+$$
+\int_{-\pi}^{0}F_N(t)\,dt
+=\int_{0}^{\pi}F_N(t)\,dt
+=\pi
+$$
+
+を示せ。
+
+## 問 4.2（Fejér 核を用いた収束定理）
+
+$f$ を周期 $2\pi$ の区分的に連続な関数とする。$\theta\in\mathbb R$ を固定し、
+
+$$
+A_\theta\coloneqq
+\frac{f(\theta+)+f(\theta-)}{2}
+$$
+
+とおく。以下の問に答えよ。
+
+**(1)** 講義で行った Dirichlet 核による証明と同様に、核の偶性と問題1の積分公式を用いて、次の等式を示せ。
+
+$$
+\begin{aligned}
+\sigma_N^f(\theta)-A_\theta
+&=
+\frac{1}{2\pi}\int_{0}^{\pi}
+F_N(t)\bigl(f(\theta+t)-f(\theta+)\bigr)\,dt\\
+&\quad+
+\frac{1}{2\pi}\int_{-\pi}^{0}
+F_N(t)\bigl(f(\theta+t)-f(\theta-)\bigr)\,dt.
+\end{aligned}
+$$
+
+**(2)** 任意の $0<\delta<\pi$ に対して、
+
+$$
+0\le F_N(t)
+\le\frac{1}{(N+1)\sin^2(\delta/2)}
+\qquad(\delta\le|t|\le\pi)
+$$
+
+を示し、これを用いて
+
+$$
+\lim_{N\to\infty}
+\int_{\delta\le|t|\le\pi}F_N(t)\,dt=0
+$$
+
+を導け。
+
+**(3)** (1) の各積分を $|t|<\delta$ と $\delta\le|t|\le\pi$ に分けて評価し、(2) の結果と $f(\theta\pm)$ の定義から、
+
+$$
+\lim_{N\to\infty}\sigma_N^f(\theta)
+=\frac{f(\theta+)+f(\theta-)}{2}
+$$
+
+を示せ。
+
+（ヒント：原点付近では片側極限を用いて差を小さくし、原点から離れた区間では $f$ の有界性を用いよ。）
