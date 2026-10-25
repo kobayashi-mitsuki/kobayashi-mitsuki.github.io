@@ -6,7 +6,7 @@ title: "フーリエ解析"
 
 - [令和8年度 シラバス（PDF）](fourier-analysis/syllabus/r8-syllabus.pdf)
 
-## レポート課題
+## レポート課題（PDF）
 
 <details open>
 <summary>令和8年度</summary>
@@ -14,7 +14,7 @@ title: "フーリエ解析"
 - [第1回 レポート課題（PDF）](fourier-analysis/reports/r8-fourier-analysis-report-01.pdf)
 - [第2回 レポート課題（PDF）](fourier-analysis/reports/r8-fourier-analysis-report-02.pdf)
 - [第3回 レポート課題（PDF）](fourier-analysis/reports/r8-fourier-analysis-report-03.pdf)
-- [第4回 レポート課題（Web版）](fourier-analysis/reports/r8-fourier-analysis-report-04.qmd)
+- [第4回 レポート課題（PDF）](fourier-analysis/reports/r8-fourier-analysis-report-04.pdf)
 
 </details>
 

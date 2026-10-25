@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  pre-render:
+    - node tests/check-fourier-report-pdfs.mjs
   render:
     - "*.qmd"
     - "teaching/**/*.qmd"
