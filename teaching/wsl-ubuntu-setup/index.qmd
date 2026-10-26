@@ -2,6 +2,10 @@
 title: "WSL + Ubuntu 環境構築"
 ---
 
+::: {.page-breadcrumbs role="navigation" aria-label="パンくずリスト"}
+[授業・教材](../../teaching.qmd) › **WSL + Ubuntu 環境構築**
+:::
+
 ## 操作動画
 
 1.  [WSLをインストール](videos/wsl-install/index.qmd)
@@ -15,3 +19,7 @@ title: "WSL + Ubuntu 環境構築"
 
 - [WSL のバージョン確認と更新](videos/wsl-version-update/index.qmd)
 - [Ubuntu のユーザー名・パスワードを忘れた場合](troubleshooting.qmd)
+
+::: {.page-back-link}
+← [授業・教材一覧に戻る](../../teaching.qmd)
+:::

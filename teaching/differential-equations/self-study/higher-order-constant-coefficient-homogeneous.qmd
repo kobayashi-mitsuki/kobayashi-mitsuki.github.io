@@ -2,6 +2,10 @@
 title: "高階定数係数斉次線形微分方程式"
 ---
 
+::: {.page-breadcrumbs role="navigation" aria-label="パンくずリスト"}
+[授業・教材](../../../teaching.qmd) › [微分方程式](../../differential-equations.qmd) › **高階定数係数斉次線形微分方程式**
+:::
+
 次の各小問において, 微分方程式の解をすべて求めよ. ただし, $D=\tfrac{d}{dx}$ とし, $C_k$ $(k=1,2,\dots)$ を任意定数として用いて良い.
 
 ## (1) 実根のみ
@@ -346,3 +350,7 @@ window.addEventListener("load", function() {
   generateMixedRepeated();
 });
 </script>
+
+::: {.page-back-link}
+← [微分方程式の資料一覧に戻る](../../differential-equations.qmd)
+:::

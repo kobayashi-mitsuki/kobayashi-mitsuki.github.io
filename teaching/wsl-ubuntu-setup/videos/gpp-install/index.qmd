@@ -2,6 +2,10 @@
 title: "C++ の開発ツールを導入する"
 ---
 
+::: {.page-breadcrumbs role="navigation" aria-label="パンくずリスト"}
+[授業・教材](../../../../teaching.qmd) › [WSL + Ubuntu 環境構築](../../index.qmd) › **C++ の開発ツールを導入する**
+:::
+
 ## 操作動画
 
 {{< video gpp-install.mp4 >}}
@@ -53,4 +57,6 @@ Ubuntu を起動し、パッケージ情報を更新して `build-essential` と
 
 バージョン情報が表示されれば、`g++` を使用できる状態です。
 
-[WSL + Ubuntu 環境構築ページに戻る](../../index.qmd)
+::: {.page-back-link}
+← [WSL + Ubuntu 環境構築の資料一覧に戻る](../../index.qmd)
+:::

@@ -2,6 +2,10 @@
 title: "授業用フォルダを作成して登録する"
 ---
 
+::: {.page-breadcrumbs role="navigation" aria-label="パンくずリスト"}
+[授業・教材](../../../../teaching.qmd) › [WSL + Ubuntu 環境構築](../../index.qmd) › **授業用フォルダを作成して登録する**
+:::
+
 ## 操作動画
 
 {{< video ../mkdir-to-pin/mkdir-to-pin.mp4 >}}
@@ -26,4 +30,6 @@ C++ の授業で使用する `cpp1` フォルダを Ubuntu 側に作成し、Win
 
 クイックアクセスに登録しておけば、次回以降は Windows のエクスプローラーから授業用フォルダをすぐに開くことができます。
 
-[WSL + Ubuntu 環境構築ページに戻る](../../index.qmd)
+::: {.page-back-link}
+← [WSL + Ubuntu 環境構築の資料一覧に戻る](../../index.qmd)
+:::

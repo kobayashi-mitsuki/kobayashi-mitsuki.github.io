@@ -2,4 +2,12 @@
 title: "C++プログラミングⅡ"
 ---
 
+::: {.page-breadcrumbs role="navigation" aria-label="パンくずリスト"}
+[授業・教材](../teaching.qmd) › **C++プログラミングⅡ**
+:::
+
 準備中
+
+::: {.page-back-link}
+← [授業・教材一覧に戻る](../teaching.qmd)
+:::

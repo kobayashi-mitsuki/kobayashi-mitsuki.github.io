@@ -2,6 +2,10 @@
 title: "Ubuntuをインストールして初回設定"
 ---
 
+::: {.page-breadcrumbs role="navigation" aria-label="パンくずリスト"}
+[授業・教材](../../../../teaching.qmd) › [WSL + Ubuntu 環境構築](../../index.qmd) › **Ubuntuをインストールして初回設定**
+:::
+
 ## 操作動画
 
 {{< video ubuntu-install.mp4 >}}
@@ -35,4 +39,6 @@ WSL のインストールと Windows の再起動が完了した後に、Ubuntu 
 
 `wsl --install -d Ubuntu` の実行時に `404 Not Found` などのエラーが表示され、Ubuntu の取得が正常に進まない場合は、自己判断で別の方法を試さず、授業中に教員へ知らせてください。
 
-[WSL + Ubuntu 環境構築ページに戻る](../../index.qmd)
+::: {.page-back-link}
+← [WSL + Ubuntu 環境構築の資料一覧に戻る](../../index.qmd)
+:::

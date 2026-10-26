@@ -2,6 +2,10 @@
 title: "ファイル名拡張子を表示する"
 ---
 
+::: {.page-breadcrumbs role="navigation" aria-label="パンくずリスト"}
+[授業・教材](../../../../teaching.qmd) › [WSL + Ubuntu 環境構築](../../index.qmd) › **ファイル名拡張子を表示する**
+:::
+
 ## 操作動画
 
 {{< video show-file-extension.mp4 >}}
@@ -14,4 +18,6 @@ Windows のエクスプローラーで、ファイル名拡張子を表示する
 2. 上部メニューの「表示」を選びます。
 3. 「表示」から「ファイル名拡張子」を有効にします。
 
-[WSL + Ubuntu 環境構築ページに戻る](../../index.qmd)
+::: {.page-back-link}
+← [WSL + Ubuntu 環境構築の資料一覧に戻る](../../index.qmd)
+:::

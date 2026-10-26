@@ -2,6 +2,10 @@
 title: "多項式を非斉次項にもつ場合"
 ---
 
+::: {.page-breadcrumbs role="navigation" aria-label="パンくずリスト"}
+[授業・教材](../../../teaching.qmd) › [微分方程式](../../differential-equations.qmd) › **多項式を非斉次項にもつ場合**
+:::
+
 次の各小問において, 微分方程式
 $$
 P(D)y=f(x)
@@ -845,3 +849,7 @@ window.addEventListener("load", function() {
   generatePolynomialZero();
 });
 </script>
+
+::: {.page-back-link}
+← [微分方程式の資料一覧に戻る](../../differential-equations.qmd)
+:::
