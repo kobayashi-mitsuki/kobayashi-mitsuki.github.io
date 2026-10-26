@@ -2,6 +2,8 @@
 title: "フーリエ解析"
 ---
 
+[授業・教材一覧に戻る](../teaching.qmd)
+
 ## シラバス
 
 - [令和8年度 シラバス（PDF）](fourier-analysis/syllabus/r8-syllabus.pdf)
