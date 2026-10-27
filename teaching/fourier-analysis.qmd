@@ -32,7 +32,7 @@ title: "フーリエ解析"
 
 </details>
 
-過去問は保存原稿に基づく誤植修正版です。[訂正・補充内容](fourier-analysis/exams/corrections.qmd)も参照してください。
+掲載している過去問は、保存原稿をもとに誤植の訂正や必要な補足を行った再掲版です。
 
 ::: {.page-back-link}
 ← [授業・教材一覧に戻る](../teaching.qmd)
