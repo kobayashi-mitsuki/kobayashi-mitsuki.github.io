@@ -15,11 +15,11 @@ title: "フーリエ解析"
 <details open>
 <summary>令和8年度</summary>
 
-- [第1回 レポート課題（PDF）](fourier-analysis/reports/r8-fourier-analysis-report-01.pdf)
-- [第2回 レポート課題（PDF）](fourier-analysis/reports/r8-fourier-analysis-report-02.pdf)
-- [第3回 レポート課題（PDF）](fourier-analysis/reports/r8-fourier-analysis-report-03.pdf)
-- [第4回 レポート課題（PDF）](fourier-analysis/reports/r8-fourier-analysis-report-04.pdf)
-- [第5回 レポート課題（PDF）](fourier-analysis/reports/r8-fourier-analysis-report-05.pdf)
+- [第1回 音の重ね合わせ・三角関数の直交性・フーリエ係数](fourier-analysis/reports/r8-fourier-analysis-report-01.pdf)
+- [第2回 偶拡張・奇拡張とフーリエ級数](fourier-analysis/reports/r8-fourier-analysis-report-02.pdf)
+- [第3回 畳み込み・フーリエ部分和と近似誤差](fourier-analysis/reports/r8-fourier-analysis-report-03.pdf)
+- [第4回 Fejér核とCesàro平均による収束](fourier-analysis/reports/r8-fourier-analysis-report-04.pdf)
+- [第5回 項別微分・項別積分](fourier-analysis/reports/r8-fourier-analysis-report-05.pdf)
 
 </details>
 

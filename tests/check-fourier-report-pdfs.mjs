@@ -24,7 +24,7 @@ if (headings.length !== 1) fail("Exactly one report section is required.");
 const start = headings[0] + 1;
 const end = lines.findIndex((line, i) => i >= start && line.startsWith("## "));
 const section = lines.slice(start, end === -1 ? undefined : end);
-const format = /^\s*-\s*\[\u7b2c(\d+)\u56de \u30ec\u30dd\u30fc\u30c8\u8ab2\u984c\uff08PDF\uff09\]\(fourier-analysis\/reports\/(r8-fourier-analysis-report-(\d{2})\.pdf)\)\s*$/;
+const format = /^\s*-\s*\[\u7b2c(\d+)\u56de [^\]\r\n]*\S[^\]\r\n]*\]\(fourier-analysis\/reports\/(r8-fourier-analysis-report-(\d{2})\.pdf)\)\s*$/;
 const used = new Set();
 let checked = 0;
 
