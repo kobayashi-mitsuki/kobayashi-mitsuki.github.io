@@ -20,6 +20,7 @@ title: "フーリエ解析"
 - [第3回 畳み込み・フーリエ部分和と近似誤差](fourier-analysis/reports/r8-fourier-analysis-report-03.pdf)
 - [第4回 Fejér核とCesàro平均による収束](fourier-analysis/reports/r8-fourier-analysis-report-04.pdf)
 - [第5回 項別微分・項別積分](fourier-analysis/reports/r8-fourier-analysis-report-05.pdf)
+- [第6回 滑らかさとフーリエ係数の減衰・平行移動・Gibbs現象](fourier-analysis/reports/r8-fourier-analysis-report-06.pdf)
 
 </details>
 
